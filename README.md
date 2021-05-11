@@ -1,3 +1,7 @@
 # CASA Dissertation
 
-## Update ethical reflection
+Apply for EC - 14th May
+
+Proposal - 12th May
+
+Update ethical reflection - 11th May
