@@ -22,5 +22,7 @@ bookdown::pdf_book:
   latex_engine: xelatex
   citation_package: biblatex 
   keep_tex: yes
+bookdown::html_book:
+  css: toc.css
 #bookdown::epub_book: default
 #word_document: default

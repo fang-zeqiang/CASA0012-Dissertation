@@ -1,5 +1,5 @@
-output_dir: docs
-book_filename: "CASA-Thesis"
+output_dir: html
+book_filename: "CASA0012-Dissertation"
 rmd_files:
 - index.Rmd
 - 00-preamble.Rmd
