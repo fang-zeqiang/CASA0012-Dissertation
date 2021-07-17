@@ -1,40 +1,42 @@
-# Equations and direct quotes
+# Methodology
 
-This section will focus on equations and direct quotes
+## Research Framework
 
-## Equations {#equations}
+1. Restate my research question
+2. Cluster & Multiple Regression
+(Figure Flow Chart)
 
-You need to include equations with some LaTeX. The easiest way to do this is to use an online tool such as: https://latex.codecogs.com/eqneditor/editor.php. It can be a real pain to get these right, but once you've worked it out it will be much easier than dealing with word equation editor. 
+## Data Source and Processing
 
-\begin{equation} 
-  p= h\frac{c}{\varrho}
-  (\#eq:test)
-\end{equation} 
+1. What is my data source from?
+1. How I process this data? 
+  (Figure Flow Chart)
+1. To what extent my processed data represent my research objectives?
 
-To reference this in the text we use: \@ref(eq:test)
+### Tech Firms Finding
 
-You can also test your code in your RMarkdown document using `$` e.g. $$p= h\frac{c}{\varrho}$$
+Max: If you don't plan to measure clusters using data-driven methods like DB-Scan, you will need to justify this decision in the dissertation, especially as some tech clusters are likely to be smaller than TTWAs in practice. You could look at literature on TTWAs to argue that they are a good representation of local economies; you could also argue that limitations in OC address data mean it's sensible to aggregate firms to TTWA level (again, you will need references to back that up).
 
-However, this won't generate an equation number and you can't cross reference it. But we can use this logic to define the parameters within the equation e.g. where $h$ is Plank's constant, $6.626 × 10^-34 Js$
+### Dynamics Measuring Index 
 
-`$$` puts it on a new line, single `$` keeps it on the same line (in the text)
+I need to refer to lit review
 
-## Block quotes (or direct quotes) {#quotes}
+## Quatitative Analysis and Methods
 
-You may wish to quote a large section from a source, to do this use a block quote. 
+### Tech Cluster Identifying
 
-Simply input a `>` before the text. For example ` > This is a quote`. 
+sic4 code
 
-> "This is a direct quote" 
+tech cluster
 
-You can also provide an attribution at the footer of the quote using `tufte::quote_footer()`, either a name or a reference. You'll need to install the `tufte` package to use this. For example, `> [include only r here] tufte::quote_footer('--- Joe Martin')` or ` > [include only r here] tufte::quote_footer('--- @xie2015')` 
+### Dynamics Analysis
 
-Giving...
+entry / exit / churn pattern
 
-> `r tufte::quote_footer('--- Joe Martin')`
+incorporation / dissolution date
 
-> `r tufte::quote_footer('--- @xie2015')`
+### Location Quotients
 
-Instead you could just include the reference at the end of the quote, using the same method to reference as we've seen before..e.g. `> "This is a direct quote" @xie2015, Equation \@ref(eq:test)`...giving 
+## Limitations
 
-> "This is a direct quote" @xie2015 \@ref(eq:test)
+## Ethical Statement

@@ -3,3 +3,11 @@
 <div id="refs"></div>
 '`
 
+- Kerr, William R., and Frederic Robert-Nicoud. 2020. "Tech Clusters." Journal of Economic Perspectives, 34 (3): 50-76. https://www.aeaweb.org/articles?id=10.1257/jep.34.3.50
+
+- Frenken, K., Cefis, E., & Stam, E. (2015). Industrial Dynamics and Clusters: A Survey. Regional Studies, 49(1), 10-27. doi:10.1080/00343404.2014.904505
+Frenken K., Cefis E. and Stam E. 
+
+- Combes, P.-P., Duranton, G., Gobillon, L., Puga, D. and Roux, S. (2012), The Productivity Advantages of Large Cities: Distinguishing Agglomeration From Firm Selection. Econometrica, 80: 2543-2594. https://doi.org/10.3982/ECTA8442
+
+
