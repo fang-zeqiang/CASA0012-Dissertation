@@ -1,0 +1,5 @@
+# Conclusion
+
+Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
+
+To be done

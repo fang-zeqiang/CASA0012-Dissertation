@@ -1,0 +1,23 @@
+# Methodology
+
+## Research Framework {#equations}
+
+$$p= h\frac{c}{\varrho}$$
+
+## Data Source and Processing {#quotes}
+
+### Tech Firms Finding
+
+### Dynamics Measuring Index
+
+## Quatitative Analysis and Methods
+
+### Tech Cluster Identifying
+
+### Dynamics Analysis
+
+### Location Quotients
+
+## Limitations
+
+## Ethical Statement
