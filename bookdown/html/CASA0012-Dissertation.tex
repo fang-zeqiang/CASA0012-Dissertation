@@ -1,0 +1,342 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  12pt,
+  oneside]{book}
+\usepackage{lmodern}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+  \usepackage{amssymb}
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={CASA0012 Dissertation Book},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[left=4cm, right=3cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage[none]{hyphenat}
+\pagestyle{plain}
+\raggedbottom
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+\usepackage{pdfpages}
+\usepackage[width=\textwidth]{caption}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{15pt}%
+\fancyhead[RO,RE]{\nouppercase{\leftmark}}
+\fancyfoot[CO, CE] {\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[style=apa,]{biblatex}
+\addbibresource{book.bib}
+\addbibresource{packages.bib}
+\addbibresource{test.bib}
+
+\title{CASA0012 Dissertation Book}
+\author{Zeqiang Fang\\
+~\\
+CASA0012, MSc Spatial Data Science and Visualisation Dissertation\\
+~\\
+Supervisor: Dr Max Nathan\\
+~\\
+Repository: \url{https://fang-zeqiang.github.io/CASA0012-Dissertation/}\\
+~\\
+This dissertation is submitted in part requirement for the\\
+MSc (Or MRes) in the Centre for Advanced Spatial Analysis,\\
+Bartlett Faculty of the Built Environment, UCL\\
+~\\
+Word count: 8,000}
+\date{2021-07-17}
+
+\begin{document}
+\maketitle
+
+\setstretch{1.5}
+\pagenumbering{roman}
+
+\hypertarget{abstract}{%
+\chapter*{Abstract}\label{abstract}}
+
+Some abstract text
+
+\pagenumbering{roman}
+
+\hypertarget{declaration}{%
+\chapter*{Declaration}\label{declaration}}
+
+I, Zeqiang Fang, hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is xxx words in length
+
+\hypertarget{acknowledgements}{%
+\chapter*{Acknowledgements}\label{acknowledgements}}
+
+I would like to thank blah blah
+
+% Trigger ToC creation in LaTeX
+\setcounter{tocdepth}{3}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\hypertarget{abbreviations}{%
+\chapter*{Abbreviations}\label{abbreviations}}
+
+\begin{table}
+\centering
+\begin{tabular}{ll}
+\toprule
+\textbf{Term} & \textbf{Abbreviation}\\
+\midrule
+Digital Elevation Model & DEM\\
+Digital Surface Model & DSM\\
+Digital Terrain Model & DTM\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+\pagenumbering{arabic} 
+
+\hypertarget{background}{%
+\section{Background}\label{background}}
+
+To be done
+
+\hypertarget{research-question-and-objectives}{%
+\section{Research Question and Objectives}\label{research-question-and-objectives}}
+
+To be done
+
+\hypertarget{report-structure}{%
+\section{Report Structure}\label{report-structure}}
+
+To be done
+
+\hypertarget{crossref}{%
+\chapter{Literature Review}\label{crossref}}
+
+\hypertarget{industry-cluster-tech-cluster}{%
+\section{Industry Cluster \& Tech Cluster}\label{industry-cluster-tech-cluster}}
+
+Tech clusters like Silicon Valley play a central role for modern innovation, business competitiveness, and economic performance. This paper reviews what constitutes a tech cluster, how they function internally, and the degree to which policy makers can purposefully foster them. We describe the growing influence of advanced technologies for businesses outside of traditional tech fields, the strains and backlash that tech clusters are experiencing, and emerging research questions for theory and empirical work.
+
+\hypertarget{cluster-dynamics}{%
+\section{Cluster Dynamics}\label{cluster-dynamics}}
+
+Industrial dynamics and clusters: a survey, regional research. This article reviews clusters and their impact on the entry, exit, and growth of firms, as well as the literature supporting the evolutionary dynamics of cluster formation. This extensive review shows strong evidence that clusters promote the entry of manufacturers, but the evidence that clusters can promote the growth and survival of firms is rather weak. From a number of open-ended questions, this research extracts various future research paths that emphasize the importance of manufacturer heterogeneity and the exact mechanism that supports the localized economy.
+
+\hypertarget{location-quotient}{%
+\section{Location Quotient}\label{location-quotient}}
+
+On average, companies in large cities are more productive. There are two main explanations: corporate choice (big cities strengthen competition and only allow the most productive people to survive) and agglomeration economies (big cities promote interaction and increase productivity), which may be strengthened by the natural advantages of localization. In order to distinguish them, we nested a general version of the easy-to-handle company selection model and a standard agglomeration model. Stronger choices in large cities cut the distribution of productivity to the left, while stronger gatherings move to the right and expand the distribution. Using this forecast, French firm-level data, and new quantile methods, we show that firm choices cannot explain differences in spatial productivity. The results are applicable to various departments, city size thresholds, institutional samples and regional definitions.
+
+\hypertarget{methodology}{%
+\chapter{Methodology}\label{methodology}}
+
+\hypertarget{equations}{%
+\section{Research Framework}\label{equations}}
+
+\[p= h\frac{c}{\varrho}\]
+
+\hypertarget{quotes}{%
+\section{Data Source and Processing}\label{quotes}}
+
+\hypertarget{tech-firms-finding}{%
+\subsection{Tech Firms Finding}\label{tech-firms-finding}}
+
+\hypertarget{dynamics-measuring-index}{%
+\subsection{Dynamics Measuring Index}\label{dynamics-measuring-index}}
+
+\hypertarget{quatitative-analysis-and-methods}{%
+\section{Quatitative Analysis and Methods}\label{quatitative-analysis-and-methods}}
+
+\hypertarget{tech-cluster-identifying}{%
+\subsection{Tech Cluster Identifying}\label{tech-cluster-identifying}}
+
+\hypertarget{dynamics-analysis}{%
+\subsection{Dynamics Analysis}\label{dynamics-analysis}}
+
+\hypertarget{location-quotients}{%
+\subsection{Location Quotients}\label{location-quotients}}
+
+\hypertarget{limitations}{%
+\section{Limitations}\label{limitations}}
+
+\hypertarget{ethical-statement}{%
+\section{Ethical Statement}\label{ethical-statement}}
+
+\hypertarget{results}{%
+\chapter{Results}\label{results}}
+
+\hypertarget{visualisation-and-analysis-of-tech-cluster}{%
+\section{Visualisation and Analysis of Tech Cluster}\label{visualisation-and-analysis-of-tech-cluster}}
+
+\hypertarget{distribution}{%
+\subsection{Distribution}\label{distribution}}
+
+\hypertarget{descriptive-analysis}{%
+\subsection{Descriptive Analysis}\label{descriptive-analysis}}
+
+\hypertarget{visualisation-and-analysis-of-dynamics}{%
+\section{Visualisation and Analysis of Dynamics}\label{visualisation-and-analysis-of-dynamics}}
+
+\hypertarget{regression}{%
+\subsection{Regression}\label{regression}}
+
+\hypertarget{discussion}{%
+\chapter{Discussion}\label{discussion}}
+
+Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
+
+To be done
+
+\hypertarget{research-significance}{%
+\section{Research significance}\label{research-significance}}
+
+\hypertarget{global-development-goals}{%
+\subsection{Global development goals}\label{global-development-goals}}
+
+\hypertarget{local-policy}{%
+\subsection{Local policy}\label{local-policy}}
+
+\hypertarget{academic-research}{%
+\subsection{Academic research}\label{academic-research}}
+
+\hypertarget{limitations-1}{%
+\section{Limitations}\label{limitations-1}}
+
+To be done
+
+\hypertarget{transferability}{%
+\section{Transferability}\label{transferability}}
+
+To be done
+
+\hypertarget{conclusion}{%
+\chapter{Conclusion}\label{conclusion}}
+
+Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
+
+To be done
+
+\begin{itemize}
+\item
+  Kerr, William R., and Frederic Robert-Nicoud. 2020. ``Tech Clusters.''Journal of Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/articles?id=10.1257/jep.34.3.50
+\item
+  Frenken, K., Cefis, E., \& Stam, E. (2015). Industrial Dynamicsand Clusters: A Survey. Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505Frenken K., Cefis E. and Stam E.
+\item
+  Combes, P.-P., Duranton, G., Gobillon, L., Puga, D. and Roux, S. (2012),The Productivity Advantages of Large Cities: Distinguishing AgglomerationFrom Firm Selection. Econometrica, 80: 2543-2594.https://doi.org/10.3982/ECTA84427
+\end{itemize}
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\printbibliography
+
+\hypertarget{appendix-a-research-log}{%
+\chapter*{Appendix A Research log}\label{appendix-a-research-log}}
+\addcontentsline{toc}{chapter}{Appendix A Research log}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+
+\hypertarget{subsection}{%
+\section*{subsection}\label{subsection}}
+
+\hypertarget{sub-sub-section}{%
+\subsection*{sub sub section}\label{sub-sub-section}}
+
+\begin{table}
+\centering
+\begin{tabular}{ll}
+\toprule
+\textbf{Date} & \textbf{Task}\\
+\midrule
+31st May 2020 & data search, commenced literature review\\
+7th June 2020 & revised literature in the direction of x\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{appendix-b-proposal}{%
+\chapter*{Appendix B Proposal}\label{appendix-b-proposal}}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
+\enddocument
+
+\printbibliography
+
+\end{document}
