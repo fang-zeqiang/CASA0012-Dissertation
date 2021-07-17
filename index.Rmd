@@ -2,7 +2,7 @@
 title: CASA0012 Dissertation Book
 
 author: 
--   |
+- |
     | Zeqiang Fang
     |    
     | CASA0012, MSc Spatial Data Science and Visualisation Dissertation 
@@ -15,7 +15,7 @@ author:
     | MSc (Or MRes) in the Centre for Advanced Spatial Analysis, 
     | Bartlett Faculty of the Built Environment, UCL
     |
-    | Word count: 8,000
+    | Word count:  
 
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site

@@ -14,7 +14,6 @@
 ### sub sub section {.unlisted .unnumbered}
 
 ```{r researchlog, echo=FALSE, message=FALSE, warning=FALSE}
-library(here)
 library(tidyverse)
 library(knitr)
 library(kableExtra)
