@@ -6,6 +6,7 @@ This repo is to store my dissertation file and present my disseration book
 - bookdown #the path of dissertation book
 - jupyterlab #the path of research progress log
 ```
+The python regression cheatsheet is in this [link](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/DSSS_SDC_2021_Workshop_6_Advanced_Regression.html)
 
 1. For very beginning exploratory analysis of `fame_OC.dta`, you can access [this page](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/EDA.html)
 
