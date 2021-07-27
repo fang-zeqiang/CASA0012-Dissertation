@@ -2,17 +2,30 @@
 
 ## Research Framework {#equations}
 
-$$p= h\frac{c}{\varrho}$$
+1. Data Clean & Select
+1. Tech Cluster Filter
+1. Measuring the Dynamics
 
 ## Data Source and Processing {#quotes}
 
-### Tech Firms Finding
+1. Tech Firms Finding
+  5 digital sic7 code & UK
 
-### Dynamics Measuring Index
 
 ## Quatitative Analysis and Methods
 
+### Time Range Selection
+
 ### Tech Cluster Identifying
+
+Why I choose ttwa
+
+Why ttwa can work as a firms' cluster
+
+### Dynamics Measuring Index
+
+$$ Entry\ Rate_{i,t} = \frac{Incorporating\ Firms_{i,t}}{Total\  Firms_{i}} $$
+Where $i$ means location(travel to work area), $t$ means year 
 
 ### Dynamics Analysis
 

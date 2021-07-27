@@ -1,0 +1,17 @@
+# Introduction
+
+```{=latex}
+\pagenumbering{arabic} 
+```
+
+## Background
+
+To be done
+
+## Research Question and Objectives
+
+To be done
+
+## Report Structure
+
+To be done

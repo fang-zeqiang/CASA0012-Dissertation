@@ -6,12 +6,22 @@
 
 ## Background
 
-To be done
+1. tech cluster development
+2. dynamics cause better performance
+3. industry clustering pattern and economics performances
 
 ## Research Question and Objectives
 
-To be done
+How does tech clusters' dynamics pattern change in UK from 1998 to 2018? / What factors can affect tech clusters' dynamics pattern change in UK?
+
+To what extent will dynamic change affect tech clusters’performance？
 
 ## Report Structure
 
-To be done
+1. data clean
+1. tech cluster recognition
+1. dynamics index generation
+1. hypothesis (OLS estimation)
+1. regression
+1. residual analysis
+1. result interpretation

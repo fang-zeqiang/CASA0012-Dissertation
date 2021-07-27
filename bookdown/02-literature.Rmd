@@ -11,3 +11,10 @@ Industrial dynamics and clusters: a survey, regional research. This article revi
 ## Location Quotient
 
 On average, companies in large cities are more productive. There are two main explanations: corporate choice (big cities strengthen competition and only allow the most productive people to survive) and agglomeration economies (big cities promote interaction and increase productivity), which may be strengthened by the natural advantages of localization. In order to distinguish them, we nested a general version of the easy-to-handle company selection model and a standard agglomeration model. Stronger choices in large cities cut the distribution of productivity to the left, while stronger gatherings move to the right and expand the distribution. Using this forecast, French firm-level data, and new quantile methods, we show that firm choices cannot explain differences in spatial productivity. The results are applicable to various departments, city size thresholds, institutional samples and regional definitions.
+
+## How location affect entry pattern in UK/Global
+
+## How time affect entry pattern in UK/Global
+
+## Other factor can affect dynamics pattern in UK
+
