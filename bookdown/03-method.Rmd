@@ -8,9 +8,22 @@
 
 ## Data Source and Processing {#quotes}
 
-1. Tech Firms Finding
-  5 digital sic7 code & UK
+1. Data Source
+1. Data Clean
+  1. The large dta file is handled with `read_stata` and `get_chunk` 去进行大数据的分块读取，提高15GB数据的读取速度
+  1. 对于`primary_uk_sic_2007`标识字段进行去空，即该列下为空的行都去除，并且把数据类型转成`int32`
+  1. 引入2007 sic code表来进行科技产业的判断，参照了ons.gov.uk网站的Science and Technology Classification数据集划分方式，如下表
 
+为了更好识别科学与技术企业对于英国经济的贡献，官方基于2007年英国标准经济活动分类，结合不同数据源头，对科学与技术企业进行分类标签(Office for National Statistics, 2015)
+
+这里参照官方提供的Science and Technology Classification表中Science and Technology indicator来进行所有产业的科技产业定位，得到科技产业的2007 sic code共计168个，约占英国所有产业分类的16%，包括5个产业大类如Digital Technologies, Life Sciences & Healthcare, Publishing & Broadcasting, Other scientific/technological manufacture and Other scientific/technological services，该分类表格详情会附在附件里
+
+`Office for National Statistics, 2015. Identifying Science and Technology Businesses in Official Statistics. [online] London, UK: Office for National Statistics, pp.10-14. Available at: <https://webarchive.nationalarchives.gov.uk/20160105170025/http://www.ons.gov.uk/ons/site-information/using-the-website/rss-news-feeds/index.html> [Accessed 28 July 2021].`
+
+
+
+1. Tech Firms Finding —— 5 digital sic7 code & UK
+1. 
 
 ## Quatitative Analysis and Methods
 
@@ -29,8 +42,25 @@ Where $i$ means location(travel to work area), $t$ means year
 
 ### Dynamics Analysis
 
-### Location Quotients
+### Herfindahl Index
+
+$$ Herfindahl\ Index_{i,t} = \frac{Incorporating\ Firms_{i,t}}{Total\  Firms_{i}} $$
 
 ## Limitations
 
+1. missing data
+`diss_year` have 99% missing value
+
+1. ttwa
+ttwa might not be a data-driven method
+
 ## Ethical Statement
+
+The data for this project comes from OpenCorporates, a firm which aggregates company-level data from around the world [link to their website]. In this case, OpenCorporates have taken data from the UK Companies House register [link to Companies House]. As detailed by Nathan and Rosso (2015), all limited companies in the UK need to registers with Companies House when they are set up, and provide annual returns and financial statements. These include details of directors and company secretary, registered office address, shares and shareholders, as well as company type and principal business activity. Thus, all the data used here is already in the public domain.
+
+The research objectives are tech firms in the UK for this project and the individual data will not be collected and measured in this project. For issues of deanonymisation or privacy, traceable information such as the real companies name and ID will not be utilised in the research. The raw data will be cleaned and filtered by several key variables include industries instead of the company’s name or other sensitive information before doing the research. Through data cleaning, pre-processing, desensitisation or other processing methods, the risks of damage to company interests (such as social reputation, economic benefits and etc.) will be mitigated to an as low as possible level in the research process.
+
+Besides, this project will not cause discrimination of industries or job categories. The final analysis results, such as the different industry concentration in each region, will not deepen some people's stereotypes and prejudices about the region (This content will be fully discussed in the project discussion section). It is necessary to point out and declare the objectivity of the analysis and the non-absoluteness of the results in the disclaimer. Consider the feelings of people and governments in different parts of the UK, this research will prevent the influence of personal preferences and subjective emotions.
+
+The leakage of companies' name and information will be protected. For example, in the reflection of the results section of academic research, the name and related information of the companies that moved may be revealed. Although this information may be open to the public you need to know that this information may be used by people with other ulterior motives. This project will desensitise the company name and information at the stage of chart presentation, such as using A, B, and C to replace them to achieve this purpose.
+

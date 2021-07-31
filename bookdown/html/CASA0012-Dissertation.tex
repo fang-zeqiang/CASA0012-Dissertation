@@ -121,7 +121,7 @@ MSc (Or MRes) in the Centre for Advanced Spatial Analysis,\\
 Bartlett Faculty of the Built Environment, UCL\\
 ~\\
 Word count: 8,000}
-\date{2021-07-17}
+\date{2021-07-30}
 
 \begin{document}
 \maketitle
@@ -176,17 +176,45 @@ Digital Terrain Model & DTM\\
 \hypertarget{background}{%
 \section{Background}\label{background}}
 
-To be done
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  tech cluster development
+\item
+  dynamics cause better performance
+\item
+  industry clustering pattern and economics performances
+\end{enumerate}
 
 \hypertarget{research-question-and-objectives}{%
 \section{Research Question and Objectives}\label{research-question-and-objectives}}
 
-To be done
+How does tech clusters' dynamics pattern change in UK from 1998 to 2018? / What factors can affect tech clusters' dynamics pattern change in UK?
+
+To what extent will dynamic change affect tech clusters'performance？
 
 \hypertarget{report-structure}{%
 \section{Report Structure}\label{report-structure}}
 
-To be done
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  data clean
+\item
+  tech cluster recognition
+\item
+  dynamics index generation
+\item
+  hypothesis (OLS estimation)
+\item
+  regression
+\item
+  residual analysis
+\item
+  result interpretation
+\end{enumerate}
 
 \hypertarget{crossref}{%
 \chapter{Literature Review}\label{crossref}}
@@ -206,28 +234,82 @@ Industrial dynamics and clusters: a survey, regional research. This article revi
 
 On average, companies in large cities are more productive. There are two main explanations: corporate choice (big cities strengthen competition and only allow the most productive people to survive) and agglomeration economies (big cities promote interaction and increase productivity), which may be strengthened by the natural advantages of localization. In order to distinguish them, we nested a general version of the easy-to-handle company selection model and a standard agglomeration model. Stronger choices in large cities cut the distribution of productivity to the left, while stronger gatherings move to the right and expand the distribution. Using this forecast, French firm-level data, and new quantile methods, we show that firm choices cannot explain differences in spatial productivity. The results are applicable to various departments, city size thresholds, institutional samples and regional definitions.
 
+\hypertarget{how-location-affect-entry-pattern-in-ukglobal}{%
+\section{How location affect entry pattern in UK/Global}\label{how-location-affect-entry-pattern-in-ukglobal}}
+
+\hypertarget{how-time-affect-entry-pattern-in-ukglobal}{%
+\section{How time affect entry pattern in UK/Global}\label{how-time-affect-entry-pattern-in-ukglobal}}
+
+\hypertarget{other-factor-can-affect-dynamics-pattern-in-uk}{%
+\section{Other factor can affect dynamics pattern in UK}\label{other-factor-can-affect-dynamics-pattern-in-uk}}
+
 \hypertarget{methodology}{%
 \chapter{Methodology}\label{methodology}}
 
 \hypertarget{equations}{%
 \section{Research Framework}\label{equations}}
 
-\[p= h\frac{c}{\varrho}\]
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Data Clean \& Select
+\item
+  Tech Cluster Filter
+\item
+  Measuring the Dynamics
+\end{enumerate}
 
 \hypertarget{quotes}{%
 \section{Data Source and Processing}\label{quotes}}
 
-\hypertarget{tech-firms-finding}{%
-\subsection{Tech Firms Finding}\label{tech-firms-finding}}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Data Source
+\item
+  Data Clean
+\item
+  The large dta file is handled with \texttt{read\_stata} and \texttt{get\_chunk} 去进行大数据的分块读取，提高15GB数据的读取速度
+\item
+  对于\texttt{primary\_uk\_sic\_2007}标识字段进行去空，即该列下为空的行都去除，并且把数据类型转成\texttt{int32}
+\item
+  引入2007 sic code表来进行科技产业的判断，参照了ons.gov.uk网站的Science and Technology Classification数据集划分方式，如下表
+\end{enumerate}
 
-\hypertarget{dynamics-measuring-index}{%
-\subsection{Dynamics Measuring Index}\label{dynamics-measuring-index}}
+为了更好识别科学与技术企业对于英国经济的贡献，官方基于2007年英国标准经济活动分类，结合不同数据源头，对科学与技术企业进行分类标签(Office for National Statistics, 2015)
+
+这里参照官方提供的Science and Technology Classification表中Science and Technology indicator来进行所有产业的科技产业定位，得到科技产业的2007 sic code共计168个，约占英国所有产业分类的16\%，包括5个产业大类如Digital Technologies, Life Sciences \& Healthcare, Publishing \& Broadcasting, Other scientific/technological manufacture and Other scientific/technological services，该分类表格详情会附在附件里
+
+\texttt{Office\ for\ National\ Statistics,\ 2015.\ Identifying\ Science\ and\ Technology\ Businesses\ in\ Official\ Statistics.\ {[}online{]}\ London,\ UK:\ Office\ for\ National\ Statistics,\ pp.10-14.\ Available\ at:\ \textless{}https://webarchive.nationalarchives.gov.uk/20160105170025/http://www.ons.gov.uk/ons/site-information/using-the-website/rss-news-feeds/index.html\textgreater{}\ {[}Accessed\ 28\ July\ 2021{]}.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Tech Firms Finding ------ 5 digital sic7 code \& UK
+\item
+\end{enumerate}
 
 \hypertarget{quatitative-analysis-and-methods}{%
 \section{Quatitative Analysis and Methods}\label{quatitative-analysis-and-methods}}
 
+\hypertarget{time-range-selection}{%
+\subsection{Time Range Selection}\label{time-range-selection}}
+
 \hypertarget{tech-cluster-identifying}{%
 \subsection{Tech Cluster Identifying}\label{tech-cluster-identifying}}
+
+Why I choose ttwa
+
+Why ttwa can work as a firms' cluster
+
+\hypertarget{dynamics-measuring-index}{%
+\subsection{Dynamics Measuring Index}\label{dynamics-measuring-index}}
+
+\[ Entry\ Rate_{i,t} = \frac{Incorporating\ Firms_{i,t}}{Total\  Firms_{i}} \]
+Where \(i\) means location(travel to work area), \(t\) means year
 
 \hypertarget{dynamics-analysis}{%
 \subsection{Dynamics Analysis}\label{dynamics-analysis}}
@@ -237,6 +319,14 @@ On average, companies in large cities are more productive. There are two main ex
 
 \hypertarget{limitations}{%
 \section{Limitations}\label{limitations}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  missing data
+  \texttt{diss\_year} have 99\% missing value
+\end{enumerate}
 
 \hypertarget{ethical-statement}{%
 \section{Ethical Statement}\label{ethical-statement}}
@@ -295,41 +385,27 @@ Short introduction to the chapter, reviewing the previous chapter and detailing 
 
 To be done
 
-\begin{itemize}
-\item
-  Kerr, William R., and Frederic Robert-Nicoud. 2020. ``Tech Clusters.''Journal of Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/articles?id=10.1257/jep.34.3.50
-\item
-  Frenken, K., Cefis, E., \& Stam, E. (2015). Industrial Dynamicsand Clusters: A Survey. Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505Frenken K., Cefis E. and Stam E.
-\item
-  Combes, P.-P., Duranton, G., Gobillon, L., Puga, D. and Roux, S. (2012),The Productivity Advantages of Large Cities: Distinguishing AgglomerationFrom Firm Selection. Econometrica, 80: 2543-2594.https://doi.org/10.3982/ECTA84427
-\end{itemize}
+\hypertarget{references}{%
+\chapter*{References}\label{references}}
+\addcontentsline{toc}{chapter}{References}
+
+Kerr, William R., and Frederic Robert-Nicoud. 2020. ``Tech Clusters.''Journal of Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/articles?id=10.1257/jep.34.3.50
+
+Frenken, K., Cefis, E., \& Stam, E. (2015). Industrial Dynamicsand Clusters: A Survey. Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505Frenken K., Cefis E. and Stam E.
+
+Combes, P.-P., Duranton, G., Gobillon, L., Puga, D. and Roux, S. (2012),The Productivity Advantages of Large Cities: Distinguishing AgglomerationFrom Firm Selection. Econometrica, 80: 2543-2594.https://doi.org/10.3982/ECTA84427
 
 \addcontentsline{toc}{chapter}{Bibliography}
 \printbibliography
 
-\hypertarget{appendix-a-research-log}{%
-\chapter*{Appendix A Research log}\label{appendix-a-research-log}}
-\addcontentsline{toc}{chapter}{Appendix A Research log}
+\hypertarget{appendix-a-classification-form}{%
+\chapter*{Appendix A Classification Form}\label{appendix-a-classification-form}}
+\addcontentsline{toc}{chapter}{Appendix A Classification Form}
 
 \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 
-\hypertarget{subsection}{%
-\section*{subsection}\label{subsection}}
-
-\hypertarget{sub-sub-section}{%
-\subsection*{sub sub section}\label{sub-sub-section}}
-
-\begin{table}
-\centering
-\begin{tabular}{ll}
-\toprule
-\textbf{Date} & \textbf{Task}\\
-\midrule
-31st May 2020 & data search, commenced literature review\\
-7th June 2020 & revised literature in the direction of x\\
-\bottomrule
-\end{tabular}
-\end{table}
+\hypertarget{science-and-technology-classification}{%
+\section*{Science and Technology Classification}\label{science-and-technology-classification}}
 
 \hypertarget{appendix-b-proposal}{%
 \chapter*{Appendix B Proposal}\label{appendix-b-proposal}}

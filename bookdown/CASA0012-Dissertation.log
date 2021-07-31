@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.7.17)  17 JUL 2021 23:01
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.7.30)  30 JUL 2021 19:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1356,79 +1356,547 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 
 ]
 Chapter 1.
+Missing character: There is no ？ (U+FF1F) in font [lmroman12-regular]:mapping=t
+ex-text;!
 [1
 
-]
+] [2]
 Chapter 2.
-[2
+[3
 
-] [3]
+]
+Underfull \hbox (badness 6412) in paragraph at lines 238--238
+[]\TU/lmr/bx/n/17.28 How location affect entry pattern in
+ []
+
+[4]
 Chapter 3.
-[4
+Missing character: There is no 去 (U+53BB) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 进 (U+8FDB) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 行 (U+884C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 大 (U+5927) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 数 (U+6570) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 据 (U+636E) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 分 (U+5206) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 块 (U+5757) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 读 (U+8BFB) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 取 (U+53D6) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 提 (U+63D0) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 高 (U+9AD8) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 数 (U+6570) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 据 (U+636E) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 读 (U+8BFB) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 取 (U+53D6) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 速 (U+901F) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 度 (U+5EA6) in font [lmroman12-regular]:mapping=t
+ex-text;!
 
-] [5]
+Underfull \hbox (badness 5091) in paragraph at lines 274--276
+[]\TU/lmr/m/n/12 The large dta file is handled with \TU/lmtt/m/n/12 read_-stata
+ \TU/lmr/m/n/12 and \TU/lmtt/m/n/12 get_-chunk
+ []
+
+Missing character: There is no 对 (U+5BF9) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 于 (U+4E8E) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 标 (U+6807) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 识 (U+8BC6) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 字 (U+5B57) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 段 (U+6BB5) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 进 (U+8FDB) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 行 (U+884C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 去 (U+53BB) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 空 (U+7A7A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 即 (U+5373) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 该 (U+8BE5) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 列 (U+5217) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 下 (U+4E0B) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 为 (U+4E3A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 空 (U+7A7A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 行 (U+884C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 都 (U+90FD) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 去 (U+53BB) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 除 (U+9664) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 并 (U+5E76) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 且 (U+4E14) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 把 (U+628A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 数 (U+6570) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 据 (U+636E) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 类 (U+7C7B) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 型 (U+578B) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 转 (U+8F6C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 成 (U+6210) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 引 (U+5F15) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 入 (U+5165) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 表 (U+8868) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 来 (U+6765) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 进 (U+8FDB) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 行 (U+884C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 科 (U+79D1) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 技 (U+6280) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 产 (U+4EA7) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 业 (U+4E1A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 判 (U+5224) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 断 (U+65AD) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 参 (U+53C2) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 照 (U+7167) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 了 (U+4E86) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 网 (U+7F51) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 站 (U+7AD9) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 数 (U+6570) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 据 (U+636E) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 集 (U+96C6) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 划 (U+5212) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 分 (U+5206) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 方 (U+65B9) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 式 (U+5F0F) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 如 (U+5982) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 下 (U+4E0B) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 表 (U+8868) in font [lmroman12-regular]:mapping=t
+ex-text;!
+
+Overfull \hbox (27.76631pt too wide) in paragraph at lines 278--279
+[]\TU/lmr/m/n/12 引入2007 sic code表来进行科技产业的判断，参照了ons.gov.uk网站的Science and Technol
+ogy Classification数据集划分方式，如下表 
+ []
+
+Missing character: There is no 为 (U+4E3A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 了 (U+4E86) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 更 (U+66F4) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 好 (U+597D) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 识 (U+8BC6) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 别 (U+522B) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 科 (U+79D1) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 学 (U+5B66) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 与 (U+4E0E) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 技 (U+6280) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 术 (U+672F) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 企 (U+4F01) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 业 (U+4E1A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 对 (U+5BF9) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 于 (U+4E8E) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 英 (U+82F1) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 国 (U+56FD) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 经 (U+7ECF) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 济 (U+6D4E) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 贡 (U+8D21) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 献 (U+732E) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 官 (U+5B98) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 方 (U+65B9) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 基 (U+57FA) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 于 (U+4E8E) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 年 (U+5E74) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 英 (U+82F1) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 国 (U+56FD) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 标 (U+6807) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 准 (U+51C6) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 经 (U+7ECF) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 济 (U+6D4E) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 活 (U+6D3B) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 动 (U+52A8) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 分 (U+5206) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 类 (U+7C7B) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 结 (U+7ED3) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 合 (U+5408) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 不 (U+4E0D) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 同 (U+540C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 数 (U+6570) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 据 (U+636E) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 源 (U+6E90) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 头 (U+5934) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 对 (U+5BF9) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 科 (U+79D1) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 学 (U+5B66) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 与 (U+4E0E) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 技 (U+6280) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 术 (U+672F) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 企 (U+4F01) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 业 (U+4E1A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 进 (U+8FDB) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 行 (U+884C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 分 (U+5206) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 类 (U+7C7B) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 标 (U+6807) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 签 (U+7B7E) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 这 (U+8FD9) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 里 (U+91CC) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 参 (U+53C2) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 照 (U+7167) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 官 (U+5B98) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 方 (U+65B9) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 提 (U+63D0) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 供 (U+4F9B) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 表 (U+8868) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 中 (U+4E2D) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 来 (U+6765) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 进 (U+8FDB) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 行 (U+884C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 所 (U+6240) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 有 (U+6709) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 产 (U+4EA7) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 业 (U+4E1A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 科 (U+79D1) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 技 (U+6280) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 产 (U+4EA7) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 业 (U+4E1A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 定 (U+5B9A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 位 (U+4F4D) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 得 (U+5F97) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 到 (U+5230) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 科 (U+79D1) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 技 (U+6280) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 产 (U+4EA7) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 业 (U+4E1A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 共 (U+5171) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 计 (U+8BA1) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 个 (U+4E2A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 约 (U+7EA6) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 占 (U+5360) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 英 (U+82F1) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 国 (U+56FD) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 所 (U+6240) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 有 (U+6709) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 产 (U+4EA7) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 业 (U+4E1A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 分 (U+5206) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 类 (U+7C7B) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 包 (U+5305) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 括 (U+62EC) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 个 (U+4E2A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 产 (U+4EA7) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 业 (U+4E1A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 大 (U+5927) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 类 (U+7C7B) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 如 (U+5982) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 该 (U+8BE5) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 分 (U+5206) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 类 (U+7C7B) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 表 (U+8868) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 格 (U+683C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 详 (U+8BE6) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 情 (U+60C5) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 会 (U+4F1A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 附 (U+9644) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 在 (U+5728) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 附 (U+9644) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 件 (U+4EF6) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 里 (U+91CC) in font [lmroman12-regular]:mapping=t
+ex-text;!
+
+Overfull \hbox (76.4903pt too wide) in paragraph at lines 283--284
+[]\TU/lmr/m/n/12 这里参照官方提供的Science and Technology Classification表中Science and Te
+chnology indicator来进行所有产业的科技产业定位，得到科技产业的2007
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 283--284
+\TU/lmr/m/n/12 Publishing & Broadcasting, Other scientific/technological manufa
+cture and
+ []
+
+[5
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
+[]\TU/lmtt/m/n/12 Office for National Statistics, 2015. Identifying Science and
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
+\TU/lmtt/m/n/12 Technology Businesses in Official Statistics. [online] London, 
+UK:
+ []
+
+
+Overfull \hbox (833.22226pt too wide) in paragraph at lines 285--286
+\TU/lmtt/m/n/12 Office for National Statistics, pp.10-14. Available at: <https:
+//webarchive.nationalarchives.gov.uk/20160105170025/http://www.ons.gov.uk/ons/s
+ite-information/using-the-website/rss-news-feeds/index.html>
+ []
+
+[6] [7]
 Chapter 4.
-[6
+[8
 
 ]
 Chapter 5.
-[7
-
-] [8]
-Chapter 6.
-
-Overfull \hbox (6.9546pt too wide) in paragraph at lines 300--302
-[]\TU/lmr/m/n/12 Kerr, William R., and Frederic Robert-Nicoud. 2020. “Tech Clus
-ters.”Journal
- []
-
-
-Overfull \hbox (108.67911pt too wide) in paragraph at lines 300--302
-\TU/lmr/m/n/12 of Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/a
-rticles?id=10.1257/jep.34.3.50 
- []
-
-
-Overfull \hbox (38.83595pt too wide) in paragraph at lines 302--304
-\TU/lmr/m/n/12 A Survey. Regional Studies, 49(1), 10-27.doi:10.1080/00343404.20
-14.904505Frenken
- []
-
-
-Underfull \hbox (badness 1776) in paragraph at lines 304--305
-\TU/lmr/m/n/12 (2012),The Productivity Advantages of Large Cities: Distinguishi
-ng
- []
-
-
-Overfull \hbox (140.72046pt too wide) in paragraph at lines 304--305
-\TU/lmr/m/n/12 AgglomerationFrom Firm Selection. Econometrica, 80: 2543-2594.ht
-tps://doi.org/10.3982/ECTA84427 
- []
-
-
-LaTeX Warning: Empty bibliography on input line 308.
-
 [9
 
-] [10
+] [10]
+Chapter 6.
+[11
 
-] [11
+]
+Overfull \hbox (66.6031pt too wide) in paragraph at lines 392--393
+\TU/lmr/m/n/12 Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/arti
+cles?id=10.1257/jep.34.3.50 
+ []
+
+
+Overfull \hbox (5.76445pt too wide) in paragraph at lines 396--397
+\TU/lmr/m/n/12 Firm Selection. Econometrica, 80: 2543-2594.https://doi.org/10.3
+982/ECTA84427 
+ []
+
+
+LaTeX Warning: Empty bibliography on input line 399.
+
+[12
+
+] [13
+
+] [14
 
 ] (./CASA0012-Dissertation.aux)
 Package rerunfilecheck Info: File `CASA0012-Dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 733C6E672AEFCD2215A3CCB35BFFFD54;5299.
+(rerunfilecheck)             Checksum: 26D05254FD954310222B677DEE7FD21A;6333.
 Package logreq Info: Writing requests to 'CASA0012-Dissertation.run.xml'.
 \openout1 = `CASA0012-Dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27166 strings out of 478476
- 499643 string characters out of 5857956
- 1478763 words of memory out of 5000000
- 47118 multiletter control sequences out of 15000+600000
- 407479 words of font info for 65 fonts, out of 8000000 for 9000
+ 27172 strings out of 478475
+ 499860 string characters out of 5857943
+ 1482095 words of memory out of 5000000
+ 47123 multiletter control sequences out of 15000+600000
+ 407487 words of font info for 66 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  87i,11n,120p,967b,4823s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CASA0012-Dissertation.pdf (20 pages).
+Output written on CASA0012-Dissertation.pdf (23 pages).
