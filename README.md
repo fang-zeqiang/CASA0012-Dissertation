@@ -6,15 +6,16 @@ This repo is to store my dissertation file and present my disseration book
 - bookdown #the path of dissertation book
 - jupyterlab #the path of research progress log
 ```
-Research Progress:
+## Research Progress
 
 1. For very beginning exploratory analysis of `fame_OC.dta`, you can access [this page](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/EDA.html)
 1. For further descriptive analysis(dynamics), you can access [this page](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Dynamics-Research.html)
-1. For regression analysis, you can access [this page](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Regression-Research.html)
-  For regression **dataset**, you can access [this page](https://zeqiang.fun/CASA0012-Dissertation/dataset/Top_10_Tech_TTWA_Cluster_Reg_Prepare.xlsx)
+1. For regression analysis, you can access [this page](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Regression-Research.html)(For regression **dataset**, you can access [this page](https://zeqiang.fun/CASA0012-Dissertation/dataset/Top_10_Tech_TTWA_Cluster_Reg_Prepare.xlsx))
 
-The Cheatsheet:
+## The Cheatsheet
 
 1. The python regression cheatsheet is in this [link](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/example/DSSS_SDC_2021_Workshop_6_Advanced_Regression.html)
 1. The python cluster cheatsheet is in this [link](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/example/clustering_workshop_2020.html)
 1. The python regression analysis context is in this [link](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/example/regression_child_poverty.html)
+
+## Reference
