@@ -17,6 +17,7 @@ This repo is to store my dissertation file and present my disseration book
 1. The python regression cheatsheet is in this [link](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/example/DSSS_SDC_2021_Workshop_6_Advanced_Regression.html)
 1. The python cluster cheatsheet is in this [link](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/example/clustering_workshop_2020.html)
 1. The python regression analysis context is in this [link](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/example/regression_child_poverty.html)
+1. [Spatial Research](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Spatial-Research.html)
 
 ## Reference
 
