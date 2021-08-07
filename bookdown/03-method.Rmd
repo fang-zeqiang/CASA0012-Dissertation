@@ -1,12 +1,18 @@
 # Methodology
 
-## Research Framework {#equations}
+## Research Framework
 
 1. Data Clean & Select
-1. Tech Cluster Filter
-1. Measuring the Dynamics
+1. Identifying Tech Cluster 
+1. Measuring the Dynamics & Industry Mix
+1. Quantitative Method Research
+1. Temporal Qualitative Analysis
 
-## Data Source and Processing {#quotes}
+In this study, a data set containing all British companies will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government; before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region; then this study conducts multiple regressions, single and double variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods
+
+在本研究中，包含所有英国公司的数据集会被进行数据清洗和属性选择，并且根据英国政府官网对于科技企业的分类定义来进行科技公司的识别与筛选；在定量研究前，本研究基于时间与空间维度对科技公司数量进行统计，并且计算出特定年份特定地区的企业集群动态指标与产业组合指标；紧接着本研究进行多元回归，单双变量的莫兰指数检测来进行空间定量研究，最后结合三个不同时间段的指标空间变化进行定性的空间模式趋势研究
+
+## Data Source and Processing
 
 1. Data Source
 1. Data Clean
@@ -44,7 +50,12 @@ Where $i$ means location(travel to work area), $t$ means year
 
 ### Herfindahl Index
 
-$$ Herfindahl\ Index_{i,t} = \frac{Incorporating\ Firms_{i,t}}{Total\  Firms_{i}} $$
+$$ Herfindahl\ Index_{i,t,k} = \frac{Tech\ Firms_{i,t}}{Total\  Firms_{i}} $$
+Where `k` represents industry
+
+赫芬达尔—赫希曼指数 [1]  (Herfindahl-Hirschman Index，简称HHI），简称赫芬达尔指数，是一种测量产业集中度的综合指数。它是指一个行业中各市场竞争主体所占行业总收入或总资产百分比的平方和，用来计量市场份额的变化，即市场中厂商规模的离散度。
+
+赫芬达尔一赫希曼指数是计算某一市场上50家最大企业(如果少于50家企业就是所有企业)每家企业市场占有份额(取百分之的分子)的平方之和。显然， HHI越大，表示市场集中程度越高，垄断程度越高。该指数不仅能反映市场内大企业的市场份额，而且能反映大企业之外的市场结构，因此，能更准确地反映大企业对市场的影响程度。
 
 ## Limitations
 
@@ -52,7 +63,14 @@ $$ Herfindahl\ Index_{i,t} = \frac{Incorporating\ Firms_{i,t}}{Total\  Firms_{i}
 `diss_year` have 99% missing value
 
 1. ttwa
-ttwa might not be a data-driven method
+- ttwa might not be a data-driven method
+- ttwa的时间局限性，因为是2015年统计的
+- ttwa的变化(Ozkul,2014)
+
+Ozkul, B., 2014. Changing home-to-work travel in England and Wales. Regional Studies, Regional Science, 1(1), pp.32-39.
+
+1. Herfindahl-Hirschman Index
+- 
 
 ## Ethical Statement
 

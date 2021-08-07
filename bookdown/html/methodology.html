@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-07-30" />
+<meta name="date" content="2021-08-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -95,18 +95,19 @@
 </ul></li>
 <li class="chapter" data-level="3" data-path="methodology.html"><a href="methodology.html"><i class="fa fa-check"></i><b>3</b> Methodology</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="methodology.html"><a href="methodology.html#equations"><i class="fa fa-check"></i><b>3.1</b> Research Framework</a></li>
-<li class="chapter" data-level="3.2" data-path="methodology.html"><a href="methodology.html#quotes"><i class="fa fa-check"></i><b>3.2</b> Data Source and Processing</a></li>
+<li class="chapter" data-level="3.1" data-path="methodology.html"><a href="methodology.html#research-framework"><i class="fa fa-check"></i><b>3.1</b> Research Framework</a></li>
+<li class="chapter" data-level="3.2" data-path="methodology.html"><a href="methodology.html#data-source-and-processing"><i class="fa fa-check"></i><b>3.2</b> Data Source and Processing</a></li>
 <li class="chapter" data-level="3.3" data-path="methodology.html"><a href="methodology.html#quatitative-analysis-and-methods"><i class="fa fa-check"></i><b>3.3</b> Quatitative Analysis and Methods</a>
 <ul>
 <li class="chapter" data-level="3.3.1" data-path="methodology.html"><a href="methodology.html#time-range-selection"><i class="fa fa-check"></i><b>3.3.1</b> Time Range Selection</a></li>
 <li class="chapter" data-level="3.3.2" data-path="methodology.html"><a href="methodology.html#tech-cluster-identifying"><i class="fa fa-check"></i><b>3.3.2</b> Tech Cluster Identifying</a></li>
 <li class="chapter" data-level="3.3.3" data-path="methodology.html"><a href="methodology.html#dynamics-measuring-index"><i class="fa fa-check"></i><b>3.3.3</b> Dynamics Measuring Index</a></li>
 <li class="chapter" data-level="3.3.4" data-path="methodology.html"><a href="methodology.html#dynamics-analysis"><i class="fa fa-check"></i><b>3.3.4</b> Dynamics Analysis</a></li>
-<li class="chapter" data-level="3.3.5" data-path="methodology.html"><a href="methodology.html#location-quotients"><i class="fa fa-check"></i><b>3.3.5</b> Location Quotients</a></li>
+<li class="chapter" data-level="3.3.5" data-path="methodology.html"><a href="methodology.html#herfindahl-index"><i class="fa fa-check"></i><b>3.3.5</b> Herfindahl Index</a></li>
 </ul></li>
 <li class="chapter" data-level="3.4" data-path="methodology.html"><a href="methodology.html#limitations"><i class="fa fa-check"></i><b>3.4</b> Limitations</a></li>
-<li class="chapter" data-level="3.5" data-path="methodology.html"><a href="methodology.html#ethical-statement"><i class="fa fa-check"></i><b>3.5</b> Ethical Statement</a></li>
+<li class="chapter" data-level="3.5" data-path="methodology.html"><a href="methodology.html#herfindahl-hirschman-index"><i class="fa fa-check"></i><b>3.5</b> 1. Herfindahl-Hirschman Index</a></li>
+<li class="chapter" data-level="3.6" data-path="methodology.html"><a href="methodology.html#ethical-statement"><i class="fa fa-check"></i><b>3.6</b> Ethical Statement</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>4</b> Results</a>
 <ul>
@@ -156,15 +157,17 @@
             <section class="normal" id="section-">
 <div id="methodology" class="section level1" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Methodology</h1>
-<div id="equations" class="section level2" number="3.1">
+<div id="research-framework" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Research Framework</h2>
 <ol style="list-style-type: decimal">
 <li>Data Clean &amp; Select</li>
-<li>Tech Cluster Filter</li>
+<li>Identifying Tech Cluster</li>
 <li>Measuring the Dynamics</li>
+<li>Quantitative Method Research</li>
+<li>Temporal Qualitative Analysis</li>
 </ol>
 </div>
-<div id="quotes" class="section level2" number="3.2">
+<div id="data-source-and-processing" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> Data Source and Processing</h2>
 <ol style="list-style-type: decimal">
 <li>Data Source</li>
@@ -199,19 +202,37 @@ Where <span class="math inline">\(i\)</span> means location(travel to work area)
 <div id="dynamics-analysis" class="section level3" number="3.3.4">
 <h3><span class="header-section-number">3.3.4</span> Dynamics Analysis</h3>
 </div>
-<div id="location-quotients" class="section level3" number="3.3.5">
-<h3><span class="header-section-number">3.3.5</span> Location Quotients</h3>
+<div id="herfindahl-index" class="section level3" number="3.3.5">
+<h3><span class="header-section-number">3.3.5</span> Herfindahl Index</h3>
+<p><span class="math display">\[ Herfindahl\ Index_{i,t,k} = \frac{Tech\ Firms_{i,t}}{Total\  Firms_{i}} \]</span>
+Where <code>k</code> represents industry</p>
+<p>赫芬达尔—赫希曼指数 [1] (Herfindahl-Hirschman Index，简称HHI），简称赫芬达尔指数，是一种测量产业集中度的综合指数。它是指一个行业中各市场竞争主体所占行业总收入或总资产百分比的平方和，用来计量市场份额的变化，即市场中厂商规模的离散度。</p>
+<p>赫芬达尔一赫希曼指数是计算某一市场上50家最大企业(如果少于50家企业就是所有企业)每家企业市场占有份额(取百分之的分子)的平方之和。显然， HHI越大，表示市场集中程度越高，垄断程度越高。该指数不仅能反映市场内大企业的市场份额，而且能反映大企业之外的市场结构，因此，能更准确地反映大企业对市场的影响程度。</p>
 </div>
 </div>
 <div id="limitations" class="section level2" number="3.4">
 <h2><span class="header-section-number">3.4</span> Limitations</h2>
 <ol style="list-style-type: decimal">
-<li>missing data
-<code>diss_year</code> have 99% missing value</li>
+<li><p>missing data
+<code>diss_year</code> have 99% missing value</p></li>
+<li><p>ttwa</p></li>
 </ol>
+<ul>
+<li>ttwa might not be a data-driven method</li>
+<li>ttwa的时间局限性，因为是2015年统计的</li>
+<li>ttwa的变化(Ozkul,2014)</li>
+</ul>
+<p>Ozkul, B., 2014. Changing home-to-work travel in England and Wales. Regional Studies, Regional Science, 1(1), pp.32-39.</p>
 </div>
-<div id="ethical-statement" class="section level2" number="3.5">
-<h2><span class="header-section-number">3.5</span> Ethical Statement</h2>
+<div id="herfindahl-hirschman-index" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> 1. Herfindahl-Hirschman Index</h2>
+</div>
+<div id="ethical-statement" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Ethical Statement</h2>
+<p>The data for this project comes from OpenCorporates, a firm which aggregates company-level data from around the world [link to their website]. In this case, OpenCorporates have taken data from the UK Companies House register [link to Companies House]. As detailed by Nathan and Rosso (2015), all limited companies in the UK need to registers with Companies House when they are set up, and provide annual returns and financial statements. These include details of directors and company secretary, registered office address, shares and shareholders, as well as company type and principal business activity. Thus, all the data used here is already in the public domain.</p>
+<p>The research objectives are tech firms in the UK for this project and the individual data will not be collected and measured in this project. For issues of deanonymisation or privacy, traceable information such as the real companies name and ID will not be utilised in the research. The raw data will be cleaned and filtered by several key variables include industries instead of the company’s name or other sensitive information before doing the research. Through data cleaning, pre-processing, desensitisation or other processing methods, the risks of damage to company interests (such as social reputation, economic benefits and etc.) will be mitigated to an as low as possible level in the research process.</p>
+<p>Besides, this project will not cause discrimination of industries or job categories. The final analysis results, such as the different industry concentration in each region, will not deepen some people’s stereotypes and prejudices about the region (This content will be fully discussed in the project discussion section). It is necessary to point out and declare the objectivity of the analysis and the non-absoluteness of the results in the disclaimer. Consider the feelings of people and governments in different parts of the UK, this research will prevent the influence of personal preferences and subjective emotions.</p>
+<p>The leakage of companies’ name and information will be protected. For example, in the reflection of the results section of academic research, the name and related information of the companies that moved may be revealed. Although this information may be open to the public you need to know that this information may be used by people with other ulterior motives. This project will desensitise the company name and information at the stage of chart presentation, such as using A, B, and C to replace them to achieve this purpose.</p>
 
 </div>
 </div>
