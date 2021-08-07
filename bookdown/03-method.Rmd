@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Methodology
 
 ## Research Framework
@@ -8,54 +13,85 @@
 1. Quantitative Method Research
 1. Temporal Qualitative Analysis
 
-In this study, a data set containing all British companies will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government; before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region; then this study conducts multiple regressions, single and double variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods
+In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate and bivariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods
 
 在本研究中，包含所有英国公司的数据集会被进行数据清洗和属性选择，并且根据英国政府官网对于科技企业的分类定义来进行科技公司的识别与筛选；在定量研究前，本研究基于时间与空间维度对科技公司数量进行统计，并且计算出特定年份特定地区的企业集群动态指标与产业组合指标；紧接着本研究进行多元回归，单双变量的莫兰指数检测来进行空间定量研究，最后结合三个不同时间段的指标空间变化进行定性的空间模式趋势研究
 
 ## Data Source and Processing
 
-1. Data Source
-1. Data Clean
-  1. The large dta file is handled with `read_stata` and `get_chunk` 去进行大数据的分块读取，提高15GB数据的读取速度
-  1. 对于`primary_uk_sic_2007`标识字段进行去空，即该列下为空的行都去除，并且把数据类型转成`int32`
-  1. 引入2007 sic code表来进行科技产业的判断，参照了ons.gov.uk网站的Science and Technology Classification数据集划分方式，如下表
+This raw dataset is collected from the core company data from Open Corporates master company database (Open Corporates, 2018). And the size of dataset accounts for 15 GB which is handled with `read_stata` and `get_chunk` function to read large data file in chunks, then increasing the reading speed. The "primary uk sic 2007" identification field is the basis of industry finding and the "birth year" is the key to measure dynamics variables . All rows whose these two values are empty are removed（17% incorperate date is missing and sic code is complete).
 
-为了更好识别科学与技术企业对于英国经济的贡献，官方基于2007年英国标准经济活动分类，结合不同数据源头，对科学与技术企业进行分类标签(Office for National Statistics, 2015)
+## Identifying Tech Cluster 
 
-这里参照官方提供的Science and Technology Classification表中Science and Technology indicator来进行所有产业的科技产业定位，得到科技产业的2007 sic code共计168个，约占英国所有产业分类的16%，包括5个产业大类如Digital Technologies, Life Sciences & Healthcare, Publishing & Broadcasting, Other scientific/technological manufacture and Other scientific/technological services，该分类表格详情会附在附件里
+For the identification of science and technology companies, this study introduces the main 2007 sic code table to judge the science and technology industry, referring to the classification method of the Science and Technology Classification data set on the ons.gov.uk website; in order to better identify science and technology companies for the UK The economic contribution is officially based on the 2007 British Standard Economic Activity Classification, combined with different data sources, to classify and label science and technology companies (Office for National Statistics, 2015). 
 
-`Office for National Statistics, 2015. Identifying Science and Technology Businesses in Official Statistics. [online] London, UK: Office for National Statistics, pp.10-14. Available at: <https://webarchive.nationalarchives.gov.uk/20160105170025/http://www.ons.gov.uk/ons/site-information/using-the-website/rss-news-feeds/index.html> [Accessed 28 July 2021].`
+Table 1 2007 sic code for science and technology industry (part)
 
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(readxl)
+library(fs)
+library(here)
 
+read_excel(here("tables", "tech_sic_code.xlsx"))%>%
+  arrange("SIC07 heading") %>% # i.e. alphabetical order by Term
+  knitr::kable(booktabs = FALSE)%>% # booktab = T gives us a pretty APA-ish table
+  kable_styling(position = "center")%>%
+    row_spec(.,
+  row=0,
+  bold = TRUE)
+```
 
-1. Tech Firms Finding —— 5 digital sic7 code & UK
-1. 
+This research refers to the science and technology classification table provided by the government. The technology indicator is used to position the technology industry of all industries, and a total of 168 sic codes for the technology industry in 2007 were obtained, accounting for about 16% of all industry categories in the UK, including 5 industry categories such as Digital Technologies, Life Sciences & Healthcare, Publishing & Broadcasting , Other scientific/technological manufacture and Other scientific/technological services, details of the classification form will be attached in the attachment. There are almost 20% firms in the raw data belonging to tech firms according to the method of category as mentioned above.
 
 ## Quatitative Analysis and Methods
 
 ### Time Range Selection
 
+The reason why this research choose tech firms which incorporate from 1998 to 2018 is because
+这20年来科技公司在英国的成立数量相比1998年以前明显走高正如图1所示
+
+Figure 1 Incorporating technology & science companies in UK
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics(here::here('general_images','figure1.png'))
+```
+
 ### Tech Cluster Identifying
 
-Why I choose ttwa
+What is ttwa?
 
-Why ttwa can work as a firms' cluster
+The 228 areas forming the 2011 TTWAs, covering the whole of the UK, were defined in 2015 using 2011 Census commuting flow data, indicating home and workplace address. The TTWAs are based on aggregations of Lower Layer Super Output Areas (LSOA) in England and Wales, Data Zones (DZ) in Scotland, and Super Output Areas (SOA) in Northern Ireland and in some cases span country borders. There are six cross-border TTWAs, 149 in England, 18 in Wales, 45 in Scotland and 10 in Northern Ireland (...,...).
+
+- Why choose TTWA?
+
+This geographical division can better reflect the relationship between population, company and work (...,...)
+
+- Why ttwa can work as a firms' cluster?
+
+Some researchers have found... (...,...)
 
 ### Dynamics Measuring Index
+
+衡量一个集群的动态变化程度需要计算出科技集群的进入率，计算方法如下
+这里参考了其他研究者的计算方法(...,...)
 
 $$ Entry\ Rate_{i,t} = \frac{Incorporating\ Firms_{i,t}}{Total\  Firms_{i}} $$
 Where $i$ means location(travel to work area), $t$ means year 
 
-### Dynamics Analysis
+### Industry Mix Measuring Index
 
-### Herfindahl Index
+衡量一个集群地区的产业集中程度需要计算出科技集群的Herfindahl-Hirschman Index或者location quotient，这里只采用前者的方法是因为缺失相应地区年份对应的受雇人员数据，故采用前者进行指标计算，这里参考了其他研究者的计算方法(...,...)，计算方法如下
 
-$$ Herfindahl\ Index_{i,t,k} = \frac{Tech\ Firms_{i,t}}{Total\  Firms_{i}} $$
-Where `k` represents industry
+$$ Herfindahl-Hirschman \ Index_{\ i,t} = \sum_1^k (\frac{Tech\ Firms_{i,t,k}}{Total\ Tech\ Firms_{i,t}})^2 $$
+Where $k$ represents the $k$th industry in location $i$ and year $t$. $Tech Firms$ means the number of tech companies and $Total Tech Firms$ represents the number of total tech firms in a specific location and year
 
 赫芬达尔—赫希曼指数 [1]  (Herfindahl-Hirschman Index，简称HHI），简称赫芬达尔指数，是一种测量产业集中度的综合指数。它是指一个行业中各市场竞争主体所占行业总收入或总资产百分比的平方和，用来计量市场份额的变化，即市场中厂商规模的离散度。
 
 赫芬达尔一赫希曼指数是计算某一市场上50家最大企业(如果少于50家企业就是所有企业)每家企业市场占有份额(取百分之的分子)的平方之和。显然， HHI越大，表示市场集中程度越高，垄断程度越高。该指数不仅能反映市场内大企业的市场份额，而且能反映大企业之外的市场结构，因此，能更准确地反映大企业对市场的影响程度。
+
+### Dynamics and Performance Analysis
 
 ## Limitations
 

@@ -39,7 +39,7 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={CASA0012 Dissertation Book},
+  pdftitle={Spatial pattern mining of tech clusters of dynamics and industry mix based on quantitative methods in England area, UK},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
@@ -107,7 +107,7 @@
 \addbibresource{packages.bib}
 \addbibresource{test.bib}
 
-\title{CASA0012 Dissertation Book}
+\title{Spatial pattern mining of tech clusters of dynamics and industry mix based on quantitative methods in England area, UK}
 \author{Zeqiang Fang\\
 ~\\
 CASA0012, MSc Spatial Data Science and Visualisation Dissertation\\
@@ -121,7 +121,7 @@ MSc (Or MRes) in the Centre for Advanced Spatial Analysis,\\
 Bartlett Faculty of the Built Environment, UCL\\
 ~\\
 Word count: 8,000}
-\date{2021-07-30}
+\date{2021-08-08}
 
 \begin{document}
 \maketitle
@@ -157,13 +157,17 @@ I would like to thank blah blah
 
 \begin{table}
 \centering
-\begin{tabular}{ll}
+\begin{tabular}{llrllll}
 \toprule
-\textbf{Term} & \textbf{Abbreviation}\\
+\textbf{SIC07 type} & \textbf{...2} & \textbf{5-digit SIC07 code} & \textbf{SIC07 heading} & \textbf{...5} & \textbf{Science and Technology category} & \textbf{Science and Technology topic}\\
 \midrule
-Digital Elevation Model & DEM\\
-Digital Surface Model & DSM\\
-Digital Terrain Model & DTM\\
+Class & ... & 26110 & Manufacture of electronic components & ... & Digital Technologies & Computer \& Electronic manufacturing\\
+Class & ... & 58210 & Publishing of computer games & ... & Digital Technologies & Digital \& Computer Services\\
+Class & ... & 62090 & Other information technology and computed service activities & ... & Digital Technologies & Digital \& Computer Services\\
+Class & ... & 63110 & Data processing, hosting and related activities & ... & Digital Technologies & Digital \& Computer Services\\
+Class & ... & 27510 & Manufacture of electric domestic appliances & ... & Other scientific/technological manufacture & Electrical Machinery manufacturing\\
+\addlinespace
+Class & ... & 86230 & Dental practice activities & ... & Life Sciences \& Healthcare & Healthcare services\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -246,8 +250,8 @@ On average, companies in large cities are more productive. There are two main ex
 \hypertarget{methodology}{%
 \chapter{Methodology}\label{methodology}}
 
-\hypertarget{equations}{%
-\section{Research Framework}\label{equations}}
+\hypertarget{research-framework}{%
+\section{Research Framework}\label{research-framework}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -255,42 +259,49 @@ On average, companies in large cities are more productive. There are two main ex
 \item
   Data Clean \& Select
 \item
-  Tech Cluster Filter
+  Identifying Tech Cluster
 \item
-  Measuring the Dynamics
+  Measuring the Dynamics \& Industry Mix
+\item
+  Quantitative Method Research
+\item
+  Temporal Qualitative Analysis
 \end{enumerate}
 
-\hypertarget{quotes}{%
-\section{Data Source and Processing}\label{quotes}}
+In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate and bivariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Data Source
-\item
-  Data Clean
-\item
-  The large dta file is handled with \texttt{read\_stata} and \texttt{get\_chunk} 去进行大数据的分块读取，提高15GB数据的读取速度
-\item
-  对于\texttt{primary\_uk\_sic\_2007}标识字段进行去空，即该列下为空的行都去除，并且把数据类型转成\texttt{int32}
-\item
-  引入2007 sic code表来进行科技产业的判断，参照了ons.gov.uk网站的Science and Technology Classification数据集划分方式，如下表
-\end{enumerate}
+在本研究中，包含所有英国公司的数据集会被进行数据清洗和属性选择，并且根据英国政府官网对于科技企业的分类定义来进行科技公司的识别与筛选；在定量研究前，本研究基于时间与空间维度对科技公司数量进行统计，并且计算出特定年份特定地区的企业集群动态指标与产业组合指标；紧接着本研究进行多元回归，单双变量的莫兰指数检测来进行空间定量研究，最后结合三个不同时间段的指标空间变化进行定性的空间模式趋势研究
 
-为了更好识别科学与技术企业对于英国经济的贡献，官方基于2007年英国标准经济活动分类，结合不同数据源头，对科学与技术企业进行分类标签(Office for National Statistics, 2015)
+\hypertarget{data-source-and-processing}{%
+\section{Data Source and Processing}\label{data-source-and-processing}}
 
-这里参照官方提供的Science and Technology Classification表中Science and Technology indicator来进行所有产业的科技产业定位，得到科技产业的2007 sic code共计168个，约占英国所有产业分类的16\%，包括5个产业大类如Digital Technologies, Life Sciences \& Healthcare, Publishing \& Broadcasting, Other scientific/technological manufacture and Other scientific/technological services，该分类表格详情会附在附件里
+This raw dataset is collected from the core company data from Open Corporates master company database (Open Corporates, 2018). And the size of dataset accounts for 15 GB which is handled with \texttt{read\_stata} and \texttt{get\_chunk} function to read large data file in chunks, then increasing the reading speed. The ``primary uk sic 2007'' identification field is the basis of industry finding and the ``birth year'' is the key to measure dynamics variables . All rows whose these two values are empty are removed（17\% incorperate date is missing and sic code is complete).
 
-\texttt{Office\ for\ National\ Statistics,\ 2015.\ Identifying\ Science\ and\ Technology\ Businesses\ in\ Official\ Statistics.\ {[}online{]}\ London,\ UK:\ Office\ for\ National\ Statistics,\ pp.10-14.\ Available\ at:\ \textless{}https://webarchive.nationalarchives.gov.uk/20160105170025/http://www.ons.gov.uk/ons/site-information/using-the-website/rss-news-feeds/index.html\textgreater{}\ {[}Accessed\ 28\ July\ 2021{]}.}
+\hypertarget{identifying-tech-cluster}{%
+\section{Identifying Tech Cluster}\label{identifying-tech-cluster}}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Tech Firms Finding ------ 5 digital sic7 code \& UK
-\item
-\end{enumerate}
+For the identification of science and technology companies, this study introduces the main 2007 sic code table to judge the science and technology industry, referring to the classification method of the Science and Technology Classification data set on the ons.gov.uk website; in order to better identify science and technology companies for the UK The economic contribution is officially based on the 2007 British Standard Economic Activity Classification, combined with different data sources, to classify and label science and technology companies (Office for National Statistics, 2015).
+
+Table 1 2007 sic code for science and technology industry (part)
+
+\begin{table}
+\centering
+\begin{tabular}{llrllll}
+\toprule
+\textbf{SIC07 type} & \textbf{...2} & \textbf{5-digit SIC07 code} & \textbf{SIC07 heading} & \textbf{...5} & \textbf{Science and Technology category} & \textbf{Science and Technology topic}\\
+\midrule
+Class & ... & 26110 & Manufacture of electronic components & ... & Digital Technologies & Computer \& Electronic manufacturing\\
+Class & ... & 58210 & Publishing of computer games & ... & Digital Technologies & Digital \& Computer Services\\
+Class & ... & 62090 & Other information technology and computed service activities & ... & Digital Technologies & Digital \& Computer Services\\
+Class & ... & 63110 & Data processing, hosting and related activities & ... & Digital Technologies & Digital \& Computer Services\\
+Class & ... & 27510 & Manufacture of electric domestic appliances & ... & Other scientific/technological manufacture & Electrical Machinery manufacturing\\
+\addlinespace
+Class & ... & 86230 & Dental practice activities & ... & Life Sciences \& Healthcare & Healthcare services\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This research refers to the science and technology classification table provided by the government. The technology indicator is used to position the technology industry of all industries, and a total of 168 sic codes for the technology industry in 2007 were obtained, accounting for about 16\% of all industry categories in the UK, including 5 industry categories such as Digital Technologies, Life Sciences \& Healthcare, Publishing \& Broadcasting , Other scientific/technological manufacture and Other scientific/technological services, details of the classification form will be attached in the attachment. There are almost 20\% firms in the raw data belonging to tech firms according to the method of category as mentioned above.
 
 \hypertarget{quatitative-analysis-and-methods}{%
 \section{Quatitative Analysis and Methods}\label{quatitative-analysis-and-methods}}
@@ -314,22 +325,53 @@ Where \(i\) means location(travel to work area), \(t\) means year
 \hypertarget{dynamics-analysis}{%
 \subsection{Dynamics Analysis}\label{dynamics-analysis}}
 
-\hypertarget{location-quotients}{%
-\subsection{Location Quotients}\label{location-quotients}}
+\hypertarget{herfindahl-index}{%
+\subsection{Herfindahl Index}\label{herfindahl-index}}
+
+\[ Herfindahl\ Index_{i,t,k} = \frac{Tech\ Firms_{i,t}}{Total\  Firms_{i}} \]
+Where \texttt{k} represents industry
+
+赫芬达尔---赫希曼指数 {[}1{]} (Herfindahl-Hirschman Index，简称HHI），简称赫芬达尔指数，是一种测量产业集中度的综合指数。它是指一个行业中各市场竞争主体所占行业总收入或总资产百分比的平方和，用来计量市场份额的变化，即市场中厂商规模的离散度。
+
+赫芬达尔一赫希曼指数是计算某一市场上50家最大企业(如果少于50家企业就是所有企业)每家企业市场占有份额(取百分之的分子)的平方之和。显然， HHI越大，表示市场集中程度越高，垄断程度越高。该指数不仅能反映市场内大企业的市场份额，而且能反映大企业之外的市场结构，因此，能更准确地反映大企业对市场的影响程度。
 
 \hypertarget{limitations}{%
 \section{Limitations}\label{limitations}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\tightlist
 \item
   missing data
   \texttt{diss\_year} have 99\% missing value
+\item
+  ttwa
 \end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  ttwa might not be a data-driven method
+\item
+  ttwa的时间局限性，因为是2015年统计的
+\item
+  ttwa的变化(Ozkul,2014)
+\end{itemize}
+
+Ozkul, B., 2014. Changing home-to-work travel in England and Wales. Regional Studies, Regional Science, 1(1), pp.32-39.
+
+\hypertarget{herfindahl-hirschman-index}{%
+\section{1. Herfindahl-Hirschman Index}\label{herfindahl-hirschman-index}}
 
 \hypertarget{ethical-statement}{%
 \section{Ethical Statement}\label{ethical-statement}}
+
+The data for this project comes from OpenCorporates, a firm which aggregates company-level data from around the world {[}link to their website{]}. In this case, OpenCorporates have taken data from the UK Companies House register {[}link to Companies House{]}. As detailed by Nathan and Rosso (2015), all limited companies in the UK need to registers with Companies House when they are set up, and provide annual returns and financial statements. These include details of directors and company secretary, registered office address, shares and shareholders, as well as company type and principal business activity. Thus, all the data used here is already in the public domain.
+
+The research objectives are tech firms in the UK for this project and the individual data will not be collected and measured in this project. For issues of deanonymisation or privacy, traceable information such as the real companies name and ID will not be utilised in the research. The raw data will be cleaned and filtered by several key variables include industries instead of the company's name or other sensitive information before doing the research. Through data cleaning, pre-processing, desensitisation or other processing methods, the risks of damage to company interests (such as social reputation, economic benefits and etc.) will be mitigated to an as low as possible level in the research process.
+
+Besides, this project will not cause discrimination of industries or job categories. The final analysis results, such as the different industry concentration in each region, will not deepen some people's stereotypes and prejudices about the region (This content will be fully discussed in the project discussion section). It is necessary to point out and declare the objectivity of the analysis and the non-absoluteness of the results in the disclaimer. Consider the feelings of people and governments in different parts of the UK, this research will prevent the influence of personal preferences and subjective emotions.
+
+The leakage of companies' name and information will be protected. For example, in the reflection of the results section of academic research, the name and related information of the companies that moved may be revealed. Although this information may be open to the public you need to know that this information may be used by people with other ulterior motives. This project will desensitise the company name and information at the stage of chart presentation, such as using A, B, and C to replace them to achieve this purpose.
 
 \hypertarget{results}{%
 \chapter{Results}\label{results}}
@@ -389,11 +431,17 @@ To be done
 \chapter*{References}\label{references}}
 \addcontentsline{toc}{chapter}{References}
 
-Kerr, William R., and Frederic Robert-Nicoud. 2020. ``Tech Clusters.''Journal of Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/articles?id=10.1257/jep.34.3.50
-
-Frenken, K., Cefis, E., \& Stam, E. (2015). Industrial Dynamicsand Clusters: A Survey. Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505Frenken K., Cefis E. and Stam E.
+a b c d e f g h i j k l m n o p q r s t u v w x y z
 
 Combes, P.-P., Duranton, G., Gobillon, L., Puga, D. and Roux, S. (2012),The Productivity Advantages of Large Cities: Distinguishing AgglomerationFrom Firm Selection. Econometrica, 80: 2543-2594.https://doi.org/10.3982/ECTA84427
+
+Frenken, K., Cefis, E., \& Stam, E. (2015). Industrial Dynamicsand Clusters: A Survey. Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505
+
+Kerr, William R., and Frederic Robert-Nicoud. 2020. ``Tech Clusters.''Journal of Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/articles?id=10.1257/jep.34.3.50
+
+Open Corporates. (2018), The core company data from OpenCorporates master company database, electronic dataset, OpenCorporates Data Dictionary, viewed 12 June 2021, \url{https://opencorporates.com/}.
+
+Office for National Statistics, 2015. Identifying Science and Technology Businesses in Official Statistics. {[}online{]} London, UK: Office for National Statistics, pp.10-14. Available at: \url{https://webarchive.nationalarchives.gov.uk/20160105170025/http://www.ons.gov.uk/ons/site-information/using-the-website/rss-news-feeds/index.html} {[}Accessed 28 July 2021{]}.
 
 \addcontentsline{toc}{chapter}{Bibliography}
 \printbibliography

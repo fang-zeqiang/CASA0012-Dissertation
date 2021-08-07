@@ -1,5 +1,5 @@
 --- 
-title: CASA0012 Dissertation Book
+title: Spatial pattern mining of tech clusters of dynamics and industry mix based on quantitative methods in England area, UK
 
 author: 
 - |

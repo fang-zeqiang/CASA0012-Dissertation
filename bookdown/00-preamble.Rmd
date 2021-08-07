@@ -48,8 +48,8 @@ library(readxl)
 library(fs)
 library(here)
 
-read_excel(here("tables", "abbreviations.xlsx"))%>%
-  arrange(Term) %>% # i.e. alphabetical order by Term
+read_excel(here("tables", "tech_sic_code.xlsx"))%>%
+  arrange("SIC07 heading") %>% # i.e. alphabetical order by Term
   knitr::kable(booktabs = TRUE)%>% # booktab = T gives us a pretty APA-ish table
   kable_styling(position = "center")%>%
     row_spec(.,

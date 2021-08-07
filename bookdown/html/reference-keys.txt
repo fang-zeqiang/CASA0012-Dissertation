@@ -12,6 +12,7 @@ other-factor-can-affect-dynamics-pattern-in-uk
 methodology
 research-framework
 data-source-and-processing
+identifying-tech-cluster
 quatitative-analysis-and-methods
 time-range-selection
 tech-cluster-identifying

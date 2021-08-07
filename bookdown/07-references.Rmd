@@ -1,9 +1,15 @@
 # References {-}
 
-Kerr, William R., and Frederic Robert-Nicoud. 2020. “Tech Clusters.”Journal of Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/articles?id=10.1257/jep.34.3.50
-
-Frenken, K., Cefis, E., & Stam, E. (2015).  Industrial Dynamicsand Clusters:  A Survey.   Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505Frenken K., Cefis E. and Stam E.
+a b c d e f g h i j k l m n o p q r s t u v w x y z
 
 Combes, P.-P., Duranton, G., Gobillon, L., Puga, D. and Roux, S. (2012),The Productivity Advantages of Large Cities: Distinguishing AgglomerationFrom Firm Selection. Econometrica, 80: 2543-2594.https://doi.org/10.3982/ECTA84427
+
+Frenken, K., Cefis, E., & Stam, E. (2015).  Industrial Dynamicsand Clusters:  A Survey.   Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505
+
+Kerr, William R., and Frederic Robert-Nicoud. 2020. “Tech Clusters.”Journal of Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/articles?id=10.1257/jep.34.3.50
+
+Open Corporates. (2018), The core company data from OpenCorporates master company database, electronic dataset, OpenCorporates Data Dictionary, viewed 12 June 2021, <https://opencorporates.com/>.
+
+Office for National Statistics, 2015. Identifying Science and Technology Businesses in Official Statistics. [online] London, UK: Office for National Statistics, pp.10-14. Available at: <https://webarchive.nationalarchives.gov.uk/20160105170025/http://www.ons.gov.uk/ons/site-information/using-the-website/rss-news-feeds/index.html> [Accessed 28 July 2021].
 
 
