@@ -13,9 +13,7 @@ output:
 1. Quantitative Method Research
 1. Temporal Qualitative Analysis
 
-In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate and bivariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods
-
-在本研究中，包含所有英国公司的数据集会被进行数据清洗和属性选择，并且根据英国政府官网对于科技企业的分类定义来进行科技公司的识别与筛选；在定量研究前，本研究基于时间与空间维度对科技公司数量进行统计，并且计算出特定年份特定地区的企业集群动态指标与产业组合指标；紧接着本研究进行多元回归，单双变量的莫兰指数检测来进行空间定量研究，最后结合三个不同时间段的指标空间变化进行定性的空间模式趋势研究
+In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate and bivariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods.
 
 ## Data Source and Processing
 
@@ -47,8 +45,7 @@ This research refers to the science and technology classification table provided
 
 ### Time Range Selection
 
-The reason why this research choose tech firms which incorporate from 1998 to 2018 is because
-这20年来科技公司在英国的成立数量相比1998年以前明显走高正如图1所示
+The reason why this research choose tech firms which incorporate from 1998 to 2018 is because the number of technology companies established in the UK in the past 20 years is significantly higher than before 1998, as shown in below figure.
 
 ```{r fig-1, echo=FALSE, fig.cap='Incorporating technology & science companies in UK', out.width='100%'}
 knitr::include_graphics(here::here('general_images','figure1.png'))
@@ -56,36 +53,35 @@ knitr::include_graphics(here::here('general_images','figure1.png'))
 
 ### Tech Cluster Identifying
 
-What is ttwa?
+Travel to Work Locations is official statistics that capture local labour markets, i.e., areas where the majority (70%) of the people who live there work and where the majority (70%) of the population who work live. These measures are based on responses to the 2011 and are used to define the TTWAs algorithmically. There are currently 228 TTWAs in the UK. When it is recognised that the activity of interest may be scattered across administrative boundaries such as local authority districts or NUTS areas, TTWAs are widely utilised in industrial clustering investigations (Prothero, 2021).
 
-The 228 areas forming the 2011 TTWAs, covering the whole of the UK, were defined in 2015 using 2011 Census commuting flow data, indicating home and workplace address. The TTWAs are based on aggregations of Lower Layer Super Output Areas (LSOA) in England and Wales, Data Zones (DZ) in Scotland, and Super Output Areas (SOA) in Northern Ireland and in some cases span country borders. There are six cross-border TTWAs, 149 in England, 18 in Wales, 45 in Scotland and 10 in Northern Ireland (...,...).
+Relevant studies have shown that commuting across towns has become more common in England and Wales. People are not limited to living and working in the same administrative area. In addition, studies have found that low-skilled workers tend to rely on the public to work locally. Strong skill-oriented jobs are more dependent on cars, and they are also the main force for cross-city commuting. The technology industry has a greater demand for those strong skill-oriented workers which suggest that travel to work area(TTWA) is used as a cluster of technology companies compared to traditional administrative Region would be a good choice (Titheridge & Hall,2006)
 
-- Why choose TTWA?
+The University of Cambridge had funded some researchers to undertake the Wisbech 2020 Vision project to analyse the current problem, mining the potential future space for employment growth with alternative macro-economic scenario to help drive a  high value-added growth plan in the local area (Burgess & et al., 2014)
 
-This geographical division can better reflect the relationship between population, company and work (...,...)
-
-- Why ttwa can work as a firms' cluster?
-
-Some researchers have found... (...,...)
+This geographical division can better reflect the relationship between population, company and work. In terms of geographic research, related researchers have combined the Business Structure Database (BSD) from the Office for National Statistics (ONS) and industry classification methods to use the ONS geographic area of TTWA to survey the commuting patterns and labour market of the population in 2011. Most scholars state that this might be an effective measure for the research of industrial clusters at the sub-regional level (Mateos-Garcia，2016).
 
 ### Dynamics Measuring Index
 
-衡量一个集群的动态变化程度需要计算出科技集群的进入率，计算方法如下
-这里参考了其他研究者的计算方法(...,...)
+Firm entry is the result of the interaction between the
+characteristics of an actor, on the one hand, and the surrounding environment, on the other hand (Frenken, Cefis and Stam, 2014).
+
+To measure the degree of dynamic change of a cluster, it is necessary to calculate the entry rate of the technology cluster. Brandt used the enterprise's entry rate and exit rate to measure the dynamics attributes of a company (2005). This research refers to the researcher's calculation method. The number of enterprises entering and quitting a sector as a percentage of the total number of firms in the same sector in a given year is used to compute entry rate in this tech cluster dynamics research(ibid). The calculation method is as follows.
 
 $$ Entry\ Rate_{i,t} = \frac{Incorporating\ Firms_{i,t}}{Total\  Firms_{i}} $$
+
 Where $i$ means location(travel to work area), $t$ means year 
 
 ### Industry Mix Measuring Index
 
-衡量一个集群地区的产业集中程度需要计算出科技集群的Herfindahl-Hirschman Index或者location quotient，这里只采用前者的方法是因为缺失相应地区年份对应的受雇人员数据，故采用前者进行指标计算，这里参考了其他研究者的计算方法(...,...)，计算方法如下
+It is necessary to calculate the Herfindahl-Hirschman Index or location quotient of the technology cluster to measure the degree of industrial concentration in a cluster area,. However, only the former method is used because the employment data corresponding to the corresponding region year is missing; Here is a reference to the quantitative method of industrial concentration of Chao Lu's research team (2017). HHI is calculated by squaring the market share of each competing company and then adding the results, where the market share is given in the form of scores or points (ibid). Increases in the Herfindahl index generally indicate a decrease in competition and an increase of market power, whereas decreases indicate the opposite (Hall & et al., 2009), as the calculation method shown below.
 
-$$ Herfindahl-Hirschman \ Index_{\ i,t} = \sum_1^k (\frac{Tech\ Firms_{i,t,k}}{Total\ Tech\ Firms_{i,t}})^2 $$
-Where $k$ represents the $k$th industry in location $i$ and year $t$. $Tech Firms$ means the number of tech companies and $Total Tech Firms$ represents the number of total tech firms in a specific location and year.
-
-赫芬达尔—赫希曼指数 [1]  (Herfindahl-Hirschman Index，简称HHI），简称赫芬达尔指数，是一种测量产业集中度的综合指数。它是指一个行业中各市场竞争主体所占行业总收入或总资产百分比的平方和，用来计量市场份额的变化，即市场中厂商规模的离散度。
-
-赫芬达尔一赫希曼指数是计算某一市场上50家最大企业(如果少于50家企业就是所有企业)每家企业市场占有份额(取百分之的分子)的平方之和。显然， HHI越大，表示市场集中程度越高，垄断程度越高。该指数不仅能反映市场内大企业的市场份额，而且能反映大企业之外的市场结构，因此，能更准确地反映大企业对市场的影响程度。
+$$ Herfindahl-Hirschman \ Index_{\ i,t} = \sum_{j=1}^N (\frac{Tech\ Firms_{j,i,t}}{Total\ Tech\ Firms_{i,t}})^2 $$
+Where:
+  $N$ is the overall number of individual tech firm contained.
+  $k$ represents the $k$th industry in location $i$ and year $t$. 
+  $Tech Firms_j$ is the number of j-th individual tech firm
+  $Total Tech Firms$ represents the number of total tech firms in a specific location and year.
 
 ### Dynamics and Performance Analysis
 
@@ -102,7 +98,8 @@ Where $k$ represents the $k$th industry in location $i$ and year $t$. $Tech Firm
 Ozkul, B., 2014. Changing home-to-work travel in England and Wales. Regional Studies, Regional Science, 1(1), pp.32-39.
 
 1. Herfindahl-Hirschman Index
-- 
+
+The value of this statistical data for identifying monopoly development, on the other hand, is directly dependent on the precise definition of a market (Kwoka, 1977). For instances, geographical considerations might influence market share. This dilemma can arise when there are nearly equal market share of tech businesses in a given sector, but they each operate exclusively in distinct regions of the travel to work area, resulting in each firm having a monopoly inside the specific marketplace in which it conducts business, which might make it more difficult to measure the industry mix in a specific location and year. Furthermore, one IT firm may control as much as 70% of the market for a certain area of the digital industry (i.e. the sale of one specific equipment). As a result, that company would have a near-total monopoly on the manufacturing and sale of that commodity.
 
 ## Ethical Statement
 

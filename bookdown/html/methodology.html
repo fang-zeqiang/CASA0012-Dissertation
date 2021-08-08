@@ -165,8 +165,7 @@
 <li>Quantitative Method Research</li>
 <li>Temporal Qualitative Analysis</li>
 </ol>
-<p>In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate and bivariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods</p>
-<p>在本研究中，包含所有英国公司的数据集会被进行数据清洗和属性选择，并且根据英国政府官网对于科技企业的分类定义来进行科技公司的识别与筛选；在定量研究前，本研究基于时间与空间维度对科技公司数量进行统计，并且计算出特定年份特定地区的企业集群动态指标与产业组合指标；紧接着本研究进行多元回归，单双变量的莫兰指数检测来进行空间定量研究，最后结合三个不同时间段的指标空间变化进行定性的空间模式趋势研究</p>
+<p>In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate and bivariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods.</p>
 </div>
 <div id="data-source-and-processing" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> Data Source and Processing</h2>
@@ -309,8 +308,7 @@ Healthcare services
 <h2><span class="header-section-number">3.4</span> Quatitative Analysis and Methods</h2>
 <div id="time-range-selection" class="section level3" number="3.4.1">
 <h3><span class="header-section-number">3.4.1</span> Time Range Selection</h3>
-<p>The reason why this research choose tech firms which incorporate from 1998 to 2018 is because
-这20年来科技公司在英国的成立数量相比1998年以前明显走高正如图1所示</p>
+<p>The reason why this research choose tech firms which incorporate from 1998 to 2018 is because the number of technology companies established in the UK in the past 20 years is significantly higher than before 1998, as shown in below figure.</p>
 <div class="figure"><span style="display:block;" id="fig:fig-1"></span>
 <img src="general_images/figure1.png" alt="Incorporating technology &amp; science companies in UK" width="100%" />
 <p class="caption">
@@ -320,23 +318,18 @@ Figure 3.1: Incorporating technology &amp; science companies in UK
 </div>
 <div id="tech-cluster-identifying" class="section level3" number="3.4.2">
 <h3><span class="header-section-number">3.4.2</span> Tech Cluster Identifying</h3>
-<p>What is ttwa?</p>
-<p>The 228 areas forming the 2011 TTWAs, covering the whole of the UK, were defined in 2015 using 2011 Census commuting flow data, indicating home and workplace address. The TTWAs are based on aggregations of Lower Layer Super Output Areas (LSOA) in England and Wales, Data Zones (DZ) in Scotland, and Super Output Areas (SOA) in Northern Ireland and in some cases span country borders. There are six cross-border TTWAs, 149 in England, 18 in Wales, 45 in Scotland and 10 in Northern Ireland (…,…).</p>
-<ul>
-<li>Why choose TTWA?</li>
-</ul>
-<p>This geographical division can better reflect the relationship between population, company and work (…,…)</p>
-<ul>
-<li>Why ttwa can work as a firms’ cluster?</li>
-</ul>
-<p>Some researchers have found… (…,…)</p>
+<p>Travel to Work Locations is official statistics that capture local labour markets, i.e., areas where the majority (70%) of the people who live there work and where the majority (70%) of the population who work live. These measures are based on responses to the 2011 and are used to define the TTWAs algorithmically. There are currently 228 TTWAs in the UK. When it is recognised that the activity of interest may be scattered across administrative boundaries such as local authority districts or NUTS areas, TTWAs are widely utilised in industrial clustering investigations (Prothero, 2021).</p>
+<p>Relevant studies have shown that commuting across towns has become more common in England and Wales. People are not limited to living and working in the same administrative area. In addition, studies have found that low-skilled workers tend to rely on the public to work locally. Strong skill-oriented jobs are more dependent on cars, and they are also the main force for cross-city commuting. The technology industry has a greater demand for those strong skill-oriented workers which suggest that travel to work area(TTWA) is used as a cluster of technology companies compared to traditional administrative Region would be a good choice (Titheridge &amp; Hall,2006)</p>
+<p>The University of Cambridge had funded some researchers to undertake the Wisbech 2020 Vision project to analyse the current problem, mining the potential future space for employment growth with alternative macro-economic scenario to help drive a high value-added growth plan in the local area (Burgess &amp; et al., 2014)</p>
+<p>This geographical division can better reflect the relationship between population, company and work. In terms of geographic research, related researchers have combined the Business Structure Database (BSD) from the Office for National Statistics (ONS) and industry classification methods to use the ONS geographic area of TTWA to survey the commuting patterns and labour market of the population in 2011. Most scholars state that this might be an effective measure for the research of industrial clusters at the sub-regional level (Mateos-Garcia，2016).</p>
 </div>
 <div id="dynamics-measuring-index" class="section level3" number="3.4.3">
 <h3><span class="header-section-number">3.4.3</span> Dynamics Measuring Index</h3>
-<p>衡量一个集群的动态变化程度需要计算出科技集群的进入率，计算方法如下
-这里参考了其他研究者的计算方法(…,…)</p>
-<p><span class="math display">\[ Entry\ Rate_{i,t} = \frac{Incorporating\ Firms_{i,t}}{Total\  Firms_{i}} \]</span>
-Where <span class="math inline">\(i\)</span> means location(travel to work area), <span class="math inline">\(t\)</span> means year</p>
+<p>Firm entry is the result of the interaction between the
+characteristics of an actor, on the one hand, and the surrounding environment, on the other hand (Frenken, Cefis and Stam, 2014).</p>
+<p>To measure the degree of dynamic change of a cluster, it is necessary to calculate the entry rate of the technology cluster. Brandt used the enterprise’s entry rate and exit rate to measure the dynamics attributes of a company (2005). This research refers to the researcher’s calculation method. The number of enterprises entering and quitting a sector as a percentage of the total number of firms in the same sector in a given year is used to compute entry rate in this tech cluster dynamics research(ibid). The calculation method is as follows.</p>
+<p><span class="math display">\[ Entry\ Rate_{i,t} = \frac{Incorporating\ Firms_{i,t}}{Total\  Firms_{i}} \]</span></p>
+<p>Where <span class="math inline">\(i\)</span> means location(travel to work area), <span class="math inline">\(t\)</span> means year</p>
 </div>
 <div id="industry-mix-measuring-index" class="section level3" number="3.4.4">
 <h3><span class="header-section-number">3.4.4</span> Industry Mix Measuring Index</h3>

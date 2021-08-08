@@ -1,15 +1,45 @@
 # References {-}
 
 a b c d e f g h i j k l m n o p q r s t u v w x y z
+pay attention to the unity of format
+
+ALCACER J. and CHUNG W. (2007) Location strategies and knowledge spillovers, Management Science 53, 760–776.
+
+Brandt, N., 2005. Business dynamics and policies. OECD Economic Studies, 2004(1), pp.9-36.
+
+Burgess, G., Monk, S., Morrison, N. and Udagawa, C., 2014. Economic Analysis of the Wisbech Travel to Work Area: Main Report: March 2014.
+
+Baptista, R. and Swann, G., 1999. A comparison of clustering dynamics in the US and UK computer industries. Journal of Evolutionary Economics, 9(3), pp.373-399.
+
+Boschma, R., 2015. Do spinoff dynamics or agglomeration externalities drive industry clustering? A reappraisal of Steven Klepper’s work. Industrial and Corporate Change, 24(4), pp.859-873.
 
 Combes, P.-P., Duranton, G., Gobillon, L., Puga, D. and Roux, S. (2012),The Productivity Advantages of Large Cities: Distinguishing AgglomerationFrom Firm Selection. Econometrica, 80: 2543-2594.https://doi.org/10.3982/ECTA84427
 
-Frenken, K., Cefis, E., & Stam, E. (2015).  Industrial Dynamicsand Clusters:  A Survey.   Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505
+Clementi, G.L. and Palazzo, B., 2016. Entry, exit, firm dynamics, and aggregate fluctuations. American Economic Journal: Macroeconomics, 8(3), pp.1-41.
+
+Frenken, K., Cefis, E., & Stam, E. 2015.  Industrial Dynamicsand Clusters:  A Survey.   Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505
+
+Hall, B.L., Hsiao, E.Y., Majercik, S., Hirbe, M. and Hamilton, B.H., 2009. The impact of surgeon specialization on patient mortality: examination of a continuous Herfindahl-Hirschman index. Annals of surgery, 249(5), pp.708-716.
 
 Kerr, William R., and Frederic Robert-Nicoud. 2020. “Tech Clusters.”Journal of Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/articles?id=10.1257/jep.34.3.50
 
-Open Corporates. (2018), The core company data from OpenCorporates master company database, electronic dataset, OpenCorporates Data Dictionary, viewed 12 June 2021, <https://opencorporates.com/>.
+Kwoka, J., 1977. Large Firm Dominance and Price-Cost Margins in Manufacturing Industries. Southern Economic Journal, 44(1), p.183.
+
+Krafft, J., 2004. Entry, exit and knowledge: evidence from a cluster in the info-communications industry. Research policy, 33(10), pp.1687-1706.
+
+Liston-Heyes, C. and Pilkington, A., 2004. Inventive concentration in the production of green technology: A comparative analysis of fuel cell patents. Science and Public Policy, 31(1), pp.15-25
+
+Lu, C., Qiao, J. and Chang, J., 2017. Herfindahl--Hirschman Index based performance analysis on the convergence development. Cluster Computing, 20(1), pp.121-129. 
+
+Mateos-Garcia, J. and Bakhshi, H., 2016. The geography of creativity in the UK. London: Nesta.
+
+Open Corporates. 2018, The core company data from OpenCorporates master company database, electronic dataset, OpenCorporates Data Dictionary, viewed 12 June 2021, <https://opencorporates.com/>.
 
 Office for National Statistics, 2015. Identifying Science and Technology Businesses in Official Statistics. [online] London, UK: Office for National Statistics, pp.10-14. Available at: <https://webarchive.nationalarchives.gov.uk/20160105170025/http://www.ons.gov.uk/ons/site-information/using-the-website/rss-news-feeds/index.html> [Accessed 28 July 2021].
+
+Prothero, R., 2021. Travel to work area analysis in Great Britain. [online] Office for National Statistics. Available at: <https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/traveltoworkareaanalysisingreatbritain/2016> [Accessed 8 August 2021].
+
+Titheridge, H. and Hall, P., 2006. Changing travel to work patterns in South East England. Journal of Transport Geography, 14(1), pp.60-75.
+
 
 

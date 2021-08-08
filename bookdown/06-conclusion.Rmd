@@ -1,5 +1,17 @@
 # Conclusion
 
-Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
+ case (Clementi & Palazzo,2016)
+This paper provides a framework to study the dynamics of the cross–section of firms and its implications for aggregate dynamics. When calibrated to match a set of moments of the investment process, our model delivers implications for firm dynamics and for the cyclicality of entry and exit that are consistent with the evidence. 
 
-To be done
+The survival rate increases with size. The growth rate of employment is decreasing with size and age, both unconditionally and conditionally. The size distribution of firms is skewed to the right. When tracking the size distribution over the life a cohort, the skewness declines with age. The entry rate is positively correlated with current and lagged output growth. The exit rate is negatively correlated with output growth and positively associated with future growth. 
+
+Carefully modeling firm–level dynamics turns out to be key. The pro–cyclicality of entry and the positive association between age and firm growth deliver amplification and propagation of aggregate shocks in a plain-vanilla competitive framework.
+ 
+A positive shock to aggregate productivity leads to an increase in entry. Consistent with the empirical evidence, entrants are smaller than incumbents. The skewness of the distribution of firms over idiosyncratic productivity increases. As the exogenous component of aggregate productivity declines towards its unconditional mean, the new entrants that survive grow in productivity and size. That is, the distribution of idiosyncratic productivity improves. As a result, the response of output is stronger and more persistent than in an environment that abstracts from entry and exit. 
+
+Our numerical experiments reveal that on average, entry and exit account for about one fifth of the above–trend growth experienced by our economy over the 10 years following a 1.5 standard deviation innovation to aggregate productivity. As an alternative metric of the impact of entry and exit on aggregate dynamics, we assessed the effect on persistence. For a version of our model without entry or exit to generate a data–conforming persistence of output, the first–order autocorrelation of aggregate productivity shocks must be 0.775. In the benchmark scenario with entry and exit, it needs only be 0.685. 
+
+Last, but not least, we show that according to our model there is a clear causal link between the exceptionally large drop in establishments during the great recession and the painfully low speed of the recovery from it. Whatever its exact nature, the adverse event that initiated the recession had a particularly strong effect on the 2008 and 2009 cohorts, severely reducing the ranks of small but high–conditional–growth plants and thereby suppressing the growth in aggregate labor demand for years to come. 
+
+In spite of the wealth of detail and descriptive realism achieved by the model, our framework could be extended in a variety of dimensions. In particular, we would like to gauge the quantitative effect of our mechanism when imbedded in a genuine general equilibrium framework. Relaxing our assumption that firms of different cohorts share the same technology is also of interest. Assuming, as it appears to be the case in reality, that entrants are more likely to adopt more recent vintages of capital, is likely to further enhance the amplification and propagation mechanism uncovered here. 
+end (Clementi & Palazzo,2016)

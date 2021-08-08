@@ -52,8 +52,6 @@
 
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 
@@ -76,8 +74,6 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Abstract</a></li>
 <li class="chapter" data-level="" data-path="declaration.html"><a href="declaration.html"><i class="fa fa-check"></i>Declaration</a></li>
-<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
-<li class="chapter" data-level="" data-path="abbreviations.html"><a href="abbreviations.html"><i class="fa fa-check"></i>Abbreviations</a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#background"><i class="fa fa-check"></i><b>1.1</b> Background</a></li>
@@ -107,8 +103,7 @@
 <li class="chapter" data-level="3.4.5" data-path="methodology.html"><a href="methodology.html#dynamics-and-performance-analysis"><i class="fa fa-check"></i><b>3.4.5</b> Dynamics and Performance Analysis</a></li>
 </ul></li>
 <li class="chapter" data-level="3.5" data-path="methodology.html"><a href="methodology.html#limitations"><i class="fa fa-check"></i><b>3.5</b> Limitations</a></li>
-<li class="chapter" data-level="3.6" data-path="methodology.html"><a href="methodology.html#herfindahl-hirschman-index"><i class="fa fa-check"></i><b>3.6</b> 1. Herfindahl-Hirschman Index</a></li>
-<li class="chapter" data-level="3.7" data-path="methodology.html"><a href="methodology.html#ethical-statement"><i class="fa fa-check"></i><b>3.7</b> Ethical Statement</a></li>
+<li class="chapter" data-level="3.6" data-path="methodology.html"><a href="methodology.html#ethical-statement"><i class="fa fa-check"></i><b>3.6</b> Ethical Statement</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>4</b> Results</a>
 <ul>
@@ -171,6 +166,12 @@
 <h2><span class="header-section-number">4.2</span> Visualisation and Analysis of Dynamics</h2>
 <div id="regression" class="section level3" number="4.2.1">
 <h3><span class="header-section-number">4.2.1</span> Regression</h3>
+<div class="figure"><span style="display:block;" id="fig:fig-regression"></span>
+<img src="general_images/entry_rate_regression.png" alt="Regression results of top tech clusters in England" width="100%" />
+<p class="caption">
+Figure 4.1: Regression results of top tech clusters in England
+</p>
+</div>
 
 </div>
 </div>
@@ -237,20 +238,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>

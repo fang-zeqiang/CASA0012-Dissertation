@@ -6,11 +6,27 @@ Tech clusters like Silicon Valley play a central role for modern innovation, bus
 
 ## Cluster Dynamics
 
-Industrial dynamics and clusters: a survey, regional research. This article reviews clusters and their impact on the entry, exit, and growth of firms, as well as the literature supporting the evolutionary dynamics of cluster formation. This extensive review shows strong evidence that clusters promote the entry of manufacturers, but the evidence that clusters can promote the growth and survival of firms is rather weak. From a number of open-ended questions, this research extracts various future research paths that emphasize the importance of manufacturer heterogeneity and the exact mechanism that supports the localized economy.
+Industrial dynamics and clusters: a survey, regional research. This article reviews clusters and their impact on the entry, exit, and growth of firms, as well as the literature supporting the evolutionary dynamics of cluster formation. This extensive review shows strong evidence that clusters promote the entry of manufacturers, but the evidence that clusters can promote the growth and survival of firms is rather weak. From a number of open-ended questions, this research extracts various future research paths that emphasize the importance of manufacturer heterogeneity and the exact mechanism that supports the localized economy (Frenken, Cefis and Stam, 2014).
 
-## Location Quotient
+Relative researchers found that industry clustering not only increased firm entry but also firm exit rates. This implied that clusters could emerge and exist because they provide entry opportunities but they do not necessarily generate Marshallian economies that increase firm survival (Boschma, 2015). 
+
+by looking at how clusters influence entry, departure, and growth via localization economics, and by taking a long-term look at cluster emergence and evolution.
+
+Entry is strongly influenced by clustering. Empirical research have consistently found that as cluster size grows, so does the rate of admission. Most potential entrepreneurs simply stay in their region of origin, therefore this empirical correlation does not imply that enterprises locate in a cluster because they gain from co-location.
+
+Localization economies appear to play a role in entrance decisions in these research, but only for technologically trailing businesses who stand to gain the most and have the least to lose from co-location (ALCCER and CHUNG, 2007).
+
+集群对整体的作用
+Enterprise entry does play an important role in shaping the overall dynamics. The new entrants that survive in the cluster will become larger over time, resulting in broader expansion and overall impact (Clementi & Palazzo, 2016)
+https://pages.stern.nyu.edu/~gclement/Papers/Entry_exit.pdf
+
+## Industry Mix
 
 On average, companies in large cities are more productive. There are two main explanations: corporate choice (big cities strengthen competition and only allow the most productive people to survive) and agglomeration economies (big cities promote interaction and increase productivity), which may be strengthened by the natural advantages of localization. In order to distinguish them, we nested a general version of the easy-to-handle company selection model and a standard agglomeration model. Stronger choices in large cities cut the distribution of productivity to the left, while stronger gatherings move to the right and expand the distribution. Using this forecast, French firm-level data, and new quantile methods, we show that firm choices cannot explain differences in spatial productivity. The results are applicable to various departments, city size thresholds, institutional samples and regional definitions.
+
+The Herfindahl–Hirschman Index (HHI) is a commonly used economic concept in competition law, antitrust[1], and technology management. It's a measure of a company's size in relation to the industry it's in, as well as an indicator of how competitive it is ​(Liston-Heyes & Pilkington, 2004).
+
+
 
 ## How location affect entry pattern in UK/Global
 
@@ -18,3 +34,4 @@ On average, companies in large cities are more productive. There are two main ex
 
 ## Other factor can affect dynamics pattern in UK
 
+Firm density has a beneficial effect on entry rates in the early stages of an industry since each firm has the potential to bring in new entrants. Legitimation has been coined to describe this positive density impact. Higher company density levels, on the other hand, become a barrier to entrance as the industry evolves and grows, owing to fierce market competition (Boschma, 2015).
