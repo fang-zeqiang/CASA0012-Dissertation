@@ -1,3 +1,178 @@
+--- 
+title: Spatial pattern mining of tech clusters of dynamics and industry mix based on quantitative methods in England area, UK
+
+author: 
+- |
+    | Zeqiang Fang
+    |    
+    | CASA0012, MSc Spatial Data Science and Visualisation Dissertation 
+    |  
+    | Supervisor: Dr Max Nathan
+    |
+    | Repository: https://fang-zeqiang.github.io/CASA0012-Dissertation/
+    |  
+    | This dissertation is submitted in part requirement for the 
+    | MSc (Or MRes) in the Centre for Advanced Spatial Analysis, 
+    | Bartlett Faculty of the Built Environment, UCL
+    |
+    | Word count: 8,000
+
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: 
+    bookdown::gitbook
+    bookdown::html_book
+documentclass: book
+classoption: oneside #openany or #twosides #if two then need to change headers and check margins.
+geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
+fontsize: 12pt
+linestretch: 1.5
+bibliography: [book.bib, packages.bib, test.bib]
+biblio-style: apa
+link-citations: yes
+github-repo: fang-zeqiang/CASA0012-Dissertation
+description: "This dissertation is submitted in part requirement for the MSc (Or MRes) in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL "
+always_allow_html: yes
+---
+```{r, include=FALSE}
+options(tinytex.verbose = TRUE)
+```
+
+```{=latex}
+\pagenumbering{roman}
+```
+
+```{r include=FALSE}
+library(knitr)
+library(tinytex)
+```
+
+`r if (knitr:::is_html_output()) '
+# Abstract {-}
+'`
+`r if (knitr:::is_latex_output()) '
+# Abstract {.unlisted .unnumbered}
+'`
+Some abstract text
+
+
+<!--chapter:end:index.Rmd-->
+
+```{=latex}
+\pagenumbering{roman}
+```
+
+```{r include=FALSE}
+library(knitr)
+```
+
+
+`r if (knitr:::is_html_output()) '
+# Declaration{-}
+'`
+`r if (knitr:::is_latex_output()) '
+# Declaration {.unlisted .unnumbered}
+'`
+
+I, Zeqiang Fang, hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is xxx words in length
+
+`r if (knitr:::is_html_output()) '
+# Acknowledgements{-}
+'`
+`r if (knitr:::is_latex_output()) '
+# Acknowledgements {.unlisted .unnumbered}
+'`
+I would like to thank blah blah
+
+
+```{=latex}
+% Trigger ToC creation in LaTeX
+\setcounter{tocdepth}{3}
+\tableofcontents
+\listoffigures
+\listoftables
+```
+
+`r if (knitr:::is_html_output()) '
+# Abbreviations{-}
+'`
+`r if (knitr:::is_latex_output()) '
+# Abbreviations {.unlisted .unnumbered}
+'`
+
+```{r abbreviations, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(readxl)
+library(fs)
+library(here)
+
+read_excel(here("tables", "abbreviations.xlsx"))%>%
+  arrange("Term") %>% # i.e. alphabetical order by Term
+  knitr::kable(booktabs = TRUE)%>% # booktab = T gives us a pretty APA-ish table
+  kable_styling(position = "center")%>%
+    row_spec(.,
+  row=0,
+  bold = TRUE)
+```
+
+
+<!--chapter:end:00-preamble.Rmd-->
+
+# Introduction
+
+```{=latex}
+\pagenumbering{arabic} 
+```
+
+## Background
+
+1. tech cluster development
+2. dynamics cause better performance
+3. industry clustering pattern and economics performances
+
+## Research Question and Objectives
+
+How does tech clusters' dynamics pattern change in UK from 1998 to 2018? / What factors can affect tech clusters' dynamics pattern change in UK?
+
+To what extent will dynamic change affect tech clusters’performance？
+
+## Report Structure
+
+1. data clean
+1. tech cluster recognition
+1. dynamics index generation
+1. hypothesis (OLS estimation)
+1. regression
+1. residual analysis
+1. result interpretation
+
+<!--chapter:end:01-intro.Rmd-->
+
+# Literature Review {#crossref}
+
+## Industry Cluster & Tech Cluster
+
+Tech clusters like Silicon Valley play a central role for modern innovation, business competitiveness, and economic performance. This paper reviews what constitutes a tech cluster, how they function internally, and the degree to which policy makers can purposefully foster them. We describe the growing influence of advanced technologies for businesses outside of traditional tech fields, the strains and backlash that tech clusters are experiencing, and emerging research questions for theory and empirical work.
+
+## Cluster Dynamics
+
+Industrial dynamics and clusters: a survey, regional research. This article reviews clusters and their impact on the entry, exit, and growth of firms, as well as the literature supporting the evolutionary dynamics of cluster formation. This extensive review shows strong evidence that clusters promote the entry of manufacturers, but the evidence that clusters can promote the growth and survival of firms is rather weak. From a number of open-ended questions, this research extracts various future research paths that emphasize the importance of manufacturer heterogeneity and the exact mechanism that supports the localized economy.
+
+## Location Quotient
+
+On average, companies in large cities are more productive. There are two main explanations: corporate choice (big cities strengthen competition and only allow the most productive people to survive) and agglomeration economies (big cities promote interaction and increase productivity), which may be strengthened by the natural advantages of localization. In order to distinguish them, we nested a general version of the easy-to-handle company selection model and a standard agglomeration model. Stronger choices in large cities cut the distribution of productivity to the left, while stronger gatherings move to the right and expand the distribution. Using this forecast, French firm-level data, and new quantile methods, we show that firm choices cannot explain differences in spatial productivity. The results are applicable to various departments, city size thresholds, institutional samples and regional definitions.
+
+## How location affect entry pattern in UK/Global
+
+## How time affect entry pattern in UK/Global
+
+## Other factor can affect dynamics pattern in UK
+
+
+<!--chapter:end:02-literature.Rmd-->
+
 ---
 output:
   pdf_document: default
@@ -113,4 +288,113 @@ The research objectives are tech firms in the UK for this project and the indivi
 Besides, this project will not cause discrimination of industries or job categories. The final analysis results, such as the different industry concentration in each region, will not deepen some people's stereotypes and prejudices about the region (This content will be fully discussed in the project discussion section). It is necessary to point out and declare the objectivity of the analysis and the non-absoluteness of the results in the disclaimer. Consider the feelings of people and governments in different parts of the UK, this research will prevent the influence of personal preferences and subjective emotions.
 
 The leakage of companies' name and information will be protected. For example, in the reflection of the results section of academic research, the name and related information of the companies that moved may be revealed. Although this information may be open to the public you need to know that this information may be used by people with other ulterior motives. This project will desensitise the company name and information at the stage of chart presentation, such as using A, B, and C to replace them to achieve this purpose.
+
+
+<!--chapter:end:03-method.Rmd-->
+
+# Results
+
+## Visualisation and Analysis of Tech Cluster
+
+### Distribution
+
+### Descriptive Analysis
+
+## Visualisation and Analysis of Dynamics
+
+### Regression
+
+<!--chapter:end:04-results.Rmd-->
+
+# Discussion
+
+Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
+
+To be done
+
+## Research significance 
+
+### Global development goals
+
+### Local policy
+
+### Academic research
+
+## Limitations
+
+To be done
+
+## Transferability 
+
+To be done
+
+<!--chapter:end:05-discussion.Rmd-->
+
+# Conclusion
+
+Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
+
+To be done
+
+<!--chapter:end:06-conclusion.Rmd-->
+
+# References {-}
+
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+Combes, P.-P., Duranton, G., Gobillon, L., Puga, D. and Roux, S. (2012),The Productivity Advantages of Large Cities: Distinguishing AgglomerationFrom Firm Selection. Econometrica, 80: 2543-2594.https://doi.org/10.3982/ECTA84427
+
+Frenken, K., Cefis, E., & Stam, E. (2015).  Industrial Dynamicsand Clusters:  A Survey.   Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505
+
+Kerr, William R., and Frederic Robert-Nicoud. 2020. “Tech Clusters.”Journal of Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/articles?id=10.1257/jep.34.3.50
+
+Open Corporates. (2018), The core company data from OpenCorporates master company database, electronic dataset, OpenCorporates Data Dictionary, viewed 12 June 2021, <https://opencorporates.com/>.
+
+Office for National Statistics, 2015. Identifying Science and Technology Businesses in Official Statistics. [online] London, UK: Office for National Statistics, pp.10-14. Available at: <https://webarchive.nationalarchives.gov.uk/20160105170025/http://www.ons.gov.uk/ons/site-information/using-the-website/rss-news-feeds/index.html> [Accessed 28 July 2021].
+
+
+
+<!--chapter:end:07-references.Rmd-->
+
+
+```{=latex}
+\addcontentsline{toc}{chapter}{Bibliography}
+\printbibliography
+```
+# Appendix A Classification Form {-}
+
+```{=latex}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+```
+
+## Science and Technology Classification {.unlisted .unnumbered}
+
+```{r researchlog, echo=FALSE, message=FALSE, warning=FALSE}
+library(here)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(readxl)
+library(fs)
+# 
+# read_excel(here("tables","science_and_technology_classification.xlsx"))%>%
+#   arrange("SIC07 heading") %>% # i.e. alphabetical order by Term
+#   knitr::kable(booktabs = TRUE)%>% # booktab = T gives us a pretty APA-ish table
+#   kable_styling(position = "center")%>%
+#   row_spec(.,
+#   row=0,
+#   bold = TRUE)
+
+```
+
+`r if (knitr:::is_latex_output()) '
+# Appendix B  Proposal {.unlisted .unnumbered}
+'`
+
+```{=latex}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
+\enddocument
+```
+
+<!--chapter:end:08-appendix.Rmd-->
 

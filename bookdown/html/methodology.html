@@ -32,7 +32,7 @@
   
 <link rel="prev" href="crossref.html"/>
 <link rel="next" href="results.html"/>
-<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -101,8 +101,8 @@
 <li class="chapter" data-level="3.4.1" data-path="methodology.html"><a href="methodology.html#time-range-selection"><i class="fa fa-check"></i><b>3.4.1</b> Time Range Selection</a></li>
 <li class="chapter" data-level="3.4.2" data-path="methodology.html"><a href="methodology.html#tech-cluster-identifying"><i class="fa fa-check"></i><b>3.4.2</b> Tech Cluster Identifying</a></li>
 <li class="chapter" data-level="3.4.3" data-path="methodology.html"><a href="methodology.html#dynamics-measuring-index"><i class="fa fa-check"></i><b>3.4.3</b> Dynamics Measuring Index</a></li>
-<li class="chapter" data-level="3.4.4" data-path="methodology.html"><a href="methodology.html#dynamics-analysis"><i class="fa fa-check"></i><b>3.4.4</b> Dynamics Analysis</a></li>
-<li class="chapter" data-level="3.4.5" data-path="methodology.html"><a href="methodology.html#herfindahl-index"><i class="fa fa-check"></i><b>3.4.5</b> Herfindahl Index</a></li>
+<li class="chapter" data-level="3.4.4" data-path="methodology.html"><a href="methodology.html#industry-mix-measuring-index"><i class="fa fa-check"></i><b>3.4.4</b> Industry Mix Measuring Index</a></li>
+<li class="chapter" data-level="3.4.5" data-path="methodology.html"><a href="methodology.html#dynamics-and-performance-analysis"><i class="fa fa-check"></i><b>3.4.5</b> Dynamics and Performance Analysis</a></li>
 </ul></li>
 <li class="chapter" data-level="3.5" data-path="methodology.html"><a href="methodology.html#limitations"><i class="fa fa-check"></i><b>3.5</b> Limitations</a></li>
 <li class="chapter" data-level="3.6" data-path="methodology.html"><a href="methodology.html#herfindahl-hirschman-index"><i class="fa fa-check"></i><b>3.6</b> 1. Herfindahl-Hirschman Index</a></li>
@@ -175,29 +175,25 @@
 <div id="identifying-tech-cluster" class="section level2" number="3.3">
 <h2><span class="header-section-number">3.3</span> Identifying Tech Cluster</h2>
 <p>For the identification of science and technology companies, this study introduces the main 2007 sic code table to judge the science and technology industry, referring to the classification method of the Science and Technology Classification data set on the ons.gov.uk website; in order to better identify science and technology companies for the UK The economic contribution is officially based on the 2007 British Standard Economic Activity Classification, combined with different data sources, to classify and label science and technology companies (Office for National Statistics, 2015).</p>
-<p>Table 1 2007 sic code for science and technology industry (part)</p>
-<table class="table" style="margin-left: auto; margin-right: auto;">
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:table-1">Table 3.1: </span>2007 sic code for science and technology industry (part)
+</caption>
 <thead>
 <tr>
-<th style="text-align:left;font-weight: bold;">
+<th style="text-align:left;">
 SIC07 type
 </th>
-<th style="text-align:left;font-weight: bold;">
-…2
-</th>
-<th style="text-align:right;font-weight: bold;">
+<th style="text-align:right;">
 5-digit SIC07 code
 </th>
-<th style="text-align:left;font-weight: bold;">
-SIC07 heading
+<th style="text-align:left;">
+…3
 </th>
-<th style="text-align:left;font-weight: bold;">
-…5
-</th>
-<th style="text-align:left;font-weight: bold;">
+<th style="text-align:left;">
 Science and Technology category
 </th>
-<th style="text-align:left;font-weight: bold;">
+<th style="text-align:left;">
 Science and Technology topic
 </th>
 </tr>
@@ -207,14 +203,8 @@ Science and Technology topic
 <td style="text-align:left;">
 Class
 </td>
-<td style="text-align:left;">
-…
-</td>
 <td style="text-align:right;">
 26110
-</td>
-<td style="text-align:left;">
-Manufacture of electronic components
 </td>
 <td style="text-align:left;">
 …
@@ -230,14 +220,8 @@ Computer &amp; Electronic manufacturing
 <td style="text-align:left;">
 Class
 </td>
-<td style="text-align:left;">
-…
-</td>
 <td style="text-align:right;">
 58210
-</td>
-<td style="text-align:left;">
-Publishing of computer games
 </td>
 <td style="text-align:left;">
 …
@@ -252,17 +236,11 @@ Digital &amp; Computer Services
 <tr>
 <td style="text-align:left;">
 Class
-</td>
-<td style="text-align:left;">
-…
 </td>
 <td style="text-align:right;">
 62090
 </td>
 <td style="text-align:left;">
-Other information technology and computed service activities
-</td>
-<td style="text-align:left;">
 …
 </td>
 <td style="text-align:left;">
@@ -275,17 +253,11 @@ Digital &amp; Computer Services
 <tr>
 <td style="text-align:left;">
 Class
-</td>
-<td style="text-align:left;">
-…
 </td>
 <td style="text-align:right;">
 63110
 </td>
 <td style="text-align:left;">
-Data processing, hosting and related activities
-</td>
-<td style="text-align:left;">
 …
 </td>
 <td style="text-align:left;">
@@ -299,14 +271,8 @@ Digital &amp; Computer Services
 <td style="text-align:left;">
 Class
 </td>
-<td style="text-align:left;">
-…
-</td>
 <td style="text-align:right;">
 27510
-</td>
-<td style="text-align:left;">
-Manufacture of electric domestic appliances
 </td>
 <td style="text-align:left;">
 …
@@ -322,14 +288,8 @@ Electrical Machinery manufacturing
 <td style="text-align:left;">
 Class
 </td>
-<td style="text-align:left;">
-…
-</td>
 <td style="text-align:right;">
 86230
-</td>
-<td style="text-align:left;">
-Dental practice activities
 </td>
 <td style="text-align:left;">
 …
@@ -351,28 +311,43 @@ Healthcare services
 <h3><span class="header-section-number">3.4.1</span> Time Range Selection</h3>
 <p>The reason why this research choose tech firms which incorporate from 1998 to 2018 is because
 这20年来科技公司在英国的成立数量相比1998年以前明显走高正如图1所示</p>
-<p>Figure 1 Incorporating technology &amp; science companies in UK
-<img src="general_images/figure1.png" width="1200" /></p>
+<div class="figure"><span style="display:block;" id="fig:fig-1"></span>
+<img src="general_images/figure1.png" alt="Incorporating technology &amp; science companies in UK" width="100%" />
+<p class="caption">
+Figure 3.1: Incorporating technology &amp; science companies in UK
+</p>
+</div>
 </div>
 <div id="tech-cluster-identifying" class="section level3" number="3.4.2">
 <h3><span class="header-section-number">3.4.2</span> Tech Cluster Identifying</h3>
-<p>Why I choose ttwa</p>
-<p>Why ttwa can work as a firms’ cluster</p>
+<p>What is ttwa?</p>
+<p>The 228 areas forming the 2011 TTWAs, covering the whole of the UK, were defined in 2015 using 2011 Census commuting flow data, indicating home and workplace address. The TTWAs are based on aggregations of Lower Layer Super Output Areas (LSOA) in England and Wales, Data Zones (DZ) in Scotland, and Super Output Areas (SOA) in Northern Ireland and in some cases span country borders. There are six cross-border TTWAs, 149 in England, 18 in Wales, 45 in Scotland and 10 in Northern Ireland (…,…).</p>
+<ul>
+<li>Why choose TTWA?</li>
+</ul>
+<p>This geographical division can better reflect the relationship between population, company and work (…,…)</p>
+<ul>
+<li>Why ttwa can work as a firms’ cluster?</li>
+</ul>
+<p>Some researchers have found… (…,…)</p>
 </div>
 <div id="dynamics-measuring-index" class="section level3" number="3.4.3">
 <h3><span class="header-section-number">3.4.3</span> Dynamics Measuring Index</h3>
+<p>衡量一个集群的动态变化程度需要计算出科技集群的进入率，计算方法如下
+这里参考了其他研究者的计算方法(…,…)</p>
 <p><span class="math display">\[ Entry\ Rate_{i,t} = \frac{Incorporating\ Firms_{i,t}}{Total\  Firms_{i}} \]</span>
 Where <span class="math inline">\(i\)</span> means location(travel to work area), <span class="math inline">\(t\)</span> means year</p>
 </div>
-<div id="dynamics-analysis" class="section level3" number="3.4.4">
-<h3><span class="header-section-number">3.4.4</span> Dynamics Analysis</h3>
-</div>
-<div id="herfindahl-index" class="section level3" number="3.4.5">
-<h3><span class="header-section-number">3.4.5</span> Herfindahl Index</h3>
-<p><span class="math display">\[ Herfindahl\ Index_{i,t,k} = \frac{Tech\ Firms_{i,t}}{Total\  Firms_{i}} \]</span>
-Where <code>k</code> represents industry</p>
+<div id="industry-mix-measuring-index" class="section level3" number="3.4.4">
+<h3><span class="header-section-number">3.4.4</span> Industry Mix Measuring Index</h3>
+<p>衡量一个集群地区的产业集中程度需要计算出科技集群的Herfindahl-Hirschman Index或者location quotient，这里只采用前者的方法是因为缺失相应地区年份对应的受雇人员数据，故采用前者进行指标计算，这里参考了其他研究者的计算方法(…,…)，计算方法如下</p>
+<p><span class="math display">\[ Herfindahl-Hirschman \ Index_{\ i,t} = \sum_1^k (\frac{Tech\ Firms_{i,t,k}}{Total\ Tech\ Firms_{i,t}})^2 \]</span>
+Where <span class="math inline">\(k\)</span> represents the <span class="math inline">\(k\)</span>th industry in location <span class="math inline">\(i\)</span> and year <span class="math inline">\(t\)</span>. <span class="math inline">\(Tech Firms\)</span> means the number of tech companies and <span class="math inline">\(Total Tech Firms\)</span> represents the number of total tech firms in a specific location and year.</p>
 <p>赫芬达尔—赫希曼指数 [1] (Herfindahl-Hirschman Index，简称HHI），简称赫芬达尔指数，是一种测量产业集中度的综合指数。它是指一个行业中各市场竞争主体所占行业总收入或总资产百分比的平方和，用来计量市场份额的变化，即市场中厂商规模的离散度。</p>
 <p>赫芬达尔一赫希曼指数是计算某一市场上50家最大企业(如果少于50家企业就是所有企业)每家企业市场占有份额(取百分之的分子)的平方之和。显然， HHI越大，表示市场集中程度越高，垄断程度越高。该指数不仅能反映市场内大企业的市场份额，而且能反映大企业之外的市场结构，因此，能更准确地反映大企业对市场的影响程度。</p>
+</div>
+<div id="dynamics-and-performance-analysis" class="section level3" number="3.4.5">
+<h3><span class="header-section-number">3.4.5</span> Dynamics and Performance Analysis</h3>
 </div>
 </div>
 <div id="limitations" class="section level2" number="3.5">
