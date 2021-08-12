@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-08-08" />
+<meta name="date" content="2021-08-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,6 +52,8 @@
 
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 
@@ -74,6 +76,8 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Abstract</a></li>
 <li class="chapter" data-level="" data-path="declaration.html"><a href="declaration.html"><i class="fa fa-check"></i>Declaration</a></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="abbreviations.html"><a href="abbreviations.html"><i class="fa fa-check"></i>Abbreviations</a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#background"><i class="fa fa-check"></i><b>1.1</b> Background</a></li>
@@ -84,7 +88,7 @@
 <ul>
 <li class="chapter" data-level="2.1" data-path="crossref.html"><a href="crossref.html#industry-cluster-tech-cluster"><i class="fa fa-check"></i><b>2.1</b> Industry Cluster &amp; Tech Cluster</a></li>
 <li class="chapter" data-level="2.2" data-path="crossref.html"><a href="crossref.html#cluster-dynamics"><i class="fa fa-check"></i><b>2.2</b> Cluster Dynamics</a></li>
-<li class="chapter" data-level="2.3" data-path="crossref.html"><a href="crossref.html#location-quotient"><i class="fa fa-check"></i><b>2.3</b> Location Quotient</a></li>
+<li class="chapter" data-level="2.3" data-path="crossref.html"><a href="crossref.html#industry-mix"><i class="fa fa-check"></i><b>2.3</b> Industry Mix</a></li>
 <li class="chapter" data-level="2.4" data-path="crossref.html"><a href="crossref.html#how-location-affect-entry-pattern-in-ukglobal"><i class="fa fa-check"></i><b>2.4</b> How location affect entry pattern in UK/Global</a></li>
 <li class="chapter" data-level="2.5" data-path="crossref.html"><a href="crossref.html#how-time-affect-entry-pattern-in-ukglobal"><i class="fa fa-check"></i><b>2.5</b> How time affect entry pattern in UK/Global</a></li>
 <li class="chapter" data-level="2.6" data-path="crossref.html"><a href="crossref.html#other-factor-can-affect-dynamics-pattern-in-uk"><i class="fa fa-check"></i><b>2.6</b> Other factor can affect dynamics pattern in UK</a></li>
@@ -219,6 +223,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

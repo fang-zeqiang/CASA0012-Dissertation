@@ -1,5 +1,7 @@
 tab:table-1
 fig:fig-1
+fig:fig-regression-entry-rate
+fig:fig-regression-mix-entry
 introduction
 background
 research-question-and-objectives
@@ -7,7 +9,7 @@ report-structure
 crossref
 industry-cluster-tech-cluster
 cluster-dynamics
-location-quotient
+industry-mix
 how-location-affect-entry-pattern-in-ukglobal
 how-time-affect-entry-pattern-in-ukglobal
 other-factor-can-affect-dynamics-pattern-in-uk
@@ -22,7 +24,6 @@ dynamics-measuring-index
 industry-mix-measuring-index
 dynamics-and-performance-analysis
 limitations
-herfindahl-hirschman-index
 ethical-statement
 results
 visualisation-and-analysis-of-tech-cluster
@@ -38,4 +39,3 @@ academic-research
 limitations-1
 transferability
 conclusion
-fig:fig-regression

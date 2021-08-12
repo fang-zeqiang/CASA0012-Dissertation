@@ -12,7 +12,7 @@
 
 For Top 10 clusters regression on the dynamics with year and location
 
-```{r fig-regression, echo=FALSE, fig.cap='Regression results of tech clusters in England', out.width='100%'}
+```{r fig-regression-entry-rate, echo=FALSE, fig.cap='Regression results of tech clusters in England', out.width='100%'}
 knitr::include_graphics(here::here('general_images','entry_rate_regression.png'))
 ```
 
@@ -22,7 +22,7 @@ From & Refer to https://pages.stern.nyu.edu/~gclement/Papers/Entry_exit.pdf
 
 For Entry Rate & HHI 
 
-```{r fig-regression, echo=FALSE, fig.cap='Regression on industry mix and  dynamics of tech clusters in England', out.width='100%'}
+```{r fig-regression-mix-entry, echo=FALSE, fig.cap='Regression on industry mix and  dynamics of tech clusters in England', out.width='100%'}
 knitr::include_graphics(here::here('general_images','two-dep-var-regression.png'))
 ```
 From & Refer to https://search.oecd.org/economy/growth/35027468.pdf
