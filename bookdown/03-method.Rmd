@@ -23,20 +23,30 @@ This raw dataset is collected from the core company data from Open Corporates ma
 
 For the identification of science and technology companies, this study introduces the main 2007 sic code table to judge the science and technology industry, referring to the classification method of the Science and Technology Classification data set on the ons.gov.uk website; in order to better identify science and technology companies for the UK The economic contribution is officially based on the 2007 British Standard Economic Activity Classification, combined with different data sources, to classify and label science and technology companies (Office for National Statistics, 2015). 
 
-```{r table-1, echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(knitr)
 library(kableExtra)
 library(readxl)
 library(fs)
 library(here)
+```
+
+
+```{r table-1, echo=FALSE, message=FALSE, warning=FALSE}
 
 #read in data
-read_excel(here("tables", "tech_sic_code.xlsx"))%>%
+sic_df = read_excel(here("tables", "tech_sic_code.xlsx"))
+
+sic_df %>% 
   knitr::kable(
+  .,
   caption = "2007 sic code for science and technology industry (part)",
-  booktabs = TRUE) %>%
-  kable_classic(full_width = F, html_font = "Cambria")
+  booktabs = TRUE,
+  longtable = TRUE
+  ) %>%
+  # kable_styling(position = "center", full_width = T) %>%
+  kable_classic(full_width = T, html_font = "Cambria")
 ```
 
 This research refers to the science and technology classification table provided by the government. The technology indicator is used to position the technology industry of all industries, and a total of 168 sic codes for the technology industry in 2007 were obtained, accounting for about 16% of all industry categories in the UK, including 5 industry categories such as Digital Technologies, Life Sciences & Healthcare, Publishing & Broadcasting , Other scientific/technological manufacture and Other scientific/technological services, details of the classification form will be attached in the attachment. There are almost 20% firms in the raw data belonging to tech firms according to the method of category as mentioned above.
@@ -47,8 +57,8 @@ This research refers to the science and technology classification table provided
 
 The reason why this research choose tech firms which incorporate from 1998 to 2018 is because the number of technology companies established in the UK in the past 20 years is significantly higher than before 1998, as shown in below figure.
 
-```{r fig-1, echo=FALSE, fig.cap='Incorporating technology & science companies in UK', out.width='100%'}
-knitr::include_graphics(here::here('general_images','figure1.png'))
+```{r fig-1, echo=FALSE, fig.cap="Incorporating technology & science companies in UK",out.width='80%'}
+# knitr::include_graphics(here::here('general_images','figure1.png'),auto_pdf = TRUE)
 ```
 
 ### Tech Cluster Identifying

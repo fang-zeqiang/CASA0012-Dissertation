@@ -4,7 +4,14 @@
 
 ### Distribution
 
+From 1998 to 2018, 每隔十年英格兰各个Travel to work area(TTWA)进入率都会有大改变，比如在1998年较深颜色的区域多围绕在大伦敦地区以及整个英格兰南部地区，而2008年整体的进入率，相比于1998，水平有所提高并且呈现新公司向英格兰北部进入的趋势，这年在英格兰地区边缘有一些ttwa地区的进入率较为突出，比如Malton，Minehead and Bridport等地区；而2018年整体的进入率水平相比过去2008年平均多了约2倍不止，并且高进入率的ttwa多集中于北部与大伦敦地区周边的区域
+
+```{r fig-enR-1998-2018, echo=FALSE, fig.cap='The distribution of the entry rate of the England tech clusters(ttwa) from 1998 to 2018', out.width='100%'}
+knitr::include_graphics(here::here('general_images','enR_1998_2018.png'))
+```
+
 ### Descriptive Analysis
+
 
 ## Visualisation and Analysis of Dynamics
 

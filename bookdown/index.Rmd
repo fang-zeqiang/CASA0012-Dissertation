@@ -27,7 +27,7 @@ classoption: oneside #openany or #twosides #if two then need to change headers a
 geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
 fontsize: 12pt
 linestretch: 1.5
-bibliography: [book.bib, packages.bib, test.bib]
+bibliography: [book.bib, packages.bib]
 biblio-style: apa
 link-citations: yes
 github-repo: fang-zeqiang/CASA0012-Dissertation
