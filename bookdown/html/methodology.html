@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 3 Methodology | Spatial pattern mining of tech clusters of dynamics and industry mix based on quantitative methods in England area, UK</title>
   <meta name="description" content="This dissertation is submitted in part requirement for the MSc (Or MRes) in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.23.1 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 3 Methodology | Spatial pattern mining of tech clusters of dynamics and industry mix based on quantitative methods in England area, UK" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-08-15" />
+<meta name="date" content="2021-08-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
 <link rel="prev" href="crossref.html"/>
 <link rel="next" href="results.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/header-attrs-2.10.1/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -104,7 +104,8 @@
 <li class="chapter" data-level="3.4.2" data-path="methodology.html"><a href="methodology.html#tech-cluster-identifying"><i class="fa fa-check"></i><b>3.4.2</b> Tech Cluster Identifying</a></li>
 <li class="chapter" data-level="3.4.3" data-path="methodology.html"><a href="methodology.html#dynamics-measuring-index"><i class="fa fa-check"></i><b>3.4.3</b> Dynamics Measuring Index</a></li>
 <li class="chapter" data-level="3.4.4" data-path="methodology.html"><a href="methodology.html#industry-mix-measuring-index"><i class="fa fa-check"></i><b>3.4.4</b> Industry Mix Measuring Index</a></li>
-<li class="chapter" data-level="3.4.5" data-path="methodology.html"><a href="methodology.html#dynamics-and-performance-analysis"><i class="fa fa-check"></i><b>3.4.5</b> Dynamics and Performance Analysis</a></li>
+<li class="chapter" data-level="3.4.5" data-path="methodology.html"><a href="methodology.html#research-objectivities"><i class="fa fa-check"></i><b>3.4.5</b> Research Objectivities</a></li>
+<li class="chapter" data-level="3.4.6" data-path="methodology.html"><a href="methodology.html#morans-i"><i class="fa fa-check"></i><b>3.4.6</b> Moran’s I</a></li>
 </ul></li>
 <li class="chapter" data-level="3.5" data-path="methodology.html"><a href="methodology.html#limitations"><i class="fa fa-check"></i><b>3.5</b> Limitations</a></li>
 <li class="chapter" data-level="3.6" data-path="methodology.html"><a href="methodology.html#ethical-statement"><i class="fa fa-check"></i><b>3.6</b> Ethical Statement</a></li>
@@ -120,6 +121,7 @@
 <ul>
 <li class="chapter" data-level="4.2.1" data-path="results.html"><a href="results.html#regression"><i class="fa fa-check"></i><b>4.2.1</b> Regression</a></li>
 </ul></li>
+<li class="chapter" data-level="4.3" data-path="results.html"><a href="results.html#spatial-autocorrelation"><i class="fa fa-check"></i><b>4.3</b> Spatial autocorrelation</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>5</b> Discussion</a>
 <ul>
@@ -164,9 +166,10 @@
 <li>Identifying Tech Cluster</li>
 <li>Measuring the Dynamics &amp; Industry Mix</li>
 <li>Quantitative Method Research</li>
-<li>Temporal Qualitative Analysis</li>
+<li>Temporal Spatial Analysis</li>
 </ol>
-<p>In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate and bivariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods.</p>
+<p>In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate and bivariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods(1998, 2008 &amp; 2018).</p>
+<p>according to research method of Kumari’s team(2019), the Moran’s I of three time period will be calculated to analysis the dynamics change in spatial and temporal aspects.</p>
 </div>
 <div id="data-source-and-processing" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> Data Source and Processing</h2>
@@ -175,142 +178,6 @@
 <div id="identifying-tech-cluster" class="section level2" number="3.3">
 <h2><span class="header-section-number">3.3</span> Identifying Tech Cluster</h2>
 <p>For the identification of science and technology companies, this study introduces the main 2007 sic code table to judge the science and technology industry, referring to the classification method of the Science and Technology Classification data set on the ons.gov.uk website; in order to better identify science and technology companies for the UK The economic contribution is officially based on the 2007 British Standard Economic Activity Classification, combined with different data sources, to classify and label science and technology companies (Office for National Statistics, 2015).</p>
-<table class="kable_wrapper lightable-classic" style="font-family: Cambria; margin-left: auto; margin-right: auto;">
-<caption>
-<span id="tab:table-1">Table 3.1: </span>2007 sic code for science and technology industry (part)
-</caption>
-<tbody>
-<tr>
-<td>
-<table>
-<thead>
-<tr>
-<th style="text-align:left;">
-SIC07 type
-</th>
-<th style="text-align:right;">
-5-digit SIC07 code
-</th>
-<th style="text-align:left;">
-…3
-</th>
-<th style="text-align:left;">
-Science and Technology category
-</th>
-<th style="text-align:left;">
-Science and Technology topic
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-Class
-</td>
-<td style="text-align:right;">
-26110
-</td>
-<td style="text-align:left;">
-…
-</td>
-<td style="text-align:left;">
-Digital Technologies
-</td>
-<td style="text-align:left;">
-Computer &amp; Electronic manufacturing
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Class
-</td>
-<td style="text-align:right;">
-58210
-</td>
-<td style="text-align:left;">
-…
-</td>
-<td style="text-align:left;">
-Digital Technologies
-</td>
-<td style="text-align:left;">
-Digital &amp; Computer Services
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Class
-</td>
-<td style="text-align:right;">
-62090
-</td>
-<td style="text-align:left;">
-…
-</td>
-<td style="text-align:left;">
-Digital Technologies
-</td>
-<td style="text-align:left;">
-Digital &amp; Computer Services
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Class
-</td>
-<td style="text-align:right;">
-63110
-</td>
-<td style="text-align:left;">
-…
-</td>
-<td style="text-align:left;">
-Digital Technologies
-</td>
-<td style="text-align:left;">
-Digital &amp; Computer Services
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Class
-</td>
-<td style="text-align:right;">
-27510
-</td>
-<td style="text-align:left;">
-…
-</td>
-<td style="text-align:left;">
-Other scientific/technological manufacture
-</td>
-<td style="text-align:left;">
-Electrical Machinery manufacturing
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Class
-</td>
-<td style="text-align:right;">
-86230
-</td>
-<td style="text-align:left;">
-…
-</td>
-<td style="text-align:left;">
-Life Sciences &amp; Healthcare
-</td>
-<td style="text-align:left;">
-Healthcare services
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
 <p>This research refers to the science and technology classification table provided by the government. The technology indicator is used to position the technology industry of all industries, and a total of 168 sic codes for the technology industry in 2007 were obtained, accounting for about 16% of all industry categories in the UK, including 5 industry categories such as Digital Technologies, Life Sciences &amp; Healthcare, Publishing &amp; Broadcasting , Other scientific/technological manufacture and Other scientific/technological services, details of the classification form will be attached in the attachment. There are almost 20% firms in the raw data belonging to tech firms according to the method of category as mentioned above.</p>
 </div>
 <div id="quatitative-analysis-and-methods" class="section level2" number="3.4">
@@ -344,8 +211,63 @@ Where:
 <span class="math inline">\(Tech Firms_j\)</span> is the number of j-th individual tech firm
 <span class="math inline">\(Total Tech Firms\)</span> represents the number of total tech firms in a specific location and year.</p>
 </div>
-<div id="dynamics-and-performance-analysis" class="section level3" number="3.4.5">
-<h3><span class="header-section-number">3.4.5</span> Dynamics and Performance Analysis</h3>
+<div id="research-objectivities" class="section level3" number="3.4.5">
+<h3><span class="header-section-number">3.4.5</span> Research Objectivities</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Independent Variables</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+<th align="right"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Firms</td>
+<td align="center">numeric</td>
+<td align="center">The number of tech firms</td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td>Density</td>
+<td align="center">numeric</td>
+<td align="center">The density of tech firms</td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td>Herfindahl-Hirschman Index</td>
+<td align="center">numeric</td>
+<td align="center">The index measuring the industry mix</td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td>Year</td>
+<td align="center">category</td>
+<td align="center">Years from 1998 to 2018</td>
+<td align="right"></td>
+</tr>
+<tr class="odd">
+<td>Location</td>
+<td align="center">category</td>
+<td align="center">Top ten clusters of companies in England</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="morans-i" class="section level3" number="3.4.6">
+<h3><span class="header-section-number">3.4.6</span> Moran’s I</h3>
+<p>One of the most popular and often used measures of spatial autocorrelation is Moran’s Index. Based on the locations and values of the feature, the Global Moran’s I tool analyzes the pattern of a data set spatially and decides if it is scattered, clustered, or random. The program calculates the Moran’s I Index value, as well as the z-score and p-value, to statistically validate the Index. It is computed using the formula below (Kumari &amp; et al., 2019).</p>
+<p><span class="math display">\[ Moran&#39;s \ Index = \frac{n}{S_0} \frac{\sum_{x=1}^n \sum_{y=1}^n w_{x,y} z_x z_y}{\sum_{x=1}^n z_x^2}\]</span></p>
+<p><span class="math display">\[ S_0 = \sum_{x=1}^n \sum_{y=1}^n w_{x,y}\]</span>
+Where <span class="math inline">\(z_x\)</span> stands for deviation of an attribute from its mean <span class="math inline">\((x_i – X̅)\)</span> for feature <span class="math inline">\(X\)</span>, <span class="math inline">\(w_{x,y}\)</span> is the spatial weight among feature <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, <span class="math inline">\(n\)</span> is the total number of features and So is the summation of all spatial weights</p>
+<p>The statistic’s <span class="math inline">\(z_j\)</span> score is given below</p>
+<p><span class="math display">\[ z_x = \frac{I - E[I]}{\sqrt{V[I]}}\]</span>
+where</p>
+<p><span class="math display">\[ E[I] = \frac{-1}{(n-1)}\]</span>
+<span class="math display">\[ V[I] = E[I^2]-E[I]^2\]</span>
+The Moran’s Index(I) has a range of values from -1 to 1. Index value 1 indicates that the observed pattern is spatially clustered. On the other hand value -1 indicates scattering or dispersion. Moran’s I assign a value of near or equal to zero to the lack of auto correlation. The z-score and p-value of the Index are only used to form final judgments regarding the observed pattern.</p>
 </div>
 </div>
 <div id="limitations" class="section level2" number="3.5">
@@ -356,8 +278,8 @@ Where:
 </ol>
 <ul>
 <li>ttwa might not be a data-driven method</li>
-<li>ttwa的时间局限性，因为是2015年统计的</li>
-<li>ttwa的变化(Ozkul,2014)</li>
+<li>ttwa data is not up-to-date because it is 2015 statistics</li>
+<li>ttwa’s change (Ozkul,2014)</li>
 </ul>
 <p>Ozkul, B., 2014. Changing home-to-work travel in England and Wales. Regional Studies, Regional Science, 1(1), pp.32-39.</p>
 <p>The value of this statistical data(Herfindahl-Hirschman Index) for identifying monopoly development, on the other hand, is directly dependent on the precise definition of a market (Kwoka, 1977). For instances, geographical considerations might influence market share. This dilemma can arise when there are nearly equal market share of tech businesses in a given sector, but they each operate exclusively in distinct regions of the travel to work area, resulting in each firm having a monopoly inside the specific marketplace in which it conducts business, which might make it more difficult to measure the industry mix in a specific location and year. Furthermore, one IT firm may control as much as 70% of the market for a certain area of the digital industry (i.e. the sale of one specific equipment). As a result, that company would have a near-total monopoly on the manufacturing and sale of that commodity.</p>

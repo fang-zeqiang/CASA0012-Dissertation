@@ -16,7 +16,7 @@ Entry is strongly influenced by clustering. Empirical research have consistently
 
 Localization economies appear to play a role in entrance decisions in these research, but only for technologically trailing businesses who stand to gain the most and have the least to lose from co-location (ALCCER and CHUNG, 2007).
 
-集群对整体的作用
+Cluster effect on the whole England area
 Enterprise entry does play an important role in shaping the overall dynamics. The new entrants that survive in the cluster will become larger over time, resulting in broader expansion and overall impact (Clementi & Palazzo, 2016)
 https://pages.stern.nyu.edu/~gclement/Papers/Entry_exit.pdf
 
@@ -25,8 +25,6 @@ https://pages.stern.nyu.edu/~gclement/Papers/Entry_exit.pdf
 On average, companies in large cities are more productive. There are two main explanations: corporate choice (big cities strengthen competition and only allow the most productive people to survive) and agglomeration economies (big cities promote interaction and increase productivity), which may be strengthened by the natural advantages of localization. In order to distinguish them, we nested a general version of the easy-to-handle company selection model and a standard agglomeration model. Stronger choices in large cities cut the distribution of productivity to the left, while stronger gatherings move to the right and expand the distribution. Using this forecast, French firm-level data, and new quantile methods, we show that firm choices cannot explain differences in spatial productivity. The results are applicable to various departments, city size thresholds, institutional samples and regional definitions.
 
 The Herfindahl–Hirschman Index (HHI) is a commonly used economic concept in competition law, antitrust[1], and technology management. It's a measure of a company's size in relation to the industry it's in, as well as an indicator of how competitive it is ​(Liston-Heyes & Pilkington, 2004).
-
-
 
 ## How location affect entry pattern in UK/Global
 

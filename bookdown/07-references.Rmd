@@ -27,13 +27,15 @@ Kwoka, J., 1977. Large Firm Dominance and Price-Cost Margins in Manufacturing In
 
 Krafft, J., 2004. Entry, exit and knowledge: evidence from a cluster in the info-communications industry. Research policy, 33(10), pp.1687-1706.
 
+Kumari, M., Sarma, K. and Sharma, R., 2019. Using Moran's I and GIS to study the spatial pattern of land surface temperature in relation to land use/cover around a thermal power plant in Singrauli district, Madhya Pradesh, India. Remote Sensing Applications: Society and Environment, 15, p.100239.
+
 Liston-Heyes, C. and Pilkington, A., 2004. Inventive concentration in the production of green technology: A comparative analysis of fuel cell patents. Science and Public Policy, 31(1), pp.15-25
 
 Lu, C., Qiao, J. and Chang, J., 2017. Herfindahl--Hirschman Index based performance analysis on the convergence development. Cluster Computing, 20(1), pp.121-129. 
 
 Mateos-Garcia, J. and Bakhshi, H., 2016. The geography of creativity in the UK. London: Nesta.
 
-Open Corporates. 2018, The core company data from OpenCorporates master company database, electronic dataset, OpenCorporates Data Dictionary, viewed 12 June 2021, <https://opencorporates.com/>.
+Open Corporates. 2018, The core company data from OpenCorporates master company database, electronic dataset, OpenCorporates Data Dictionary, viewed 12 June 2021, <https://opencorporates.com/>[Accessed 18 August 2021].
 
 Office for National Statistics, 2015. Identifying Science and Technology Businesses in Official Statistics. [online] London, UK: Office for National Statistics, pp.10-14. Available at: <https://webarchive.nationalarchives.gov.uk/20160105170025/http://www.ons.gov.uk/ons/site-information/using-the-website/rss-news-feeds/index.html> [Accessed 28 July 2021].
 

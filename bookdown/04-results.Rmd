@@ -4,14 +4,22 @@
 
 ### Distribution
 
-From 1998 to 2018, 每隔十年英格兰各个Travel to work area(TTWA)进入率都会有大改变，比如在1998年较深颜色的区域多围绕在大伦敦地区以及整个英格兰南部地区，而2008年整体的进入率，相比于1998，水平有所提高并且呈现新公司向英格兰北部进入的趋势，这年在英格兰地区边缘有一些ttwa地区的进入率较为突出，比如Malton，Minehead and Bridport等地区；而2018年整体的进入率水平相比过去2008年平均多了约2倍不止，并且高进入率的ttwa多集中于北部与大伦敦地区周边的区域
+From 1998 to 2018, the entry rate of each Travel to work area (TTWA) in England will change drastically every ten years. For example, in 1998 the darker colored areas were mostly around the Greater London area and the entire southern part of England. The overall entry rate in 2008 was higher than that in 1998 and showed a trend of new companies entering the north of England. In this year, some ttwa areas on the edge of England have more prominent entry rates, such as Malton, Minehead and Bridport. However, the overall entry rate in 2018 was about twice as high as the average in 2008. Moreover, ttwa with high entry rate is mostly concentrated in the north and the surrounding areas of Greater London.
 
-```{r fig-enR-1998-2018, echo=FALSE, fig.cap='The distribution of the entry rate of the England tech clusters(ttwa) from 1998 to 2018', out.width='100%'}
-knitr::include_graphics(here::here('general_images','enR_1998_2018.png'))
+The figure below is the spatial distribution change in entry rate of tech clusters(ttwa) in England. The trend can be witnessed that there is an increasing trend in the overall level of entry rate from 1998 (average about 1.06% ) to 2018
+(average about 14.33%)
+
+```{r fig-enR-1998-2018-v1, echo=FALSE, fig.cap='The distribution of the entry rate of the England tech clusters(ttwa) from 1998 to 2018', out.width='100%'}
+knitr::include_graphics(here::here('general_images','enR_1998_2018_v1.png'))
+```
+
+In terms of herfindahl-Hirschman index of tech industry in ttwa of England
+
+```{r fig-hh-1998-2018, echo=FALSE, fig.cap='The distribution of the Herfindahl-Hirschman index of the England tech clusters(ttwa) from 1998 to 2018', out.width='100%'}
+knitr::include_graphics(here::here('general_images','hh_1998_2018.png'))
 ```
 
 ### Descriptive Analysis
-
 
 ## Visualisation and Analysis of Dynamics
 
@@ -33,3 +41,13 @@ For Entry Rate & HHI
 knitr::include_graphics(here::here('general_images','two-dep-var-regression.png'))
 ```
 From & Refer to https://search.oecd.org/economy/growth/35027468.pdf
+
+## Spatial autocorrelation 
+
+Table 2 Spatio-temporal dynamics(entry rate) cluster analysis
+
+|Year| Moran's Index|p value|z-score|
+|----|:------:| :---:|---:|
+|1998 |  0.436|  0.00 |10.077
+|2008 |  0.062|  0.08 |1.3483
+|2018 |  0.056|  0.10 |1.2382   

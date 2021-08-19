@@ -11,9 +11,11 @@ output:
 1. Identifying Tech Cluster 
 1. Measuring the Dynamics & Industry Mix
 1. Quantitative Method Research
-1. Temporal Qualitative Analysis
+1. Temporal Spatial Analysis
 
-In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate and bivariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods.
+In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate and bivariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods(1998, 2008 & 2018).
+
+according to research method of Kumari's team(2019), the Moran's I of three time period will be calculated to analysis the dynamics change in spatial and temporal aspects.
 
 ## Data Source and Processing
 
@@ -36,17 +38,25 @@ library(here)
 ```{r table-1, echo=FALSE, message=FALSE, warning=FALSE}
 
 #read in data
-sic_df = read_excel(here("tables", "tech_sic_code.xlsx"))
+# sic_df = read_excel(here("tables", "tech_sic_code.xlsx"))
+# 
+# sic_df %>%
+#   knitr::kable(
+#   .,
+#   caption = "2007 sic code for science and technology industry (part)",
+#   booktabs = TRUE,
+#   longtable = TRUE
+#   )
+#   # kable_styling(position = "center", full_width = T) %>%
+#   # kable_classic(full_width = T, html_font = "Cambria")
 
-sic_df %>% 
-  knitr::kable(
-  .,
-  caption = "2007 sic code for science and technology industry (part)",
-  booktabs = TRUE,
-  longtable = TRUE
-  ) %>%
-  # kable_styling(position = "center", full_width = T) %>%
-  kable_classic(full_width = T, html_font = "Cambria")
+
+read_excel(here("tables", "tech_sic_code.xlsx"))%>%
+  knitr::kable(booktabs = TRUE)%>% # booktab = T gives us a pretty APA-ish table
+  kable_styling(position = "center")%>%
+    row_spec(.,
+  row=0,
+  bold = TRUE)
 ```
 
 This research refers to the science and technology classification table provided by the government. The technology indicator is used to position the technology industry of all industries, and a total of 168 sic codes for the technology industry in 2007 were obtained, accounting for about 16% of all industry categories in the UK, including 5 industry categories such as Digital Technologies, Life Sciences & Healthcare, Publishing & Broadcasting , Other scientific/technological manufacture and Other scientific/technological services, details of the classification form will be attached in the attachment. There are almost 20% firms in the raw data belonging to tech firms according to the method of category as mentioned above.
@@ -57,8 +67,8 @@ This research refers to the science and technology classification table provided
 
 The reason why this research choose tech firms which incorporate from 1998 to 2018 is because the number of technology companies established in the UK in the past 20 years is significantly higher than before 1998, as shown in below figure.
 
-```{r fig-1, echo=FALSE, fig.cap="Incorporating technology & science companies in UK",out.width='80%'}
-# knitr::include_graphics(here::here('general_images','figure1.png'),auto_pdf = TRUE)
+```{r fig-1, echo=FALSE, fig.cap="Incorporating technology and science companies in UK",out.width='100%'}
+knitr::include_graphics(here::here('general_images','figure1.png'),auto_pdf = TRUE)
 ```
 
 ### Tech Cluster Identifying
@@ -93,7 +103,33 @@ Where:
   $Tech Firms_j$ is the number of j-th individual tech firm
   $Total Tech Firms$ represents the number of total tech firms in a specific location and year.
 
-### Dynamics and Performance Analysis
+### Research Objectivities
+
+|Independent Variables     | Type      |Description||
+| --------------- |:------:| :---:|---:|
+|Firms      |   numeric   |  The number of tech firms |
+|Density      |   numeric   |  The density of tech firms |
+|Herfindahl-Hirschman Index      |   numeric   |  The index measuring the industry mix  |
+|Year     |   category   |  Years from 1998 to 2018  |
+|Location      |   category   |  Top ten clusters of companies in England |
+
+### Moran's I
+
+One of the most popular and often used measures of spatial autocorrelation is Moran's Index. Based on the locations and values of the feature, the Global Moran's I tool analyzes the pattern of a data set spatially and decides if it is scattered, clustered, or random. The program calculates the Moran's I Index value, as well as the z-score and p-value, to statistically validate the Index. It is computed using the formula below (Kumari & et al., 2019).
+
+$$ Moran's \ Index = \frac{n}{S_0} \frac{\sum_{x=1}^n \sum_{y=1}^n w_{x,y} z_x z_y}{\sum_{x=1}^n z_x^2}$$
+
+$$ S_0 = \sum_{x=1}^n \sum_{y=1}^n w_{x,y}$$
+Where $z_x$ stands for deviation of an attribute from its mean $(x_i – X̅)$ for feature $X$, $w_{x,y}$ is the spatial weight among feature $X$ and $Y$, $n$ is the total number of features and So is the summation of all spatial weights
+
+The statistic's $z_j$ score is given below
+
+$$ z_x = \frac{I - E[I]}{\sqrt{V[I]}}$$
+where
+
+$$ E[I] = \frac{-1}{(n-1)}$$
+$$ V[I] = E[I^2]-E[I]^2$$
+The Moran's Index(I) has a range of values from -1 to 1. Index value 1 indicates that the observed pattern is spatially clustered. On the other hand value -1 indicates scattering or dispersion. Moran's I assign a value of near or equal to zero to the lack of auto correlation. The z-score and p-value of the Index are only used to form final judgments regarding the observed pattern.
 
 ## Limitations
 
@@ -101,9 +137,8 @@ In term of missing value in the original dataset, there are almost 99.8% missing
 
 1. ttwa
 - ttwa might not be a data-driven method
-- ttwa的时间局限性，因为是2015年统计的
-- ttwa的变化(Ozkul,2014)
-
+- ttwa data is not up-to-date because it is 2015 statistics
+- ttwa's change (Ozkul,2014)
 
 Ozkul, B., 2014. Changing home-to-work travel in England and Wales. Regional Studies, Regional Science, 1(1), pp.32-39.
 

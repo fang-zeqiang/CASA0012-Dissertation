@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.8.15)  15 AUG 2021 23:11
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.8.15)  19 AUG 2021 18:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1276,8 +1276,8 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 \openout3 = `CASA0012-Dissertation.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'CASA0012-Dissertation.bbl' not found.
-No file CASA0012-Dissertation.bbl.
+Package biblatex Info: ... file 'CASA0012-Dissertation.bbl' found.
+(./CASA0012-Dissertation.bbl)
 Package biblatex Info: Reference section=0 on input line 125.
 Package biblatex Info: Reference segment=0 on input line 125.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
@@ -1317,103 +1317,59 @@ Overfull \hbox (22.9413pt too wide) in paragraph at lines 127--127
 
 ] [3
 
-] (./CASA0012-Dissertation.toc)
+] (./CASA0012-Dissertation.toc
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 8.4pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 12.0011pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.40076pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00055pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 11.99872pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.3991pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 5.
+[4
+
+] [5])
 \tf@toc=\write5
 \openout5 = `CASA0012-Dissertation.toc'.
 
-[4
+[6] (./CASA0012-Dissertation.lof
+Underfull \hbox (badness 4144) in paragraph at lines 13--13
+ [][] [][]\TU/lmr/m/n/12 The distribution of the entry rate of the England tech
+ 
+ []
 
-] (./CASA0012-Dissertation.lof)
+)
 \tf@lof=\write6
 \openout6 = `CASA0012-Dissertation.lof'.
 
-[5
+[7
 
 ] (./CASA0012-Dissertation.lot)
 \tf@lot=\write7
 \openout7 = `CASA0012-Dissertation.lot'.
 
-[6
+[8
 
-]
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.4pt on input line 159.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 159.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.0011pt on input line 159.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.40076pt on input line 159.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 159.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 159.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.3991pt on input line 159.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 159.
-[7
+] [9
 
 ]
 Chapter 1.
-Missing character: There is no 和 (U+548C) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 联 (U+8054) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 系 (U+7CFB) in font [lmroman12-regular]:mapping=t
-ex-text;!
 Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
 ex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--188
+Underfull \hbox (badness 3148) in paragraph at lines 185--188
 [][]$[][][][][] [] [] [] [][][][][][][][][][] [] [][] [] [][][][][][][][][][] [
-] [][][] [][] [][][][][][]$[] \TU/lmr/m/n/12 tech cluster和ttwa的联系 In fact,
+] [][][] [][] [][][][][][]$[] \TU/lmr/m/n/12 tech cluster & ttwa In fact,
  []
 
-Missing character: There is no 相 (U+76F8) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 关 (U+5173) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 研 (U+7814) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 究 (U+7A76) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 表 (U+8868) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 明 (U+660E) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 英 (U+82F1) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 国 (U+56FD) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 企 (U+4F01) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 业 (U+4E1A) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 也 (U+4E5F) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 存 (U+5B58) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 在 (U+5728) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 较 (U+8F83) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 高 (U+9AD8) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 聚 (U+805A) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 集 (U+96C6) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 效 (U+6548) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 应 (U+5E94) in font [lmroman12-regular]:mapping=t
-ex-text;!
 [1
 
 ]
@@ -1424,46 +1380,173 @@ Chapter 2.
 [3
 
 ]
-Missing character: There is no 集 (U+96C6) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 群 (U+7FA4) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 对 (U+5BF9) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 整 (U+6574) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 体 (U+4F53) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 作 (U+4F5C) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 用 (U+7528) in font [lmroman12-regular]:mapping=t
-ex-text;!
+Underfull \hbox (badness 3780) in paragraph at lines 262--265
+[]\TU/lmr/m/n/12 Cluster effect on the whole England area Enterprise entry does
+ play
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 262--265
+\TU/lmr/m/n/12 an important role in shaping the overall dynamics. The new entra
+nts
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 262--265
+\TU/lmr/m/n/12 that survive in the cluster will become larger over time, result
+ing in
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 262--265
+\TU/lmr/m/n/12 broader expansion and overall impact (Clementi & Palazzo, 2016) 
+[]$[][][][][] []
+ []
+
 [4]
-Underfull \hbox (badness 6412) in paragraph at lines 273--273
+Underfull \hbox (badness 6412) in paragraph at lines 274--274
 []\TU/lmr/bx/n/17.28 How location affect entry pattern in
  []
 
 [5]
 Chapter 3.
-Missing character: There is no （ (U+FF08) in font [lmroman12-regular]:mapping=t
-ex-text;!
 [6
 
 ]
-! Dimension too large.
-\LT@max@sel #1#2->{\ifdim #2=\wd \tw@ 
-                                      #1\else \number \c@LT@chunks \fi }{\th...
-l.329 \end{longtabu}
-                     
-Here is how much of TeX's memory you used:
- 27153 strings out of 478475
- 499193 string characters out of 5857943
- 1477679 words of memory out of 5000000
- 47111 multiletter control sequences out of 15000+600000
- 407479 words of font info for 65 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 87i,11n,120p,967b,4823s stack positions out of 5000i,500n,10000p,200000b,80000s
+Missing character: There is no （ (U+FF08) in font [lmroman12-regular]:mapping=t
+ex-text;!
 
-Output written on CASA0012-Dissertation.pdf (14 pages).
+Overfull \hbox (255.84232pt too wide) in paragraph at lines 321--334
+ [][] 
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 336--337
+\TU/lmr/m/n/12 & Healthcare, Publishing & Broadcasting , Other scientific/techn
+ological
+ []
+
+
+Underfull \hbox (badness 6526) in paragraph at lines 336--337
+\TU/lmr/m/n/12 manufacture and Other scientific/technological services, details
+ of the
+ []
+
+[7]
+File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/f
+igure1.png Graphic file (type bmp)
+</Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/figure
+1.png>
+[8]
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+[9] [10]
+Overfull \hbox (22.74234pt too wide) in alignment at lines 388--392
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (22.74234pt too wide) in alignment at lines 392--399
+ [] [] [] [] 
+ []
+
+[11]
+Missing character: There is no ̅ ("305) in font lmmi12!
+[12] [13] [14] [15]
+Chapter 4.
+File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/e
+nR_1998_2018_v1.png Graphic file (type bmp)
+</Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/enR_19
+98_2018_v1.png>
+File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/h
+h_1998_2018.png Graphic file (type bmp)
+</Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/hh_199
+8_2018.png>
+File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/e
+ntry_rate_regression.png Graphic file (type bmp)
+</Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/entry_
+rate_regression.png>
+[16
+
+] [17] [18]
+File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/t
+wo-dep-var-regression.png Graphic file (type bmp)
+</Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/two-de
+p-var-regression.png>
+[19] [20] [21]
+Chapter 5.
+[22
+
+] [23]
+Chapter 6.
+[24
+
+] [25]
+Overfull \hbox (5.76445pt too wide) in paragraph at lines 589--590
+\TU/lmr/m/n/12 Firm Selection. Econometrica, 80: 2543-2594.https://doi.org/10.3
+982/ECTA84427 
+ []
+
+[26
+
+]
+Overfull \hbox (66.6031pt too wide) in paragraph at lines 597--598
+\TU/lmr/m/n/12 Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/arti
+cles?id=10.1257/jep.34.3.50 
+ []
+
+
+Underfull \hbox (badness 2478) in paragraph at lines 599--600
+[]\TU/lmr/m/n/12 Kwoka, J., 1977. Large Firm Dominance and Price-Cost Margins i
+n
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 613--614
+[]\TU/lmr/m/n/12 Office for National Statistics, 2015. Identifying Science and 
+Technology
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 613--614
+[][] [] [][][][][][][][][][][][][][] [] [][][][] [] [] [] [][][] [] [][][] [] [
+][][] [] [][] [] [][][] [] [][][][] [][] [][][][][][][][][][][] [] [][][][][] [
+][] [][][] [][]
+ []
+
+[27]
+Underfull \hbox (badness 4024) in paragraph at lines 615--616
+\TU/lmr/m/n/12 Office for National Statistics. Available at: []$[][][][][] [] [
+] [] [][][] [] [][][] [] [][][] [] [][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 615--616
+[][][][][][][][][][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][][] 
+[] [][][][][][][][][][][][][][][][][][][][][][][][][][] []
+ []
+
+
+LaTeX Warning: Empty bibliography on input line 620.
+
+[28] [29
+
+] [30
+
+] (./CASA0012-Dissertation.aux)
+Package rerunfilecheck Info: File `CASA0012-Dissertation.out' has not changed.
+(rerunfilecheck)             Checksum: EA13383E7D6F368B9E7CC0A77B9D0C4E;6855.
+Package logreq Info: Writing requests to 'CASA0012-Dissertation.run.xml'.
+\openout1 = `CASA0012-Dissertation.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 27278 strings out of 478475
+ 508465 string characters out of 5857943
+ 1486768 words of memory out of 5000000
+ 47218 multiletter control sequences out of 15000+600000
+ 407487 words of font info for 66 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 87i,12n,120p,967b,4823s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on CASA0012-Dissertation.pdf (40 pages).

@@ -9,10 +9,11 @@
 1. tech cluster development
 
 https://technation.io/report2021/#uk-trends
-tech cluster和ttwa的联系
+tech cluster & ttwa
 In fact, between 2007 and 2014, the number of creative enterprises grew faster than the overall company population in more than nine out of ten of the UK's 228 Travel-to-Work-Area geographies (Mateos-Garcia，2016). 
 
-相关研究表明英国的企业也存在较高的聚集效应
+There are high clustering effect among the England tech firms
+
 By modeling the evolution of business growth and entry, this research contrasts the dynamics of the process by which regional clusters emerge in the US and UK computer industries. New enterprises are lured to both countries by industrial strength in specific sub-sectors in specific regions. Furthermore, incumbent firms in a cluster that is strong in their particular sub-sector of the industry expand at a quicker rate than the industry average. While there are significant second-order variations between the models estimated for the United States and the United Kingdom, the clustering dynamics appear to be comparable. There is no evidence that clustering effects are weaker in the United Kingdom than in the United States(Baptista and Swann, 1999).
 
 2. dynamics cause better performance

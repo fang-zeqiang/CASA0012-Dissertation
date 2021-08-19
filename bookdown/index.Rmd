@@ -22,6 +22,7 @@ site: bookdown::bookdown_site
 output: 
     bookdown::gitbook
     bookdown::html_book
+    bookdown::pdf_book
 documentclass: book
 classoption: oneside #openany or #twosides #if two then need to change headers and check margins.
 geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
