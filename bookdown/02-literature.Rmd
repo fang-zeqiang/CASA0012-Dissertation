@@ -4,6 +4,9 @@
 
 Tech clusters like Silicon Valley play a central role for modern innovation, business competitiveness, and economic performance. This paper reviews what constitutes a tech cluster, how they function internally, and the degree to which policy makers can purposefully foster them. We describe the growing influence of advanced technologies for businesses outside of traditional tech fields, the strains and backlash that tech clusters are experiencing, and emerging research questions for theory and empirical work.
 
+They find ICT employment shares nearly double the usual estimates using their unique ‘sector-product' approach, however this conclusion is more speculative (ICT production space is around 42 percent larger than SIC-based estimates, with around 70,000 more companies)
+(Nathan & Rosso, 2015)
+
 ## Cluster Dynamics
 
 Industrial dynamics and clusters: a survey, regional research. This article reviews clusters and their impact on the entry, exit, and growth of firms, as well as the literature supporting the evolutionary dynamics of cluster formation. This extensive review shows strong evidence that clusters promote the entry of manufacturers, but the evidence that clusters can promote the growth and survival of firms is rather weak. From a number of open-ended questions, this research extracts various future research paths that emphasize the importance of manufacturer heterogeneity and the exact mechanism that supports the localized economy (Frenken, Cefis and Stam, 2014).
@@ -33,3 +36,9 @@ The Herfindahl–Hirschman Index (HHI) is a commonly used economic concept in co
 ## Other factor can affect dynamics pattern in UK
 
 Firm density has a beneficial effect on entry rates in the early stages of an industry since each firm has the potential to bring in new entrants. Legitimation has been coined to describe this positive density impact. Higher company density levels, on the other hand, become a barrier to entrance as the industry evolves and grows, owing to fierce market competition (Boschma, 2015).
+
+
+The empirical evidence reveals that technology and the stage of the industry life cycle impact the relationship between business size and the likelihood of survival.(Agarwal and Audretsch, 2001)
+Entry may be less about radical innovation and more about filling strategic niches in established businesses that are nonetheless technologically intensive, neutralizing the impact of entry size on the likelihood of survival.(ibid)
+
+Over time, smaller factories generated proportionately more jobs, implying that job-growth incentives to larger enterprises may have been misdirected. Overall, our findings suggest that the impacts of size and age on manufacturing plant expansion in a developing economy are similar to those in rich economies (negative relationship between plant age and plant growth )(Liu, Tsou and Hammitt, 1999)

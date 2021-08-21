@@ -29,6 +29,9 @@ How does tech clusters' dynamics pattern change in UK from 1998 to 2018? / What 
 
 To what extent will dynamic change affect tech clusters’performance？
 
+Governments all across the world aim to grow their ICT sectors. As a result, researchers and policymakers want a comprehensive image of digital firms, but traditional datasets and typologies lag real-world change. We perform an alternative analysis for all active enterprises in the UK, focused on ICT-producing firms, using innovative "big data" resources.
+(Nathan and Rosso, 2015)
+
 ## Report Structure
 
 1. data clean

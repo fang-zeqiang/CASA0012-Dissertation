@@ -5,6 +5,10 @@ pay attention to the unity of format
 
 ALCACER J. and CHUNG W. (2007) Location strategies and knowledge spillovers, Management Science 53, 760–776.
 
+Anselin, L., 2010. Local Indicators of Spatial Association-LISA. Geographical Analysis, 27(2), pp.93-115.
+
+Agarwal, R. and Audretsch, D., 2001. Does Entry Size Matter? The Impact of the Life Cycle and Technology on Firm Survival. Journal of Industrial Economics, 49(1), pp.21-43.
+
 Brandt, N., 2005. Business dynamics and policies. OECD Economic Studies, 2004(1), pp.9-36.
 
 Burgess, G., Monk, S., Morrison, N. and Udagawa, C., 2014. Economic Analysis of the Wisbech Travel to Work Area: Main Report: March 2014.
@@ -18,6 +22,8 @@ Combes, P.-P., Duranton, G., Gobillon, L., Puga, D. and Roux, S. (2012),The Prod
 Clementi, G.L. and Palazzo, B., 2016. Entry, exit, firm dynamics, and aggregate fluctuations. American Economic Journal: Macroeconomics, 8(3), pp.1-41.
 
 Frenken, K., Cefis, E., & Stam, E. 2015.  Industrial Dynamicsand Clusters:  A Survey.   Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505
+
+Getis, A. and Ord, J., 2010. The Analysis of Spatial Association by Use of Distance Statistics. Geographical Analysis, 24(3), pp.189-206.
 
 Hall, B.L., Hsiao, E.Y., Majercik, S., Hirbe, M. and Hamilton, B.H., 2009. The impact of surgeon specialization on patient mortality: examination of a continuous Herfindahl-Hirschman index. Annals of surgery, 249(5), pp.708-716.
 
@@ -33,7 +39,11 @@ Liston-Heyes, C. and Pilkington, A., 2004. Inventive concentration in the produc
 
 Lu, C., Qiao, J. and Chang, J., 2017. Herfindahl--Hirschman Index based performance analysis on the convergence development. Cluster Computing, 20(1), pp.121-129. 
 
+Liu, J., Tsou, M. and Hammitt, J., 1999. Do small plants grow faster? Evidence from the Taiwan electronics industry. Economics Letters, 65(1), pp.121-129.
+
 Mateos-Garcia, J. and Bakhshi, H., 2016. The geography of creativity in the UK. London: Nesta.
+
+Nathan, M. and Rosso, A., 2015. Mapping digital businesses with big data: Some early findings from the UK. Research Policy, 44(9), pp.1714-1733.
 
 Open Corporates. 2018, The core company data from OpenCorporates master company database, electronic dataset, OpenCorporates Data Dictionary, viewed 12 June 2021, <https://opencorporates.com/>[Accessed 18 August 2021].
 

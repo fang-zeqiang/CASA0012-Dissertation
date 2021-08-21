@@ -1,53 +1,150 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(readxl)
+library(fs)
+library(here)
+```
+
 # Results
 
-## Visualisation and Analysis of Tech Cluster
+## Spatial and Temporal Distribution
 
-### Distribution
+In terms of three variables' change of overall England level,it can be found that the average firms' entry rate and density in England increase significantly(Figure \@ref(fig:fig-all-var-trend)). There was a growth in firms entry rate from 0.01(1998) to 0.14(2018) and the statistics of density climb from 0.02 to 0.43 during these decades (Table \@ref(tab:tab-all-var-trend)). However, the Herfindahl-Hirschman index decreased by less than 0.1 in 2018 which is 1/3 times than that in 1998. Overall, it can be seen that the dynamics increased but the industry concentration reduced.
+```{r fig-all-var-trend, echo=FALSE, fig.cap='The average level change of three variables in two decades', out.width='100%'}
+knitr::include_graphics(here::here('general_images','all_enR_hh_den_change.png'))
+```
+How to reference (Figure \@ref(fig:fig-all-var-trend))
 
-From 1998 to 2018, the entry rate of each Travel to work area (TTWA) in England will change drastically every ten years. For example, in 1998 the darker colored areas were mostly around the Greater London area and the entire southern part of England. The overall entry rate in 2008 was higher than that in 1998 and showed a trend of new companies entering the north of England. In this year, some ttwa areas on the edge of England have more prominent entry rates, such as Malton, Minehead and Bridport. However, the overall entry rate in 2018 was about twice as high as the average in 2008. Moreover, ttwa with high entry rate is mostly concentrated in the north and the surrounding areas of Greater London.
+```{r tab-all-var-trend, echo=FALSE}
+read_excel(here("tables", "enR_hh_den_year_trend.xlsx"))%>% 
+    knitr::kable(booktabs = TRUE,caption = "The average level change of three variables in two decades")%>%
+    kable_styling(position = "center")%>%
+    row_spec(.,row=0,bold = TRUE)
+```
+How to reference (Table \@ref(tab:tab-all-var-trend))
 
-The figure below is the spatial distribution change in entry rate of tech clusters(ttwa) in England. The trend can be witnessed that there is an increasing trend in the overall level of entry rate from 1998 (average about 1.06% ) to 2018
+### Tech Cluster Dynamics
+From 1998 to 2018, the entry rate of each Travel to work area (TTWA) in England will change drastically every decades. For example, in 1998 the darker colored areas were mostly around the Greater London area and the entire southern part of England(Figure \@ref(fig:fig-enR-1998-2018-v1)). The overall entry rate in 2008 was higher than that in 1998 and showed a trend of new companies entering the north of England. In this year, some travel to work areas on the edge of England have more prominent entry rates, such as Malton, Minehead and Bridport. However, the overall entry rate in 2018 was about twice as high as the average in 2008. Moreover, ttwa with high entry rate is mostly concentrated in the north and the surrounding areas of Greater London. The overall trend can be witnessed as given by Table \@ref(tab:tab-all-var-trend) that there is an increasing trend in the overall level of entry rate from 1998 (average about 1.06% ) to 2018
 (average about 14.33%)
+
+Finally, from the perspective of changes in temporal and spatial distribution, the increase in the entry rate of the travel to work area in the northern part of England is much larger than that in the southern part. The areas with high entry rates before 2008 were mostly scattered in other areas except for the Greater London area. However, close to after 2018, London and its surrounding areas, the central Manchester-Birmingham area and the southwest, such as Exeter, have a rising entry rate. In contrast, in 2008, the urban agglomerations north of Leeds had higher firm entry rates in tech industry(Figure \@ref(fig:fig-enR-1998-2018-v1)).
 
 ```{r fig-enR-1998-2018-v1, echo=FALSE, fig.cap='The distribution of the entry rate of the England tech clusters(ttwa) from 1998 to 2018', out.width='100%'}
 knitr::include_graphics(here::here('general_images','enR_1998_2018_v1.png'))
 ```
+### Tech Industry Mix
 
-In terms of herfindahl-Hirschman index of tech industry in ttwa of England
+In terms of herfindahl-Hirschman index of tech industry in travel to work area of England. As given figure below, it can be seen that the Herfindahl-Hirschman index has a downward trend year by year (Figure \@ref(fig:fig-hh-1998-2018)). In the methodology module, this index is mentioned as a measure of industrial concentration. A decrease in the value represents an increase in industrial competition and a decrease in market power. The decline of the index means that the types of SIC codes corresponding to companies in a particular region have increased in a year or the number of companies corresponding to a large share of SIC codes has decreased. In other words, the types of technology industries corresponding to the unit area have increased, or the number of advantageous industries has decreased; you can see The concentration of technology industries out of England declined year by year from 1998 to 2018 (Table \@ref(tab:tab-all-var-trend)). In the same way, the diversity of the technology industry is also increasing, and the richness of the industry may also be related to the increase in the entry rate of enterprises.
+
+From the perspective of temporal and spatial distribution, the technology industry was concentrated in northern England, northern and southwestern England before 2008. With the passage of time, even if the concentration of industries in some small areas scattered on the border of England is still high, the Herfindahl-Hirschman index in these places has gradually decreased to a level comparable to that of the Greater London area(Figure \@ref(fig:fig-hh-1998-2018)).
 
 ```{r fig-hh-1998-2018, echo=FALSE, fig.cap='The distribution of the Herfindahl-Hirschman index of the England tech clusters(ttwa) from 1998 to 2018', out.width='100%'}
 knitr::include_graphics(here::here('general_images','hh_1998_2018.png'))
 ```
+## Regression Analysis
 
-### Descriptive Analysis
+For 149 tech clusters(travel to work areas), the regression results can indicate the relationship among cluster dynamics, industry mix and firms density in different years(1998-2018) and locations (149 tech clusters). Among these three models, the model with outliers excluded and logarithmic processing of the dependent variable performed better. It can be seen that the Herfindahl-Hirschman index has a negative correlation with the tech cluster dynamic variable (entry rate) but the density has a positive effect.
 
-## Visualisation and Analysis of Dynamics
+Taking Model [3] as an example, every time this indicator decreases by one unit, the entry rate might increase by about $e^{1.37}$ unit times higher than the original one. The high confidence of this coefficient can explain 99% of all observation data. On the contrary, for the density of these tech clusters in Model [3], every time the density increases by one unit, the corresponding dependent variable entry rate will be about $e^{0.5}$ unit times more than the original one (Table \@ref(tab:tab-regression-entry-rate)). Although the HHI and Density values of the three models are not the same, the positive and negative effect of the relationship are similar. For example, for the industrial concentration variable HHI, all three models show a negative correlation (Table \@ref(tab:tab-regression-entry-rate)). And when HHI and Density change the same unit, the former seems to have a greater impact on the entry rate (it may increase the dependent variable entry rate by more than $e$ times in both model 1 and model 2)
 
-### Regression
-
-For Top 10 clusters regression on the dynamics with year and location
-
-```{r fig-regression-entry-rate, echo=FALSE, fig.cap='Regression results of tech clusters in England', out.width='100%'}
-knitr::include_graphics(here::here('general_images','entry_rate_regression.png'))
+```{r tab-regression-entry-rate, echo=FALSE}
+options(knitr.kable.NA = '')
+read_excel(here("tables", "OLS_regression_results.xlsx"))%>% 
+    knitr::kable(booktabs = TRUE,
+                 caption = "Regression results relationship between entry rate and tech clusters' characters")%>%
+    kable_styling(position = "center") %>% 
+    row_spec(c(3, 9), hline_after = T) %>% 
+    row_spec(0, hline_after = F) %>% 
+    add_footnote(c("All regressions include dummy variables for 149 travel to work areas(ttwa) in England and 20 years from 1998 to 2018. Figures in brackets are standard errors. ***, **, and * represent statistical significance at 1%, 5%, and 10%, respectively.","HHI defined by Herfindahl-Hirschman index can indicate the industry concentration", "Source: tech firm data in England travel to work areas from 1998 to 2008 (n = 3089)"), notation = "alphabet") %>% 
+    row_spec(.,row=0,bold = TRUE)
 ```
 
-xxx illustrates the unconditional relation between exit hazard rate and age. Consistent with ..., the exit hazard rate decreases with age. This is the case because on average entrants are less productive than incumbents. As a cohort ages – see the right panel – the survivors’ productivity and value increase, leading to lower exit rates.
+As mentioned in the methodology section(Brandt, 2005), Table \@ref(tab:tab-regression-control-var) can illustrates the unconditional relation between entry rate and tech cluster characters. These two independent variables are controlled to be added in the regression model which can help to observe to what extent they can have an influence on the dynamics element(entry rate).
 
-From & Refer to https://pages.stern.nyu.edu/~gclement/Papers/Entry_exit.pdf
+When the year and regional conditions in the model remain unchanged, the model [1] only adds Herfindahl-Hirschman index to consider the regression analysis, and it can be found that the coefficient is about -1.2 and the confidence level is greater than 95%. Similarly, the model [2] only considers adding firm density into the fitting, the coefficient of this independent variable is about 0.38 and the statistical significance is also less than 5%. However, when other conditions are the same, adding two variables into the model at the same time [3], the absolute value of each coefficient increases, and the confidence level increases, and the overall goodness of fit is also improved (Table \@ref(tab :tab-regression-control-var)). 
 
-For Entry Rate & HHI 
+In terms of Herfindahl-Hirschman index, the entry rate might decrease when this indicator increase(Table \@ref(tab:tab-regression-control-var)).
+Consistent with model[2], the entry rate increase with density (Table \@ref(tab:tab-regression-control-var)). The HHI decrease and density increase, leading to lower entry rates.
 
-```{r fig-regression-mix-entry, echo=FALSE, fig.cap='Regression on industry mix and  dynamics of tech clusters in England', out.width='100%'}
-knitr::include_graphics(here::here('general_images','two-dep-var-regression.png'))
+```{r tab-regression-control-var, echo=FALSE}
+options(knitr.kable.NA = '')
+read_excel(here("tables", "OLS_regression_control_var.xlsx"))%>% 
+    knitr::kable(booktabs = TRUE,
+                 caption = "Regression results relationship between entry rate and tech clusters' characters (controlling variables)")%>%
+    kable_styling(position = "center")%>% 
+    row_spec(c(3, 9), hline_after = T) %>% 
+    add_footnote(c("All regressions include dummy variables for 149 travel to work areas(ttwa) in England and 20 years from 1998 to 2018. Figures in brackets are standard errors. ***, **, and * represent statistical significance at 1%, 5%, and 10%, respectively.","HHI defined by Herfindahl-Hirschman index can indicate the industry concentration", "Source: tech firm data in England travel to work areas from 1998 to 2008 (n = 3089)"), notation = "alphabet") %>% 
+  row_spec(.,row=0,bold = TRUE)
 ```
-From & Refer to https://search.oecd.org/economy/growth/35027468.pdf
 
-## Spatial autocorrelation 
+## Spatial Autocorrelation 
 
-Table 2 Spatio-temporal dynamics(entry rate) cluster analysis
+Through the global Moran's Index test of entry rate variable, it can be found that as time increases, the spatial cluster effect of entry rate attribute in England is getting weaker and weaker, from about 0.12 (1998) to 0.05 (2018).
 
-|Year| Moran's Index|p value|z-score|
-|----|:------:| :---:|---:|
-|1998 |  0.436|  0.00 |10.077
-|2008 |  0.062|  0.08 |1.3483
-|2018 |  0.056|  0.10 |1.2382   
+The confidence of global Moran's I in 1998 is as high as 95%. But the statistical significance of 2008 is lower than 10%, which indicates weak interpretability of these two years(Table \@ref(tab:tab-morans-i-enR)).
+
+```{r tab-morans-i-enR, echo=FALSE}
+options(knitr.kable.NA = '')
+read_excel(here("tables", "morans_i_entry_rate.xlsx"))%>% 
+    knitr::kable(booktabs = TRUE,
+                 caption = "Spatio-temporal dynamics cluster analysis by global Moran's Index")%>%
+    kable_styling(position = "center") %>% 
+    # add_footnote(c(" ", " "), notation = "alphabet") %>% 
+    row_spec(.,row=0,bold = TRUE)
+```
+
+Contrary to the entry rate variable, the density attribute value of England has always maintained a relatively obvious spatial aggregation phenomenon, although the global Moran's Index of the density variable has been decreasing year by year. This variable has higher confidence in global Moran's I statistics in the three-year statistics, thus its interpretability is higher than that for mentioned entry rate (Table \@ref(tab:tab-morans-i-den)).
+
+```{r tab-morans-i-den, echo=FALSE}
+options(knitr.kable.NA = '')
+read_excel(here("tables", "morans_i_den.xlsx"))%>% 
+    knitr::kable(booktabs = TRUE,
+                 caption = "Spatio-temporal density cluster analysis by global Moran's Index")%>%
+    kable_styling(position = "center") %>% 
+    # add_footnote(c(" ", " "), notation = "alphabet") %>% 
+    row_spec(.,row=0,bold = TRUE)
+```
+
+### Dynamics LISA
+
+According to the Table \@ref(tab:tab-z-p-corr), the z-score with its significance can be found.
+
+```{r tab-z-p-corr, echo=FALSE}
+options(knitr.kable.NA = '')
+read_excel(here("tables", "z-score-p-value-corr.xlsx"))%>% 
+    knitr::kable(booktabs = TRUE,
+                 caption = "Z-score and p-value correspondence table")%>%
+    kable_styling(position = "center") %>% 
+    # add_footnote(c(" ", " "), notation = "alphabet") %>% 
+    row_spec(.,row=0,bold = TRUE)
+```
+
+The visualisation result of the local Moran's index's Z-score of Entry rate is as similarly indicated by the global Moran coefficient (Figure \@ref(fig:fig-enR-1998-2018-v1)). With the growth of the year, the overall agglomeration effect of England has decreased. But, in this process, the agglomeration effect in the northern region was higher than that in other regions. However, the travel to work areas in the southwest corner changed significantly from the early cluster effect in 1998 to the corresponding outliers such as Low-High, High-Low areas in 2018 (Figure \@ref(fig:fig-lisa-entry-rate) ). In addition, from Figure \@ref(fig:fig-hh-1998-2018), the higher industrial concentration in the north also makes the phenomenon of dynamics agglomeration more obvious than that in other places in England area
+
+To be more specific, High-High clusters in 1998 are mainly concentrated in travel to work areas in northern areas such as Newcastle, southern areas such as Andover-Newbury, and the southwest of Exeter. The entry rate values around these places may be higher than the British average. The Low-Low clusters of entry rates are clustered in the northern North Yorkshire area. The surrounding areas of these places usually have relatively close entry rates and low entry rate values;
+
+With the passage of time, the High-High cluster has shifted (the north like Whitehaven and the southwest corner like Launceston areas with higher entry rates gradually formed). By 2018, High-High cluster only appeared in travel to work areas around Liverpool, and new low tech firms entry rate areas were formed in Workington and Penrith&Appleby (Figure \@ref(fig:fig-lisa-entry-rate))
+
+Central regions of England such as London, Birmingham and other regions have not had obvious spatial clustering effects in the visualisation results. This may be due to the low statistical confidence of the local Moran's index among regions. Or it might be because the data in this study is aggregated before calculated. The related data may be missing after the HHI and entry rate are utilised, which might not perfectly represent the company information in some parts of England.
+
+```{r fig-lisa-entry-rate, echo=FALSE, fig.cap="Local Moran\'s I Spatial Analysis for Entry Rate in England for three time periods", out.width='100%'}
+knitr::include_graphics(here::here('general_images','Lisa_enR.png'))
+```
+
+### Dynamics Hot-spot Analysis
+
+
+
+```{r fig-Gi-entry-rate, echo=FALSE, fig.cap='Significance Statistics for Local Moran\'s I in Entry Rate in England for three time periods', out.width='100%'}
+knitr::include_graphics(here::here('general_images','G_enR.png'))
+```
+### Density Cluster Analysis
+
+...

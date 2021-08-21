@@ -61,7 +61,7 @@ read_excel(here("tables", "tech_sic_code.xlsx"))%>%
 
 This research refers to the science and technology classification table provided by the government. The technology indicator is used to position the technology industry of all industries, and a total of 168 sic codes for the technology industry in 2007 were obtained, accounting for about 16% of all industry categories in the UK, including 5 industry categories such as Digital Technologies, Life Sciences & Healthcare, Publishing & Broadcasting , Other scientific/technological manufacture and Other scientific/technological services, details of the classification form will be attached in the attachment. There are almost 20% firms in the raw data belonging to tech firms according to the method of category as mentioned above.
 
-## Quatitative Analysis and Methods
+## Data Scale
 
 ### Time Range Selection
 
@@ -81,6 +81,8 @@ The University of Cambridge had funded some researchers to undertake the Wisbech
 
 This geographical division can better reflect the relationship between population, company and work. In terms of geographic research, related researchers have combined the Business Structure Database (BSD) from the Office for National Statistics (ONS) and industry classification methods to use the ONS geographic area of TTWA to survey the commuting patterns and labour market of the population in 2011. Most scholars state that this might be an effective measure for the research of industrial clusters at the sub-regional level (Mateos-Garcia，2016).
 
+## Index Calculation
+
 ### Dynamics Measuring Index
 
 Firm entry is the result of the interaction between the
@@ -94,7 +96,7 @@ Where $i$ means location(travel to work area), $t$ means year
 
 ### Industry Mix Measuring Index
 
-It is necessary to calculate the Herfindahl-Hirschman Index or location quotient of the technology cluster to measure the degree of industrial concentration in a cluster area,. However, only the former method is used because the employment data corresponding to the corresponding region year is missing; Here is a reference to the quantitative method of industrial concentration of Chao Lu's research team (2017). HHI is calculated by squaring the market share of each competing company and then adding the results, where the market share is given in the form of scores or points (ibid). Increases in the Herfindahl index generally indicate a decrease in competition and an increase of market power, whereas decreases indicate the opposite (Hall & et al., 2009), as the calculation method shown below.
+It is necessary to calculate the Herfindahl-Hirschman Index or location quotient of the technology cluster to measure the degree of industrial concentration in a cluster area. However, only the former method is used because the employment data corresponding to the corresponding region year is missing; Here is a reference to the quantitative method of industrial concentration of Chao Lu's research team (2017). HHI is calculated by squaring the market share of each competing company and then adding the results, where the market share is given in the form of scores or points (ibid). Increases in the Herfindahl index generally indicate a decrease in competition and an increase of market power, whereas decreases indicate the opposite (Hall & et al., 2009), as the calculation method shown below.
 
 $$ Herfindahl-Hirschman \ Index_{\ i,t} = \sum_{j=1}^N (\frac{Tech\ Firms_{j,i,t}}{Total\ Tech\ Firms_{i,t}})^2 $$
 Where:
@@ -103,7 +105,9 @@ Where:
   $Tech Firms_j$ is the number of j-th individual tech firm
   $Total Tech Firms$ represents the number of total tech firms in a specific location and year.
 
-### Research Objectivities
+## Quatitative Analysis and Methods
+
+### Regression
 
 |Independent Variables     | Type      |Description||
 | --------------- |:------:| :---:|---:|
@@ -112,6 +116,8 @@ Where:
 |Herfindahl-Hirschman Index      |   numeric   |  The index measuring the industry mix  |
 |Year     |   category   |  Years from 1998 to 2018  |
 |Location      |   category   |  Top ten clusters of companies in England |
+
+OLS
 
 ### Moran's I
 
@@ -129,7 +135,14 @@ where
 
 $$ E[I] = \frac{-1}{(n-1)}$$
 $$ V[I] = E[I^2]-E[I]^2$$
-The Moran's Index(I) has a range of values from -1 to 1. Index value 1 indicates that the observed pattern is spatially clustered. On the other hand value -1 indicates scattering or dispersion. Moran's I assign a value of near or equal to zero to the lack of auto correlation. The z-score and p-value of the Index are only used to form final judgments regarding the observed pattern.
+The Moran's Index(I) has a range of values from -1 to 1. Index value 1 indicates that the observed pattern is spatially clustered. On the other hand value -1 indicates scattering or dispersion. Moran's I assign a value of near or equal to zero to the lack of auto correlation. The z-score and p-value of the Index are only used to form final judgments regarding the observed pattern. Besides, local indicators of spatial association will be applied to measure the high-high and low-low clusters(Anselin, 2010).
+
+### Hot Spot Analysis
+
+Local Gi* Score
+
+According to Hot-Spot Analysis (Getis-Ord Gi*) (Getis & Ord, 2010)
+
 
 ## Limitations
 
