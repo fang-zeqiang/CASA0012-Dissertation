@@ -4,45 +4,36 @@
 \pagenumbering{arabic} 
 ```
 
-## Background
+## Background and Motivation
 
-1. tech cluster development
+Silicon Valley and other tech clusters are critical for modern innovation, company competitiveness, and economic performance in this digitalising world(Kerr, 2020). In terms of the development of high-tech industries, UK is becoming increasingly attractive to international investors. And the scale of VC investment in the UK had reached the third level in the world in 2020, even if it is severely affected by the covid-19 epidemic (Tech Nation, 2021). The UK tech startup and scaleup ecosystem are also valued well. Investment and relative infrastructures are friendly for tech companies (ibid).  In fact, high technology companies are often investigated from the dimension of travel to work areas in many fields of research. For example, some reports found that, between 2007 and 2014, the number of creative tech enterprises grew faster than the overall company population in more than nine out of ten of the UK's 228 travel to work area geographies (Mateos-Garcia，2016). 
 
-https://technation.io/report2021/#uk-trends
-tech cluster & ttwa
-In fact, between 2007 and 2014, the number of creative enterprises grew faster than the overall company population in more than nine out of ten of the UK's 228 Travel-to-Work-Area geographies (Mateos-Garcia，2016). 
+There are clustering effects existing among the England tech firms. Some research teams such as Baptista (1999) conducted growth model research and dynamic model mining on regional clusters of technology industries and found that the growth rate of the sub-category business of a specific industry in the cluster may be higher than the industry average and a certain agglomeration phenomenon. Some teams also had done research on employment changes in the corresponding technology research and development industry. Also, the employment growth of high-tech small and medium-sized enterprises (SMEs) seems to depend on the initial level of clusters, and the impact of this clustering effect on employment growth varies greatly in geographic scope (Fingleton et al., 2004). Although there are obvious differences in clustering characteristics between the technology industries in the UK and other areas, the cluster effect of the technology industry in the UK did not seem to be weaker than that in the United States (Baptista and Swann, 1999).
 
-There are high clustering effect among the England tech firms
+The dynamics characters of clusters can be measured by their entry pattern. Many patterns of industrial dynamics appear to be affected by the process of knowledge creation, gathering, and destruction. This promotes the admission of new businesses, the long-term coexistence of incumbents and newcomers, and their selected or combined withdrawal (Krafft, 2004). 
 
-By modeling the evolution of business growth and entry, this research contrasts the dynamics of the process by which regional clusters emerge in the US and UK computer industries. New enterprises are lured to both countries by industrial strength in specific sub-sectors in specific regions. Furthermore, incumbent firms in a cluster that is strong in their particular sub-sector of the industry expand at a quicker rate than the industry average. While there are significant second-order variations between the models estimated for the United States and the United Kingdom, the clustering dynamics appear to be comparable. There is no evidence that clustering effects are weaker in the United Kingdom than in the United States(Baptista and Swann, 1999).
-
-2. dynamics cause better performance
-
-dynamics and entry pattern
-Many industrial dynamics patterns appear to be shaped by the process by which knowledge is created, gathered, and subsequently destroyed, because it favors the admission of new enterprises, the coexistence of incumbents and new entrants, and, eventually, their selective or combined exit over time (Krafft,2004).
-
-3. industry clustering pattern and economics performances
+In terms of industry clustering pattern and policy formulation, Nathan and Rosso (2015), in response to the development needs of governments for ICT sectors, utilise big data resources to conduct an innovative alternative analysis for all active ICT manufacturers in the UK. This can help researchers to better understand the current condition of the UK's ICT industry. Meanwhile, the approach of spatial autocorrelation analysis is useful for revealing the structure and patterns of economic geographical variables. It can be used to identify not only the country's overall spatial patterns but also specific micro-locations(Stankov and Dragićević, 2015). Our research can employ these methods and background information to explore the technology industry dynamics and obtain sufficient argument evidence.
 
 ## Research Question and Objectives
 
-How does tech clusters' dynamics pattern change in UK from 1998 to 2018? / What factors can affect tech clusters' dynamics pattern change in UK?
+In order to contribute to this field research, the main purpose of this research is to explore the spatial pattern of tech clusters characteristics, introduce quantitative methods to explore the relationship between cluster dynamics, industrial concentration and density. The research will focus on the following main questions:
+  
+> To what extent will industry mix and firms density affect tech clusters’ dynamics in England area？
+  
+> How does tech clusters' dynamics spatio-temporal pattern change in England area from 1998 to 2018?
+  
+The overall experiment will be carried out around the above-mentioned central question. Breaking down the above central issues, the objectives to be achieved at each stage of this research are divided into 5 points as follows
 
-To what extent will dynamic change affect tech clusters’ performance？
+  1. Review the relevant literature on the use of regression models to identify the relationship between company clusters and find the empirical research which employs Moran's index(Moran's I), local indicators of spatial association(LISA) and hot-spot analysis based on the Getis-Ord Gi* method
 
-Governments all across the world aim to grow their ICT sectors. As a result, researchers and policymakers want a comprehensive image of digital firms, but traditional datasets and typologies lag real-world change. We perform an alternative analysis for all active enterprises in the UK, focused on ICT-producing firms, using innovative "big data" resources.
-(Nathan and Rosso, 2015)
+  2. Processing and filtering data which can represent the dynamics and related characters of each tech cluster area in England from 1998 to 2018
 
-The approach of spatial autocorrelation analysis is useful for revealing the structure and patterns of economic geographical variables. It can be used to identify not only the country's overall spatial patterns, but also specific micro-locations (Stankov & Dragićević, 2015).
+  3. Exploring the relationship between tech cluster dynamics, industry concentration and company density through trend analysis and regression models
+
+  4. Based on the mining and visualisation of related spatial indicators, understand the spatial autocorrelation of relevant indicators and the trend in the temporal dimension among various travel to work areas (TTWAs) within the England area.
+
+5. Combine with actual policies to provide guidance and recommendations at the company level and the government level based on regression results and spatial model mining results
 
 ## Report Structure
 
-1. data clean
-1. tech cluster recognition
-1. dynamics index generation
-1. hypothesis (OLS estimation)
-1. regression
-1. residual analysis
-1. result interpretation
-
-该研究文章将会先总结目前tech clutser动态研究现状，结合世界其他地方对于科技企业的动态变化研究来对比英国科技企业的研究现状。研究对象England的科技企业将会被说明。原始的数据集的处理过程与最后按Travel to Work Areas与年份划分的各个科技集群指标将会被展示。在research design阶段，如何从大数据中识别科技企业与
-
+This research paper contains 6 chapters. Chapter 2 will first compare and summarise the current research status of tech cluster dynamics in the UK and other parts of the world. In Chapter 3 methodology, the research scale and object will be explained.  Data processing process and index data summarised in different dimensions will be presented. Research design combining multiple quantitative methods will also be included in this chapter. Chapter 4 will analyse the changes in distribution and explore the influence relationship among variables from the overall to the partial. In addition, this chapter will compare the global and local indices for spatio-temporal analysis. Chapter 5 will discuss the experimental results based on the actual relevant policies of the England authority, and give investment suggestions at the government and enterprise levels for the development of the tech industry and discuss the limitations of the research framework. Finally, Chapter 6 will summarise key findings to respond to the research questions and make recommendations for future study and planning strategies.

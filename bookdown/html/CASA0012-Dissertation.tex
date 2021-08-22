@@ -120,7 +120,7 @@ MSc in the Centre for Advanced Spatial Analysis,\\
 Bartlett Faculty of the Built Environment, UCL\\
 ~\\
 Word count: 8,000}
-\date{2021-08-22}
+\date{2021-08-23}
 
 \begin{document}
 \maketitle
@@ -133,19 +133,19 @@ Word count: 8,000}
 
 Some abstract text
 
-word count: 7258
+word count: 8380
 
 \pagenumbering{roman}
 
 \hypertarget{declaration}{%
 \chapter*{Declaration}\label{declaration}}
 
-I, Zeqiang Fang, hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is xxx words in length
+I, Zeqiang Fang, hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is 8380 words in length
 
 \hypertarget{acknowledgements}{%
 \chapter*{Acknowledgements}\label{acknowledgements}}
 
-I would like to thank blah blah
+This paper would not have been possible without the help of others. First of all, I am sincerely grateful to my supervisor, Prof.~Max Nathan, for his patient guidance and enthusiasm support throughout my dissertation project. Prof.~Max Nathan not only provide me with much inspired feedback, but also offer me much care of the difficulties I encountered in thesis writing, both personally and academically.
 
 % Trigger ToC creation in LaTeX
 \setcounter{tocdepth}{3}
@@ -170,140 +170,97 @@ Ordinary Least Squares & OLS\\
 \end{tabular}
 \end{table}
 
-\hypertarget{introduction}{%
-\chapter{Introduction}\label{introduction}}
+\hypertarget{intro}{%
+\chapter{Introduction}\label{intro}}
 
 \pagenumbering{arabic} 
 
-\hypertarget{background}{%
-\section{Background}\label{background}}
+\hypertarget{background-and-motivation}{%
+\section{Background and Motivation}\label{background-and-motivation}}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  tech cluster development
-\end{enumerate}
+Silicon Valley and other tech clusters are critical for modern innovation, company competitiveness, and economic performance in this digitalising world(Kerr, 2020). In terms of the development of high-tech industries, UK is becoming increasingly attractive to international investors. And the scale of VC investment in the UK had reached the third level in the world in 2020, even if it is severely affected by the covid-19 epidemic (Tech Nation, 2021). The UK tech startup and scaleup ecosystem are also valued well. Investment and relative infrastructures are friendly for tech companies (ibid). In fact, high technology companies are often investigated from the dimension of travel to work areas in many fields of research. For example, some reports found that, between 2007 and 2014, the number of creative tech enterprises grew faster than the overall company population in more than nine out of ten of the UK's 228 travel to work area geographies (Mateos-Garcia，2016).
 
-\url{https://technation.io/report2021/\#uk-trends}
-tech cluster \& ttwa
-In fact, between 2007 and 2014, the number of creative enterprises grew faster than the overall company population in more than nine out of ten of the UK's 228 Travel-to-Work-Area geographies (Mateos-Garcia，2016).
+There are clustering effects existing among the England tech firms. Some research teams such as Baptista (1999) conducted growth model research and dynamic model mining on regional clusters of technology industries and found that the growth rate of the sub-category business of a specific industry in the cluster may be higher than the industry average and a certain agglomeration phenomenon. Some teams also had done research on employment changes in the corresponding technology research and development industry. Also, the employment growth of high-tech small and medium-sized enterprises (SMEs) seems to depend on the initial level of clusters, and the impact of this clustering effect on employment growth varies greatly in geographic scope (Fingleton et al., 2004). Although there are obvious differences in clustering characteristics between the technology industries in the UK and other areas, the cluster effect of the technology industry in the UK did not seem to be weaker than that in the United States (Baptista and Swann, 1999).
 
-There are high clustering effect among the England tech firms
+The dynamics characters of clusters can be measured by their entry pattern. Many patterns of industrial dynamics appear to be affected by the process of knowledge creation, gathering, and destruction. This promotes the admission of new businesses, the long-term coexistence of incumbents and newcomers, and their selected or combined withdrawal (Krafft, 2004).
 
-By modeling the evolution of business growth and entry, this research contrasts the dynamics of the process by which regional clusters emerge in the US and UK computer industries. New enterprises are lured to both countries by industrial strength in specific sub-sectors in specific regions. Furthermore, incumbent firms in a cluster that is strong in their particular sub-sector of the industry expand at a quicker rate than the industry average. While there are significant second-order variations between the models estimated for the United States and the United Kingdom, the clustering dynamics appear to be comparable. There is no evidence that clustering effects are weaker in the United Kingdom than in the United States(Baptista and Swann, 1999).
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  dynamics cause better performance
-\end{enumerate}
-
-dynamics and entry pattern
-Many industrial dynamics patterns appear to be shaped by the process by which knowledge is created, gathered, and subsequently destroyed, because it favors the admission of new enterprises, the coexistence of incumbents and new entrants, and, eventually, their selective or combined exit over time (Krafft,2004).
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  industry clustering pattern and economics performances
-\end{enumerate}
+In terms of industry clustering pattern and policy formulation, Nathan and Rosso (2015), in response to the development needs of governments for ICT sectors, utilise big data resources to conduct an innovative alternative analysis for all active ICT manufacturers in the UK. This can help researchers to better understand the current condition of the UK's ICT industry. Meanwhile, the approach of spatial autocorrelation analysis is useful for revealing the structure and patterns of economic geographical variables. It can be used to identify not only the country's overall spatial patterns but also specific micro-locations(Stankov and Dragićević, 2015). Our research can employ these methods and background information to explore the technology industry dynamics and obtain sufficient argument evidence.
 
 \hypertarget{research-question-and-objectives}{%
 \section{Research Question and Objectives}\label{research-question-and-objectives}}
 
-How does tech clusters' dynamics pattern change in UK from 1998 to 2018? / What factors can affect tech clusters' dynamics pattern change in UK?
+In order to contribute to this field research, the main purpose of this research is to explore the spatial pattern of tech clusters characteristics, introduce quantitative methods to explore the relationship between cluster dynamics, industrial concentration and density. The research will focus on the following main questions:
 
-To what extent will dynamic change affect tech clusters'performance？
+\begin{quote}
+To what extent will industry mix and firms density affect tech clusters' dynamics in England area？
+\end{quote}
 
-Governments all across the world aim to grow their ICT sectors. As a result, researchers and policymakers want a comprehensive image of digital firms, but traditional datasets and typologies lag real-world change. We perform an alternative analysis for all active enterprises in the UK, focused on ICT-producing firms, using innovative ``big data'' resources.
-(Nathan and Rosso, 2015)
+\begin{quote}
+How does tech clusters' dynamics spatio-temporal pattern change in England area from 1998 to 2018?
+\end{quote}
 
-The approach of spatial autocorrelation analysis is useful for revealing the structure and patterns of economic geographical variables. It can be used to identify not only the country's overall spatial patterns, but also specific micro-locations (Stankov \& Dragićević, 2015).
+The overall experiment will be carried out around the above-mentioned central question. Breaking down the above central issues, the objectives to be achieved at each stage of this research are divided into 5 points as follows
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Review the relevant literature on the use of regression models to identify the relationship between company clusters and find the empirical research which employs Moran's index(Moran's I), local indicators of spatial association(LISA) and hot-spot analysis based on the Getis-Ord Gi* method
+\item
+  Processing and filtering data which can represent the dynamics and related characters of each tech cluster area in England from 1998 to 2018
+\item
+  Exploring the relationship between tech cluster dynamics, industry concentration and company density through trend analysis and regression models
+\item
+  Based on the mining and visualisation of related spatial indicators, understand the spatial autocorrelation of relevant indicators and the trend in the temporal dimension among various travel to work areas (TTWAs) within the England area.
+\item
+  Combine with actual policies to provide guidance and recommendations at the company level and the government level based on regression results and spatial model mining results
+\end{enumerate}
 
 \hypertarget{report-structure}{%
 \section{Report Structure}\label{report-structure}}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  data clean
-\item
-  tech cluster recognition
-\item
-  dynamics index generation
-\item
-  hypothesis (OLS estimation)
-\item
-  regression
-\item
-  residual analysis
-\item
-  result interpretation
-\end{enumerate}
+This research paper contains 6 chapters. Chapter 2 will first compare and summarise the current research status of tech cluster dynamics in the UK and other parts of the world. In Chapter 3 methodology, the research scale and object will be explained. Data processing process and index data summarised in different dimensions will be presented. Research design combining multiple quantitative methods will also be included in this chapter. Chapter 4 will analyse the changes in distribution and explore the influence relationship among variables from the overall to the partial. In addition, this chapter will compare the global and local indices for spatio-temporal analysis. Chapter 5 will discuss the experimental results based on the actual relevant policies of the England authority, and give investment suggestions at the government and enterprise levels for the development of the tech industry and discuss the limitations of the research framework. Finally, Chapter 6 will summarise key findings to respond to the research questions and make recommendations for future study and planning strategies.
 
 \hypertarget{lit-review}{%
 \chapter{Literature Review}\label{lit-review}}
 
-\hypertarget{industry-cluster-tech-cluster}{%
-\section{Industry Cluster \& Tech Cluster}\label{industry-cluster-tech-cluster}}
+\hypertarget{industrial-cluster-and-tech-cluster}{%
+\section{Industrial Cluster and Tech Cluster}\label{industrial-cluster-and-tech-cluster}}
 
-Tech clusters like Silicon Valley play a central role for modern innovation, business competitiveness, and economic performance. This paper reviews what constitutes a tech cluster, how they function internally, and the degree to which policy makers can purposefully foster them. We describe the growing influence of advanced technologies for businesses outside of traditional tech fields, the strains and backlash that tech clusters are experiencing, and emerging research questions for theory and empirical work.
-
-They find ICT employment shares nearly double the usual estimates using their unique `sector-product' approach, however this conclusion is more speculative (ICT production space is around 42 percent larger than SIC-based estimates, with around 70,000 more companies)
-(Nathan \& Rosso, 2015)
-
-\hypertarget{cluster-dynamics}{%
-\section{Cluster Dynamics}\label{cluster-dynamics}}
-
-Industrial dynamics and clusters: a survey, regional research. This article reviews clusters and their impact on the entry, exit, and growth of firms, as well as the literature supporting the evolutionary dynamics of cluster formation. This extensive review shows strong evidence that clusters promote the entry of manufacturers, but the evidence that clusters can promote the growth and survival of firms is rather weak. From a number of open-ended questions, this research extracts various future research paths that emphasize the importance of manufacturer heterogeneity and the exact mechanism that supports the localized economy (Frenken, Cefis and Stam, 2014).
-
-Relative researchers found that industry clustering not only increased firm entry but also firm exit rates. This implied that clusters could emerge and exist because they provide entry opportunities but they do not necessarily generate Marshallian economies that increase firm survival (Boschma, 2015).
-
-by looking at how clusters influence entry, departure, and growth via localization economics, and by taking a long-term look at cluster emergence and evolution.
-
-Entry is strongly influenced by clustering. Empirical research have consistently found that as cluster size grows, so does the rate of admission. Most potential entrepreneurs simply stay in their region of origin, therefore this empirical correlation does not imply that enterprises locate in a cluster because they gain from co-location.
-
-Localization economies appear to play a role in entrance decisions in these research, but only for technologically trailing businesses who stand to gain the most and have the least to lose from co-location (ALCCER and CHUNG, 2007).
-
-Cluster effect on the whole England area
-Enterprise entry does play an important role in shaping the overall dynamics. The new entrants that survive in the cluster will become larger over time, resulting in broader expansion and overall impact (Clementi \& Palazzo, 2016)
-\url{https://pages.stern.nyu.edu/~gclement/Papers/Entry_exit.pdf}
-
-\hypertarget{industry-mix}{%
-\section{Industry Mix}\label{industry-mix}}
-
-On average, companies in large cities are more productive. There are two main explanations: corporate choice (big cities strengthen competition and only allow the most productive people to survive) and agglomeration economies (big cities promote interaction and increase productivity), which may be strengthened by the natural advantages of localization. In order to distinguish them, we nested a general version of the easy-to-handle company selection model and a standard agglomeration model. Stronger choices in large cities cut the distribution of productivity to the left, while stronger gatherings move to the right and expand the distribution. Using this forecast, French firm-level data, and new quantile methods, we show that firm choices cannot explain differences in spatial productivity. The results are applicable to various departments, city size thresholds, institutional samples and regional definitions.
-
-The Herfindahl--Hirschman Index (HHI) is a commonly used economic concept in competition law, antitrust{[}1{]}, and technology management. It's a measure of a company's size in relation to the industry it's in, as well as an indicator of how competitive it is \hspace{0pt}(Liston-Heyes \& Pilkington, 2004).
-
-\hypertarget{how-location-affect-entry-pattern-in-ukglobal}{%
-\section{How location affect entry pattern in UK/Global}\label{how-location-affect-entry-pattern-in-ukglobal}}
-
-\hypertarget{how-time-affect-entry-pattern-in-ukglobal}{%
-\section{How time affect entry pattern in UK/Global}\label{how-time-affect-entry-pattern-in-ukglobal}}
-
-\hypertarget{other-factor-can-affect-dynamics-pattern-in-uk}{%
-\section{Other factor can affect dynamics pattern in UK}\label{other-factor-can-affect-dynamics-pattern-in-uk}}
-
-Firm density has a beneficial effect on entry rates in the early stages of an industry since each firm has the potential to bring in new entrants. Legitimation has been coined to describe this positive density impact. Higher company density levels, on the other hand, become a barrier to entrance as the industry evolves and grows, owing to fierce market competition (Boschma, 2015).
-
-The empirical evidence reveals that technology and the stage of the industry life cycle impact the relationship between business size and the likelihood of survival.(Agarwal and Audretsch, 2001)
-Entry may be less about radical innovation and more about filling strategic niches in established businesses that are nonetheless technologically intensive, neutralizing the impact of entry size on the likelihood of survival.(ibid)
-
-Over time, smaller factories generated proportionately more jobs, implying that job-growth incentives to larger enterprises may have been misdirected. Overall, our findings suggest that the impacts of size and age on manufacturing plant expansion in a developing economy are similar to those in rich economies (negative relationship between plant age and plant growth )(Liu, Tsou and Hammitt, 1999)
+A cluster is described as a geographic concentration of businesses that operate in the same industry. High rates of entry and exit are often correlated with growth in employment and productivity, so these questions are of interest not only to academics but also to policymakers (Fritsch, 2011). Industry clusters form as a result of the production benefits of local specialization mixed with cross-regional trade. Three forces of what is now known as agglomeration economies were discussed previously: knowledge spillovers, labour market pooling, and customer-supplier interactions. While most Marshallian force studies have focused on industrial contexts, they also apply to tech clusters, albeit in slightly different ways (Ellison et al.~2010). The definition of tech clusters is mentioned in Kerr's research(2020) as given below
 
 \begin{quote}
-Firms Growth and Failure
+we define ``tech'' clusters to be locations where new products (be they goods or services) and production processes are created that impact multiple parts of the economy.
 \end{quote}
 
-Moreno's research found that the failure rate and growth rate of companies decline with the growth of scale and age. Regression-to-the-mean is not an important factor in the negative correlation between the size and growth of surviving companies. And he also offers empirical evidence of firm failure rates as well as the mean of the distribution of realized growth rates(Fariñas and Moreno, 2000).
-\url{https://sci-hub.se/10.1023/A:1007834210622}
-Fariñas, J. and Moreno, L., 2000. Review of Industrial Organization, 17(3), pp.249-265.
+In identifying Information and communications technology (ICT) relative economic activities, They find ICT employment shares nearly double the usual estimates using their unique approach even if this conclusion is more speculative(Nathan and Rosso, 2015). The definition and tech relative industry information can give a brief understanding of our research objects.
+
+\hypertarget{industrial-dynamics}{%
+\section{Industrial Dynamics}\label{industrial-dynamics}}
+
+Industrial dynamics is still a relatively new subject of research. Its main focus is on the evolution of industries, with an emphasis on company entry, growth, and exit(Malerba, 2006). Industrial dynamics, in contrast to the neoclassical approach to industries (also known as industrial organization), focuses primarily on phenomena that are intrinsically dynamic and deals with them in an interdisciplinary manner such as economic geography(Carlsson 1987;Fritsch, 2011).
+
+In industrial clutser analysis, concepts of anchor firms for clusters are developed by some researchers. This thesis indicates that big corporate headquarters can help a specific area attract many other firms to form a new cluster and this anchor firm is usually recognised as the basis of the cluster (Feldman, 2003; Porter, 1998). For the cluster dynamics, the cluster has a strong influence on the company's entry behaviour. The relevant research team found that the entry rate increases as the cluster size increases (Frenken et al., 2014). Most of the research focuses on the correlation between industry dynamics and localisation but there is little extensive quantitative research on the relationship between industry concentration and entry pattern(Furman et al., 2002; Shaver and Flyer, 2000).
+
+Relative researchers found that industry clustering not only can increase firm entry but also firm exit rates. This implied that clusters could emerge and exist because they provide entry opportunities but they do not necessarily generate Marshallian economies that increase firm survival (Boschma, 2015;Alcacer and Chung, 2007). Some teams investigate cluster emergence and evolution over the long term by looking at how clusters influence entry, exit, and growth via localisation economics(Kogut,1991). Besides, Clementi and Palazzo(2016)found there is a cluster effect on the whole of England area. The arrival of new businesses has a significant impact on the overall dynamics. The cluster's new entrants will grow in size over time, resulting in broader expansion and overall influence. This research framework can be referred to our quantitative measurement of cluster dynamics.
+
+\hypertarget{industry-concentration}{%
+\section{Industry Concentration}\label{industry-concentration}}
+
+In competition law, antitrust, and technology management, the Herfindahl--Hirschman Index (HHI) is a widely used economic concept. It's a metric for a company's size in proportion to its industry, as well as a barometer for how competitive it is (Liston-Heyes and Pilkington, 2004). On average, businesses in big cities are more productive. The natural advantages of localisation may enhance corporate choice and agglomeration economies. Large cities encourage competition by enabling only the most productive individuals to stay, fostering contact and increasing productivity(Porter and Stern, 1999).
+
+Tremblay et al.(2005) have studied the relationship between the brewing industry and the entry of enterprises from a macro and micro perspective. They found that regional technological changes will lead to an increase in industry concentration and macro-fields. Excessive industrial prosperity and high concentration will lead to a decline in business entry and a decline in survival rates(ibid). The Herfindahl--Hirschman index is also used to highlight the dynamic patterns of the sustainability sector, which is crucial for understanding how startups have applied the concept of sustainability(Kwon, 2020).
+
+\hypertarget{other-factors-and-dynamics-pattern}{%
+\section{Other Factors and Dynamics Pattern}\label{other-factors-and-dynamics-pattern}}
+
+The density of regional firms may have a two-sided impact on the entry pattern. Because each firm has the ability to bring in new entrants, firm density has a positive effect on entry rates in the early stages of an industry. Due to severe market rivalry, higher firm density levels, on the other hand, become a barrier to entry as the industry expands and flourishes (Boschma, 2015). Meanwhile, empirical research shows that the relationship between business size and the likelihood of survival is influenced by technology and the stage of the industry life cycle (Agarwal and Audretsch, 2001).
+
+Studies have also shown that entry may be less about radical innovation and more about filling strategic niches in established businesses that are nonetheless technologically intensive, neutralizing the impact of entry size on the likelihood of survival(ibid). There is also evidence that a negative relationship between firms' age and growth over time is because more and smaller firms such as factories create more jobs than some large companies(Liu et al., 1999). For firms' growth and failure, Moreno's research(2000) found that the failure rate and growth rate of companies decline with the growth of scale and age. Regression-to-the-mean is not an important factor in the negative correlation between the size and growth of surviving companies. And he also offers empirical evidence of firm failure rates as well as the mean of the distribution of realized growth rates.
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+Overall, by reviewing the past literature on industrial clusters and enterprise dynamic models, it can be found that industrial dynamics is still a relatively novel research topic in the UK. Usually, the characteristics of research clusters can be conducted in an interdisciplinary way such as economic geography. As a region with obvious cluster effects, the UK's industrial clusters can increase the entry of enterprises. And there is also a reference for the relevant literature on the quantitative measurement method of the entry index. In terms of industry concentration, a certain degree of industrial concentration in the short term may attract companies to enter, that is, industry prosperity within a certain period of time. But excessive entry will also cause industry shocks. Through the research review of the dynamic pattern of enterprises, it is also found that the regional density level, the age of enterprises or clusters and etc. have an influence on the entry pattern of enterprises.
 
 \hypertarget{methodology}{%
 \chapter{Methodology}\label{methodology}}
@@ -311,7 +268,7 @@ Fariñas, J. and Moreno, L., 2000. Review of Industrial Organization, 17(3), pp.
 \hypertarget{research-framework}{%
 \section{Research Framework}\label{research-framework}}
 
-The study area is 149 travel to work areas in England, UK (Figure \ref{fig:fig-study-area}). The areas in blue colour is the main research area. In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods(1998, 2008 \& 2018).
+The study area is 149 travel to work areas in England area (out of 228 in the UK). The areas in blue colour is the main research area (Figure \ref{fig:fig-study-area}). In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods(1998, 2008 and 2018).
 
 \begin{figure}
 \includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/study_area} \caption{The Map of Travel to Work Areas (TTWAs) within UK}\label{fig:fig-study-area}
@@ -327,7 +284,7 @@ This raw dataset is collected from the core company data from Open Corporates ma
 
 For the identification of science and technology companies, this study introduces the main 2007 sic code table to judge the science and technology industry, referring to the classification method of the Science and Technology Classification data set on the ons.gov.uk website. In order to better identify science and technology companies for the UK. The economic contribution is officially based on the 2007 British Standard Economic Activity Classification, different data sources were combined to classify and label science and technology companies (Office for National Statistics, 2015).The 5-digital sic code can identify the economic activity classification of the technology industry in the finest granularity. The statistics bureau provided a comparison table of sic codes for the classification of science and technology industries, which can help this research to better identify technology companies from the big data of UK companies (\ref{tab:tab-sic-part}).
 
-\begin{longtable}[t]{>{\raggedright\arraybackslash}p{3cm}>{\raggedright\arraybackslash}p{3cm}>{\raggedright\arraybackslash}p{3cm}}
+\begin{longtable}[t]{>{\raggedright\arraybackslash}p{4.5cm}>{\raggedright\arraybackslash}p{4.5cm}>{\raggedright\arraybackslash}p{4.5cm}}
 \caption{\label{tab:tab-sic-part}Science and Technology Classification Sample (Part)}\\
 \toprule
 \textbf{5-digit SIC07 code} & \textbf{Science and Technology category} & \textbf{Science and Technology topic}\\
@@ -343,7 +300,7 @@ For the identification of science and technology companies, this study introduce
 \bottomrule
 \end{longtable}
 
-This research refers to the science and technology classification table provided by the government. The technology indicator is used to position the technology industry of all industries, and a total of 168 sic codes for the technology industry in 2007 were obtained, accounting for about 16\% of all industry categories in the UK, including 5 industry categories such as Digital Technologies, Life Sciences \& Healthcare, Publishing \& Broadcasting , Other scientific/technological manufacture and Other scientific/technological services, details of the classification form will be attached in the attachment. There are almost 20\% firms in the raw data belonging to tech firms according to the method of category as mentioned above.
+This research refers to the science and technology classification table provided by the government. The technology indicator is used to position the technology industry of all industries, and a total of 168 sic codes for the technology industry in 2007 were obtained, accounting for about 16\% of all industry categories in the UK, including 5 industry categories such as Digital Technologies, Life Sciences and Healthcare, Publishing and Broadcasting , Other scientific/technological manufacture and Other scientific/technological services, details of the classification form will be attached in the attachment. There are almost 20\% firms in the raw data belonging to tech firms according to the method of category as mentioned above.
 
 \hypertarget{data-scale}{%
 \section{Data Scale}\label{data-scale}}
@@ -362,9 +319,9 @@ The reason why this research choose tech firms which incorporate from 1998 to 20
 
 Travel to Work Locations is official statistics that capture local labour markets, i.e., areas where the majority (approximately 70\%) of the people who live there work. These measures are based on responses to the 2011 and are used to define the TTWAs algorithmically. There are currently 228 TTWAs in the UK. When it is recognised that the activity of interest may be scattered across administrative boundaries such as local authority districts or NUTS areas, TTWAs are widely utilised in industrial clustering investigations (Prothero, 2021).
 
-Relevant studies have shown that commuting across towns has become more common in England and Wales. People are not limited to living and working in the same administrative area. In addition, studies have found that low-skilled workers tend to rely on the public to work locally. Strong skill-oriented jobs are more dependent on cars, and they are also the main force for cross-city commuting. The technology industry has a greater demand for those strong skill-oriented workers which suggest that travel to work area(TTWA) is used as a cluster of technology companies compared to traditional administrative Region would be a good choice (Titheridge \& Hall,2006)
+Relevant studies have shown that commuting across towns has become more common in England and Wales. People are not limited to living and working in the same administrative area. In addition, studies have found that low-skilled workers tend to rely on the public to work locally. Strong skill-oriented jobs are more dependent on cars, and they are also the main force for cross-city commuting. The technology industry has a greater demand for those strong skill-oriented workers which suggest that travel to work area(TTWA) is used as a cluster of technology companies compared to traditional administrative Region would be a good choice (Titheridge and Hall,2006)
 
-The University of Cambridge had funded some researchers to undertake the Wisbech 2020 Vision project to analyse the current problem, mining the potential future space for employment growth with alternative macro-economic scenario to help drive a high value-added growth plan in the local area (Burgess \& et al., 2014)
+The University of Cambridge had funded some researchers to undertake the Wisbech 2020 Vision project to analyse the current problem, mining the potential future space for employment growth with alternative macro-economic scenario to help drive a high value-added growth plan in the local area (Burgess et al., 2014)
 
 This geographical division can better reflect the relationship between population, company and work. In terms of geographic research, related researchers have combined the Business Structure Database (BSD) from the Office for National Statistics (ONS) and industry classification methods to use the ONS geographic area of TTWA to survey the commuting patterns and labour market of the population in 2011. Most scholars state that this might be an effective measure for the research of industrial clusters at the sub-regional level (Mateos-Garcia，2016).
 
@@ -388,7 +345,7 @@ Where \(i\) means location(travel to work area), \(t\) means year
 \hypertarget{industry-mix-measuring-index}{%
 \subsection{Industry Mix Measuring Index}\label{industry-mix-measuring-index}}
 
-It is necessary to calculate the Herfindahl-Hirschman Index or location quotient of the technology cluster to measure the degree of industrial concentration in a cluster area. However, only the former method is used because the employment data corresponding to the corresponding region year is missing; Here is a reference to the quantitative method of industrial concentration of Chao Lu's research team (2017). HHI is calculated by squaring the market share of each competing company and then adding the results, where the market share is given in the form of scores or points (ibid). Increases in the Herfindahl index generally indicate a decrease in competition and an increase of market power, whereas decreases indicate the opposite (Hall \& et al., 2009), as the calculation method shown below.
+It is necessary to calculate the Herfindahl-Hirschman Index or location quotient of the technology cluster to measure the degree of industrial concentration in a cluster area. However, only the former method is used because the employment data corresponding to the corresponding region year is missing; Here is a reference to the quantitative method of industrial concentration of Chao Lu's research team (2017). HHI is calculated by squaring the market share of each competing company and then adding the results, where the market share is given in the form of scores or points (ibid). Increases in the Herfindahl index generally indicate a decrease in competition and an increase of market power, whereas decreases indicate the opposite (Hall et al., 2009), as the calculation method shown below.
 
 \[
 HHI_{\ i,t} = \sum_{j=1}^N (\frac{Tech\ Firms_{j,i,t}}{Total\ Tech\ Firms_{i,t}})^2 
@@ -425,7 +382,7 @@ Location & category & Top ten clusters of companies in England\\
 \end{tabular}
 \end{table}
 
-Dynamics variable(entry rate) is measured empirically by the ratio of the number of new firms at the end of a period to the total number of firms at the beginning of the period(Hause \& Du Rietz, 1984), unless otherwise stated. The equation regression model is given:
+Dynamics variable(entry rate) is measured empirically by the ratio of the number of new firms at the end of a period to the total number of firms at the beginning of the period(Hause and Du Rietz, 1984), unless otherwise stated. The equation regression model is given:
 
 \[
 \ y\ =\ b_0 + b_1 \ x_1 + b_2 \ x_2 + \sum_{i=3}^{4} \ b_i \ x_i + \epsilon_{i,j}
@@ -442,7 +399,7 @@ Where
 \hypertarget{global-autocorrelation-morans-i}{%
 \subsection{Global Autocorrelation (Moran's I)}\label{global-autocorrelation-morans-i}}
 
-One of the most popular and often used measures of spatial autocorrelation is Moran's Index. Based on the locations and values of the feature, the Global Moran's I tool analyzes the pattern of a data set spatially and decides if it is scattered, clustered, or random. The program calculates the Moran's I Index value, as well as the z-score and p-value, to statistically validate the Index. It is computed using the formula below (Kumari \& et al., 2019).
+One of the most popular and often used measures of spatial autocorrelation is Moran's Index. Based on the locations and values of the feature, the Global Moran's I tool analyzes the pattern of a data set spatially and decides if it is scattered, clustered, or random. The program calculates the Moran's I Index value, as well as the z-score and p-value, to statistically validate the Index. It is computed using the formula below (Kumari and et al., 2019).
 
 \[
 Moran's \ I = \frac{n}{S_0} \frac{\sum_{x=1}^n \sum_{y=1}^n w_{x,y} z_x z_y}{\sum_{x=1}^n z_x^2}
@@ -473,7 +430,7 @@ The Moran's Index(I) has a range of values from -1 to 1. Index value 1 indicates
 \hypertarget{hot-spot-analysis-getis-ord-gi}{%
 \subsection{Hot-Spot Analysis (Getis-Ord Gi*)}\label{hot-spot-analysis-getis-ord-gi}}
 
-Only positive spatial autocorrelation is taken into account by the local Getis statistics, which allows for discrimination between clusters of similar values that are high or low relative to the mean. The Getis--Ord local statistics are calculated as follows by Getis \& Ord (2010):
+Only positive spatial autocorrelation is taken into account by the local Getis statistics, which allows for discrimination between clusters of similar values that are high or low relative to the mean. The Getis--Ord local statistics are calculated as follows by Getis and Ord (2010):
 
 \[
 G^*_j = \frac{\sum_{j=1}^nw_{i,j}x_j - \bar{X}\sum_{j=1}^{n}w_{i,j}}{S\sqrt{\frac{[n\sum_{j=1}^{n}w^2_{i,j} - (\sum_{j=1}^{n}w_{i,j})^2)]}{n-1}}}
@@ -489,7 +446,7 @@ where \(x_j\) is the attribute value for feature \(j, w_{i,j}\) is the spatial w
 S = \sqrt{\frac{\sum_{j=1}^{n}x^2_j}{n} -(\bar{x})^2}
 \]
 
-The Gi* statistic returned for each feature in the dataset is a z-score (Getis \& Ord, 2010). For statistically significant positive z-scores, the larger the z-score is, the more intense the clustering of high values (hot spot). For statistically significant negative z-scores, the smaller the z-score is, the more intense the clustering of low values (cold spot).
+The Gi* statistic returned for each feature in the dataset is a z-score (Getis and Ord, 2010). For statistically significant positive z-scores, the larger the z-score is, the more intense the clustering of high values (hot spot). For statistically significant negative z-scores, the smaller the z-score is, the more intense the clustering of low values (cold spot).
 
 \hypertarget{limitations}{%
 \section{Limitations}\label{limitations}}
@@ -752,32 +709,42 @@ On the whole, there is a distinct north-south difference in the distribution of 
 
 By 2008, most of the hot spots disappeared, and the places that were hot spots gradually became cold spots, such as the southwestern region. In 2018, some hot spots appeared in the northwestern region along with England. The original two hot spots in the southwest have experienced two-time nodes in 2008 and 2018, and they finally turned into cold spot clusters(Figure \ref{fig:fig-Gi-entry-rate}).
 
-From: \url{https://sci-hub.se/10.1556/032.65.2015.3.1}
-
-Discussion: 从时空趋势的角度上看，北方逐渐成为entry rate的热点，有越来越多的科技公司加入北方并且这一现象具有空间自相关性；而西南部地区如何进行政策鼓励和调整来使得他们的科技产业重新焕发生机，税收？
-
 \begin{figure}
 \includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/G_enR_v1} \caption{Local Gi* Score Statistics for Entry Rate in England for Three Time Periods}\label{fig:fig-Gi-entry-rate}
 \end{figure}
 
-\hypertarget{disc}{%
-\chapter{Discussion}\label{disc}}
+\hypertarget{discussion}{%
+\chapter{Discussion}\label{discussion}}
 
-Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
+\begin{itemize}
+\item
+  思考：Over time, smaller factories generated proportionately more jobs, implying that job-growth incentives to larger enterprises may have been misdirected. Overall, our findings suggest that the impacts of size and age on manufacturing plant expansion in a developing economy are similar to those in rich economies (negative relationship between plant age and plant growth)(Liu, Tsou and Hammitt, 1999)
+\item
+  Discussion: 从时空趋势的角度上看，北方逐渐成为entry rate的热点，有越来越多的科技公司加入北方并且这一现象具有空间自相关性；而西南部地区如何进行政策鼓励和调整来使得他们的科技产业重新焕发生机，税收？
+\end{itemize}
 
-To be done
+\hypertarget{reflection-on-results}{%
+\section{Reflection on Results}\label{reflection-on-results}}
 
-\hypertarget{research-significance}{%
-\section{Research significance}\label{research-significance}}
+针对公司层面
 
-\hypertarget{global-development-goals}{%
-\subsection{Global development goals}\label{global-development-goals}}
+总体上，风险投资选择未来科技产业较为多样的地区且公司密度较大的地区进行投资，因为这些地区往往和高进入率可能存在联系，这意味着试错成本较低，选择较多（新兴企业的存活基数较大）；
 
-\hypertarget{local-policy}{%
-\subsection{Local policy}\label{local-policy}}
+作为风险投资，也可以多关注诸如北部一些进入率热点集群。根据冷热点分析的结果，在未来可以多关注北部地区。这里在不考虑除了England地区以外的其他UK地区影响下，东北部城市带有可能会成为科技企业的进入热点区。关注这些地区的企业可以为投资提供更多选择。虽然西南部地区在2018年是公司进入的冷点，该地区相应企业服务基础设施可能会比较完善，因为该地区在1998年是科技公司进入的热点集群。
 
-\hypertarget{academic-research}{%
-\subsection{Academic research}\label{academic-research}}
+如果从通勤区的角度观察，可以发现在一个特定的Travel to Work Area中通勤者从住宅区到商业区往往有着较为成熟的通勤方式。这种模式可以帮助我们更好地理解科技企业的集群现象。并且，从业者在家庭位置固定的情况下选择工作上往往倾向于在一定的通勤区域内(\ldots)。在这种情况下，企业在市场竞争较不激烈的地区中雇佣高端稳定的劳动力要比其他地区进行同样的公司招聘行为更加可行。
+
+但另一方面，市场竞争较为激烈的地方对人才的吸引力大这会改变个体家庭的通勤决策。风险投资也不妨兼顾在未来会有更大科技进入率的伦敦周边地区(Figure \ref{fig:fig-enR-1998-2018-v1})。虽然该地区在回归分析结果中往往被当作离群点处理，伦敦及其周边卫星城市可能有着相比England地区非常不同的企业动态模式。
+
+针对政府层面
+
+从全局角度出发，根据实验结果会发现企业的进入率聚集效应呈现逐年下降的趋势 (\ref{tab:tab-morans-i-enR})
+
+从局部角度观察，北方地区特别是东北部通勤地区的聚集效应下降相比其他地区有延迟。对于政策而言，南北部地区的政策推行需要结合当地现状。举个例子，政府希望提高某大区域科技企业数量平均水平以此来优化各个地区产业结构。如果England政府出于鼓励当地企业迁入或创立的目的，在投资优先级上可以考虑企业进入率冷点群地区优先。因为提高冷点群中某一个地区的企业entry rate可以在空间效应上一定程度消解Low-Low Cluster的产生。这样做有利于引导地区之间的产业平衡，而不是高进入率和低进入率二元分明（也可以避免马太效应）
+
+从政府直接作用的角度出发，比如推行针对科技公司的税收优惠，地区租金优惠来提高地区的企业进入率。
+
+从间接作用的方式上，政府可以通过引导地区科技产业的多样性发展与适当增加地区科技企业密度的方式来提高的当地企业进入率。根据(Table \ref{tab:tab-regression-entry-rate})的实验结果展示，企业在某一地区在某一时段的进入率受到地区企业密度的正影响和企业集中度(Herfindahl-Hirschman Index )的负影响。
 
 \hypertarget{limitations-1}{%
 \section{Limitations}\label{limitations-1}}
@@ -787,28 +754,20 @@ To be done
 \hypertarget{transferability}{%
 \section{Transferability}\label{transferability}}
 
+研究其他地区也可以采用本研究的方式。比如研究科技企业可以从公司集群入手，先量化公司进入率与产业集中度。在此基础上，研究可以通过回归模型分析集群特征与进入率的关系。进一步研究局部地区的空间相关性可以采用全局与局部莫兰分析方法，结合冷热点分析进行某项指标的聚集现象。这样有助于帮助特定地区的政府平衡各个地区的发展来消解某一个产业的马太效应，从而实现社会生产的分配公平。
+
 To be done
 
 TTWA可以作为\ldots{}
 
-\hypertarget{conclusion}{%
-\chapter{Conclusion}\label{conclusion}}
+\hypertarget{conclusion-1}{%
+\chapter{Conclusion}\label{conclusion-1}}
 
-case (Clementi \& Palazzo,2016)
-This paper provides a framework to study the dynamics of the cross--section of firms and its implications for aggregate dynamics. When calibrated to match a set of moments of the investment process, our model delivers implications for firm dynamics and for the cyclicality of entry and exit that are consistent with the evidence.
+Aiming to make contributions to the research on the dynamic characteristics of tech clusters and industrial concentration, this article not only analyses the distribution of tech clusters in the England area but also conduct regression analysis and spatio-temporal pattern mining. In addition, the relationship between the entry rate of tech companies in England and the different indicators of the clusters (including firms density and the concentration of tech industries) is also quantitatively explained based on the results of the regression model and the spatial autocorrelation test.
 
-The survival rate increases with size. The growth rate of employment is decreasing with size and age, both unconditionally and conditionally. The size distribution of firms is skewed to the right. When tracking the size distribution over the life a cohort, the skewness declines with age. The entry rate is positively correlated with current and lagged output growth. The exit rate is negatively correlated with output growth and positively associated with future growth.
+In a nutshell, under the current research framework, whether it is the entire area of England or the local tech clusters, the experimental results in the past 20 years (1998-2018) have shown that industrial concentration and company density have a strong relationship with the entry rate of cluster technology companies. For example, the higher the industrial diversity and the greater the density of local technology companies, the higher the entry rate of technology companies in the region. In addition, the visualisation of spatio-temporal patterns also found the shift of cold and hot spots. For instance, compared with England as a whole, the cluster effect of the entry rate in some areas in the north has declined more slowly, while the southwest has changed from a cluster with a high entry rate to a cluster with a low entry rate. These findings can help government planning decision-makers to optimise the investment distribution of science and technology industries in England, thus realising the fair development of resource allocation among the England science and technology industries in the future.
 
-Carefully modeling firm--level dynamics turns out to be key. The pro--cyclicality of entry and the positive association between age and firm growth deliver amplification and propagation of aggregate shocks in a plain-vanilla competitive framework.
-
-A positive shock to aggregate productivity leads to an increase in entry. Consistent with the empirical evidence, entrants are smaller than incumbents. The skewness of the distribution of firms over idiosyncratic productivity increases. As the exogenous component of aggregate productivity declines towards its unconditional mean, the new entrants that survive grow in productivity and size. That is, the distribution of idiosyncratic productivity improves. As a result, the response of output is stronger and more persistent than in an environment that abstracts from entry and exit.
-
-Our numerical experiments reveal that on average, entry and exit account for about one fifth of the above--trend growth experienced by our economy over the 10 years following a 1.5 standard deviation innovation to aggregate productivity. As an alternative metric of the impact of entry and exit on aggregate dynamics, we assessed the effect on persistence. For a version of our model without entry or exit to generate a data--conforming persistence of output, the first--order auto correlation of aggregate productivity shocks must be 0.775. In the benchmark scenario with entry and exit, it needs only be 0.685.
-
-Last, but not least, we show that according to our model there is a clear causal link between the exceptionally large drop in establishments during the great recession and the painfully low speed of the recovery from it. Whatever its exact nature, the adverse event that initiated the recession had a particularly strong effect on the 2008 and 2009 cohorts, severely reducing the ranks of small but high--conditional--growth plants and thereby suppressing the growth in aggregate labor demand for years to come.
-
-In spite of the wealth of detail and descriptive realism achieved by the model, our framework could be extended in a variety of dimensions. In particular, we would like to gauge the quantitative effect of our mechanism when imbedded in a genuine general equilibrium framework. Relaxing our assumption that firms of different cohorts share the same technology is also of interest. Assuming, as it appears to be the case in reality, that entrants are more likely to adopt more recent vintages of capital, is likely to further enhance the amplification and propagation mechanism uncovered here.
-end (Clementi \& Palazzo,2016)
+Although the research framework has some limitations, the regression model and spatial autocorrelation analysis methods have good reproducibility in explaining the areas whose administrative divisions are similar to the UK. For the expansion of research directions, this research can refer to Clementi's (2016) analysis framework to investigate the dynamics of a cross-section of enterprises and their implications for aggregate dynamics. In addition, with the development of the technology industry and the trend of globalisation, the government's collection and archiving of more dimensional data of these companies would help to employ quantitative methods to explore the survival mode of tech companies. In addition to a more multi-dimensional quantitative analysis, this research can also focus on studying the impact of corporates' movement in the future, especially the change of the same company address and other corporate indicators such as the size of employees and assets before and after the relocation.
 
 \hypertarget{references}{%
 \chapter*{References}\label{references}}
@@ -816,7 +775,7 @@ end (Clementi \& Palazzo,2016)
 
 a b c d e f g h i j k l m n o p q r s t u v w x y z
 
-Alcacer J. and Chung W., 2007 Location strategies and knowledge spillovers, Management Science 53, 760--776.
+Alcacer J. and Chung W., 2007. Location strategies and knowledge spillovers, Management Science 53, 760--776.
 
 Anselin, L., 2010. Local Indicators of Spatial Association-LISA. Geographical Analysis, 27(2), pp.93-115.
 
@@ -830,13 +789,30 @@ Baptista, R. and Swann, G., 1999. A comparison of clustering dynamics in the US 
 
 Boschma, R., 2015. Do spinoff dynamics or agglomeration externalities drive industry clustering? A reappraisal of Steven Klepper's work. Industrial and Corporate Change, 24(4), pp.859-873.
 
-Combes, P.-P., Duranton, G., Gobillon, L., Puga, D. and Roux, S. (2012),The Productivity Advantages of Large Cities: Distinguishing AgglomerationFrom Firm Selection. Econometrica, 80: 2543-2594.https://doi.org/10.3982/ECTA84427
+Combes, P.-P., Duranton, G., Gobillon, L., Puga, D. and Roux, S. , 2012,The Productivity Advantages of Large Cities: Distinguishing AgglomerationFrom Firm Selection. Econometrica, 80: 2543-2594.https://doi.org/10.3982/ECTA84427
 
 Clementi, G.L. and Palazzo, B., 2016. Entry, exit, firm dynamics, and aggregate fluctuations. American Economic Journal: Macroeconomics, 8(3), pp.1-41.
 
-ESRI. 2021. How Hot Spot Analysis (Getis-Ord Gi*) works. {[}online{]} Available at: \url{https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/h-how-hot-spot-analysis-getis-ord-gi-spatial-stati.htm} {[}Accessed 21 August 2021{]}.
+Carlsson B. ,1987 Reflections on industrial dynamics: the challenges ahead, International Journal of Industrial Organization 5,
+133--148.
 
-Frenken, K., Cefis, E., \& Stam, E. 2015. Industrial Dynamicsand Clusters: A Survey. Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505
+ESRI., 2021. How Hot Spot Analysis (Getis-Ord Gi*) works. {[}online{]} Available at: \url{https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/h-how-hot-spot-analysis-getis-ord-gi-spatial-stati.htm} {[}Accessed 21 August 2021{]}.
+
+Ellison, G., Glaeser, E., Kerr, W. ,2010. ``What causes industry agglomeration? Evidence from
+coagglomeration patterns.'' American Economic Review, 100 (3), 1195-213.
+
+Frenken, K., Cefis, E., and Stam, E. 2015. Industrial Dynamicsand Clusters: A Survey. Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505
+
+Fariñas, J. and Moreno, L., 2000. Review of Industrial Organization, 17(3), pp.249-265.
+
+Feldman, M., 2003. ``The locational dynamics of the US biotech industry: knowledge externalities
+and the anchor hypothesis.'' Industry and Innovation 10 (3), 311-29
+
+Fingleton, B., Camargo Igliori, D. and Moore, B., 2004. Employment Growth of Small High-technology Firms and the Role of Horizontal Clustering: Evidence from Computing Services and R\&D in Great Britain, 1991-2000. Urban Studies, 41(4), pp.773-799.
+
+Fritsch M., 2011. The effect of new business formation on regional development -- empirical evidence, interpretation, and avenues for the further research, in FRITSCH M. (Ed.) Handbook of Research on Entrepreneurship and Regional Development -- National and Regional Perspectives, pp.~58--106. Edward Elgar, Cheltenham
+
+Furman, J. L., M. E. Porter, S. Stern., 2002. The determinants of national innovative capacity. Res. Policy. 31(6) 899--933.
 
 Getis, A. and Ord, J., 2010. The Analysis of Spatial Association by Use of Distance Statistics. Geographical Analysis, 24(3), pp.189-206.
 
@@ -844,13 +820,17 @@ Hall, B.L., Hsiao, E.Y., Majercik, S., Hirbe, M. and Hamilton, B.H., 2009. The i
 
 Hause, J. and Du Rietz, G., 1984. Entry, Industry Growth, and the Microdynamics of Industry Supply. Journal of Political Economy, 92(4), pp.733-757.
 
-Kerr, William R., and Frederic Robert-Nicoud. 2020. ``Tech Clusters.''Journal of Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/articles?id=10.1257/jep.34.3.50
+Kerr, William R., and Frederic Robert-Nicoud., 2020. Tech Clusters. Journal of Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/articles?id=10.1257/jep.34.3.50
 
 Kwoka, J., 1977. Large Firm Dominance and Price-Cost Margins in Manufacturing Industries. Southern Economic Journal, 44(1), p.183.
 
 Krafft, J., 2004. Entry, exit and knowledge: evidence from a cluster in the info-communications industry. Research policy, 33(10), pp.1687-1706.
 
 Kumari, M., Sarma, K. and Sharma, R., 2019. Using Moran's I and GIS to study the spatial pattern of land surface temperature in relation to land use/cover around a thermal power plant in Singrauli district, Madhya Pradesh, India. Remote Sensing Applications: Society and Environment, 15, p.100239.
+
+Kogut, B., S. J. Chang., 1991. Technological capabilities and Japanese foreign direct investment in the United States. Rev.~Econom. Statist. 73(3) 401--413.
+
+Kwon, O., 2020. A study on how startups approach sustainable development through intellectual property. Sustainable Development, 28(4), pp.613-625.
 
 Liston-Heyes, C. and Pilkington, A., 2004. Inventive concentration in the production of green technology: A comparative analysis of fuel cell patents. Science and Public Policy, 31(1), pp.15-25
 
@@ -862,9 +842,11 @@ Li, L., Jiang, Z., Duan, N., Dong, W., Hu, K. and Sun, W., 2011. Police Patrol s
 
 Mateos-Garcia, J. and Bakhshi, H., 2016. The geography of creativity in the UK. London: Nesta.
 
+Malerba F., 2006. Innovation and the evolution of industries. Journal of Evolutionary Economics 16, 3--23.
+
 Nathan, M. and Rosso, A., 2015. Mapping digital businesses with big data: Some early findings from the UK. Research Policy, 44(9), pp.1714-1733.
 
-Open Corporates. 2018, The core company data from OpenCorporates master company database, electronic dataset, OpenCorporates Data Dictionary, viewed 12 June 2021, \url{https://opencorporates.com/}{[}Accessed 18 August 2021{]}.
+Open Corporates, 2018. The core company data from OpenCorporates master company database, electronic dataset, OpenCorporates Data Dictionary, viewed 12 June 2021, \url{https://opencorporates.com/}{[}Accessed 18 August 2021{]}.
 
 Office for National Statistics, 2015. Identifying Science and Technology Businesses in Official Statistics. {[}online{]} London, UK: Office for National Statistics, pp.10-14. Available at: \url{https://webarchive.nationalarchives.gov.uk/20160105170025/http://www.ons.gov.uk/ons/site-information/using-the-website/rss-news-feeds/index.html} {[}Accessed 28 July 2021{]}.
 
@@ -872,18 +854,32 @@ Ozkul, B., 2014. Changing home-to-work travel in England and Wales. Regional Stu
 
 Prothero, R., 2021. Travel to work area analysis in Great Britain. {[}online{]} Office for National Statistics. Available at: \url{https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/traveltoworkareaanalysisingreatbritain/2016} {[}Accessed 8 August 2021{]}.
 
+Porter, M., 1998. ``Clusters and the new economics of competition.'' Harvard Business Review.
+
+Porter, M E, and S Stern., 1999. The New Challenge to America's Prosperity: Findings from the Innovation Index (Council on Competitiveness, Washington DC).
+
 Stankov, U. and Dragićević, V., 2015. Changes in the spatial pattern of net earnings: Evidence from Serbia. Acta Oeconomica, 65(3), pp.351-365.
 
+Shaver, J. M., F. Flyer. 2000. Agglomeration economies, firm heterogeneity, and foreign direct investment in the United States. Strategic Management J. 21(12) 1175--1193.
+
 Titheridge, H. and Hall, P., 2006. Changing travel to work patterns in South East England. Journal of Transport Geography, 14(1), pp.60-75.
+
+Tech Nation, 2021. The Future UK Tech Built. {[}online{]} Tech Nation. Available at: \url{https://technation.io/report2021/\#methodology} {[}Accessed 10 August 2021{]}.
+
+Tremblay, V., Iwasaki, N. and Tremblay, C., 2005. The Dynamics of Industry Concentration for U.S. Micro and Macro Brewers. Review of Industrial Organization, 26(3), pp.307-324.
 
 \addcontentsline{toc}{chapter}{Bibliography}
 \printbibliography
 
-\hypertarget{appendix-a-classification-form}{%
-\chapter*{Appendix A Classification Form}\label{appendix-a-classification-form}}
-\addcontentsline{toc}{chapter}{Appendix A Classification Form}
+\hypertarget{appendix-a-data-source}{%
+\chapter*{Appendix A Data Source}\label{appendix-a-data-source}}
+\addcontentsline{toc}{chapter}{Appendix A Data Source}
 
 \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+
+Dissertation Book Live Version: \url{https://zeqiang.fun/CASA0012-Dissertation/bookdown/html/}
+
+Data Source: \ldots{}
 
 \hypertarget{science-and-technology-classification}{%
 \section*{Science and Technology Classification}\label{science-and-technology-classification}}

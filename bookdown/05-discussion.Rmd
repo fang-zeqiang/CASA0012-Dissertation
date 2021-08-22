@@ -1,22 +1,39 @@
-# Discussion{#disc}
+# Discussion{#discussion}
 
-Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
++ 思考：Over time, smaller factories generated proportionately more jobs, implying that job-growth incentives to larger enterprises may have been misdirected. Overall, our findings suggest that the impacts of size and age on manufacturing plant expansion in a developing economy are similar to those in rich economies (negative relationship between plant age and plant growth)(Liu, Tsou and Hammitt, 1999)
 
-To be done
++ Discussion: 从时空趋势的角度上看，北方逐渐成为entry rate的热点，有越来越多的科技公司加入北方并且这一现象具有空间自相关性；而西南部地区如何进行政策鼓励和调整来使得他们的科技产业重新焕发生机，税收？
 
-## Research significance 
+## Reflection on Results
 
-### Global development goals
+针对公司层面
 
-### Local policy
+总体上，风险投资选择未来科技产业较为多样的地区且公司密度较大的地区进行投资，因为这些地区往往和高进入率可能存在联系，这意味着试错成本较低，选择较多（新兴企业的存活基数较大）；
 
-### Academic research
+作为风险投资，也可以多关注诸如北部一些进入率热点集群。根据冷热点分析的结果，在未来可以多关注北部地区。这里在不考虑除了England地区以外的其他UK地区影响下，东北部城市带有可能会成为科技企业的进入热点区。关注这些地区的企业可以为投资提供更多选择。虽然西南部地区在2018年是公司进入的冷点，该地区相应企业服务基础设施可能会比较完善，因为该地区在1998年是科技公司进入的热点集群。
+
+如果从通勤区的角度观察，可以发现在一个特定的Travel to Work Area中通勤者从住宅区到商业区往往有着较为成熟的通勤方式。这种模式可以帮助我们更好地理解科技企业的集群现象。并且，从业者在家庭位置固定的情况下选择工作上往往倾向于在一定的通勤区域内(...)。在这种情况下，企业在市场竞争较不激烈的地区中雇佣高端稳定的劳动力要比其他地区进行同样的公司招聘行为更加可行。
+
+但另一方面，市场竞争较为激烈的地方对人才的吸引力大这会改变个体家庭的通勤决策。风险投资也不妨兼顾在未来会有更大科技进入率的伦敦周边地区(Figure \@ref(fig:fig-enR-1998-2018-v1))。虽然该地区在回归分析结果中往往被当作离群点处理，伦敦及其周边卫星城市可能有着相比England地区非常不同的企业动态模式。
+
+针对政府层面
+
+从全局角度出发，根据实验结果会发现企业的进入率聚集效应呈现逐年下降的趋势 (\@ref(tab:tab-morans-i-enR))
+
+从局部角度观察，北方地区特别是东北部通勤地区的聚集效应下降相比其他地区有延迟。对于政策而言，南北部地区的政策推行需要结合当地现状。举个例子，政府希望提高某大区域科技企业数量平均水平以此来优化各个地区产业结构。如果England政府出于鼓励当地企业迁入或创立的目的，在投资优先级上可以考虑企业进入率冷点群地区优先。因为提高冷点群中某一个地区的企业entry rate可以在空间效应上一定程度消解Low-Low Cluster的产生。这样做有利于引导地区之间的产业平衡，而不是高进入率和低进入率二元分明（也可以避免马太效应）
+
+从政府直接作用的角度出发，比如推行针对科技公司的税收优惠，地区租金优惠来提高地区的企业进入率。
+
+从间接作用的方式上，政府可以通过引导地区科技产业的多样性发展与适当增加地区科技企业密度的方式来提高的当地企业进入率。根据(Table \@ref(tab:tab-regression-entry-rate))的实验结果展示，企业在某一地区在某一时段的进入率受到地区企业密度的正影响和企业集中度(Herfindahl-Hirschman Index )的负影响。
+
 
 ## Limitations
 
 To be done
 
 ## Transferability 
+
+研究其他地区也可以采用本研究的方式。比如研究科技企业可以从公司集群入手，先量化公司进入率与产业集中度。在此基础上，研究可以通过回归模型分析集群特征与进入率的关系。进一步研究局部地区的空间相关性可以采用全局与局部莫兰分析方法，结合冷热点分析进行某项指标的聚集现象。这样有助于帮助特定地区的政府平衡各个地区的发展来消解某一个产业的马太效应，从而实现社会生产的分配公平。
 
 To be done
 

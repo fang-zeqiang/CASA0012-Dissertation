@@ -14,7 +14,29 @@ library(knitr)
 # Declaration {.unlisted .unnumbered}
 '`
 
-I, Zeqiang Fang, hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is xxx words in length
+```{r include=FALSE,message=FALSE, warning=FALSE}
+word_count_00 = wordcountaddin::word_count("00-preamble.Rmd")
+
+word_count_01 = wordcountaddin::word_count("01-intro.Rmd")
+
+word_count_02 = wordcountaddin::word_count("02-literature.Rmd")
+
+word_count_03 = wordcountaddin::word_count("03-method.Rmd")
+
+word_count_04 = wordcountaddin::word_count("04-results.Rmd")
+
+word_count_05 = wordcountaddin::word_count("05-discussion.Rmd")
+
+word_count_06 = wordcountaddin::word_count("06-conclusion.Rmd")
+
+word_count_07 = wordcountaddin::word_count("07-references.Rmd")
+
+word_count_08 = wordcountaddin::word_count("08-appendix.Rmd")
+
+total_word_count = word_count_00 + word_count_01 + word_count_02 + word_count_03 + word_count_04 + word_count_05 + word_count_06 + word_count_07
+```
+
+I, Zeqiang Fang, hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is `r total_word_count` words in length
 
 `r if (knitr:::is_html_output()) '
 # Acknowledgements{-}
@@ -34,7 +56,7 @@ This paper would not have been possible without the help of others. First of all
 ```
 
 `r if (knitr:::is_html_output()) '
-# Abbreviations{#abbr}
+# Abbreviations {.unlisted .unnumbered}
 '`
 `r if (knitr:::is_latex_output()) '
 # Abbreviations {.unlisted .unnumbered}

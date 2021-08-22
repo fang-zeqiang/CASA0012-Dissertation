@@ -1,51 +1,34 @@
 # Literature Review {#lit-review}
 
-## Industry Cluster & Tech Cluster
+## Industrial Cluster and Tech Cluster
 
-Tech clusters like Silicon Valley play a central role for modern innovation, business competitiveness, and economic performance. This paper reviews what constitutes a tech cluster, how they function internally, and the degree to which policy makers can purposefully foster them. We describe the growing influence of advanced technologies for businesses outside of traditional tech fields, the strains and backlash that tech clusters are experiencing, and emerging research questions for theory and empirical work.
+A cluster is described as a geographic concentration of businesses that operate in the same industry. High rates of entry and exit are often correlated with growth in employment and productivity, so these questions are of interest not only to academics but also to policymakers (Fritsch, 2011). Industry clusters form as a result of the production benefits of local specialization mixed with cross-regional trade. Three forces of what is now known as agglomeration economies were discussed previously: knowledge spillovers, labour market pooling, and customer-supplier interactions. While most Marshallian force studies have focused on industrial contexts, they also apply to tech clusters, albeit in slightly different ways (Ellison et al. 2010). The definition of tech clusters is mentioned in Kerr's research(2020) as given below
 
-They find ICT employment shares nearly double the usual estimates using their unique ‘sector-product' approach, however this conclusion is more speculative (ICT production space is around 42 percent larger than SIC-based estimates, with around 70,000 more companies)
-(Nathan & Rosso, 2015)
+> we define “tech” clusters to be locations where new products (be they goods or services) and production processes are created that impact multiple parts of the economy. 
 
-## Cluster Dynamics
+In identifying Information and communications technology (ICT) relative economic activities, They find ICT employment shares nearly double the usual estimates using their unique approach even if this conclusion is more speculative(Nathan and Rosso, 2015). The definition and tech relative industry information can give a brief understanding of our research objects.
 
-Industrial dynamics and clusters: a survey, regional research. This article reviews clusters and their impact on the entry, exit, and growth of firms, as well as the literature supporting the evolutionary dynamics of cluster formation. This extensive review shows strong evidence that clusters promote the entry of manufacturers, but the evidence that clusters can promote the growth and survival of firms is rather weak. From a number of open-ended questions, this research extracts various future research paths that emphasize the importance of manufacturer heterogeneity and the exact mechanism that supports the localized economy (Frenken, Cefis and Stam, 2014).
+## Industrial Dynamics
 
-Relative researchers found that industry clustering not only increased firm entry but also firm exit rates. This implied that clusters could emerge and exist because they provide entry opportunities but they do not necessarily generate Marshallian economies that increase firm survival (Boschma, 2015). 
+Industrial dynamics is still a relatively new subject of research. Its main focus is on the evolution of industries, with an emphasis on company entry, growth, and exit(Malerba, 2006). Industrial dynamics, in contrast to the neoclassical approach to industries (also known as industrial organization), focuses primarily on phenomena that are intrinsically dynamic and deals with them in an interdisciplinary manner such as economic geography(Carlsson 1987;Fritsch, 2011). 
 
-by looking at how clusters influence entry, departure, and growth via localization economics, and by taking a long-term look at cluster emergence and evolution.
+In industrial clutser analysis, concepts of anchor firms for clusters are developed by some researchers. This thesis indicates that big corporate headquarters can help a specific area attract many other firms to form a new cluster and this anchor firm is usually recognised as the basis of the cluster (Feldman, 2003; Porter, 1998). For the cluster dynamics, the cluster has a strong influence on the company's entry behaviour. The relevant research team found that the entry rate increases as the cluster size increases (Frenken et al., 2014). Most of the research focuses on the correlation between industry dynamics and localisation but there is little extensive quantitative research on the relationship between industry concentration and entry pattern(Furman et al., 2002; Shaver and Flyer, 2000).
 
-Entry is strongly influenced by clustering. Empirical research have consistently found that as cluster size grows, so does the rate of admission. Most potential entrepreneurs simply stay in their region of origin, therefore this empirical correlation does not imply that enterprises locate in a cluster because they gain from co-location.
+Relative researchers found that industry clustering not only can increase firm entry but also firm exit rates. This implied that clusters could emerge and exist because they provide entry opportunities but they do not necessarily generate Marshallian economies that increase firm survival (Boschma, 2015;Alcacer and Chung, 2007). Some teams investigate cluster emergence and evolution over the long term by looking at how clusters influence entry, exit, and growth via localisation economics(Kogut,1991). Besides, Clementi and Palazzo(2016)found there is a cluster effect on the whole of England area. The arrival of new businesses has a significant impact on the overall dynamics. The cluster's new entrants will grow in size over time, resulting in broader expansion and overall influence. This research framework can be referred to our quantitative measurement of cluster dynamics.
 
-Localization economies appear to play a role in entrance decisions in these research, but only for technologically trailing businesses who stand to gain the most and have the least to lose from co-location (ALCCER and CHUNG, 2007).
+## Industry Concentration
 
-Cluster effect on the whole England area
-Enterprise entry does play an important role in shaping the overall dynamics. The new entrants that survive in the cluster will become larger over time, resulting in broader expansion and overall impact (Clementi & Palazzo, 2016)
-https://pages.stern.nyu.edu/~gclement/Papers/Entry_exit.pdf
+In competition law, antitrust, and technology management, the Herfindahl–Hirschman Index (HHI) is a widely used economic concept. It's a metric for a company's size in proportion to its industry, as well as a barometer for how competitive it is (Liston-Heyes and Pilkington, 2004). On average, businesses in big cities are more productive. The natural advantages of localisation may enhance corporate choice and agglomeration economies. Large cities encourage competition by enabling only the most productive individuals to stay, fostering contact and increasing productivity(Porter and Stern, 1999).
 
-## Industry Mix
+Tremblay et al.(2005) have studied the relationship between the brewing industry and the entry of enterprises from a macro and micro perspective. They found that regional technological changes will lead to an increase in industry concentration and macro-fields. Excessive industrial prosperity and high concentration will lead to a decline in business entry and a decline in survival rates(ibid). The Herfindahl–Hirschman index is also used to highlight the dynamic patterns of the sustainability sector, which is crucial for understanding how startups have applied the concept of sustainability(Kwon, 2020).
 
-On average, companies in large cities are more productive. There are two main explanations: corporate choice (big cities strengthen competition and only allow the most productive people to survive) and agglomeration economies (big cities promote interaction and increase productivity), which may be strengthened by the natural advantages of localization. In order to distinguish them, we nested a general version of the easy-to-handle company selection model and a standard agglomeration model. Stronger choices in large cities cut the distribution of productivity to the left, while stronger gatherings move to the right and expand the distribution. Using this forecast, French firm-level data, and new quantile methods, we show that firm choices cannot explain differences in spatial productivity. The results are applicable to various departments, city size thresholds, institutional samples and regional definitions.
+## Other Factors and Dynamics Pattern
 
-The Herfindahl–Hirschman Index (HHI) is a commonly used economic concept in competition law, antitrust[1], and technology management. It's a measure of a company's size in relation to the industry it's in, as well as an indicator of how competitive it is ​(Liston-Heyes & Pilkington, 2004).
+The density of regional firms may have a two-sided impact on the entry pattern. Because each firm has the ability to bring in new entrants, firm density has a positive effect on entry rates in the early stages of an industry. Due to severe market rivalry, higher firm density levels, on the other hand, become a barrier to entry as the industry expands and flourishes (Boschma, 2015). Meanwhile, empirical research shows that the relationship between business size and the likelihood of survival is influenced by technology and the stage of the industry life cycle (Agarwal and Audretsch, 2001). 
 
-## How location affect entry pattern in UK/Global
+Studies have also shown that entry may be less about radical innovation and more about filling strategic niches in established businesses that are nonetheless technologically intensive, neutralizing the impact of entry size on the likelihood of survival(ibid). There is also evidence that a negative relationship between firms' age and growth over time is because more and smaller firms such as factories create more jobs than some large companies(Liu et al., 1999). For firms' growth and failure, Moreno's research(2000) found that the failure rate and growth rate of companies decline with the growth of scale and age. Regression-to-the-mean is not an important factor in the negative correlation between the size and growth of surviving companies. And he also offers empirical evidence of firm failure rates as well as the mean of the distribution of realized growth rates.
 
-## How time affect entry pattern in UK/Global
+## Conclusion
 
-## Other factor can affect dynamics pattern in UK
+Overall, by reviewing the past literature on industrial clusters and enterprise dynamic models, it can be found that industrial dynamics is still a relatively novel research topic in the UK. Usually, the characteristics of research clusters can be conducted in an interdisciplinary way such as economic geography. As a region with obvious cluster effects, the UK's industrial clusters can increase the entry of enterprises. And there is also a reference for the relevant literature on the quantitative measurement method of the entry index. In terms of industry concentration, a certain degree of industrial concentration in the short term may attract companies to enter, that is, industry prosperity within a certain period of time. But excessive entry will also cause industry shocks. Through the research review of the dynamic pattern of enterprises, it is also found that the regional density level, the age of enterprises or clusters and etc. have an influence on the entry pattern of enterprises.
 
-Firm density has a beneficial effect on entry rates in the early stages of an industry since each firm has the potential to bring in new entrants. Legitimation has been coined to describe this positive density impact. Higher company density levels, on the other hand, become a barrier to entrance as the industry evolves and grows, owing to fierce market competition (Boschma, 2015).
-
-
-The empirical evidence reveals that technology and the stage of the industry life cycle impact the relationship between business size and the likelihood of survival.(Agarwal and Audretsch, 2001)
-Entry may be less about radical innovation and more about filling strategic niches in established businesses that are nonetheless technologically intensive, neutralizing the impact of entry size on the likelihood of survival.(ibid)
-
-Over time, smaller factories generated proportionately more jobs, implying that job-growth incentives to larger enterprises may have been misdirected. Overall, our findings suggest that the impacts of size and age on manufacturing plant expansion in a developing economy are similar to those in rich economies (negative relationship between plant age and plant growth )(Liu, Tsou and Hammitt, 1999)
-
-
-> Firms Growth and Failure
-
-Moreno's research found that the failure rate and growth rate of companies decline with the growth of scale and age. Regression-to-the-mean is not an important factor in the negative correlation between the size and growth of surviving companies. And he also offers empirical evidence of firm failure rates as well as the mean of the distribution of realized growth rates(Fariñas and Moreno, 2000).
-https://sci-hub.se/10.1023/A:1007834210622
-Fariñas, J. and Moreno, L., 2000. Review of Industrial Organization, 17(3), pp.249-265.

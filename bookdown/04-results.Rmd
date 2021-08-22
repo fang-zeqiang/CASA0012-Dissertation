@@ -20,7 +20,6 @@ In terms of three variables' change of overall England level,it can be found tha
 ```{r fig-all-var-trend, echo=FALSE, fig.cap='The average level change of three variables in two decades', out.width='100%'}
 knitr::include_graphics(here::here('general_images','all_enR_hh_den_change.png'))
 ```
-How to reference (Figure \@ref(fig:fig-all-var-trend))
 
 ```{r tab-all-var-trend, echo=FALSE}
 read_excel(here("tables", "enR_hh_den_year_trend.xlsx"))%>% 
@@ -28,7 +27,6 @@ read_excel(here("tables", "enR_hh_den_year_trend.xlsx"))%>%
     kable_styling(position = "center")%>%
     row_spec(.,row=0,bold = TRUE)
 ```
-How to reference (Table \@ref(tab:tab-all-var-trend))
 
 ### Tech Cluster Dynamics
 From 1998 to 2018, the entry rate of each Travel to work area (TTWA) in England will change drastically every decades. For example, in 1998 the darker colored areas were mostly around the Greater London area and the entire southern part of England(Figure \@ref(fig:fig-enR-1998-2018-v1)). The overall entry rate in 2008 was higher than that in 1998 and showed a trend of new companies entering the north of England. In this year, some travel to work areas on the edge of England have more prominent entry rates, such as Malton, Minehead and Bridport. However, the overall entry rate in 2018 was about twice as high as the average in 2008. Moreover, ttwa with high entry rate is mostly concentrated in the north and the surrounding areas of Greater London. The overall trend can be witnessed as given by Table \@ref(tab:tab-all-var-trend) that there is an increasing trend in the overall level of entry rate from 1998 (average about 1.06% ) to 2018
@@ -77,7 +75,7 @@ Consistent with model[2], the entry rate increase with density (Table \@ref(tab:
 options(knitr.kable.NA = '')
 read_excel(here("tables", "OLS_regression_control_var.xlsx"))%>% 
     knitr::kable(booktabs = TRUE,
-                 caption = "Regression Results of Firms Entry Rate and Tech Clusters' Characters (variables Controlled)")%>%
+                 caption = "Regression Results of Firms Entry Rate and Tech Clusters' Characters (Variables Controlled)")%>%
     kable_styling(position = "center")%>% 
     row_spec(c(3, 9), hline_after = T) %>% 
     add_footnote(c("All regressions include dummy variables for 149 travel to work areas(ttwa) in England and 20 years from 1998 to 2018. Figures in brackets are standard errors. ***, **, and * represent statistical significance at 1%, 5%, and 10%, respectively.","HHI defined by Herfindahl-Hirschman index can indicate the industry concentration", "Source: tech firm data in England travel to work areas from 1998 to 2008 (n = 3089)"), notation = "alphabet") %>% 
@@ -146,10 +144,6 @@ This research identified and mapped local clusters (hot and cold spots) by the l
 On the whole, there is a distinct north-south difference in the distribution of cold and hot spots in the early stage(1998). With the development of England tech clusters, this difference is slowly dissipating and a reversal is formed eventually(Figure \@ref(fig:fig-Gi-entry-rate)). More specifically, in 1998, there were some hot spots concentrated in the Swindon-Bristol-Reading urban belt in the south-central area and the southwest urban agglomeration of Exeter. Whilst, in the north, there were scattered cold spots represented by the Whitehaven area.
 
 By 2008, most of the hot spots disappeared, and the places that were hot spots gradually became cold spots, such as the southwestern region. In 2018, some hot spots appeared in the northwestern region along with England. The original two hot spots in the southwest have experienced two-time nodes in 2008 and 2018, and they finally turned into cold spot clusters(Figure \@ref(fig:fig-Gi-entry-rate)).
-
-From: https://sci-hub.se/10.1556/032.65.2015.3.1
-
-Discussion: 从时空趋势的角度上看，北方逐渐成为entry rate的热点，有越来越多的科技公司加入北方并且这一现象具有空间自相关性；而西南部地区如何进行政策鼓励和调整来使得他们的科技产业重新焕发生机，税收？
 
 ```{r fig-Gi-entry-rate, echo=FALSE, fig.cap='Local Gi* Score Statistics for Entry Rate in England for Three Time Periods', out.width='100%'}
 knitr::include_graphics(here::here('general_images','G_enR_v1.png'))

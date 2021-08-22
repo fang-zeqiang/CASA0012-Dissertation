@@ -2,7 +2,7 @@
 
 a b c d e f g h i j k l m n o p q r s t u v w x y z
 
-Alcacer J. and Chung W., 2007 Location strategies and knowledge spillovers, Management Science 53, 760–776.
+Alcacer J. and Chung W., 2007. Location strategies and knowledge spillovers, Management Science 53, 760–776.
 
 Anselin, L., 2010. Local Indicators of Spatial Association-LISA. Geographical Analysis, 27(2), pp.93-115.
 
@@ -16,13 +16,30 @@ Baptista, R. and Swann, G., 1999. A comparison of clustering dynamics in the US 
 
 Boschma, R., 2015. Do spinoff dynamics or agglomeration externalities drive industry clustering? A reappraisal of Steven Klepper’s work. Industrial and Corporate Change, 24(4), pp.859-873.
 
-Combes, P.-P., Duranton, G., Gobillon, L., Puga, D. and Roux, S. (2012),The Productivity Advantages of Large Cities: Distinguishing AgglomerationFrom Firm Selection. Econometrica, 80: 2543-2594.https://doi.org/10.3982/ECTA84427
+Combes, P.-P., Duranton, G., Gobillon, L., Puga, D. and Roux, S. , 2012,The Productivity Advantages of Large Cities: Distinguishing AgglomerationFrom Firm Selection. Econometrica, 80: 2543-2594.https://doi.org/10.3982/ECTA84427
 
 Clementi, G.L. and Palazzo, B., 2016. Entry, exit, firm dynamics, and aggregate fluctuations. American Economic Journal: Macroeconomics, 8(3), pp.1-41.
 
-ESRI. 2021. How Hot Spot Analysis (Getis-Ord Gi*) works. [online] Available at: <https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/h-how-hot-spot-analysis-getis-ord-gi-spatial-stati.htm> [Accessed 21 August 2021].
+Carlsson B. ,1987 Reflections on industrial dynamics: the challenges ahead, International Journal of Industrial Organization 5,
+133–148.
 
-Frenken, K., Cefis, E., & Stam, E. 2015.  Industrial Dynamicsand Clusters:  A Survey.   Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505
+ESRI., 2021. How Hot Spot Analysis (Getis-Ord Gi*) works. [online] Available at: <https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/h-how-hot-spot-analysis-getis-ord-gi-spatial-stati.htm> [Accessed 21 August 2021].
+
+Ellison, G., Glaeser, E., Kerr, W. ,2010. “What causes industry agglomeration? Evidence from 
+coagglomeration patterns.” American Economic Review, 100 (3), 1195-213.
+
+Frenken, K., Cefis, E., and Stam, E. 2015.  Industrial Dynamicsand Clusters:  A Survey.   Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505
+
+Fariñas, J. and Moreno, L., 2000. Review of Industrial Organization, 17(3), pp.249-265.
+
+Feldman, M., 2003. “The locational dynamics of the US biotech industry: knowledge externalities 
+and the anchor hypothesis.” Industry and Innovation 10 (3), 311-29
+
+Fingleton, B., Camargo Igliori, D. and Moore, B., 2004. Employment Growth of Small High-technology Firms and the Role of Horizontal Clustering: Evidence from Computing Services and R&D in Great Britain, 1991-2000. Urban Studies, 41(4), pp.773-799.
+
+Fritsch M., 2011. The effect of new business formation on regional development – empirical evidence, interpretation, and avenues for the further research, in FRITSCH M. (Ed.) Handbook of Research on Entrepreneurship and Regional Development – National and Regional Perspectives, pp. 58–106. Edward Elgar, Cheltenham
+
+Furman, J. L., M. E. Porter, S. Stern., 2002. The determinants of national innovative capacity. Res. Policy. 31(6) 899–933.
 
 Getis, A. and Ord, J., 2010. The Analysis of Spatial Association by Use of Distance Statistics. Geographical Analysis, 24(3), pp.189-206.
 
@@ -30,13 +47,17 @@ Hall, B.L., Hsiao, E.Y., Majercik, S., Hirbe, M. and Hamilton, B.H., 2009. The i
 
 Hause, J. and Du Rietz, G., 1984. Entry, Industry Growth, and the Microdynamics of Industry Supply. Journal of Political Economy, 92(4), pp.733-757.
 
-Kerr, William R., and Frederic Robert-Nicoud. 2020. “Tech Clusters.”Journal of Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/articles?id=10.1257/jep.34.3.50
+Kerr, William R., and Frederic Robert-Nicoud., 2020. Tech Clusters. Journal of Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/articles?id=10.1257/jep.34.3.50
 
 Kwoka, J., 1977. Large Firm Dominance and Price-Cost Margins in Manufacturing Industries. Southern Economic Journal, 44(1), p.183.
 
 Krafft, J., 2004. Entry, exit and knowledge: evidence from a cluster in the info-communications industry. Research policy, 33(10), pp.1687-1706.
 
 Kumari, M., Sarma, K. and Sharma, R., 2019. Using Moran's I and GIS to study the spatial pattern of land surface temperature in relation to land use/cover around a thermal power plant in Singrauli district, Madhya Pradesh, India. Remote Sensing Applications: Society and Environment, 15, p.100239.
+
+Kogut, B., S. J. Chang., 1991. Technological capabilities and Japanese foreign direct investment in the United States. Rev. Econom. Statist. 73(3) 401–413.
+
+Kwon, O., 2020. A study on how startups approach sustainable development through intellectual property. Sustainable Development, 28(4), pp.613-625.
 
 Liston-Heyes, C. and Pilkington, A., 2004. Inventive concentration in the production of green technology: A comparative analysis of fuel cell patents. Science and Public Policy, 31(1), pp.15-25
 
@@ -48,9 +69,11 @@ Li, L., Jiang, Z., Duan, N., Dong, W., Hu, K. and Sun, W., 2011. Police Patrol s
 
 Mateos-Garcia, J. and Bakhshi, H., 2016. The geography of creativity in the UK. London: Nesta.
 
+Malerba F., 2006. Innovation and the evolution of industries. Journal of Evolutionary Economics 16, 3–23.
+
 Nathan, M. and Rosso, A., 2015. Mapping digital businesses with big data: Some early findings from the UK. Research Policy, 44(9), pp.1714-1733.
 
-Open Corporates. 2018, The core company data from OpenCorporates master company database, electronic dataset, OpenCorporates Data Dictionary, viewed 12 June 2021, <https://opencorporates.com/>[Accessed 18 August 2021].
+Open Corporates, 2018. The core company data from OpenCorporates master company database, electronic dataset, OpenCorporates Data Dictionary, viewed 12 June 2021, <https://opencorporates.com/>[Accessed 18 August 2021].
 
 Office for National Statistics, 2015. Identifying Science and Technology Businesses in Official Statistics. [online] London, UK: Office for National Statistics, pp.10-14. Available at: <https://webarchive.nationalarchives.gov.uk/20160105170025/http://www.ons.gov.uk/ons/site-information/using-the-website/rss-news-feeds/index.html> [Accessed 28 July 2021].
 
@@ -58,9 +81,19 @@ Ozkul, B., 2014. Changing home-to-work travel in England and Wales. Regional Stu
 
 Prothero, R., 2021. Travel to work area analysis in Great Britain. [online] Office for National Statistics. Available at: <https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/traveltoworkareaanalysisingreatbritain/2016> [Accessed 8 August 2021].
 
+Porter, M., 1998. “Clusters and the new economics of competition.” Harvard Business Review.
+
+Porter, M E, and S Stern., 1999. The New Challenge to America’s Prosperity: Findings from the Innovation Index (Council on Competitiveness, Washington DC).
+
 Stankov, U. and Dragićević, V., 2015. Changes in the spatial pattern of net earnings: Evidence from Serbia. Acta Oeconomica, 65(3), pp.351-365.
 
+Shaver, J. M., F. Flyer. 2000. Agglomeration economies, firm heterogeneity, and foreign direct investment in the United States. Strategic Management J. 21(12) 1175–1193.
+
 Titheridge, H. and Hall, P., 2006. Changing travel to work patterns in South East England. Journal of Transport Geography, 14(1), pp.60-75.
+
+Tech Nation, 2021. The Future UK Tech Built. [online] Tech Nation. Available at: <https://technation.io/report2021/#methodology> [Accessed 10 August 2021].
+
+Tremblay, V., Iwasaki, N. and Tremblay, C., 2005. The Dynamics of Industry Concentration for U.S. Micro and Macro Brewers. Review of Industrial Organization, 26(3), pp.307-324.
 
 
 
