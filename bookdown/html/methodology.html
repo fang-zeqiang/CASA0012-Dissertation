@@ -95,7 +95,7 @@
 <ul>
 <li class="chapter" data-level="3.1" data-path="methodology.html"><a href="methodology.html#research-framework"><i class="fa fa-check"></i><b>3.1</b> Research Framework</a></li>
 <li class="chapter" data-level="3.2" data-path="methodology.html"><a href="methodology.html#data-source-and-processing"><i class="fa fa-check"></i><b>3.2</b> Data Source and Processing</a></li>
-<li class="chapter" data-level="3.3" data-path="methodology.html"><a href="methodology.html#identifying-tech-cluster"><i class="fa fa-check"></i><b>3.3</b> Identifying Tech Cluster</a></li>
+<li class="chapter" data-level="3.3" data-path="methodology.html"><a href="methodology.html#identifying-tech-clusters"><i class="fa fa-check"></i><b>3.3</b> Identifying Tech Clusters</a></li>
 <li class="chapter" data-level="3.4" data-path="methodology.html"><a href="methodology.html#data-scale"><i class="fa fa-check"></i><b>3.4</b> Data Scale</a>
 <ul>
 <li class="chapter" data-level="3.4.1" data-path="methodology.html"><a href="methodology.html#time-range-selection"><i class="fa fa-check"></i><b>3.4.1</b> Time Range Selection</a></li>
@@ -162,11 +162,11 @@
             <section class="normal" id="section-">
 <div id="methodology" class="section level1" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Methodology</h1>
-<p>The study area is the England country in UK</p>
+<p>The study area is travel to work areas in England, UK (Figure <a href="methodology.html#fig:fig-study-area">3.1</a>). The areas in blue colour is the main research area.</p>
 <div class="figure"><span style="display:block;" id="fig:fig-study-area"></span>
-<img src="general_images/study_area.png" alt="The Map of Travel to work areas (ttwa) within UK" width="50%" />
+<img src="general_images/study_area.png" alt="The Map of Travel to Work Areas (TTWAs) within UK" width="100%" height="50%" />
 <p class="caption">
-Figure 3.1: The Map of Travel to work areas (ttwa) within UK
+Figure 3.1: The Map of Travel to Work Areas (TTWAs) within UK
 </p>
 </div>
 <div id="research-framework" class="section level2" number="3.1">
@@ -177,10 +177,13 @@ Figure 3.1: The Map of Travel to work areas (ttwa) within UK
 <h2><span class="header-section-number">3.2</span> Data Source and Processing</h2>
 <p>This raw dataset is collected from the core company data from Open Corporates master company database (Open Corporates, 2018). And the size of dataset accounts for 15 GB which is handled with <code>read_stata</code> and <code>get_chunk</code> function to read large data file in chunks, then increasing the reading speed. The “primary uk sic 2007” identification field is the basis of industry finding and the “birth year” is the key to measure dynamics variables . All rows whose these two values are empty are removed（17% incorperate date is missing and sic code is complete).</p>
 </div>
-<div id="identifying-tech-cluster" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Identifying Tech Cluster</h2>
-<p>For the identification of science and technology companies, this study introduces the main 2007 sic code table to judge the science and technology industry, referring to the classification method of the Science and Technology Classification data set on the ons.gov.uk website; in order to better identify science and technology companies for the UK The economic contribution is officially based on the 2007 British Standard Economic Activity Classification, combined with different data sources, to classify and label science and technology companies (Office for National Statistics, 2015).</p>
+<div id="identifying-tech-clusters" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Identifying Tech Clusters</h2>
+<p>For the identification of science and technology companies, this study introduces the main 2007 sic code table to judge the science and technology industry, referring to the classification method of the Science and Technology Classification data set on the ons.gov.uk website. In order to better identify science and technology companies for the UK. The economic contribution is officially based on the 2007 British Standard Economic Activity Classification, different data sources were combined to classify and label science and technology companies (Office for National Statistics, 2015).The 5-digital sic code can identify the economic activity classification of the technology industry in the finest granularity. The statistics bureau provided a comparison table of sic codes for the classification of science and technology industries, which can help this research to better identify technology companies from the big data of UK companies (<a href="#tab:tab-sic-part"><strong>??</strong></a>).</p>
 <table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:table-1">Table 3.1: </span>Science and Technology Classification Sample (Part)
+</caption>
 <thead>
 <tr>
 <th style="text-align:left;font-weight: bold;">
@@ -323,10 +326,10 @@ Where:
 </div>
 <div id="regression" class="section level3" number="3.5.3">
 <h3><span class="header-section-number">3.5.3</span> Regression</h3>
-<p>In order to quantify the impact of industry concentration and company density in the cluster on the cluster dynamic variable (entry rate), the Herfindahl-Hirschman Index and company density corresponding to the year and location(i.e. ttwa) in the data are used as independent variables (Table <a href="methodology.html#tab:tab-reg-idp-var">3.1</a>). And the variable of the numeric data type of entry rate is regarded as the dependent variable</p>
+<p>In order to quantify the impact of industry concentration and company density in the cluster on the cluster dynamic variable (entry rate), the Herfindahl-Hirschman Index and company density corresponding to the year and location(i.e. ttwa) in the data are used as independent variables (Table <a href="methodology.html#tab:tab-reg-idp-var">3.2</a>). And the variable of the numeric data type of entry rate is regarded as the dependent variable</p>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:tab-reg-idp-var">Table 3.1: </span>Independent Variables Selection for Regression
+<span id="tab:tab-reg-idp-var">Table 3.2: </span>Independent Variables Selection for Regression
 </caption>
 <thead>
 <tr>

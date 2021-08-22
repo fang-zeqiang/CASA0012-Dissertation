@@ -3,25 +3,6 @@ output:
   pdf_document: default
   html_document: default
 ---
-# Methodology
-
-The study area is travel to work areas in England, UK (Figure \@ref(fig:fig-study-area)). The areas in blue colour is the main research area.
-
-```{r fig-study-area, echo=FALSE, fig.cap="The Map of Travel to work areas (TTWAs) within UK",out.width='100%'}
-knitr::include_graphics(here::here('general_images','study_area.png'),auto_pdf = TRUE)
-```
-
-## Research Framework
-
-In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods(1998, 2008 & 2018).
-
-## Data Source and Processing
-
-This raw dataset is collected from the core company data from Open Corporates master company database (Open Corporates, 2018). And the size of dataset accounts for 15 GB which is handled with `read_stata` and `get_chunk` function to read large data file in chunks, then increasing the reading speed. The "primary uk sic 2007" identification field is the basis of industry finding and the "birth year" is the key to measure dynamics variables . All rows whose these two values are empty are removed（17% incorperate date is missing and sic code is complete).
-
-## Identifying Tech Cluster 
-
-For the identification of science and technology companies, this study introduces the main 2007 sic code table to judge the science and technology industry, referring to the classification method of the Science and Technology Classification data set on the ons.gov.uk website; in order to better identify science and technology companies for the UK The economic contribution is officially based on the 2007 British Standard Economic Activity Classification, combined with different data sources, to classify and label science and technology companies (Office for National Statistics, 2015). 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
@@ -32,29 +13,37 @@ library(fs)
 library(here)
 ```
 
+# Methodology
 
-```{r table-1, echo=FALSE, message=FALSE, warning=FALSE}
+## Research Framework
 
-#read in data
-# sic_df = read_excel(here("tables", "tech_sic_code.xlsx"))
-# 
-# sic_df %>%
-#   knitr::kable(
-#   .,
-#   caption = "2007 sic code for science and technology industry (part)",
-#   booktabs = TRUE,
-#   longtable = TRUE
-#   )
-#   # kable_styling(position = "center", full_width = T) %>%
-#   # kable_classic(full_width = T, html_font = "Cambria")
+The study area is 149 travel to work areas in England, UK (Figure \@ref(fig:fig-study-area)). The areas in blue colour is the main research area. In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods(1998, 2008 & 2018).
 
+```{r fig-study-area, echo=FALSE, fig.cap="The Map of Travel to Work Areas (TTWAs) within UK",out.width='100%'}
+knitr::include_graphics(here::here('general_images','study_area.png'),auto_pdf = TRUE)
+```
+
+## Data Source and Processing
+
+This raw dataset is collected from the core company data from Open Corporates master company database (Open Corporates, 2018). And the size of dataset accounts for 15 GB which is handled with `read_stata` and `get_chunk` function to read large data file in chunks, then increasing the reading speed. The "primary uk sic 2007" identification field is the basis of industry finding and the "birth year" is the key to measure dynamics variables . All rows whose these two values are empty are removed（17% incorperate date is missing and sic code is complete).
+
+## Identifying Tech Clusters 
+
+For the identification of science and technology companies, this study introduces the main 2007 sic code table to judge the science and technology industry, referring to the classification method of the Science and Technology Classification data set on the ons.gov.uk website. In order to better identify science and technology companies for the UK. The economic contribution is officially based on the 2007 British Standard Economic Activity Classification,  different data sources were combined to classify and label science and technology companies (Office for National Statistics, 2015).The 5-digital sic code can identify the economic activity classification of the technology industry in the finest granularity. The statistics bureau provided a comparison table of sic codes for the classification of science and technology industries, which can help this research to better identify technology companies from the big data of UK companies (\@ref(tab:tab-sic-part)).
+
+
+```{r tab-sic-part, echo=FALSE, message=FALSE, warning=FALSE}
 
 read_excel(here("tables", "tech_sic_code.xlsx"))%>%
-  knitr::kable(booktabs = TRUE)%>% # booktab = T gives us a pretty APA-ish table
+  knitr::kable(booktabs = TRUE,longtable = T,
+               caption = "Science and Technology Classification Sample (Part)")%>% 
   kable_styling(position = "center")%>%
     row_spec(.,
   row=0,
-  bold = TRUE)
+  bold = TRUE) %>% 
+    column_spec(1,width = "4.5cm") %>% 
+    column_spec(2,width = "4.5cm") %>% 
+    column_spec(3,width = "4.5cm")
 ```
 
 This research refers to the science and technology classification table provided by the government. The technology indicator is used to position the technology industry of all industries, and a total of 168 sic codes for the technology industry in 2007 were obtained, accounting for about 16% of all industry categories in the UK, including 5 industry categories such as Digital Technologies, Life Sciences & Healthcare, Publishing & Broadcasting , Other scientific/technological manufacture and Other scientific/technological services, details of the classification form will be attached in the attachment. There are almost 20% firms in the raw data belonging to tech firms according to the method of category as mentioned above.

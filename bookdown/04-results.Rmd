@@ -36,7 +36,7 @@ From 1998 to 2018, the entry rate of each Travel to work area (TTWA) in England 
 
 Finally, from the perspective of changes in temporal and spatial distribution, the increase in the entry rate of the travel to work area in the northern part of England is much larger than that in the southern part. The areas with high entry rates before 2008 were mostly scattered in other areas except for the Greater London area. However, close to after 2018, London and its surrounding areas, the central Manchester-Birmingham area and the southwest, such as Exeter, have a rising entry rate. In contrast, in 2008, the urban agglomerations north of Leeds had higher firm entry rates in tech industry(Figure \@ref(fig:fig-enR-1998-2018-v1)).
 
-```{r fig-enR-1998-2018-v1, echo=FALSE, fig.cap='The distribution of the entry rate of the England tech clusters(ttwa) from 1998 to 2018', out.width='100%'}
+```{r fig-enR-1998-2018-v1, echo=FALSE, fig.cap='The Distribution of the Firms Entry Rate of the England Travel to Work Areas(TTWAs) from 1998 to 2018', out.width='100%'}
 knitr::include_graphics(here::here('general_images','enR_1998_2018_v1.png'))
 ```
 ### Tech Industry Mix
@@ -45,7 +45,7 @@ In terms of herfindahl-Hirschman index of tech industry in travel to work area o
 
 From the perspective of temporal and spatial distribution, the technology industry was concentrated in northern England, northern and southwestern England before 2008. With the passage of time, even if the concentration of industries in some small areas scattered on the border of England is still high, the Herfindahl-Hirschman index in these places has gradually decreased to a level comparable to that of the Greater London area(Figure \@ref(fig:fig-hh-1998-2018)).
 
-```{r fig-hh-1998-2018, echo=FALSE, fig.cap='The distribution of the Herfindahl-Hirschman index of the England tech clusters(ttwa) from 1998 to 2018', out.width='100%'}
+```{r fig-hh-1998-2018, echo=FALSE, fig.cap='The Distribution of the Herfindahl-Hirschman Index of the England Travel to Work Areas(TTWAs) from 1998 to 2018', out.width='100%'}
 knitr::include_graphics(here::here('general_images','hh_1998_2018.png'))
 ```
 ## Regression Analysis
@@ -58,7 +58,7 @@ Taking Model [3] as an example, every time this indicator decreases by one unit,
 options(knitr.kable.NA = '')
 read_excel(here("tables", "OLS_regression_results.xlsx"))%>% 
     knitr::kable(booktabs = TRUE,
-                 caption = "Regression results relationship between entry rate and tech clusters' characters")%>%
+                 caption = "Regression Results of Firms Entry Rate and Tech Clusters' Characters")%>%
     kable_styling(position = "center") %>% 
     row_spec(c(3, 9), hline_after = T) %>% 
     row_spec(0, hline_after = F) %>% 
@@ -77,7 +77,7 @@ Consistent with model[2], the entry rate increase with density (Table \@ref(tab:
 options(knitr.kable.NA = '')
 read_excel(here("tables", "OLS_regression_control_var.xlsx"))%>% 
     knitr::kable(booktabs = TRUE,
-                 caption = "Regression results relationship between entry rate and tech clusters' characters (controlling variables)")%>%
+                 caption = "Regression Results of Firms Entry Rate and Tech Clusters' Characters (variables Controlled)")%>%
     kable_styling(position = "center")%>% 
     row_spec(c(3, 9), hline_after = T) %>% 
     add_footnote(c("All regressions include dummy variables for 149 travel to work areas(ttwa) in England and 20 years from 1998 to 2018. Figures in brackets are standard errors. ***, **, and * represent statistical significance at 1%, 5%, and 10%, respectively.","HHI defined by Herfindahl-Hirschman index can indicate the industry concentration", "Source: tech firm data in England travel to work areas from 1998 to 2008 (n = 3089)"), notation = "alphabet") %>% 
@@ -94,7 +94,7 @@ The confidence of global Moran's I in 1998 is as high as 95%. But the statistica
 options(knitr.kable.NA = '')
 read_excel(here("tables", "morans_i_entry_rate.xlsx"))%>% 
     knitr::kable(booktabs = TRUE,
-                 caption = "Spatio-temporal dynamics cluster analysis by global Moran's Index")%>%
+                 caption = "Global Moran's Index of Firms Entry Rate in Three Time Periods")%>%
     kable_styling(position = "center") %>% 
     # add_footnote(c(" ", " "), notation = "alphabet") %>% 
     row_spec(.,row=0,bold = TRUE)
@@ -106,7 +106,7 @@ Contrary to the entry rate variable, the density attribute value of England has 
 options(knitr.kable.NA = '')
 read_excel(here("tables", "morans_i_den.xlsx"))%>% 
     knitr::kable(booktabs = TRUE,
-                 caption = "Spatio-temporal density cluster analysis by global Moran's Index")%>%
+                 caption = "Global Moran's Index of Firms Density in Three Time Periods")%>%
     kable_styling(position = "center") %>% 
     # add_footnote(c(" ", " "), notation = "alphabet") %>% 
     row_spec(.,row=0,bold = TRUE)
@@ -121,7 +121,7 @@ According to the Table \@ref(tab:tab-z-p-corr), the z-score with its significanc
 options(knitr.kable.NA = '')
 read_excel(here("tables", "z-score-p-value-corr.xlsx"))%>% 
     knitr::kable(booktabs = TRUE,
-                 caption = "Z-score and p-value correspondence table")%>%
+                 caption = "Correspondence of Z-score and P-value")%>%
     kable_styling(position = "center") %>% 
     # add_footnote(c(" ", " "), notation = "alphabet") %>% 
     row_spec(.,row=0,bold = TRUE)
@@ -135,7 +135,7 @@ With the passage of time, the High-High cluster has shifted (the north like Whit
 
 Central regions of England such as London, Birmingham and other regions have not had obvious spatial clustering effects in the visualisation results. This may be due to the low statistical confidence of the local Moran's index among regions. Or it might be because the data in this study is aggregated before calculated. The related data may be missing after the HHI and entry rate are utilised, which might not perfectly represent the company information in some parts of England.
 
-```{r fig-lisa-entry-rate, echo=FALSE, fig.cap="Local Moran\'s I Spatial Analysis for Entry Rate in England for three time periods", out.width='100%'}
+```{r fig-lisa-entry-rate, echo=FALSE, fig.cap="Local Moran\'s I Spatial Analysis for Entry Rate in England for Three Time Periods", out.width='100%'}
 knitr::include_graphics(here::here('general_images','Lisa_enR_v1.png'))
 ```
 
@@ -151,6 +151,6 @@ From: https://sci-hub.se/10.1556/032.65.2015.3.1
 
 Discussion: 从时空趋势的角度上看，北方逐渐成为entry rate的热点，有越来越多的科技公司加入北方并且这一现象具有空间自相关性；而西南部地区如何进行政策鼓励和调整来使得他们的科技产业重新焕发生机，税收？
 
-```{r fig-Gi-entry-rate, echo=FALSE, fig.cap='Significance Statistics for Local Moran\'s I in Entry Rate in England for three time periods', out.width='100%'}
+```{r fig-Gi-entry-rate, echo=FALSE, fig.cap='Local Gi* Score Statistics for Entry Rate in England for Three Time Periods', out.width='100%'}
 knitr::include_graphics(here::here('general_images','G_enR_v1.png'))
 ```

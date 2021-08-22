@@ -133,7 +133,7 @@ Word count: 8,000}
 
 Some abstract text
 
-word count: 7185
+word count: 7258
 
 \pagenumbering{roman}
 
@@ -308,30 +308,27 @@ Fariñas, J. and Moreno, L., 2000. Review of Industrial Organization, 17(3), pp.
 \hypertarget{methodology}{%
 \chapter{Methodology}\label{methodology}}
 
-The study area is the England country in UK
-
-\begin{figure}
-\includegraphics[width=0.5\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/study_area} \caption{The Map of Travel to work areas (TTWAs) within UK}\label{fig:fig-study-area}
-\end{figure}
-
 \hypertarget{research-framework}{%
 \section{Research Framework}\label{research-framework}}
 
-In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods(1998, 2008 \& 2018).
+The study area is 149 travel to work areas in England, UK (Figure \ref{fig:fig-study-area}). The areas in blue colour is the main research area. In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods(1998, 2008 \& 2018).
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/study_area} \caption{The Map of Travel to Work Areas (TTWAs) within UK}\label{fig:fig-study-area}
+\end{figure}
 
 \hypertarget{data-source-and-processing}{%
 \section{Data Source and Processing}\label{data-source-and-processing}}
 
 This raw dataset is collected from the core company data from Open Corporates master company database (Open Corporates, 2018). And the size of dataset accounts for 15 GB which is handled with \texttt{read\_stata} and \texttt{get\_chunk} function to read large data file in chunks, then increasing the reading speed. The ``primary uk sic 2007'' identification field is the basis of industry finding and the ``birth year'' is the key to measure dynamics variables . All rows whose these two values are empty are removed（17\% incorperate date is missing and sic code is complete).
 
-\hypertarget{identifying-tech-cluster}{%
-\section{Identifying Tech Cluster}\label{identifying-tech-cluster}}
+\hypertarget{identifying-tech-clusters}{%
+\section{Identifying Tech Clusters}\label{identifying-tech-clusters}}
 
-For the identification of science and technology companies, this study introduces the main 2007 sic code table to judge the science and technology industry, referring to the classification method of the Science and Technology Classification data set on the ons.gov.uk website; in order to better identify science and technology companies for the UK The economic contribution is officially based on the 2007 British Standard Economic Activity Classification, combined with different data sources, to classify and label science and technology companies (Office for National Statistics, 2015).
+For the identification of science and technology companies, this study introduces the main 2007 sic code table to judge the science and technology industry, referring to the classification method of the Science and Technology Classification data set on the ons.gov.uk website. In order to better identify science and technology companies for the UK. The economic contribution is officially based on the 2007 British Standard Economic Activity Classification, different data sources were combined to classify and label science and technology companies (Office for National Statistics, 2015).The 5-digital sic code can identify the economic activity classification of the technology industry in the finest granularity. The statistics bureau provided a comparison table of sic codes for the classification of science and technology industries, which can help this research to better identify technology companies from the big data of UK companies (\ref{tab:tab-sic-part}).
 
-\begin{table}
-\centering
-\begin{tabular}{lll}
+\begin{longtable}[t]{>{\raggedright\arraybackslash}p{3cm}>{\raggedright\arraybackslash}p{3cm}>{\raggedright\arraybackslash}p{3cm}}
+\caption{\label{tab:tab-sic-part}Science and Technology Classification Sample (Part)}\\
 \toprule
 \textbf{5-digit SIC07 code} & \textbf{Science and Technology category} & \textbf{Science and Technology topic}\\
 \midrule
@@ -344,8 +341,7 @@ For the identification of science and technology companies, this study introduce
 … & … & …\\
 86230 & Life Sciences \& Healthcare & Healthcare services\\
 \bottomrule
-\end{tabular}
-\end{table}
+\end{longtable}
 
 This research refers to the science and technology classification table provided by the government. The technology indicator is used to position the technology industry of all industries, and a total of 168 sic codes for the technology industry in 2007 were obtained, accounting for about 16\% of all industry categories in the UK, including 5 industry categories such as Digital Technologies, Life Sciences \& Healthcare, Publishing \& Broadcasting , Other scientific/technological manufacture and Other scientific/technological services, details of the classification form will be attached in the attachment. There are almost 20\% firms in the raw data belonging to tech firms according to the method of category as mentioned above.
 
@@ -577,7 +573,7 @@ From 1998 to 2018, the entry rate of each Travel to work area (TTWA) in England 
 Finally, from the perspective of changes in temporal and spatial distribution, the increase in the entry rate of the travel to work area in the northern part of England is much larger than that in the southern part. The areas with high entry rates before 2008 were mostly scattered in other areas except for the Greater London area. However, close to after 2018, London and its surrounding areas, the central Manchester-Birmingham area and the southwest, such as Exeter, have a rising entry rate. In contrast, in 2008, the urban agglomerations north of Leeds had higher firm entry rates in tech industry(Figure \ref{fig:fig-enR-1998-2018-v1}).
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/enR_1998_2018_v1} \caption{The distribution of the entry rate of the England tech clusters(ttwa) from 1998 to 2018}\label{fig:fig-enR-1998-2018-v1}
+\includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/enR_1998_2018_v1} \caption{The Distribution of the Firms Entry Rate of the England Travel to Work Areas(TTWAs) from 1998 to 2018}\label{fig:fig-enR-1998-2018-v1}
 \end{figure}
 
 \hypertarget{tech-industry-mix}{%
@@ -588,7 +584,7 @@ In terms of herfindahl-Hirschman index of tech industry in travel to work area o
 From the perspective of temporal and spatial distribution, the technology industry was concentrated in northern England, northern and southwestern England before 2008. With the passage of time, even if the concentration of industries in some small areas scattered on the border of England is still high, the Herfindahl-Hirschman index in these places has gradually decreased to a level comparable to that of the Greater London area(Figure \ref{fig:fig-hh-1998-2018}).
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/hh_1998_2018} \caption{The distribution of the Herfindahl-Hirschman index of the England tech clusters(ttwa) from 1998 to 2018}\label{fig:fig-hh-1998-2018}
+\includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/hh_1998_2018} \caption{The Distribution of the Herfindahl-Hirschman Index of the England Travel to Work Areas(TTWAs) from 1998 to 2018}\label{fig:fig-hh-1998-2018}
 \end{figure}
 
 \hypertarget{regression-analysis}{%
@@ -600,7 +596,7 @@ Taking Model {[}3{]} as an example, every time this indicator decreases by one u
 
 \begin{table}
 
-\caption{\label{tab:tab-regression-entry-rate}Regression results relationship between entry rate and tech clusters' characters}
+\caption{\label{tab:tab-regression-entry-rate}Regression Results of Firms Entry Rate and Tech Clusters' Characters}
 \centering
 \begin{tabular}[t]{llll}
 \toprule
@@ -642,7 +638,7 @@ Consistent with model{[}2{]}, the entry rate increase with density (Table \ref{t
 
 \begin{table}
 
-\caption{\label{tab:tab-regression-control-var}Regression results relationship between entry rate and tech clusters' characters (controlling variables)}
+\caption{\label{tab:tab-regression-control-var}Regression Results of Firms Entry Rate and Tech Clusters' Characters (variables Controlled)}
 \centering
 \begin{tabular}[t]{llll}
 \toprule
@@ -684,7 +680,7 @@ The confidence of global Moran's I in 1998 is as high as 95\%. But the statistic
 
 \begin{table}
 
-\caption{\label{tab:tab-morans-i-enR}Spatio-temporal dynamics cluster analysis by global Moran's Index}
+\caption{\label{tab:tab-morans-i-enR}Global Moran's Index of Firms Entry Rate in Three Time Periods}
 \centering
 \begin{tabular}[t]{rrlr}
 \toprule
@@ -701,7 +697,7 @@ Contrary to the entry rate variable, the density attribute value of England has 
 
 \begin{table}
 
-\caption{\label{tab:tab-morans-i-den}Spatio-temporal density cluster analysis by global Moran's Index}
+\caption{\label{tab:tab-morans-i-den}Global Moran's Index of Firms Density in Three Time Periods}
 \centering
 \begin{tabular}[t]{rrlr}
 \toprule
@@ -722,7 +718,7 @@ According to the Table \ref{tab:tab-z-p-corr}, the z-score with its significance
 
 \begin{table}
 
-\caption{\label{tab:tab-z-p-corr}Z-score and p-value correspondence table}
+\caption{\label{tab:tab-z-p-corr}Correspondence of Z-score and P-value}
 \centering
 \begin{tabular}[t]{llr}
 \toprule
@@ -744,7 +740,7 @@ With the passage of time, the High-High cluster has shifted (the north like Whit
 Central regions of England such as London, Birmingham and other regions have not had obvious spatial clustering effects in the visualisation results. This may be due to the low statistical confidence of the local Moran's index among regions. Or it might be because the data in this study is aggregated before calculated. The related data may be missing after the HHI and entry rate are utilised, which might not perfectly represent the company information in some parts of England.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/Lisa_enR_v1} \caption{Local Moran's I Spatial Analysis for Entry Rate in England for three time periods}\label{fig:fig-lisa-entry-rate}
+\includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/Lisa_enR_v1} \caption{Local Moran's I Spatial Analysis for Entry Rate in England for Three Time Periods}\label{fig:fig-lisa-entry-rate}
 \end{figure}
 
 \hypertarget{hot-spot-analysis-of-firms-dynamics}{%
@@ -761,7 +757,7 @@ From: \url{https://sci-hub.se/10.1556/032.65.2015.3.1}
 Discussion: 从时空趋势的角度上看，北方逐渐成为entry rate的热点，有越来越多的科技公司加入北方并且这一现象具有空间自相关性；而西南部地区如何进行政策鼓励和调整来使得他们的科技产业重新焕发生机，税收？
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/G_enR_v1} \caption{Significance Statistics for Local Moran's I in Entry Rate in England for three time periods}\label{fig:fig-Gi-entry-rate}
+\includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/G_enR_v1} \caption{Local Gi* Score Statistics for Entry Rate in England for Three Time Periods}\label{fig:fig-Gi-entry-rate}
 \end{figure}
 
 \hypertarget{disc}{%

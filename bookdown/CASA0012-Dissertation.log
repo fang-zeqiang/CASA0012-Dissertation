@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.8.15)  22 AUG 2021 04:56
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.8.15)  22 AUG 2021 15:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1341,9 +1341,9 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 \openout5 = `CASA0012-Dissertation.toc'.
 
 [6] (./CASA0012-Dissertation.lof
-Underfull \hbox (badness 4144) in paragraph at lines 17--17
- [][] [][]\TU/lmr/m/n/12 The distribution of the entry rate of the England tech
- 
+Underfull \hbox (badness 1776) in paragraph at lines 19--19
+ [][] [][]\TU/lmr/m/n/12 The Distribution of the Herfindahl-Hirschman Index of 
+the 
  []
 
 )
@@ -1353,15 +1353,15 @@ Underfull \hbox (badness 4144) in paragraph at lines 17--17
 [7
 
 ] (./CASA0012-Dissertation.lot
-Underfull \hbox (badness 1648) in paragraph at lines 15--15
- [][] [][]\TU/lmr/m/n/12 Regression results relationship between entry rate and
- tech 
+Underfull \hbox (badness 1033) in paragraph at lines 17--17
+ [][] [][]\TU/lmr/m/n/12 Regression Results of Firms Entry Rate and Tech Cluste
+rs’ 
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 17--17
- [][] [][]\TU/lmr/m/n/12 Regression results relationship between entry rate and
- tech 
+Underfull \hbox (badness 1033) in paragraph at lines 19--19
+ [][] [][]\TU/lmr/m/n/12 Regression Results of Firms Entry Rate and Tech Cluste
+rs’ 
  []
 
 )
@@ -1426,77 +1426,88 @@ File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/s
 tudy_area.png Graphic file (type bmp)
 </Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/study_
 area.png>
-[9
-
-]
 Missing character: There is no （ (U+FF08) in font [lmroman12-regular]:mapping=t
 ex-text;!
+[9
 
-Overfull \hbox (147.4823pt too wide) in paragraph at lines 334--348
- [][] 
+] [10]
+Underfull \hbox (badness 1137) in paragraph at lines 328--329
+\TU/lmr/m/n/12 technology companies for the UK. The economic contribution is of
+ficially
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 350--351
+Underfull \hbox (badness 1215) in paragraph at lines 328--329
+\TU/lmr/m/n/12 data sources were combined to classify and label science and tec
+hnology
+ []
+
+
+Overfull \hbox (30.92174pt too wide) in paragraph at lines 339--339
+\TU/lmr/m/n/12 scientific/technological 
+ []
+
+[11]
+Underfull \hbox (badness 2005) in paragraph at lines 346--347
 \TU/lmr/m/n/12 & Healthcare, Publishing & Broadcasting , Other scientific/techn
 ological
  []
 
 
-Underfull \hbox (badness 6526) in paragraph at lines 350--351
+Underfull \hbox (badness 6526) in paragraph at lines 346--347
 \TU/lmr/m/n/12 manufacture and Other scientific/technological services, details
  of the
  []
 
-[10]
+[12]
 File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/f
 igure1.png Graphic file (type bmp)
 </Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/figure
 1.png>
-[11] [12]
+[13]
 Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
 ex-text;!
-[13]
-Overfull \hbox (22.74234pt too wide) in paragraph at lines 420--430
+[14] [15]
+Overfull \hbox (22.74234pt too wide) in paragraph at lines 416--426
  [][] 
  []
 
-[14] [15]
+[16]
 Missing character: There is no ̅ ("305) in font lmmi12!
-[16] [17] [18] [19]
+[17] [18] [19] [20] [21]
 Chapter 4.
 File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/a
 ll_enR_hh_den_change.png Graphic file (type bmp)
 </Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/all_en
 R_hh_den_change.png>
 
-Overfull \hbox (0.53029pt too wide) in paragraph at lines 536--567
+Overfull \hbox (0.53029pt too wide) in paragraph at lines 532--563
  [][] 
  []
 
-[20
+[22
 
-] [21]
+] [23]
 File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/e
 nR_1998_2018_v1.png Graphic file (type bmp)
 </Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/enR_19
 98_2018_v1.png>
-[22] [23]
+[24] [25]
 File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/h
 h_1998_2018.png Graphic file (type bmp)
 </Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/hh_199
 8_2018.png>
-[24] [25] [26]
-Overfull \hbox (29.15836pt too wide) in paragraph at lines 647--676
+[26] [27] [28]
+Overfull \hbox (29.15836pt too wide) in paragraph at lines 643--672
  [][] 
  []
 
-[27] [28] [29]
+[29] [30] [31]
 File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/L
 isa_enR_v1.png Graphic file (type bmp)
 </Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/Lisa_e
 nR_v1.png>
-[30]
+[32]
 Missing character: There is no 从 (U+4ECE) in font [lmroman12-regular]:mapping=t
 ex-text;!
 Missing character: There is no 时 (U+65F6) in font [lmroman12-regular]:mapping=t
@@ -1675,9 +1686,9 @@ File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/G
 _enR_v1.png Graphic file (type bmp)
 </Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/G_enR_
 v1.png>
-[31]
+[33]
 Chapter 5.
-[32
+[34
 
 ]
 Missing character: There is no 可 (U+53EF) in font [lmroman12-regular]:mapping=t
@@ -1688,89 +1699,89 @@ Missing character: There is no 作 (U+4F5C) in font [lmroman12-regular]:mapping=
 ex-text;!
 Missing character: There is no 为 (U+4E3A) in font [lmroman12-regular]:mapping=t
 ex-text;!
-[33]
+[35]
 Chapter 6.
-[34
+[36
 
-] [35]
-Overfull \hbox (5.76445pt too wide) in paragraph at lines 837--838
+] [37]
+Overfull \hbox (5.76445pt too wide) in paragraph at lines 833--834
 \TU/lmr/m/n/12 Firm Selection. Econometrica, 80: 2543-2594.https://doi.org/10.3
 982/ECTA84427 
  []
 
-[36
+[38
 
 ]
-Underfull \hbox (badness 1383) in paragraph at lines 849--850
+Underfull \hbox (badness 1383) in paragraph at lines 845--846
 []\TU/lmr/m/n/12 Hause, J. and Du Rietz, G., 1984. Entry, Industry Growth, and 
 the
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 849--850
+Underfull \hbox (badness 1009) in paragraph at lines 845--846
 \TU/lmr/m/n/12 Microdynamics of Industry Supply. Journal of Political Economy, 
 92(4),
  []
 
 
-Overfull \hbox (66.6031pt too wide) in paragraph at lines 851--852
+Overfull \hbox (66.6031pt too wide) in paragraph at lines 847--848
 \TU/lmr/m/n/12 Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/arti
 cles?id=10.1257/jep.34.3.50 
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 853--854
+Underfull \hbox (badness 2478) in paragraph at lines 849--850
 []\TU/lmr/m/n/12 Kwoka, J., 1977. Large Firm Dominance and Price-Cost Margins i
 n
  []
 
-[37]
-Underfull \hbox (badness 1406) in paragraph at lines 873--874
+[39]
+Underfull \hbox (badness 1406) in paragraph at lines 869--870
 []\TU/lmr/m/n/12 Office for National Statistics, 2015. Identifying Science and 
 Technology
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 873--874
+Underfull \hbox (badness 10000) in paragraph at lines 869--870
 [][] [] [][][][][][][][][][][][][][] [] [][][][] [] [] [] [][][] [] [][][] [] [
 ][][] [] [][] [] [][][] [] [][][][] [][] [][][][][][][][][][][] [] [][][][][] [
 ][] [][][] [][]
  []
 
 
-Underfull \hbox (badness 4024) in paragraph at lines 877--878
+Underfull \hbox (badness 4024) in paragraph at lines 873--874
 \TU/lmr/m/n/12 Office for National Statistics. Available at: []$[][][][][] [] [
 ] [] [][][] [] [][][] [] [][][] [] [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 877--878
+Underfull \hbox (badness 10000) in paragraph at lines 873--874
 [][][][][][][][][][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][][] 
 [] [][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
-[38]
+[40]
 
-LaTeX Warning: Empty bibliography on input line 884.
+LaTeX Warning: Empty bibliography on input line 880.
 
-[39] [40
+[41] [42
 
-] [41
+] [43
 
 ] (./CASA0012-Dissertation.aux)
 Package rerunfilecheck Info: File `CASA0012-Dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 15E577243F7562D9461CAC473C7A738F;7529.
+(rerunfilecheck)             Checksum: 6261D4154B847FB78E39A179177CBB72;7534.
 Package logreq Info: Writing requests to 'CASA0012-Dissertation.run.xml'.
 \openout1 = `CASA0012-Dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27329 strings out of 478475
- 511743 string characters out of 5857943
- 1491467 words of memory out of 5000000
- 47265 multiletter control sequences out of 15000+600000
+ 27332 strings out of 478475
+ 511787 string characters out of 5857943
+ 1491545 words of memory out of 5000000
+ 47268 multiletter control sequences out of 15000+600000
  407495 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  87i,13n,120p,1187b,4823s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CASA0012-Dissertation.pdf (51 pages).
+Output written on CASA0012-Dissertation.pdf (53 pages).

@@ -22,7 +22,7 @@ I, Zeqiang Fang, hereby declare that this dissertation is all my own original wo
 `r if (knitr:::is_latex_output()) '
 # Acknowledgements {.unlisted .unnumbered}
 '`
-I would like to thank blah blah
+This paper would not have been possible without the help of others. First of all, I am sincerely grateful to my supervisor, Prof. Max Nathan, for his patient guidance and enthusiasm support throughout my dissertation project. Prof. Max Nathan not only provide me with much inspired feedback, but also offer me much care of the difficulties I encountered in thesis writing, both personally and academically.
 
 
 ```{=latex}

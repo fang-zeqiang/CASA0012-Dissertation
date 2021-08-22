@@ -1,4 +1,4 @@
-# Introduction
+# Introduction{#intro}
 
 ```{=latex}
 \pagenumbering{arabic} 
@@ -27,7 +27,7 @@ Many industrial dynamics patterns appear to be shaped by the process by which kn
 
 How does tech clusters' dynamics pattern change in UK from 1998 to 2018? / What factors can affect tech clusters' dynamics pattern change in UK?
 
-To what extent will dynamic change affect tech clusters’performance？
+To what extent will dynamic change affect tech clusters’ performance？
 
 Governments all across the world aim to grow their ICT sectors. As a result, researchers and policymakers want a comprehensive image of digital firms, but traditional datasets and typologies lag real-world change. We perform an alternative analysis for all active enterprises in the UK, focused on ICT-producing firms, using innovative "big data" resources.
 (Nathan and Rosso, 2015)
@@ -43,3 +43,6 @@ The approach of spatial autocorrelation analysis is useful for revealing the str
 1. regression
 1. residual analysis
 1. result interpretation
+
+该研究文章将会先总结目前tech clutser动态研究现状，结合世界其他地方对于科技企业的动态变化研究来对比英国科技企业的研究现状。研究对象England的科技企业将会被说明。原始的数据集的处理过程与最后按Travel to Work Areas与年份划分的各个科技集群指标将会被展示。在research design阶段，如何从大数据中识别科技企业与
+
