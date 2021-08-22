@@ -1,9 +1,8 @@
 # References {-}
 
 a b c d e f g h i j k l m n o p q r s t u v w x y z
-pay attention to the unity of format
 
-ALCACER J. and CHUNG W. (2007) Location strategies and knowledge spillovers, Management Science 53, 760–776.
+Alcacer J. and Chung W., 2007 Location strategies and knowledge spillovers, Management Science 53, 760–776.
 
 Anselin, L., 2010. Local Indicators of Spatial Association-LISA. Geographical Analysis, 27(2), pp.93-115.
 
@@ -21,11 +20,15 @@ Combes, P.-P., Duranton, G., Gobillon, L., Puga, D. and Roux, S. (2012),The Prod
 
 Clementi, G.L. and Palazzo, B., 2016. Entry, exit, firm dynamics, and aggregate fluctuations. American Economic Journal: Macroeconomics, 8(3), pp.1-41.
 
+ESRI. 2021. How Hot Spot Analysis (Getis-Ord Gi*) works. [online] Available at: <https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/h-how-hot-spot-analysis-getis-ord-gi-spatial-stati.htm> [Accessed 21 August 2021].
+
 Frenken, K., Cefis, E., & Stam, E. 2015.  Industrial Dynamicsand Clusters:  A Survey.   Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505
 
 Getis, A. and Ord, J., 2010. The Analysis of Spatial Association by Use of Distance Statistics. Geographical Analysis, 24(3), pp.189-206.
 
 Hall, B.L., Hsiao, E.Y., Majercik, S., Hirbe, M. and Hamilton, B.H., 2009. The impact of surgeon specialization on patient mortality: examination of a continuous Herfindahl-Hirschman index. Annals of surgery, 249(5), pp.708-716.
+
+Hause, J. and Du Rietz, G., 1984. Entry, Industry Growth, and the Microdynamics of Industry Supply. Journal of Political Economy, 92(4), pp.733-757.
 
 Kerr, William R., and Frederic Robert-Nicoud. 2020. “Tech Clusters.”Journal of Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/articles?id=10.1257/jep.34.3.50
 
@@ -41,6 +44,8 @@ Lu, C., Qiao, J. and Chang, J., 2017. Herfindahl--Hirschman Index based performa
 
 Liu, J., Tsou, M. and Hammitt, J., 1999. Do small plants grow faster? Evidence from the Taiwan electronics industry. Economics Letters, 65(1), pp.121-129.
 
+Li, L., Jiang, Z., Duan, N., Dong, W., Hu, K. and Sun, W., 2011. Police Patrol service optimization based on the spatial pattern of hotspots. Proceedings of 2011 IEEE International Conference on Service Operations, Logistics and Informatics,.
+
 Mateos-Garcia, J. and Bakhshi, H., 2016. The geography of creativity in the UK. London: Nesta.
 
 Nathan, M. and Rosso, A., 2015. Mapping digital businesses with big data: Some early findings from the UK. Research Policy, 44(9), pp.1714-1733.
@@ -49,7 +54,11 @@ Open Corporates. 2018, The core company data from OpenCorporates master company 
 
 Office for National Statistics, 2015. Identifying Science and Technology Businesses in Official Statistics. [online] London, UK: Office for National Statistics, pp.10-14. Available at: <https://webarchive.nationalarchives.gov.uk/20160105170025/http://www.ons.gov.uk/ons/site-information/using-the-website/rss-news-feeds/index.html> [Accessed 28 July 2021].
 
+Ozkul, B., 2014. Changing home-to-work travel in England and Wales. Regional Studies, Regional Science, 1(1), pp.32-39.
+
 Prothero, R., 2021. Travel to work area analysis in Great Britain. [online] Office for National Statistics. Available at: <https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/traveltoworkareaanalysisingreatbritain/2016> [Accessed 8 August 2021].
+
+Stankov, U. and Dragićević, V., 2015. Changes in the spatial pattern of net earnings: Evidence from Serbia. Acta Oeconomica, 65(3), pp.351-365.
 
 Titheridge, H. and Hall, P., 2006. Changing travel to work patterns in South East England. Journal of Transport Geography, 14(1), pp.60-75.
 

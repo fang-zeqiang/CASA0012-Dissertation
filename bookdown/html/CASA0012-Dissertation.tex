@@ -39,7 +39,7 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={Spatial pattern mining of tech clusters of dynamics and industry mix based on quantitative methods in England area, UK},
+  pdftitle={Spatial Pattern Mining of Tech Clusters of Dynamics and Industry Mix Based On Quantitative Methods in England Area, UK},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
@@ -106,7 +106,7 @@
 \addbibresource{book.bib}
 \addbibresource{packages.bib}
 
-\title{Spatial pattern mining of tech clusters of dynamics and industry mix based on quantitative methods in England area, UK}
+\title{Spatial Pattern Mining of Tech Clusters of Dynamics and Industry Mix Based On Quantitative Methods in England Area, UK}
 \author{Zeqiang Fang\\
 ~\\
 CASA0012, MSc Spatial Data Science and Visualisation Dissertation\\
@@ -116,11 +116,11 @@ Supervisor: Dr Max Nathan\\
 Repository: \url{https://fang-zeqiang.github.io/CASA0012-Dissertation/}\\
 ~\\
 This dissertation is submitted in part requirement for the\\
-MSc (Or MRes) in the Centre for Advanced Spatial Analysis,\\
+MSc in the Centre for Advanced Spatial Analysis,\\
 Bartlett Faculty of the Built Environment, UCL\\
 ~\\
 Word count: 8,000}
-\date{2021-08-21}
+\date{2021-08-22}
 
 \begin{document}
 \maketitle
@@ -132,6 +132,8 @@ Word count: 8,000}
 \chapter*{Abstract}\label{abstract}}
 
 Some abstract text
+
+word count: 7185
 
 \pagenumbering{roman}
 
@@ -160,9 +162,10 @@ I would like to thank blah blah
 \toprule
 \textbf{Term} & \textbf{Abbreviation}\\
 \midrule
-Digital Elevation Model & DEM\\
-Digital Surface Model & DSM\\
-Digital Terrain Model & DTM\\
+Travel to Work Area & TTWA\\
+Herfindahl-Hirschman Index & HHI\\
+Local Indicators of Spatial Association & LISA\\
+Ordinary Least Squares & OLS\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -219,6 +222,8 @@ To what extent will dynamic change affect tech clusters'performance？
 Governments all across the world aim to grow their ICT sectors. As a result, researchers and policymakers want a comprehensive image of digital firms, but traditional datasets and typologies lag real-world change. We perform an alternative analysis for all active enterprises in the UK, focused on ICT-producing firms, using innovative ``big data'' resources.
 (Nathan and Rosso, 2015)
 
+The approach of spatial autocorrelation analysis is useful for revealing the structure and patterns of economic geographical variables. It can be used to identify not only the country's overall spatial patterns, but also specific micro-locations (Stankov \& Dragićević, 2015).
+
 \hypertarget{report-structure}{%
 \section{Report Structure}\label{report-structure}}
 
@@ -241,8 +246,8 @@ Governments all across the world aim to grow their ICT sectors. As a result, res
   result interpretation
 \end{enumerate}
 
-\hypertarget{crossref}{%
-\chapter{Literature Review}\label{crossref}}
+\hypertarget{lit-review}{%
+\chapter{Literature Review}\label{lit-review}}
 
 \hypertarget{industry-cluster-tech-cluster}{%
 \section{Industry Cluster \& Tech Cluster}\label{industry-cluster-tech-cluster}}
@@ -292,30 +297,27 @@ Entry may be less about radical innovation and more about filling strategic nich
 
 Over time, smaller factories generated proportionately more jobs, implying that job-growth incentives to larger enterprises may have been misdirected. Overall, our findings suggest that the impacts of size and age on manufacturing plant expansion in a developing economy are similar to those in rich economies (negative relationship between plant age and plant growth )(Liu, Tsou and Hammitt, 1999)
 
+\begin{quote}
+Firms Growth and Failure
+\end{quote}
+
+Moreno's research found that the failure rate and growth rate of companies decline with the growth of scale and age. Regression-to-the-mean is not an important factor in the negative correlation between the size and growth of surviving companies. And he also offers empirical evidence of firm failure rates as well as the mean of the distribution of realized growth rates(Fariñas and Moreno, 2000).
+\url{https://sci-hub.se/10.1023/A:1007834210622}
+Fariñas, J. and Moreno, L., 2000. Review of Industrial Organization, 17(3), pp.249-265.
+
 \hypertarget{methodology}{%
 \chapter{Methodology}\label{methodology}}
+
+The study area is the England country in UK
+
+\begin{figure}
+\includegraphics[width=0.5\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/study_area} \caption{The Map of Travel to work areas (TTWAs) within UK}\label{fig:fig-study-area}
+\end{figure}
 
 \hypertarget{research-framework}{%
 \section{Research Framework}\label{research-framework}}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Data Clean \& Select
-\item
-  Identifying Tech Cluster
-\item
-  Measuring the Dynamics \& Industry Mix
-\item
-  Quantitative Method Research
-\item
-  Temporal Spatial Analysis
-\end{enumerate}
-
-In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate and bivariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods(1998, 2008 \& 2018).
-
-according to research method of Kumari's team(2019), the Moran's I of three time period will be calculated to analysis the dynamics change in spatial and temporal aspects.
+In this study, a data set containing all companies in UK will be cleaned and attribute selected, and technology companies will be identified and screened according to the classification and definition of technology companies on the official website of the British government. Before the quantitative study, this study is based on time and The spatial dimension counts the number of technology companies, and calculates the dynamic indicators of enterprise clusters and industrial combination indicators in a specific year and a specific region. Then this study conducts multiple regressions, univariate variables Moran index testing to conduct spatial quantitative research, and finally combines Qualitative spatial pattern trend research on the spatial changes of indicators in three different time periods(1998, 2008 \& 2018).
 
 \hypertarget{data-source-and-processing}{%
 \section{Data Source and Processing}\label{data-source-and-processing}}
@@ -329,17 +331,18 @@ For the identification of science and technology companies, this study introduce
 
 \begin{table}
 \centering
-\begin{tabular}{lrlll}
+\begin{tabular}{lll}
 \toprule
-\textbf{SIC07 type} & \textbf{5-digit SIC07 code} & \textbf{...3} & \textbf{Science and Technology category} & \textbf{Science and Technology topic}\\
+\textbf{5-digit SIC07 code} & \textbf{Science and Technology category} & \textbf{Science and Technology topic}\\
 \midrule
-Class & 26110 & ... & Digital Technologies & Computer \& Electronic manufacturing\\
-Class & 58210 & ... & Digital Technologies & Digital \& Computer Services\\
-Class & 62090 & ... & Digital Technologies & Digital \& Computer Services\\
-Class & 63110 & ... & Digital Technologies & Digital \& Computer Services\\
-Class & 27510 & ... & Other scientific/technological manufacture & Electrical Machinery manufacturing\\
+26110 & Digital Technologies & Computer \& Electronic manufacturing\\
+58210 & Digital Technologies & Digital \& Computer Services\\
+62090 & Digital Technologies & Digital \& Computer Services\\
+63110 & Digital Technologies & Digital \& Computer Services\\
+27510 & Other scientific/technological manufacture & Electrical Machinery manufacturing\\
 \addlinespace
-Class & 86230 & ... & Life Sciences \& Healthcare & Healthcare services\\
+… & … & …\\
+86230 & Life Sciences \& Healthcare & Healthcare services\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -369,8 +372,8 @@ The University of Cambridge had funded some researchers to undertake the Wisbech
 
 This geographical division can better reflect the relationship between population, company and work. In terms of geographic research, related researchers have combined the Business Structure Database (BSD) from the Office for National Statistics (ONS) and industry classification methods to use the ONS geographic area of TTWA to survey the commuting patterns and labour market of the population in 2011. Most scholars state that this might be an effective measure for the research of industrial clusters at the sub-regional level (Mateos-Garcia，2016).
 
-\hypertarget{index-calculation}{%
-\section{Index Calculation}\label{index-calculation}}
+\hypertarget{quatitative-analysis-and-methods}{%
+\section{Quatitative Analysis and Methods}\label{quatitative-analysis-and-methods}}
 
 \hypertarget{dynamics-measuring-index}{%
 \subsection{Dynamics Measuring Index}\label{dynamics-measuring-index}}
@@ -380,7 +383,9 @@ characteristics of an actor, on the one hand, and the surrounding environment, o
 
 To measure the degree of dynamic change of a cluster, it is necessary to calculate the entry rate of the technology cluster. Brandt used the enterprise's entry rate and exit rate to measure the dynamics attributes of a company (2005). This research refers to the researcher's calculation method. The number of enterprises entering and quitting a sector as a percentage of the total number of firms in the same sector in a given year is used to compute entry rate in this tech cluster dynamics research(ibid). The calculation method is as follows.
 
-\[ Entry\ Rate_{i,t} = \frac{Incorporating\ Firms_{i,t}}{Total\  Firms_{i}} \]
+\[ 
+Entry\ Rate_{i,t} = \frac{Incorporating\ Firms_{i,t}}{Total\  Firms_{i}} 
+\]
 
 Where \(i\) means location(travel to work area), \(t\) means year
 
@@ -389,83 +394,113 @@ Where \(i\) means location(travel to work area), \(t\) means year
 
 It is necessary to calculate the Herfindahl-Hirschman Index or location quotient of the technology cluster to measure the degree of industrial concentration in a cluster area. However, only the former method is used because the employment data corresponding to the corresponding region year is missing; Here is a reference to the quantitative method of industrial concentration of Chao Lu's research team (2017). HHI is calculated by squaring the market share of each competing company and then adding the results, where the market share is given in the form of scores or points (ibid). Increases in the Herfindahl index generally indicate a decrease in competition and an increase of market power, whereas decreases indicate the opposite (Hall \& et al., 2009), as the calculation method shown below.
 
-\[ Herfindahl-Hirschman \ Index_{\ i,t} = \sum_{j=1}^N (\frac{Tech\ Firms_{j,i,t}}{Total\ Tech\ Firms_{i,t}})^2 \]
+\[
+HHI_{\ i,t} = \sum_{j=1}^N (\frac{Tech\ Firms_{j,i,t}}{Total\ Tech\ Firms_{i,t}})^2 
+\]
 Where:
-\(N\) is the overall number of individual tech firm contained.
-\(k\) represents the \(k\)th industry in location \(i\) and year \(t\).
-\(Tech Firms_j\) is the number of j-th individual tech firm
-\(Total Tech Firms\) represents the number of total tech firms in a specific location and year.
+\(HHI_{i,t}\) means Herfindahl-Hirschman ~Index in location \(i\) and year \(t\)
 
-\hypertarget{quatitative-analysis-and-methods}{%
-\section{Quatitative Analysis and Methods}\label{quatitative-analysis-and-methods}}
+\(N\) is the overall number of individual tech firm contained.
+
+\(k\) represents the \(k\)th industry in location \(i\) and year \(t\).
+
+\(Tech Firms_j\) is the number of j-th individual tech firm
+
+\(Total Tech Firms\) represents the number of total tech firms in a specific location and year.
 
 \hypertarget{regression}{%
 \subsection{Regression}\label{regression}}
 
-\begin{longtable}[]{@{}lccr@{}}
+In order to quantify the impact of industry concentration and company density in the cluster on the cluster dynamic variable (entry rate), the Herfindahl-Hirschman Index and company density corresponding to the year and location(i.e.~ttwa) in the data are used as independent variables (Table \ref{tab:tab-reg-idp-var}). And the variable of the numeric data type of entry rate is regarded as the dependent variable
+
+\begin{table}
+
+\caption{\label{tab:tab-reg-idp-var}Independent Variables Selection for Regression}
+\centering
+\begin{tabular}[t]{lll}
 \toprule
-Independent Variables & Type & Description &\tabularnewline
+\textbf{Independent Variables} & \textbf{Type} & \textbf{Description}\\
 \midrule
-\endhead
-Firms & numeric & The number of tech firms &\tabularnewline
-Density & numeric & The density of tech firms &\tabularnewline
-Herfindahl-Hirschman Index & numeric & The index measuring the industry mix &\tabularnewline
-Year & category & Years from 1998 to 2018 &\tabularnewline
-Location & category & Top ten clusters of companies in England &\tabularnewline
+Density & numeric & The density of tech firms\\
+Herfindahl-Hirschman Index & numeric & The index measuring the industry mix\\
+Year & category & Years from 1998 to 2018\\
+Location & category & Top ten clusters of companies in England\\
 \bottomrule
-\end{longtable}
+\end{tabular}
+\end{table}
 
-OLS
+Dynamics variable(entry rate) is measured empirically by the ratio of the number of new firms at the end of a period to the total number of firms at the beginning of the period(Hause \& Du Rietz, 1984), unless otherwise stated. The equation regression model is given:
 
-\hypertarget{morans-i}{%
-\subsection{Moran's I}\label{morans-i}}
+\[
+\ y\ =\ b_0 + b_1 \ x_1 + b_2 \ x_2 + \sum_{i=3}^{4} \ b_i \ x_i + \epsilon_{i,j}
+\]
+Where
+
+\(y\) means entry rate in the year and location
+\(x_1\) means the year, a dummy variable
+\(x_2\) means location, i.e.~travel to work area(TTWA)
+\(x_3\) means the density of tech firms in a specific year and location
+\(x_4\) means Herfindahl-Hirschman Index in in a specific year and location
+\(\epsilon_{i,j}\) is a random error.
+
+\hypertarget{global-autocorrelation-morans-i}{%
+\subsection{Global Autocorrelation (Moran's I)}\label{global-autocorrelation-morans-i}}
 
 One of the most popular and often used measures of spatial autocorrelation is Moran's Index. Based on the locations and values of the feature, the Global Moran's I tool analyzes the pattern of a data set spatially and decides if it is scattered, clustered, or random. The program calculates the Moran's I Index value, as well as the z-score and p-value, to statistically validate the Index. It is computed using the formula below (Kumari \& et al., 2019).
 
-\[ Moran's \ Index = \frac{n}{S_0} \frac{\sum_{x=1}^n \sum_{y=1}^n w_{x,y} z_x z_y}{\sum_{x=1}^n z_x^2}\]
+\[
+Moran's \ I = \frac{n}{S_0} \frac{\sum_{x=1}^n \sum_{y=1}^n w_{x,y} z_x z_y}{\sum_{x=1}^n z_x^2}
+\]
+\[
+S_0 = \sum_{x=1}^n \sum_{y=1}^n w_{x,y}
+\]
 
-\[ S_0 = \sum_{x=1}^n \sum_{y=1}^n w_{x,y}\]
 Where \(z_x\) stands for deviation of an attribute from its mean \((x_i – X̅)\) for feature \(X\), \(w_{x,y}\) is the spatial weight among feature \(X\) and \(Y\), \(n\) is the total number of features and So is the summation of all spatial weights
 
 The statistic's \(z_j\) score is given below
 
-\[ z_x = \frac{I - E[I]}{\sqrt{V[I]}}\]
+\[ 
+z_x = \frac{I - E[I]}{\sqrt{V[I]}}
+\]
 where
 
-\[ E[I] = \frac{-1}{(n-1)}\]
-\[ V[I] = E[I^2]-E[I]^2\]
-The Moran's Index(I) has a range of values from -1 to 1. Index value 1 indicates that the observed pattern is spatially clustered. On the other hand value -1 indicates scattering or dispersion. Moran's I assign a value of near or equal to zero to the lack of auto correlation. The z-score and p-value of the Index are only used to form final judgments regarding the observed pattern. Besides, local indicators of spatial association will be applied to measure the high-high and low-low clusters(Anselin, 2010).
+\[
+E[I] = \frac{-1}{(n-1)}
+\]
 
-\hypertarget{hot-spot-analysis}{%
-\subsection{Hot Spot Analysis}\label{hot-spot-analysis}}
+\[
+V[I] = E[I^2]-E[I]^2
+\]
 
-Local Gi* Score
+The Moran's Index(I) has a range of values from -1 to 1. Index value 1 indicates that the observed pattern is spatially clustered. On the other hand value -1 indicates scattering or dispersion. Moran's I assign a value of near or equal to zero to the lack of auto correlation. The z-score and p-value of the Index are only used to form final judgments regarding the observed pattern. Besides, local indicators of spatial association will be applied to measure the high-high and low-low clusters(Anselin, 2010). According to research method of Kumari's team(2019), the Moran's I of three time period will be calculated to analysis the dynamics change in spatial and temporal aspects.
 
-According to Hot-Spot Analysis (Getis-Ord Gi*) (Getis \& Ord, 2010)
+\hypertarget{hot-spot-analysis-getis-ord-gi}{%
+\subsection{Hot-Spot Analysis (Getis-Ord Gi*)}\label{hot-spot-analysis-getis-ord-gi}}
+
+Only positive spatial autocorrelation is taken into account by the local Getis statistics, which allows for discrimination between clusters of similar values that are high or low relative to the mean. The Getis--Ord local statistics are calculated as follows by Getis \& Ord (2010):
+
+\[
+G^*_j = \frac{\sum_{j=1}^nw_{i,j}x_j - \bar{X}\sum_{j=1}^{n}w_{i,j}}{S\sqrt{\frac{[n\sum_{j=1}^{n}w^2_{i,j} - (\sum_{j=1}^{n}w_{i,j})^2)]}{n-1}}}
+\]
+
+where \(x_j\) is the attribute value for feature \(j, w_{i,j}\) is the spatial weight between feature \(i\) and \(j\), \(n\) is equal to the total number of features and:
+
+\[ 
+\bar{x} = \frac{\sum_{j=1}^{n}x_j}{n}
+\]
+
+\[
+S = \sqrt{\frac{\sum_{j=1}^{n}x^2_j}{n} -(\bar{x})^2}
+\]
+
+The Gi* statistic returned for each feature in the dataset is a z-score (Getis \& Ord, 2010). For statistically significant positive z-scores, the larger the z-score is, the more intense the clustering of high values (hot spot). For statistically significant negative z-scores, the smaller the z-score is, the more intense the clustering of low values (cold spot).
 
 \hypertarget{limitations}{%
 \section{Limitations}\label{limitations}}
 
 In term of missing value in the original dataset, there are almost 99.8\% missing value in dissolution date. This means that most companies do not have a dissolution date, which might not mean that some companies survive, nor can it accurately reflect the company's exit numbers in a specific year and region. Moreover, the company's incorporation date data (including firms birth year) is also missing about 17.26\%. These two difficulties make the data after cleaning process may have the risk of insufficient accuracy in representing the dynamics of the industry. The model prediction after fitted to this dataset might not reach the same situation as the real world level.
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  ttwa
-\end{enumerate}
-
-\begin{itemize}
-\tightlist
-\item
-  ttwa might not be a data-driven method
-\item
-  ttwa data is not up-to-date because it is 2015 statistics
-\item
-  ttwa's change (Ozkul,2014)
-\end{itemize}
-
-Ozkul, B., 2014. Changing home-to-work travel in England and Wales. Regional Studies, Regional Science, 1(1), pp.32-39.
+England travel to work areas might not be a data-driven method to identify the clusters. This spatial boundary data is not an up-to-date dataset because it is lastly updated in 2015. Changes in commuting have pushed TTWA boundaries further since their inception in the 1980s. With the passage of time, the boundaries of TTWA will be further changed in the future due to changes in commuting methods(Ozkul,2014) which might make this research slightly inappropriate in the future application.
 
 The value of this statistical data(Herfindahl-Hirschman Index) for identifying monopoly development, on the other hand, is directly dependent on the precise definition of a market (Kwoka, 1977). For instances, geographical considerations might influence market share. This dilemma can arise when there are nearly equal market share of tech businesses in a given sector, but they each operate exclusively in distinct regions of the travel to work area, resulting in each firm having a monopoly inside the specific marketplace in which it conducts business, which might make it more difficult to measure the industry mix in a specific location and year. Furthermore, one IT firm may control as much as 70\% of the market for a certain area of the digital industry (i.e.~the sale of one specific equipment). As a result, that company would have a near-total monopoly on the manufacturing and sale of that commodity.
 
@@ -649,7 +684,7 @@ The confidence of global Moran's I in 1998 is as high as 95\%. But the statistic
 
 \begin{table}
 
-\caption{\label{tab:tab-morans-i-enR}Spatio-temporal dynamics(entry rate) cluster analysis by global Moran's Index}
+\caption{\label{tab:tab-morans-i-enR}Spatio-temporal dynamics cluster analysis by global Moran's Index}
 \centering
 \begin{tabular}[t]{rrlr}
 \toprule
@@ -662,9 +697,7 @@ The confidence of global Moran's I in 1998 is as high as 95\%. But the statistic
 \end{tabular}
 \end{table}
 
-Contrary to the entry rate variable, the density attribute value of England has always maintained a relatively obvious spatial aggregation phenomenon, although the global Moran's Index of the density variable has been decreasing year by year. This variable has higher confidence in global Moran's I statistics in the three-year statistics, thus its interpretability is higher than that for mentioned entry rate.
-
-(Table \ref{tab:tab-morans-i-den})
+Contrary to the entry rate variable, the density attribute value of England has always maintained a relatively obvious spatial aggregation phenomenon, although the global Moran's Index of the density variable has been decreasing year by year. This variable has higher confidence in global Moran's I statistics in the three-year statistics, thus its interpretability is higher than that for mentioned entry rate (Table \ref{tab:tab-morans-i-den}).
 
 \begin{table}
 
@@ -681,10 +714,11 @@ Contrary to the entry rate variable, the density attribute value of England has 
 \end{tabular}
 \end{table}
 
-\hypertarget{dynamics-lisa}{%
-\subsection{Dynamics LISA}\label{dynamics-lisa}}
+\hypertarget{lisa-analysis-of-firms-dynamics}{%
+\subsection{LISA Analysis of Firms Dynamics}\label{lisa-analysis-of-firms-dynamics}}
 
-参照Table \ref{tab:tab-z-p-corr}
+Local Indicators of Spatial Association(LISA)
+According to the Table \ref{tab:tab-z-p-corr}, the z-score with its significance can be found.
 
 \begin{table}
 
@@ -701,24 +735,37 @@ less than -2.58 or more than 2.58 & less than 0.01 & 0.99\\
 \end{tabular}
 \end{table}
 
+The visualisation result of the local Moran's index's Z-score of Entry rate is as similarly indicated by the global Moran coefficient (Figure \ref{fig:fig-enR-1998-2018-v1}). With the growth of the year, the overall agglomeration effect of England has decreased. But, in this process, the agglomeration effect in the northern region was higher than that in other regions. However, the travel to work areas in the southwest corner changed significantly from the early cluster effect in 1998 to the corresponding outliers such as Low-High, High-Low areas in 2018 (Figure \ref{fig:fig-lisa-entry-rate} ). In addition, from Figure \ref{fig:fig-hh-1998-2018}, the higher industrial concentration in the north also makes the phenomenon of dynamics agglomeration more obvious than that in other places in England area
+
+To be more specific, High-High clusters in 1998 are mainly concentrated in travel to work areas in northern areas such as Newcastle, southern areas such as Andover-Newbury, and the southwest of Exeter. The entry rate values around these places may be higher than the British average. The Low-Low clusters of entry rates are clustered in the northern North Yorkshire area. The surrounding areas of these places usually have relatively close entry rates and low entry rate values;
+
+With the passage of time, the High-High cluster has shifted (the north like Whitehaven and the southwest corner like Launceston areas with higher entry rates gradually formed). By 2018, High-High cluster only appeared in travel to work areas around Liverpool, and new low tech firms entry rate areas were formed in Workington and Penrith\&Appleby (Figure \ref{fig:fig-lisa-entry-rate})
+
+Central regions of England such as London, Birmingham and other regions have not had obvious spatial clustering effects in the visualisation results. This may be due to the low statistical confidence of the local Moran's index among regions. Or it might be because the data in this study is aggregated before calculated. The related data may be missing after the HHI and entry rate are utilised, which might not perfectly represent the company information in some parts of England.
+
 \begin{figure}
-\includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/Lisa_enR} \caption{Local Moran's I Spatial Analysis for Entry Rate in England for three time periods}\label{fig:fig-lisa-entry-rate}
+\includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/Lisa_enR_v1} \caption{Local Moran's I Spatial Analysis for Entry Rate in England for three time periods}\label{fig:fig-lisa-entry-rate}
 \end{figure}
 
-\hypertarget{dynamics-hot-spot-analysis}{%
-\subsection{Dynamics Hot-spot Analysis}\label{dynamics-hot-spot-analysis}}
+\hypertarget{hot-spot-analysis-of-firms-dynamics}{%
+\subsection{Hot-Spot Analysis of Firms Dynamics}\label{hot-spot-analysis-of-firms-dynamics}}
+
+This research identified and mapped local clusters (hot and cold spots) by the level of entry rate for these three period.
+
+On the whole, there is a distinct north-south difference in the distribution of cold and hot spots in the early stage(1998). With the development of England tech clusters, this difference is slowly dissipating and a reversal is formed eventually(Figure \ref{fig:fig-Gi-entry-rate}). More specifically, in 1998, there were some hot spots concentrated in the Swindon-Bristol-Reading urban belt in the south-central area and the southwest urban agglomeration of Exeter. Whilst, in the north, there were scattered cold spots represented by the Whitehaven area.
+
+By 2008, most of the hot spots disappeared, and the places that were hot spots gradually became cold spots, such as the southwestern region. In 2018, some hot spots appeared in the northwestern region along with England. The original two hot spots in the southwest have experienced two-time nodes in 2008 and 2018, and they finally turned into cold spot clusters(Figure \ref{fig:fig-Gi-entry-rate}).
+
+From: \url{https://sci-hub.se/10.1556/032.65.2015.3.1}
+
+Discussion: 从时空趋势的角度上看，北方逐渐成为entry rate的热点，有越来越多的科技公司加入北方并且这一现象具有空间自相关性；而西南部地区如何进行政策鼓励和调整来使得他们的科技产业重新焕发生机，税收？
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/G_enR} \caption{Significance Statistics for Local Moran's I in Entry Rate in England for three time periods}\label{fig:fig-Gi-entry-rate}
+\includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/G_enR_v1} \caption{Significance Statistics for Local Moran's I in Entry Rate in England for three time periods}\label{fig:fig-Gi-entry-rate}
 \end{figure}
 
-\hypertarget{density-cluster-analysis}{%
-\subsection{Density Cluster Analysis}\label{density-cluster-analysis}}
-
-\ldots{}
-
-\hypertarget{discussion}{%
-\chapter{Discussion}\label{discussion}}
+\hypertarget{disc}{%
+\chapter{Discussion}\label{disc}}
 
 Short introduction to the chapter, reviewing the previous chapter and detailing what this one aims to achieve and build upon.
 
@@ -746,6 +793,8 @@ To be done
 
 To be done
 
+TTWA可以作为\ldots{}
+
 \hypertarget{conclusion}{%
 \chapter{Conclusion}\label{conclusion}}
 
@@ -770,9 +819,8 @@ end (Clementi \& Palazzo,2016)
 \addcontentsline{toc}{chapter}{References}
 
 a b c d e f g h i j k l m n o p q r s t u v w x y z
-pay attention to the unity of format
 
-ALCACER J. and CHUNG W. (2007) Location strategies and knowledge spillovers, Management Science 53, 760--776.
+Alcacer J. and Chung W., 2007 Location strategies and knowledge spillovers, Management Science 53, 760--776.
 
 Anselin, L., 2010. Local Indicators of Spatial Association-LISA. Geographical Analysis, 27(2), pp.93-115.
 
@@ -790,11 +838,15 @@ Combes, P.-P., Duranton, G., Gobillon, L., Puga, D. and Roux, S. (2012),The Prod
 
 Clementi, G.L. and Palazzo, B., 2016. Entry, exit, firm dynamics, and aggregate fluctuations. American Economic Journal: Macroeconomics, 8(3), pp.1-41.
 
+ESRI. 2021. How Hot Spot Analysis (Getis-Ord Gi*) works. {[}online{]} Available at: \url{https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/h-how-hot-spot-analysis-getis-ord-gi-spatial-stati.htm} {[}Accessed 21 August 2021{]}.
+
 Frenken, K., Cefis, E., \& Stam, E. 2015. Industrial Dynamicsand Clusters: A Survey. Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505
 
 Getis, A. and Ord, J., 2010. The Analysis of Spatial Association by Use of Distance Statistics. Geographical Analysis, 24(3), pp.189-206.
 
 Hall, B.L., Hsiao, E.Y., Majercik, S., Hirbe, M. and Hamilton, B.H., 2009. The impact of surgeon specialization on patient mortality: examination of a continuous Herfindahl-Hirschman index. Annals of surgery, 249(5), pp.708-716.
+
+Hause, J. and Du Rietz, G., 1984. Entry, Industry Growth, and the Microdynamics of Industry Supply. Journal of Political Economy, 92(4), pp.733-757.
 
 Kerr, William R., and Frederic Robert-Nicoud. 2020. ``Tech Clusters.''Journal of Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/articles?id=10.1257/jep.34.3.50
 
@@ -810,6 +862,8 @@ Lu, C., Qiao, J. and Chang, J., 2017. Herfindahl--Hirschman Index based performa
 
 Liu, J., Tsou, M. and Hammitt, J., 1999. Do small plants grow faster? Evidence from the Taiwan electronics industry. Economics Letters, 65(1), pp.121-129.
 
+Li, L., Jiang, Z., Duan, N., Dong, W., Hu, K. and Sun, W., 2011. Police Patrol service optimization based on the spatial pattern of hotspots. Proceedings of 2011 IEEE International Conference on Service Operations, Logistics and Informatics,.
+
 Mateos-Garcia, J. and Bakhshi, H., 2016. The geography of creativity in the UK. London: Nesta.
 
 Nathan, M. and Rosso, A., 2015. Mapping digital businesses with big data: Some early findings from the UK. Research Policy, 44(9), pp.1714-1733.
@@ -818,7 +872,11 @@ Open Corporates. 2018, The core company data from OpenCorporates master company 
 
 Office for National Statistics, 2015. Identifying Science and Technology Businesses in Official Statistics. {[}online{]} London, UK: Office for National Statistics, pp.10-14. Available at: \url{https://webarchive.nationalarchives.gov.uk/20160105170025/http://www.ons.gov.uk/ons/site-information/using-the-website/rss-news-feeds/index.html} {[}Accessed 28 July 2021{]}.
 
+Ozkul, B., 2014. Changing home-to-work travel in England and Wales. Regional Studies, Regional Science, 1(1), pp.32-39.
+
 Prothero, R., 2021. Travel to work area analysis in Great Britain. {[}online{]} Office for National Statistics. Available at: \url{https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/traveltoworkareaanalysisingreatbritain/2016} {[}Accessed 8 August 2021{]}.
+
+Stankov, U. and Dragićević, V., 2015. Changes in the spatial pattern of net earnings: Evidence from Serbia. Acta Oeconomica, 65(3), pp.351-365.
 
 Titheridge, H. and Hall, P., 2006. Changing travel to work patterns in South East England. Journal of Transport Geography, 14(1), pp.60-75.
 

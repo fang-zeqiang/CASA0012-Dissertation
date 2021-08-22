@@ -32,6 +32,8 @@ To what extent will dynamic change affect tech clusters’performance？
 Governments all across the world aim to grow their ICT sectors. As a result, researchers and policymakers want a comprehensive image of digital firms, but traditional datasets and typologies lag real-world change. We perform an alternative analysis for all active enterprises in the UK, focused on ICT-producing firms, using innovative "big data" resources.
 (Nathan and Rosso, 2015)
 
+The approach of spatial autocorrelation analysis is useful for revealing the structure and patterns of economic geographical variables. It can be used to identify not only the country's overall spatial patterns, but also specific micro-locations (Stankov & Dragićević, 2015).
+
 ## Report Structure
 
 1. data clean

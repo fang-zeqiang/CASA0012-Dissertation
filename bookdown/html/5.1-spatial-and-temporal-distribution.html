@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="5.1 Spatial and Temporal Distribution | Spatial Pattern Mining of Tech Clusters of Dynamics and Industry Mix Based On Quantitative Methods in England Area, UK" />
+<meta property="og:type" content="book" />
+
+
+<meta property="og:description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL" />
+<meta name="github-repo" content="fang-zeqiang/CASA0012-Dissertation" />
+
+
+<meta name="date" content="2021-08-22" />
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta name="description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL">
+
+<title>5.1 Spatial and Temporal Distribution | Spatial Pattern Mining of Tech Clusters of Dynamics and Industry Mix Based On Quantitative Methods in England Area, UK</title>
+
+<script src="libs/header-attrs-2.10.1/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+
+
+<link rel="stylesheet" href="toc.css" type="text/css" />
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+/* show arrow before summary tag as in bootstrap
+TODO: remove if boostrap in updated in html_document (rmarkdown#1485) */
+details > summary {
+  display: list-item;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#abstract">Abstract</a></li>
+<li><a href="declaration.html#declaration">Declaration</a></li>
+<li><a href="acknowledgements.html#acknowledgements">Acknowledgements</a></li>
+<li><a href="1-abbr.html#abbr"><span class="toc-section-number">1</span> Abbreviations</a></li>
+<li><a href="2-introduction.html#introduction"><span class="toc-section-number">2</span> Introduction</a>
+<ul>
+<li><a href="2.1-background.html#background"><span class="toc-section-number">2.1</span> Background</a></li>
+<li><a href="2.2-research-question-and-objectives.html#research-question-and-objectives"><span class="toc-section-number">2.2</span> Research Question and Objectives</a></li>
+<li><a href="2.3-report-structure.html#report-structure"><span class="toc-section-number">2.3</span> Report Structure</a></li>
+</ul></li>
+<li><a href="3-lit-review.html#lit-review"><span class="toc-section-number">3</span> Literature Review</a>
+<ul>
+<li><a href="3.1-industry-cluster-tech-cluster.html#industry-cluster-tech-cluster"><span class="toc-section-number">3.1</span> Industry Cluster &amp; Tech Cluster</a></li>
+<li><a href="3.2-cluster-dynamics.html#cluster-dynamics"><span class="toc-section-number">3.2</span> Cluster Dynamics</a></li>
+<li><a href="3.3-industry-mix.html#industry-mix"><span class="toc-section-number">3.3</span> Industry Mix</a></li>
+<li><a href="3.4-how-location-affect-entry-pattern-in-ukglobal.html#how-location-affect-entry-pattern-in-ukglobal"><span class="toc-section-number">3.4</span> How location affect entry pattern in UK/Global</a></li>
+<li><a href="3.5-how-time-affect-entry-pattern-in-ukglobal.html#how-time-affect-entry-pattern-in-ukglobal"><span class="toc-section-number">3.5</span> How time affect entry pattern in UK/Global</a></li>
+<li><a href="3.6-other-factor-can-affect-dynamics-pattern-in-uk.html#other-factor-can-affect-dynamics-pattern-in-uk"><span class="toc-section-number">3.6</span> Other factor can affect dynamics pattern in UK</a></li>
+</ul></li>
+<li><a href="4-methodology.html#methodology"><span class="toc-section-number">4</span> Methodology</a>
+<ul>
+<li><a href="4.1-research-framework.html#research-framework"><span class="toc-section-number">4.1</span> Research Framework</a></li>
+<li><a href="4.2-data-source-and-processing.html#data-source-and-processing"><span class="toc-section-number">4.2</span> Data Source and Processing</a></li>
+<li><a href="4.3-identifying-tech-cluster.html#identifying-tech-cluster"><span class="toc-section-number">4.3</span> Identifying Tech Cluster</a></li>
+<li><a href="4.4-data-scale.html#data-scale"><span class="toc-section-number">4.4</span> Data Scale</a>
+<ul>
+<li><a href="4.4-data-scale.html#time-range-selection"><span class="toc-section-number">4.4.1</span> Time Range Selection</a></li>
+<li><a href="4.4-data-scale.html#tech-cluster-identifying"><span class="toc-section-number">4.4.2</span> Tech Cluster Identifying</a></li>
+</ul></li>
+<li><a href="4.5-quatitative-analysis-and-methods.html#quatitative-analysis-and-methods"><span class="toc-section-number">4.5</span> Quatitative Analysis and Methods</a>
+<ul>
+<li><a href="4.5-quatitative-analysis-and-methods.html#dynamics-measuring-index"><span class="toc-section-number">4.5.1</span> Dynamics Measuring Index</a></li>
+<li><a href="4.5-quatitative-analysis-and-methods.html#industry-mix-measuring-index"><span class="toc-section-number">4.5.2</span> Industry Mix Measuring Index</a></li>
+<li><a href="4.5-quatitative-analysis-and-methods.html#regression"><span class="toc-section-number">4.5.3</span> Regression</a></li>
+<li><a href="4.5-quatitative-analysis-and-methods.html#global-autocorrelation-morans-i"><span class="toc-section-number">4.5.4</span> Global Autocorrelation (Moran’s I)</a></li>
+<li><a href="4.5-quatitative-analysis-and-methods.html#hot-spot-analysis-getis-ord-gi"><span class="toc-section-number">4.5.5</span> Hot-Spot Analysis (Getis-Ord Gi*)</a></li>
+</ul></li>
+<li><a href="4.6-limitations.html#limitations"><span class="toc-section-number">4.6</span> Limitations</a></li>
+<li><a href="4.7-ethical-statement.html#ethical-statement"><span class="toc-section-number">4.7</span> Ethical Statement</a></li>
+</ul></li>
+<li><a href="5-results.html#results"><span class="toc-section-number">5</span> Results</a>
+<ul>
+<li><a href="5.1-spatial-and-temporal-distribution.html#spatial-and-temporal-distribution"><span class="toc-section-number">5.1</span> Spatial and Temporal Distribution</a>
+<ul>
+<li><a href="5.1-spatial-and-temporal-distribution.html#tech-cluster-dynamics"><span class="toc-section-number">5.1.1</span> Tech Cluster Dynamics</a></li>
+<li><a href="5.1-spatial-and-temporal-distribution.html#tech-industry-mix"><span class="toc-section-number">5.1.2</span> Tech Industry Mix</a></li>
+</ul></li>
+<li><a href="5.2-regression-analysis.html#regression-analysis"><span class="toc-section-number">5.2</span> Regression Analysis</a></li>
+<li><a href="5.3-spatial-autocorrelation.html#spatial-autocorrelation"><span class="toc-section-number">5.3</span> Spatial Autocorrelation</a>
+<ul>
+<li><a href="5.3-spatial-autocorrelation.html#lisa-analysis-of-firms-dynamics"><span class="toc-section-number">5.3.1</span> LISA Analysis of Firms Dynamics</a></li>
+<li><a href="5.3-spatial-autocorrelation.html#hot-spot-analysis-of-firms-dynamics"><span class="toc-section-number">5.3.2</span> Hot-Spot Analysis of Firms Dynamics</a></li>
+</ul></li>
+</ul></li>
+<li><a href="6-disc.html#disc"><span class="toc-section-number">6</span> Discussion</a>
+<ul>
+<li><a href="6.1-research-significance.html#research-significance"><span class="toc-section-number">6.1</span> Research significance</a>
+<ul>
+<li><a href="6.1-research-significance.html#global-development-goals"><span class="toc-section-number">6.1.1</span> Global development goals</a></li>
+<li><a href="6.1-research-significance.html#local-policy"><span class="toc-section-number">6.1.2</span> Local policy</a></li>
+<li><a href="6.1-research-significance.html#academic-research"><span class="toc-section-number">6.1.3</span> Academic research</a></li>
+</ul></li>
+<li><a href="6.2-limitations-1.html#limitations-1"><span class="toc-section-number">6.2</span> Limitations</a></li>
+<li><a href="6.3-transferability.html#transferability"><span class="toc-section-number">6.3</span> Transferability</a></li>
+</ul></li>
+<li><a href="7-conclusion.html#conclusion"><span class="toc-section-number">7</span> Conclusion</a></li>
+<li><a href="references.html#references">References</a></li>
+<li><a href="appendix-a-classification-form.html#appendix-a-classification-form">Appendix A Classification Form</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="spatial-and-temporal-distribution" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Spatial and Temporal Distribution</h2>
+In terms of three variables’ change of overall England level,it can be found that the average firms’ entry rate and density in England increase significantly(Figure <a href="5.1-spatial-and-temporal-distribution.html#fig:fig-all-var-trend">5.1</a>). There was a growth in firms entry rate from 0.01(1998) to 0.14(2018) and the statistics of density climb from 0.02 to 0.43 during these decades (Table <a href="5.1-spatial-and-temporal-distribution.html#tab:tab-all-var-trend">5.1</a>). However, the Herfindahl-Hirschman index decreased by less than 0.1 in 2018 which is 1/3 times than that in 1998. Overall, it can be seen that the dynamics increased but the industry concentration reduced.
+<div class="figure"><span style="display:block;" id="fig:fig-all-var-trend"></span>
+<img src="general_images/all_enR_hh_den_change.png" alt="The average level change of three variables in two decades" width="100%" />
+<p class="caption">
+Figure 5.1: The average level change of three variables in two decades
+</p>
+</div>
+<p>How to reference (Figure <a href="5.1-spatial-and-temporal-distribution.html#fig:fig-all-var-trend">5.1</a>)</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tab-all-var-trend">Table 5.1: </span>The average level change of three variables in two decades
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;font-weight: bold;">
+Year
+</th>
+<th style="text-align:right;font-weight: bold;">
+Entry Rate
+</th>
+<th style="text-align:right;font-weight: bold;">
+Herfindahl-Hirschman Index
+</th>
+<th style="text-align:right;font-weight: bold;">
+Density (1/km^2)
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1998
+</td>
+<td style="text-align:right;">
+0.0111338
+</td>
+<td style="text-align:right;">
+0.2811410
+</td>
+<td style="text-align:right;">
+0.0251467
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1999
+</td>
+<td style="text-align:right;">
+0.0116754
+</td>
+<td style="text-align:right;">
+0.2625985
+</td>
+<td style="text-align:right;">
+0.0255016
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2000
+</td>
+<td style="text-align:right;">
+0.0127544
+</td>
+<td style="text-align:right;">
+0.2580325
+</td>
+<td style="text-align:right;">
+0.0288208
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2001
+</td>
+<td style="text-align:right;">
+0.0124221
+</td>
+<td style="text-align:right;">
+0.2361455
+</td>
+<td style="text-align:right;">
+0.0279131
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2002
+</td>
+<td style="text-align:right;">
+0.0212760
+</td>
+<td style="text-align:right;">
+0.1460459
+</td>
+<td style="text-align:right;">
+0.0420549
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2003
+</td>
+<td style="text-align:right;">
+0.0285419
+</td>
+<td style="text-align:right;">
+0.1350075
+</td>
+<td style="text-align:right;">
+0.0540107
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2004
+</td>
+<td style="text-align:right;">
+0.0195123
+</td>
+<td style="text-align:right;">
+0.1886668
+</td>
+<td style="text-align:right;">
+0.0449568
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2005
+</td>
+<td style="text-align:right;">
+0.0225973
+</td>
+<td style="text-align:right;">
+0.1841296
+</td>
+<td style="text-align:right;">
+0.0492084
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2006
+</td>
+<td style="text-align:right;">
+0.0274033
+</td>
+<td style="text-align:right;">
+0.1521901
+</td>
+<td style="text-align:right;">
+0.0592952
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2007
+</td>
+<td style="text-align:right;">
+0.0358175
+</td>
+<td style="text-align:right;">
+0.1507693
+</td>
+<td style="text-align:right;">
+0.0862518
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2008
+</td>
+<td style="text-align:right;">
+0.0295100
+</td>
+<td style="text-align:right;">
+0.1662619
+</td>
+<td style="text-align:right;">
+0.0737782
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2009
+</td>
+<td style="text-align:right;">
+0.0336153
+</td>
+<td style="text-align:right;">
+0.1305273
+</td>
+<td style="text-align:right;">
+0.0817783
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2010
+</td>
+<td style="text-align:right;">
+0.0425260
+</td>
+<td style="text-align:right;">
+0.1285513
+</td>
+<td style="text-align:right;">
+0.1134154
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2011
+</td>
+<td style="text-align:right;">
+0.0516425
+</td>
+<td style="text-align:right;">
+0.1212957
+</td>
+<td style="text-align:right;">
+0.1404650
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2012
+</td>
+<td style="text-align:right;">
+0.0593572
+</td>
+<td style="text-align:right;">
+0.1179875
+</td>
+<td style="text-align:right;">
+0.1664194
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2013
+</td>
+<td style="text-align:right;">
+0.0712224
+</td>
+<td style="text-align:right;">
+0.1006216
+</td>
+<td style="text-align:right;">
+0.2015662
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2014
+</td>
+<td style="text-align:right;">
+0.0867586
+</td>
+<td style="text-align:right;">
+0.1056914
+</td>
+<td style="text-align:right;">
+0.2538923
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2015
+</td>
+<td style="text-align:right;">
+0.0943852
+</td>
+<td style="text-align:right;">
+0.1048371
+</td>
+<td style="text-align:right;">
+0.2869250
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2016
+</td>
+<td style="text-align:right;">
+0.0912387
+</td>
+<td style="text-align:right;">
+0.0980931
+</td>
+<td style="text-align:right;">
+0.2812983
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2017
+</td>
+<td style="text-align:right;">
+0.0979282
+</td>
+<td style="text-align:right;">
+0.0894585
+</td>
+<td style="text-align:right;">
+0.2954844
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2018
+</td>
+<td style="text-align:right;">
+0.1432780
+</td>
+<td style="text-align:right;">
+0.0827082
+</td>
+<td style="text-align:right;">
+0.4387067
+</td>
+</tr>
+</tbody>
+</table>
+<p>How to reference (Table <a href="5.1-spatial-and-temporal-distribution.html#tab:tab-all-var-trend">5.1</a>)</p>
+<div id="tech-cluster-dynamics" class="section level3" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> Tech Cluster Dynamics</h3>
+<p>From 1998 to 2018, the entry rate of each Travel to work area (TTWA) in England will change drastically every decades. For example, in 1998 the darker colored areas were mostly around the Greater London area and the entire southern part of England(Figure <a href="5.1-spatial-and-temporal-distribution.html#fig:fig-enR-1998-2018-v1">5.2</a>). The overall entry rate in 2008 was higher than that in 1998 and showed a trend of new companies entering the north of England. In this year, some travel to work areas on the edge of England have more prominent entry rates, such as Malton, Minehead and Bridport. However, the overall entry rate in 2018 was about twice as high as the average in 2008. Moreover, ttwa with high entry rate is mostly concentrated in the north and the surrounding areas of Greater London. The overall trend can be witnessed as given by Table <a href="5.1-spatial-and-temporal-distribution.html#tab:tab-all-var-trend">5.1</a> that there is an increasing trend in the overall level of entry rate from 1998 (average about 1.06% ) to 2018
+(average about 14.33%)</p>
+<p>Finally, from the perspective of changes in temporal and spatial distribution, the increase in the entry rate of the travel to work area in the northern part of England is much larger than that in the southern part. The areas with high entry rates before 2008 were mostly scattered in other areas except for the Greater London area. However, close to after 2018, London and its surrounding areas, the central Manchester-Birmingham area and the southwest, such as Exeter, have a rising entry rate. In contrast, in 2008, the urban agglomerations north of Leeds had higher firm entry rates in tech industry(Figure <a href="5.1-spatial-and-temporal-distribution.html#fig:fig-enR-1998-2018-v1">5.2</a>).</p>
+<div class="figure"><span style="display:block;" id="fig:fig-enR-1998-2018-v1"></span>
+<img src="general_images/enR_1998_2018_v1.png" alt="The distribution of the entry rate of the England tech clusters(ttwa) from 1998 to 2018" width="100%" />
+<p class="caption">
+Figure 5.2: The distribution of the entry rate of the England tech clusters(ttwa) from 1998 to 2018
+</p>
+</div>
+</div>
+<div id="tech-industry-mix" class="section level3" number="5.1.2">
+<h3><span class="header-section-number">5.1.2</span> Tech Industry Mix</h3>
+<p>In terms of herfindahl-Hirschman index of tech industry in travel to work area of England. As given figure below, it can be seen that the Herfindahl-Hirschman index has a downward trend year by year (Figure <a href="5.1-spatial-and-temporal-distribution.html#fig:fig-hh-1998-2018">5.3</a>). In the methodology module, this index is mentioned as a measure of industrial concentration. A decrease in the value represents an increase in industrial competition and a decrease in market power. The decline of the index means that the types of SIC codes corresponding to companies in a particular region have increased in a year or the number of companies corresponding to a large share of SIC codes has decreased. In other words, the types of technology industries corresponding to the unit area have increased, or the number of advantageous industries has decreased; you can see The concentration of technology industries out of England declined year by year from 1998 to 2018 (Table <a href="5.1-spatial-and-temporal-distribution.html#tab:tab-all-var-trend">5.1</a>). In the same way, the diversity of the technology industry is also increasing, and the richness of the industry may also be related to the increase in the entry rate of enterprises.</p>
+<p>From the perspective of temporal and spatial distribution, the technology industry was concentrated in northern England, northern and southwestern England before 2008. With the passage of time, even if the concentration of industries in some small areas scattered on the border of England is still high, the Herfindahl-Hirschman index in these places has gradually decreased to a level comparable to that of the Greater London area(Figure <a href="5.1-spatial-and-temporal-distribution.html#fig:fig-hh-1998-2018">5.3</a>).</p>
+<div class="figure"><span style="display:block;" id="fig:fig-hh-1998-2018"></span>
+<img src="general_images/hh_1998_2018.png" alt="The distribution of the Herfindahl-Hirschman index of the England tech clusters(ttwa) from 1998 to 2018" width="100%" />
+<p class="caption">
+Figure 5.3: The distribution of the Herfindahl-Hirschman index of the England tech clusters(ttwa) from 1998 to 2018
+</p>
+</div>
+</div>
+</div>
+<p style="text-align: center;">
+<a href="5-results.html"><button class="btn btn-default">Previous</button></a>
+<a href="5.2-regression-analysis.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>

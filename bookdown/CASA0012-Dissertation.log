@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.8.15)  21 AUG 2021 20:39
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.8.15)  22 AUG 2021 04:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1341,7 +1341,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 \openout5 = `CASA0012-Dissertation.toc'.
 
 [6] (./CASA0012-Dissertation.lof
-Underfull \hbox (badness 4144) in paragraph at lines 15--15
+Underfull \hbox (badness 4144) in paragraph at lines 17--17
  [][] [][]\TU/lmr/m/n/12 The distribution of the entry rate of the England tech
  
  []
@@ -1353,13 +1353,13 @@ Underfull \hbox (badness 4144) in paragraph at lines 15--15
 [7
 
 ] (./CASA0012-Dissertation.lot
-Underfull \hbox (badness 1648) in paragraph at lines 13--13
+Underfull \hbox (badness 1648) in paragraph at lines 15--15
  [][] [][]\TU/lmr/m/n/12 Regression results relationship between entry rate and
  tech 
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 15--15
+Underfull \hbox (badness 1648) in paragraph at lines 17--17
  [][] [][]\TU/lmr/m/n/12 Regression results relationship between entry rate and
  tech 
  []
@@ -1377,7 +1377,7 @@ Chapter 1.
 Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
 ex-text;!
 
-Underfull \hbox (badness 3148) in paragraph at lines 185--188
+Underfull \hbox (badness 3148) in paragraph at lines 188--191
 [][]$[][][][][] [] [] [] [][][][][][][][][][] [] [][] [] [][][][][][][][][][] [
 ] [][][] [][] [][][][][][]$[] \TU/lmr/m/n/12 tech cluster & ttwa In fact,
  []
@@ -1387,198 +1387,390 @@ Underfull \hbox (badness 3148) in paragraph at lines 185--188
 ]
 Missing character: There is no ？ (U+FF1F) in font [lmroman12-regular]:mapping=t
 ex-text;!
-[2]
+[2] [3]
 Chapter 2.
-[3
+[4
 
 ]
-Underfull \hbox (badness 3780) in paragraph at lines 268--271
+Underfull \hbox (badness 3780) in paragraph at lines 273--276
 []\TU/lmr/m/n/12 Cluster effect on the whole England area Enterprise entry does
  play
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 268--271
+Underfull \hbox (badness 1596) in paragraph at lines 273--276
 \TU/lmr/m/n/12 an important role in shaping the overall dynamics. The new entra
 nts
  []
 
 
-Underfull \hbox (badness 2781) in paragraph at lines 268--271
+Underfull \hbox (badness 2781) in paragraph at lines 273--276
 \TU/lmr/m/n/12 that survive in the cluster will become larger over time, result
 ing in
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 268--271
+Underfull \hbox (badness 1253) in paragraph at lines 273--276
 \TU/lmr/m/n/12 broader expansion and overall impact (Clementi & Palazzo, 2016) 
 []$[][][][][] []
  []
 
-[4]
-Underfull \hbox (badness 6412) in paragraph at lines 280--280
+[5]
+Underfull \hbox (badness 6412) in paragraph at lines 285--285
 []\TU/lmr/bx/n/17.28 How location affect entry pattern in
  []
 
-[5] [6]
+[6] [7] [8]
 Chapter 3.
-[7
+File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/s
+tudy_area.png Graphic file (type bmp)
+</Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/study_
+area.png>
+[9
 
 ]
 Missing character: There is no （ (U+FF08) in font [lmroman12-regular]:mapping=t
 ex-text;!
 
-Overfull \hbox (255.84232pt too wide) in paragraph at lines 332--345
+Overfull \hbox (147.4823pt too wide) in paragraph at lines 334--348
  [][] 
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 347--348
+Underfull \hbox (badness 2005) in paragraph at lines 350--351
 \TU/lmr/m/n/12 & Healthcare, Publishing & Broadcasting , Other scientific/techn
 ological
  []
 
 
-Underfull \hbox (badness 6526) in paragraph at lines 347--348
+Underfull \hbox (badness 6526) in paragraph at lines 350--351
 \TU/lmr/m/n/12 manufacture and Other scientific/technological services, details
  of the
  []
 
-[8]
+[10]
 File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/f
 igure1.png Graphic file (type bmp)
 </Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/figure
 1.png>
-[9]
+[11] [12]
 Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
 ex-text;!
-[10] [11]
-Overfull \hbox (22.74234pt too wide) in alignment at lines 405--409
- [] [] [] [] 
+[13]
+Overfull \hbox (22.74234pt too wide) in paragraph at lines 420--430
+ [][] 
  []
 
-
-Overfull \hbox (22.74234pt too wide) in alignment at lines 409--416
- [] [] [] [] 
- []
-
-[12]
+[14] [15]
 Missing character: There is no ̅ ("305) in font lmmi12!
-[13] [14] [15] [16]
+[16] [17] [18] [19]
 Chapter 4.
 File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/a
 ll_enR_hh_den_change.png Graphic file (type bmp)
 </Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/all_en
 R_hh_den_change.png>
 
-Overfull \hbox (0.53029pt too wide) in paragraph at lines 501--532
+Overfull \hbox (0.53029pt too wide) in paragraph at lines 536--567
  [][] 
  []
 
-[17
+[20
 
-] [18]
+] [21]
 File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/e
 nR_1998_2018_v1.png Graphic file (type bmp)
 </Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/enR_19
 98_2018_v1.png>
-[19] [20]
+[22] [23]
 File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/h
 h_1998_2018.png Graphic file (type bmp)
 </Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/hh_199
 8_2018.png>
-[21] [22] [23]
-Overfull \hbox (29.15836pt too wide) in paragraph at lines 612--641
+[24] [25] [26]
+Overfull \hbox (29.15836pt too wide) in paragraph at lines 647--676
  [][] 
  []
 
-[24]
-Missing character: There is no 参 (U+53C2) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 照 (U+7167) in font [lmroman12-regular]:mapping=t
-ex-text;!
+[27] [28] [29]
 File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/L
-isa_enR.png Graphic file (type bmp)
+isa_enR_v1.png Graphic file (type bmp)
 </Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/Lisa_e
-nR.png>
+nR_v1.png>
+[30]
+Missing character: There is no 从 (U+4ECE) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 时 (U+65F6) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 空 (U+7A7A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 趋 (U+8D8B) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 势 (U+52BF) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 角 (U+89D2) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 度 (U+5EA6) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 上 (U+4E0A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 看 (U+770B) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 北 (U+5317) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 方 (U+65B9) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 逐 (U+9010) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 渐 (U+6E10) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 成 (U+6210) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 为 (U+4E3A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 热 (U+70ED) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 点 (U+70B9) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 有 (U+6709) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 越 (U+8D8A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 来 (U+6765) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 越 (U+8D8A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 多 (U+591A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 科 (U+79D1) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 技 (U+6280) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 公 (U+516C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 司 (U+53F8) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 加 (U+52A0) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 入 (U+5165) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 北 (U+5317) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 方 (U+65B9) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 并 (U+5E76) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 且 (U+4E14) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 这 (U+8FD9) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 一 (U+4E00) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 现 (U+73B0) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 象 (U+8C61) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 具 (U+5177) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 有 (U+6709) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 空 (U+7A7A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 间 (U+95F4) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 自 (U+81EA) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 相 (U+76F8) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 关 (U+5173) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 性 (U+6027) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ； (U+FF1B) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 而 (U+800C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 西 (U+897F) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 南 (U+5357) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 部 (U+90E8) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 地 (U+5730) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 区 (U+533A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 如 (U+5982) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 何 (U+4F55) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 进 (U+8FDB) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 行 (U+884C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 政 (U+653F) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 策 (U+7B56) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 鼓 (U+9F13) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 励 (U+52B1) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 和 (U+548C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 调 (U+8C03) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 整 (U+6574) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 来 (U+6765) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 使 (U+4F7F) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 得 (U+5F97) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 他 (U+4ED6) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 们 (U+4EEC) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 科 (U+79D1) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 技 (U+6280) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 产 (U+4EA7) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 业 (U+4E1A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 重 (U+91CD) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 新 (U+65B0) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 焕 (U+7115) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 发 (U+53D1) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 生 (U+751F) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 机 (U+673A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 税 (U+7A0E) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 收 (U+6536) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no ？ (U+FF1F) in font [lmroman12-regular]:mapping=t
+ex-text;!
 File: /Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/G
-_enR.png Graphic file (type bmp)
-</Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/G_enR.
-png>
-[25] [26] [27]
+_enR_v1.png Graphic file (type bmp)
+</Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/G_enR_
+v1.png>
+[31]
 Chapter 5.
-[28
+[32
 
-] [29]
+]
+Missing character: There is no 可 (U+53EF) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 以 (U+4EE5) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 作 (U+4F5C) in font [lmroman12-regular]:mapping=t
+ex-text;!
+Missing character: There is no 为 (U+4E3A) in font [lmroman12-regular]:mapping=t
+ex-text;!
+[33]
 Chapter 6.
-[30
+[34
 
-] [31]
-Overfull \hbox (5.76445pt too wide) in paragraph at lines 789--790
+] [35]
+Overfull \hbox (5.76445pt too wide) in paragraph at lines 837--838
 \TU/lmr/m/n/12 Firm Selection. Econometrica, 80: 2543-2594.https://doi.org/10.3
 982/ECTA84427 
  []
 
-[32
+[36
 
 ]
-Overfull \hbox (66.6031pt too wide) in paragraph at lines 799--800
+Underfull \hbox (badness 1383) in paragraph at lines 849--850
+[]\TU/lmr/m/n/12 Hause, J. and Du Rietz, G., 1984. Entry, Industry Growth, and 
+the
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 849--850
+\TU/lmr/m/n/12 Microdynamics of Industry Supply. Journal of Political Economy, 
+92(4),
+ []
+
+
+Overfull \hbox (66.6031pt too wide) in paragraph at lines 851--852
 \TU/lmr/m/n/12 Economic Perspectives, 34 (3): 50-76.https://www.aeaweb.org/arti
 cles?id=10.1257/jep.34.3.50 
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 801--802
+Underfull \hbox (badness 2478) in paragraph at lines 853--854
 []\TU/lmr/m/n/12 Kwoka, J., 1977. Large Firm Dominance and Price-Cost Margins i
 n
  []
 
-[33]
-Underfull \hbox (badness 1406) in paragraph at lines 819--820
+[37]
+Underfull \hbox (badness 1406) in paragraph at lines 873--874
 []\TU/lmr/m/n/12 Office for National Statistics, 2015. Identifying Science and 
 Technology
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 819--820
+Underfull \hbox (badness 10000) in paragraph at lines 873--874
 [][] [] [][][][][][][][][][][][][][] [] [][][][] [] [] [] [][][] [] [][][] [] [
 ][][] [] [][] [] [][][] [] [][][][] [][] [][][][][][][][][][][] [] [][][][][] [
 ][] [][][] [][]
  []
 
 
-Underfull \hbox (badness 4024) in paragraph at lines 821--822
+Underfull \hbox (badness 4024) in paragraph at lines 877--878
 \TU/lmr/m/n/12 Office for National Statistics. Available at: []$[][][][][] [] [
 ] [] [][][] [] [][][] [] [][][] [] [][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--822
+Underfull \hbox (badness 10000) in paragraph at lines 877--878
 [][][][][][][][][][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][][] 
 [] [][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
+[38]
 
-LaTeX Warning: Empty bibliography on input line 826.
+LaTeX Warning: Empty bibliography on input line 884.
 
-[34] [35
+[39] [40
 
-] [36
+] [41
 
 ] (./CASA0012-Dissertation.aux)
 Package rerunfilecheck Info: File `CASA0012-Dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 36101FED2D78E9568BA3CE2347F23F9B;7484.
+(rerunfilecheck)             Checksum: 15E577243F7562D9461CAC473C7A738F;7529.
 Package logreq Info: Writing requests to 'CASA0012-Dissertation.run.xml'.
 \openout1 = `CASA0012-Dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27313 strings out of 478475
- 510038 string characters out of 5857943
- 1491397 words of memory out of 5000000
- 47250 multiletter control sequences out of 15000+600000
+ 27329 strings out of 478475
+ 511743 string characters out of 5857943
+ 1491467 words of memory out of 5000000
+ 47265 multiletter control sequences out of 15000+600000
  407495 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  87i,13n,120p,1187b,4823s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CASA0012-Dissertation.pdf (46 pages).
+Output written on CASA0012-Dissertation.pdf (51 pages).

@@ -34,7 +34,7 @@ I would like to thank blah blah
 ```
 
 `r if (knitr:::is_html_output()) '
-# Abbreviations{-}
+# Abbreviations{#abbr}
 '`
 `r if (knitr:::is_latex_output()) '
 # Abbreviations {.unlisted .unnumbered}

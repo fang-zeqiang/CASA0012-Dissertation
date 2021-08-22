@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="5.2 Regression Analysis | Spatial Pattern Mining of Tech Clusters of Dynamics and Industry Mix Based On Quantitative Methods in England Area, UK" />
+<meta property="og:type" content="book" />
+
+
+<meta property="og:description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL" />
+<meta name="github-repo" content="fang-zeqiang/CASA0012-Dissertation" />
+
+
+<meta name="date" content="2021-08-22" />
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta name="description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL">
+
+<title>5.2 Regression Analysis | Spatial Pattern Mining of Tech Clusters of Dynamics and Industry Mix Based On Quantitative Methods in England Area, UK</title>
+
+<script src="libs/header-attrs-2.10.1/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+
+
+<link rel="stylesheet" href="toc.css" type="text/css" />
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+/* show arrow before summary tag as in bootstrap
+TODO: remove if boostrap in updated in html_document (rmarkdown#1485) */
+details > summary {
+  display: list-item;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#abstract">Abstract</a></li>
+<li><a href="declaration.html#declaration">Declaration</a></li>
+<li><a href="acknowledgements.html#acknowledgements">Acknowledgements</a></li>
+<li><a href="1-abbr.html#abbr"><span class="toc-section-number">1</span> Abbreviations</a></li>
+<li><a href="2-introduction.html#introduction"><span class="toc-section-number">2</span> Introduction</a>
+<ul>
+<li><a href="2.1-background.html#background"><span class="toc-section-number">2.1</span> Background</a></li>
+<li><a href="2.2-research-question-and-objectives.html#research-question-and-objectives"><span class="toc-section-number">2.2</span> Research Question and Objectives</a></li>
+<li><a href="2.3-report-structure.html#report-structure"><span class="toc-section-number">2.3</span> Report Structure</a></li>
+</ul></li>
+<li><a href="3-lit-review.html#lit-review"><span class="toc-section-number">3</span> Literature Review</a>
+<ul>
+<li><a href="3.1-industry-cluster-tech-cluster.html#industry-cluster-tech-cluster"><span class="toc-section-number">3.1</span> Industry Cluster &amp; Tech Cluster</a></li>
+<li><a href="3.2-cluster-dynamics.html#cluster-dynamics"><span class="toc-section-number">3.2</span> Cluster Dynamics</a></li>
+<li><a href="3.3-industry-mix.html#industry-mix"><span class="toc-section-number">3.3</span> Industry Mix</a></li>
+<li><a href="3.4-how-location-affect-entry-pattern-in-ukglobal.html#how-location-affect-entry-pattern-in-ukglobal"><span class="toc-section-number">3.4</span> How location affect entry pattern in UK/Global</a></li>
+<li><a href="3.5-how-time-affect-entry-pattern-in-ukglobal.html#how-time-affect-entry-pattern-in-ukglobal"><span class="toc-section-number">3.5</span> How time affect entry pattern in UK/Global</a></li>
+<li><a href="3.6-other-factor-can-affect-dynamics-pattern-in-uk.html#other-factor-can-affect-dynamics-pattern-in-uk"><span class="toc-section-number">3.6</span> Other factor can affect dynamics pattern in UK</a></li>
+</ul></li>
+<li><a href="4-methodology.html#methodology"><span class="toc-section-number">4</span> Methodology</a>
+<ul>
+<li><a href="4.1-research-framework.html#research-framework"><span class="toc-section-number">4.1</span> Research Framework</a></li>
+<li><a href="4.2-data-source-and-processing.html#data-source-and-processing"><span class="toc-section-number">4.2</span> Data Source and Processing</a></li>
+<li><a href="4.3-identifying-tech-cluster.html#identifying-tech-cluster"><span class="toc-section-number">4.3</span> Identifying Tech Cluster</a></li>
+<li><a href="4.4-data-scale.html#data-scale"><span class="toc-section-number">4.4</span> Data Scale</a>
+<ul>
+<li><a href="4.4-data-scale.html#time-range-selection"><span class="toc-section-number">4.4.1</span> Time Range Selection</a></li>
+<li><a href="4.4-data-scale.html#tech-cluster-identifying"><span class="toc-section-number">4.4.2</span> Tech Cluster Identifying</a></li>
+</ul></li>
+<li><a href="4.5-quatitative-analysis-and-methods.html#quatitative-analysis-and-methods"><span class="toc-section-number">4.5</span> Quatitative Analysis and Methods</a>
+<ul>
+<li><a href="4.5-quatitative-analysis-and-methods.html#dynamics-measuring-index"><span class="toc-section-number">4.5.1</span> Dynamics Measuring Index</a></li>
+<li><a href="4.5-quatitative-analysis-and-methods.html#industry-mix-measuring-index"><span class="toc-section-number">4.5.2</span> Industry Mix Measuring Index</a></li>
+<li><a href="4.5-quatitative-analysis-and-methods.html#regression"><span class="toc-section-number">4.5.3</span> Regression</a></li>
+<li><a href="4.5-quatitative-analysis-and-methods.html#global-autocorrelation-morans-i"><span class="toc-section-number">4.5.4</span> Global Autocorrelation (Moran’s I)</a></li>
+<li><a href="4.5-quatitative-analysis-and-methods.html#hot-spot-analysis-getis-ord-gi"><span class="toc-section-number">4.5.5</span> Hot-Spot Analysis (Getis-Ord Gi*)</a></li>
+</ul></li>
+<li><a href="4.6-limitations.html#limitations"><span class="toc-section-number">4.6</span> Limitations</a></li>
+<li><a href="4.7-ethical-statement.html#ethical-statement"><span class="toc-section-number">4.7</span> Ethical Statement</a></li>
+</ul></li>
+<li><a href="5-results.html#results"><span class="toc-section-number">5</span> Results</a>
+<ul>
+<li><a href="5.1-spatial-and-temporal-distribution.html#spatial-and-temporal-distribution"><span class="toc-section-number">5.1</span> Spatial and Temporal Distribution</a>
+<ul>
+<li><a href="5.1-spatial-and-temporal-distribution.html#tech-cluster-dynamics"><span class="toc-section-number">5.1.1</span> Tech Cluster Dynamics</a></li>
+<li><a href="5.1-spatial-and-temporal-distribution.html#tech-industry-mix"><span class="toc-section-number">5.1.2</span> Tech Industry Mix</a></li>
+</ul></li>
+<li><a href="5.2-regression-analysis.html#regression-analysis"><span class="toc-section-number">5.2</span> Regression Analysis</a></li>
+<li><a href="5.3-spatial-autocorrelation.html#spatial-autocorrelation"><span class="toc-section-number">5.3</span> Spatial Autocorrelation</a>
+<ul>
+<li><a href="5.3-spatial-autocorrelation.html#lisa-analysis-of-firms-dynamics"><span class="toc-section-number">5.3.1</span> LISA Analysis of Firms Dynamics</a></li>
+<li><a href="5.3-spatial-autocorrelation.html#hot-spot-analysis-of-firms-dynamics"><span class="toc-section-number">5.3.2</span> Hot-Spot Analysis of Firms Dynamics</a></li>
+</ul></li>
+</ul></li>
+<li><a href="6-disc.html#disc"><span class="toc-section-number">6</span> Discussion</a>
+<ul>
+<li><a href="6.1-research-significance.html#research-significance"><span class="toc-section-number">6.1</span> Research significance</a>
+<ul>
+<li><a href="6.1-research-significance.html#global-development-goals"><span class="toc-section-number">6.1.1</span> Global development goals</a></li>
+<li><a href="6.1-research-significance.html#local-policy"><span class="toc-section-number">6.1.2</span> Local policy</a></li>
+<li><a href="6.1-research-significance.html#academic-research"><span class="toc-section-number">6.1.3</span> Academic research</a></li>
+</ul></li>
+<li><a href="6.2-limitations-1.html#limitations-1"><span class="toc-section-number">6.2</span> Limitations</a></li>
+<li><a href="6.3-transferability.html#transferability"><span class="toc-section-number">6.3</span> Transferability</a></li>
+</ul></li>
+<li><a href="7-conclusion.html#conclusion"><span class="toc-section-number">7</span> Conclusion</a></li>
+<li><a href="references.html#references">References</a></li>
+<li><a href="appendix-a-classification-form.html#appendix-a-classification-form">Appendix A Classification Form</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="regression-analysis" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Regression Analysis</h2>
+<p>For 149 tech clusters(travel to work areas), the regression results can indicate the relationship among cluster dynamics, industry mix and firms density in different years(1998-2018) and locations (149 tech clusters). Among these three models, the model with outliers excluded and logarithmic processing of the dependent variable performed better. It can be seen that the Herfindahl-Hirschman index has a negative correlation with the tech cluster dynamic variable (entry rate) but the density has a positive effect.</p>
+<p>Taking Model [3] as an example, every time this indicator decreases by one unit, the entry rate might increase by about <span class="math inline">\(e^{1.37}\)</span> unit times higher than the original one. The high confidence of this coefficient can explain 99% of all observation data. On the contrary, for the density of these tech clusters in Model [3], every time the density increases by one unit, the corresponding dependent variable entry rate will be about <span class="math inline">\(e^{0.5}\)</span> unit times more than the original one (Table <a href="5.2-regression-analysis.html#tab:tab-regression-entry-rate">5.2</a>). Although the HHI and Density values of the three models are not the same, the positive and negative effect of the relationship are similar. For example, for the industrial concentration variable HHI, all three models show a negative correlation (Table <a href="5.2-regression-analysis.html#tab:tab-regression-entry-rate">5.2</a>). And when HHI and Density change the same unit, the former seems to have a greater impact on the entry rate (it may increase the dependent variable entry rate by more than <span class="math inline">\(e\)</span> times in both model 1 and model 2)</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tab-regression-entry-rate">Table 5.2: </span>Regression results relationship between entry rate and tech clusters’ characters
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;font-weight: bold;">
+Model
+</th>
+<th style="text-align:left;font-weight: bold;">
+[1]
+</th>
+<th style="text-align:left;font-weight: bold;">
+[2]
+</th>
+<th style="text-align:left;font-weight: bold;">
+[3]
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Method
+</td>
+<td style="text-align:left;">
+OLS
+</td>
+<td style="text-align:left;">
+OLS
+</td>
+<td style="text-align:left;">
+OLS
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sample
+</td>
+<td style="text-align:left;">
+all areas
+</td>
+<td style="text-align:left;">
+all areas
+</td>
+<td style="text-align:left;">
+exclude 2018 London
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Dep. Variable
+</td>
+<td style="text-align:left;">
+Entry Rate
+</td>
+<td style="text-align:left;">
+Log(Entry Rate)
+</td>
+<td style="text-align:left;">
+Log(Entry Rate)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HHI
+</td>
+<td style="text-align:left;">
+-0.0281***
+</td>
+<td style="text-align:left;">
+-1.332***
+</td>
+<td style="text-align:left;">
+-1.3693***
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+[0.002]
+</td>
+<td style="text-align:left;">
+[0.045]
+</td>
+<td style="text-align:left;">
+[0.044]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Density
+</td>
+<td style="text-align:left;">
+0.0168***
+</td>
+<td style="text-align:left;">
+0.3904***
+</td>
+<td style="text-align:left;">
+0.504***
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+[0.001]
+</td>
+<td style="text-align:left;">
+[0.019]
+</td>
+<td style="text-align:left;">
+[0.022]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Constant
+</td>
+<td style="text-align:left;">
+0.0207*
+</td>
+<td style="text-align:left;">
+-4.1138*
+</td>
+<td style="text-align:left;">
+-4.0948*
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+[0.003]
+</td>
+<td style="text-align:left;">
+[0.068]
+</td>
+<td style="text-align:left;">
+[0.066]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Observations
+</td>
+<td style="text-align:left;">
+3089
+</td>
+<td style="text-align:left;">
+3089
+</td>
+<td style="text-align:left;">
+3088
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+R-squared
+</td>
+<td style="text-align:left;">
+0.89
+</td>
+<td style="text-align:left;">
+0.89
+</td>
+<td style="text-align:left;">
+0.90
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border:0;" colspan="100%">
+<sup>a</sup> All regressions include dummy variables for 149 travel to work areas(ttwa) in England and 20 years from 1998 to 2018. Figures in brackets are standard errors. <em><strong>, </strong>, and </em> represent statistical significance at 1%, 5%, and 10%, respectively.
+</td>
+</tr>
+<tr>
+<td style="padding: 0; border:0;" colspan="100%">
+<sup>b</sup> HHI defined by Herfindahl-Hirschman index can indicate the industry concentration
+</td>
+</tr>
+<tr>
+<td style="padding: 0; border:0;" colspan="100%">
+<sup>c</sup> Source: tech firm data in England travel to work areas from 1998 to 2008 (n = 3089)
+</td>
+</tr>
+</tfoot>
+</table>
+<p>As mentioned in the methodology section(Brandt, 2005), Table <a href="5.2-regression-analysis.html#tab:tab-regression-control-var">5.3</a> can illustrates the unconditional relation between entry rate and tech cluster characters. These two independent variables are controlled to be added in the regression model which can help to observe to what extent they can have an influence on the dynamics element(entry rate).</p>
+<p>When the year and regional conditions in the model remain unchanged, the model [1] only adds Herfindahl-Hirschman index to consider the regression analysis, and it can be found that the coefficient is about -1.2 and the confidence level is greater than 95%. Similarly, the model [2] only considers adding firm density into the fitting, the coefficient of this independent variable is about 0.38 and the statistical significance is also less than 5%. However, when other conditions are the same, adding two variables into the model at the same time [3], the absolute value of each coefficient increases, and the confidence level increases, and the overall goodness of fit is also improved (Table @ref(tab :tab-regression-control-var)).</p>
+<p>In terms of Herfindahl-Hirschman index, the entry rate might decrease when this indicator increase(Table <a href="5.2-regression-analysis.html#tab:tab-regression-control-var">5.3</a>).
+Consistent with model[2], the entry rate increase with density (Table <a href="5.2-regression-analysis.html#tab:tab-regression-control-var">5.3</a>). The HHI decrease and density increase, leading to lower entry rates.</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tab-regression-control-var">Table 5.3: </span>Regression results relationship between entry rate and tech clusters’ characters (controlling variables)
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;font-weight: bold;">
+Model
+</th>
+<th style="text-align:left;font-weight: bold;">
+[1]
+</th>
+<th style="text-align:left;font-weight: bold;">
+[2]
+</th>
+<th style="text-align:left;font-weight: bold;">
+[3]
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Method
+</td>
+<td style="text-align:left;">
+OLS
+</td>
+<td style="text-align:left;">
+OLS
+</td>
+<td style="text-align:left;">
+OLS
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sample
+</td>
+<td style="text-align:left;">
+exclude 2018 London
+</td>
+<td style="text-align:left;">
+exclude 2018 London
+</td>
+<td style="text-align:left;">
+exclude 2018 London
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Dep. Variable
+</td>
+<td style="text-align:left;">
+Log(Entry Rate)
+</td>
+<td style="text-align:left;">
+Log(Entry Rate)
+</td>
+<td style="text-align:left;">
+Log(Entry Rate)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HHI
+</td>
+<td style="text-align:left;">
+-1.1844**
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+-1.3693***
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+[0.047]
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+[0.043]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Density
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+0.3779**
+</td>
+<td style="text-align:left;">
+0.504***
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+[0.025]
+</td>
+<td style="text-align:left;">
+[0.022]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Constant
+</td>
+<td style="text-align:left;">
+-4.1884*
+</td>
+<td style="text-align:left;">
+-4.5143*
+</td>
+<td style="text-align:left;">
+-4.0948*
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+[0.072]
+</td>
+<td style="text-align:left;">
+[0.075]
+</td>
+<td style="text-align:left;">
+[0.066]
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Observations
+</td>
+<td style="text-align:left;">
+3088
+</td>
+<td style="text-align:left;">
+3088
+</td>
+<td style="text-align:left;">
+3088
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+R-squared
+</td>
+<td style="text-align:left;">
+0.884
+</td>
+<td style="text-align:left;">
+0.869
+</td>
+<td style="text-align:left;">
+0.901
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border:0;" colspan="100%">
+<sup>a</sup> All regressions include dummy variables for 149 travel to work areas(ttwa) in England and 20 years from 1998 to 2018. Figures in brackets are standard errors. <em><strong>, </strong>, and </em> represent statistical significance at 1%, 5%, and 10%, respectively.
+</td>
+</tr>
+<tr>
+<td style="padding: 0; border:0;" colspan="100%">
+<sup>b</sup> HHI defined by Herfindahl-Hirschman index can indicate the industry concentration
+</td>
+</tr>
+<tr>
+<td style="padding: 0; border:0;" colspan="100%">
+<sup>c</sup> Source: tech firm data in England travel to work areas from 1998 to 2008 (n = 3089)
+</td>
+</tr>
+</tfoot>
+</table>
+</div>
+<p style="text-align: center;">
+<a href="5.1-spatial-and-temporal-distribution.html"><button class="btn btn-default">Previous</button></a>
+<a href="5.3-spatial-autocorrelation.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>

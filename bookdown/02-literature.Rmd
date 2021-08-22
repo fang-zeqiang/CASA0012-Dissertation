@@ -1,4 +1,4 @@
-# Literature Review {#crossref}
+# Literature Review {#lit-review}
 
 ## Industry Cluster & Tech Cluster
 
@@ -42,3 +42,10 @@ The empirical evidence reveals that technology and the stage of the industry lif
 Entry may be less about radical innovation and more about filling strategic niches in established businesses that are nonetheless technologically intensive, neutralizing the impact of entry size on the likelihood of survival.(ibid)
 
 Over time, smaller factories generated proportionately more jobs, implying that job-growth incentives to larger enterprises may have been misdirected. Overall, our findings suggest that the impacts of size and age on manufacturing plant expansion in a developing economy are similar to those in rich economies (negative relationship between plant age and plant growth )(Liu, Tsou and Hammitt, 1999)
+
+
+> Firms Growth and Failure
+
+Moreno's research found that the failure rate and growth rate of companies decline with the growth of scale and age. Regression-to-the-mean is not an important factor in the negative correlation between the size and growth of surviving companies. And he also offers empirical evidence of firm failure rates as well as the mean of the distribution of realized growth rates(Fariñas and Moreno, 2000).
+https://sci-hub.se/10.1023/A:1007834210622
+Fariñas, J. and Moreno, L., 2000. Review of Industrial Organization, 17(3), pp.249-265.

@@ -112,8 +112,9 @@ read_excel(here("tables", "morans_i_den.xlsx"))%>%
     row_spec(.,row=0,bold = TRUE)
 ```
 
-### Dynamics LISA
+### LISA Analysis of Firms Dynamics
 
+Local Indicators of Spatial Association(LISA)
 According to the Table \@ref(tab:tab-z-p-corr), the z-score with its significance can be found.
 
 ```{r tab-z-p-corr, echo=FALSE}
@@ -135,16 +136,21 @@ With the passage of time, the High-High cluster has shifted (the north like Whit
 Central regions of England such as London, Birmingham and other regions have not had obvious spatial clustering effects in the visualisation results. This may be due to the low statistical confidence of the local Moran's index among regions. Or it might be because the data in this study is aggregated before calculated. The related data may be missing after the HHI and entry rate are utilised, which might not perfectly represent the company information in some parts of England.
 
 ```{r fig-lisa-entry-rate, echo=FALSE, fig.cap="Local Moran\'s I Spatial Analysis for Entry Rate in England for three time periods", out.width='100%'}
-knitr::include_graphics(here::here('general_images','Lisa_enR.png'))
+knitr::include_graphics(here::here('general_images','Lisa_enR_v1.png'))
 ```
 
-### Dynamics Hot-spot Analysis
+### Hot-Spot Analysis of Firms Dynamics
 
+This research identified and mapped local clusters (hot and cold spots) by the level of entry rate for these three period. 
 
+On the whole, there is a distinct north-south difference in the distribution of cold and hot spots in the early stage(1998). With the development of England tech clusters, this difference is slowly dissipating and a reversal is formed eventually(Figure \@ref(fig:fig-Gi-entry-rate)). More specifically, in 1998, there were some hot spots concentrated in the Swindon-Bristol-Reading urban belt in the south-central area and the southwest urban agglomeration of Exeter. Whilst, in the north, there were scattered cold spots represented by the Whitehaven area.
+
+By 2008, most of the hot spots disappeared, and the places that were hot spots gradually became cold spots, such as the southwestern region. In 2018, some hot spots appeared in the northwestern region along with England. The original two hot spots in the southwest have experienced two-time nodes in 2008 and 2018, and they finally turned into cold spot clusters(Figure \@ref(fig:fig-Gi-entry-rate)).
+
+From: https://sci-hub.se/10.1556/032.65.2015.3.1
+
+Discussion: 从时空趋势的角度上看，北方逐渐成为entry rate的热点，有越来越多的科技公司加入北方并且这一现象具有空间自相关性；而西南部地区如何进行政策鼓励和调整来使得他们的科技产业重新焕发生机，税收？
 
 ```{r fig-Gi-entry-rate, echo=FALSE, fig.cap='Significance Statistics for Local Moran\'s I in Entry Rate in England for three time periods', out.width='100%'}
-knitr::include_graphics(here::here('general_images','G_enR.png'))
+knitr::include_graphics(here::here('general_images','G_enR_v1.png'))
 ```
-### Density Cluster Analysis
-
-...

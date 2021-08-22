@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="5.3 Spatial Autocorrelation | Spatial Pattern Mining of Tech Clusters of Dynamics and Industry Mix Based On Quantitative Methods in England Area, UK" />
+<meta property="og:type" content="book" />
+
+
+<meta property="og:description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL" />
+<meta name="github-repo" content="fang-zeqiang/CASA0012-Dissertation" />
+
+
+<meta name="date" content="2021-08-22" />
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta name="description" content="This dissertation is submitted in part requirement for the MSc in the Centre for Advanced Spatial Analysis, Bartlett Faculty of the Built Environment, UCL">
+
+<title>5.3 Spatial Autocorrelation | Spatial Pattern Mining of Tech Clusters of Dynamics and Industry Mix Based On Quantitative Methods in England Area, UK</title>
+
+<script src="libs/header-attrs-2.10.1/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+
+
+<link rel="stylesheet" href="toc.css" type="text/css" />
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+/* show arrow before summary tag as in bootstrap
+TODO: remove if boostrap in updated in html_document (rmarkdown#1485) */
+details > summary {
+  display: list-item;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#abstract">Abstract</a></li>
+<li><a href="declaration.html#declaration">Declaration</a></li>
+<li><a href="acknowledgements.html#acknowledgements">Acknowledgements</a></li>
+<li><a href="1-abbr.html#abbr"><span class="toc-section-number">1</span> Abbreviations</a></li>
+<li><a href="2-introduction.html#introduction"><span class="toc-section-number">2</span> Introduction</a>
+<ul>
+<li><a href="2.1-background.html#background"><span class="toc-section-number">2.1</span> Background</a></li>
+<li><a href="2.2-research-question-and-objectives.html#research-question-and-objectives"><span class="toc-section-number">2.2</span> Research Question and Objectives</a></li>
+<li><a href="2.3-report-structure.html#report-structure"><span class="toc-section-number">2.3</span> Report Structure</a></li>
+</ul></li>
+<li><a href="3-lit-review.html#lit-review"><span class="toc-section-number">3</span> Literature Review</a>
+<ul>
+<li><a href="3.1-industry-cluster-tech-cluster.html#industry-cluster-tech-cluster"><span class="toc-section-number">3.1</span> Industry Cluster &amp; Tech Cluster</a></li>
+<li><a href="3.2-cluster-dynamics.html#cluster-dynamics"><span class="toc-section-number">3.2</span> Cluster Dynamics</a></li>
+<li><a href="3.3-industry-mix.html#industry-mix"><span class="toc-section-number">3.3</span> Industry Mix</a></li>
+<li><a href="3.4-how-location-affect-entry-pattern-in-ukglobal.html#how-location-affect-entry-pattern-in-ukglobal"><span class="toc-section-number">3.4</span> How location affect entry pattern in UK/Global</a></li>
+<li><a href="3.5-how-time-affect-entry-pattern-in-ukglobal.html#how-time-affect-entry-pattern-in-ukglobal"><span class="toc-section-number">3.5</span> How time affect entry pattern in UK/Global</a></li>
+<li><a href="3.6-other-factor-can-affect-dynamics-pattern-in-uk.html#other-factor-can-affect-dynamics-pattern-in-uk"><span class="toc-section-number">3.6</span> Other factor can affect dynamics pattern in UK</a></li>
+</ul></li>
+<li><a href="4-methodology.html#methodology"><span class="toc-section-number">4</span> Methodology</a>
+<ul>
+<li><a href="4.1-research-framework.html#research-framework"><span class="toc-section-number">4.1</span> Research Framework</a></li>
+<li><a href="4.2-data-source-and-processing.html#data-source-and-processing"><span class="toc-section-number">4.2</span> Data Source and Processing</a></li>
+<li><a href="4.3-identifying-tech-cluster.html#identifying-tech-cluster"><span class="toc-section-number">4.3</span> Identifying Tech Cluster</a></li>
+<li><a href="4.4-data-scale.html#data-scale"><span class="toc-section-number">4.4</span> Data Scale</a>
+<ul>
+<li><a href="4.4-data-scale.html#time-range-selection"><span class="toc-section-number">4.4.1</span> Time Range Selection</a></li>
+<li><a href="4.4-data-scale.html#tech-cluster-identifying"><span class="toc-section-number">4.4.2</span> Tech Cluster Identifying</a></li>
+</ul></li>
+<li><a href="4.5-quatitative-analysis-and-methods.html#quatitative-analysis-and-methods"><span class="toc-section-number">4.5</span> Quatitative Analysis and Methods</a>
+<ul>
+<li><a href="4.5-quatitative-analysis-and-methods.html#dynamics-measuring-index"><span class="toc-section-number">4.5.1</span> Dynamics Measuring Index</a></li>
+<li><a href="4.5-quatitative-analysis-and-methods.html#industry-mix-measuring-index"><span class="toc-section-number">4.5.2</span> Industry Mix Measuring Index</a></li>
+<li><a href="4.5-quatitative-analysis-and-methods.html#regression"><span class="toc-section-number">4.5.3</span> Regression</a></li>
+<li><a href="4.5-quatitative-analysis-and-methods.html#global-autocorrelation-morans-i"><span class="toc-section-number">4.5.4</span> Global Autocorrelation (Moran’s I)</a></li>
+<li><a href="4.5-quatitative-analysis-and-methods.html#hot-spot-analysis-getis-ord-gi"><span class="toc-section-number">4.5.5</span> Hot-Spot Analysis (Getis-Ord Gi*)</a></li>
+</ul></li>
+<li><a href="4.6-limitations.html#limitations"><span class="toc-section-number">4.6</span> Limitations</a></li>
+<li><a href="4.7-ethical-statement.html#ethical-statement"><span class="toc-section-number">4.7</span> Ethical Statement</a></li>
+</ul></li>
+<li><a href="5-results.html#results"><span class="toc-section-number">5</span> Results</a>
+<ul>
+<li><a href="5.1-spatial-and-temporal-distribution.html#spatial-and-temporal-distribution"><span class="toc-section-number">5.1</span> Spatial and Temporal Distribution</a>
+<ul>
+<li><a href="5.1-spatial-and-temporal-distribution.html#tech-cluster-dynamics"><span class="toc-section-number">5.1.1</span> Tech Cluster Dynamics</a></li>
+<li><a href="5.1-spatial-and-temporal-distribution.html#tech-industry-mix"><span class="toc-section-number">5.1.2</span> Tech Industry Mix</a></li>
+</ul></li>
+<li><a href="5.2-regression-analysis.html#regression-analysis"><span class="toc-section-number">5.2</span> Regression Analysis</a></li>
+<li><a href="5.3-spatial-autocorrelation.html#spatial-autocorrelation"><span class="toc-section-number">5.3</span> Spatial Autocorrelation</a>
+<ul>
+<li><a href="5.3-spatial-autocorrelation.html#lisa-analysis-of-firms-dynamics"><span class="toc-section-number">5.3.1</span> LISA Analysis of Firms Dynamics</a></li>
+<li><a href="5.3-spatial-autocorrelation.html#hot-spot-analysis-of-firms-dynamics"><span class="toc-section-number">5.3.2</span> Hot-Spot Analysis of Firms Dynamics</a></li>
+</ul></li>
+</ul></li>
+<li><a href="6-disc.html#disc"><span class="toc-section-number">6</span> Discussion</a>
+<ul>
+<li><a href="6.1-research-significance.html#research-significance"><span class="toc-section-number">6.1</span> Research significance</a>
+<ul>
+<li><a href="6.1-research-significance.html#global-development-goals"><span class="toc-section-number">6.1.1</span> Global development goals</a></li>
+<li><a href="6.1-research-significance.html#local-policy"><span class="toc-section-number">6.1.2</span> Local policy</a></li>
+<li><a href="6.1-research-significance.html#academic-research"><span class="toc-section-number">6.1.3</span> Academic research</a></li>
+</ul></li>
+<li><a href="6.2-limitations-1.html#limitations-1"><span class="toc-section-number">6.2</span> Limitations</a></li>
+<li><a href="6.3-transferability.html#transferability"><span class="toc-section-number">6.3</span> Transferability</a></li>
+</ul></li>
+<li><a href="7-conclusion.html#conclusion"><span class="toc-section-number">7</span> Conclusion</a></li>
+<li><a href="references.html#references">References</a></li>
+<li><a href="appendix-a-classification-form.html#appendix-a-classification-form">Appendix A Classification Form</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="spatial-autocorrelation" class="section level2" number="5.3">
+<h2><span class="header-section-number">5.3</span> Spatial Autocorrelation</h2>
+<p>Through the global Moran’s Index test of entry rate variable, it can be found that as time increases, the spatial cluster effect of entry rate attribute in England is getting weaker and weaker, from about 0.12 (1998) to 0.05 (2018).</p>
+<p>The confidence of global Moran’s I in 1998 is as high as 95%. But the statistical significance of 2008 is lower than 10%, which indicates weak interpretability of these two years(Table <a href="5.3-spatial-autocorrelation.html#tab:tab-morans-i-enR">5.4</a>).</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tab-morans-i-enR">Table 5.4: </span>Spatio-temporal dynamics cluster analysis by global Moran’s Index
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;font-weight: bold;">
+Year
+</th>
+<th style="text-align:right;font-weight: bold;">
+Moran’s Index
+</th>
+<th style="text-align:left;font-weight: bold;">
+p value
+</th>
+<th style="text-align:right;font-weight: bold;">
+z-score
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1998
+</td>
+<td style="text-align:right;">
+0.118
+</td>
+<td style="text-align:left;">
+0.00
+</td>
+<td style="text-align:right;">
+2.438
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2008
+</td>
+<td style="text-align:right;">
+0.062
+</td>
+<td style="text-align:left;">
+0.08
+</td>
+<td style="text-align:right;">
+1.348
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2018
+</td>
+<td style="text-align:right;">
+0.056
+</td>
+<td style="text-align:left;">
+0.10
+</td>
+<td style="text-align:right;">
+1.238
+</td>
+</tr>
+</tbody>
+</table>
+<p>Contrary to the entry rate variable, the density attribute value of England has always maintained a relatively obvious spatial aggregation phenomenon, although the global Moran’s Index of the density variable has been decreasing year by year. This variable has higher confidence in global Moran’s I statistics in the three-year statistics, thus its interpretability is higher than that for mentioned entry rate (Table <a href="5.3-spatial-autocorrelation.html#tab:tab-morans-i-den">5.5</a>).</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tab-morans-i-den">Table 5.5: </span>Spatio-temporal density cluster analysis by global Moran’s Index
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;font-weight: bold;">
+Year
+</th>
+<th style="text-align:right;font-weight: bold;">
+Moran’s Index
+</th>
+<th style="text-align:left;font-weight: bold;">
+p value
+</th>
+<th style="text-align:right;font-weight: bold;">
+z-score
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1998
+</td>
+<td style="text-align:right;">
+0.436
+</td>
+<td style="text-align:left;">
+0.00
+</td>
+<td style="text-align:right;">
+10.078
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2008
+</td>
+<td style="text-align:right;">
+0.325
+</td>
+<td style="text-align:left;">
+0.00
+</td>
+<td style="text-align:right;">
+7.545
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2018
+</td>
+<td style="text-align:right;">
+0.189
+</td>
+<td style="text-align:left;">
+0.00
+</td>
+<td style="text-align:right;">
+4.982
+</td>
+</tr>
+</tbody>
+</table>
+<div id="lisa-analysis-of-firms-dynamics" class="section level3" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> LISA Analysis of Firms Dynamics</h3>
+<p>Local Indicators of Spatial Association(LISA)
+According to the Table <a href="5.3-spatial-autocorrelation.html#tab:tab-z-p-corr">5.6</a>, the z-score with its significance can be found.</p>
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:tab-z-p-corr">Table 5.6: </span>Z-score and p-value correspondence table
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;font-weight: bold;">
+Z-score
+</th>
+<th style="text-align:left;font-weight: bold;">
+p-value
+</th>
+<th style="text-align:right;font-weight: bold;">
+confidence
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+less than -1.65 or more than 1.65
+</td>
+<td style="text-align:left;">
+less than 0.10
+</td>
+<td style="text-align:right;">
+0.90
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+less than -1.96 or more than 1.96
+</td>
+<td style="text-align:left;">
+less than 0.05
+</td>
+<td style="text-align:right;">
+0.95
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+less than -2.58 or more than 2.58
+</td>
+<td style="text-align:left;">
+less than 0.01
+</td>
+<td style="text-align:right;">
+0.99
+</td>
+</tr>
+</tbody>
+</table>
+<p>The visualisation result of the local Moran’s index’s Z-score of Entry rate is as similarly indicated by the global Moran coefficient (Figure <a href="5.1-spatial-and-temporal-distribution.html#fig:fig-enR-1998-2018-v1">5.2</a>). With the growth of the year, the overall agglomeration effect of England has decreased. But, in this process, the agglomeration effect in the northern region was higher than that in other regions. However, the travel to work areas in the southwest corner changed significantly from the early cluster effect in 1998 to the corresponding outliers such as Low-High, High-Low areas in 2018 (Figure <a href="5.3-spatial-autocorrelation.html#fig:fig-lisa-entry-rate">5.4</a> ). In addition, from Figure <a href="5.1-spatial-and-temporal-distribution.html#fig:fig-hh-1998-2018">5.3</a>, the higher industrial concentration in the north also makes the phenomenon of dynamics agglomeration more obvious than that in other places in England area</p>
+<p>To be more specific, High-High clusters in 1998 are mainly concentrated in travel to work areas in northern areas such as Newcastle, southern areas such as Andover-Newbury, and the southwest of Exeter. The entry rate values around these places may be higher than the British average. The Low-Low clusters of entry rates are clustered in the northern North Yorkshire area. The surrounding areas of these places usually have relatively close entry rates and low entry rate values;</p>
+<p>With the passage of time, the High-High cluster has shifted (the north like Whitehaven and the southwest corner like Launceston areas with higher entry rates gradually formed). By 2018, High-High cluster only appeared in travel to work areas around Liverpool, and new low tech firms entry rate areas were formed in Workington and Penrith&amp;Appleby (Figure <a href="5.3-spatial-autocorrelation.html#fig:fig-lisa-entry-rate">5.4</a>)</p>
+<p>Central regions of England such as London, Birmingham and other regions have not had obvious spatial clustering effects in the visualisation results. This may be due to the low statistical confidence of the local Moran’s index among regions. Or it might be because the data in this study is aggregated before calculated. The related data may be missing after the HHI and entry rate are utilised, which might not perfectly represent the company information in some parts of England.</p>
+<div class="figure"><span style="display:block;" id="fig:fig-lisa-entry-rate"></span>
+<img src="general_images/Lisa_enR.png" alt="Local Moran's I Spatial Analysis for Entry Rate in England for three time periods" width="100%" />
+<p class="caption">
+Figure 5.4: Local Moran’s I Spatial Analysis for Entry Rate in England for three time periods
+</p>
+</div>
+</div>
+<div id="hot-spot-analysis-of-firms-dynamics" class="section level3" number="5.3.2">
+<h3><span class="header-section-number">5.3.2</span> Hot-Spot Analysis of Firms Dynamics</h3>
+<p>This research identified and mapped local clusters (hot and cold spots) by the level of entry rate for these three period.</p>
+<p>On the whole, there is a distinct north-south difference in the distribution of cold and hot spots in the early stage(1998). With the development of England tech clusters, this difference is slowly dissipating and a reversal is formed eventually(Figure <a href="5.3-spatial-autocorrelation.html#fig:fig-Gi-entry-rate">5.5</a>). More specifically, in 1998, there were some hot spots concentrated in the Swindon-Bristol-Reading urban belt in the south-central area and the southwest urban agglomeration of Exeter. Whilst, in the north, there were scattered cold spots represented by the Whitehaven area.</p>
+<p>By 2008, most of the hot spots disappeared, and the places that were hot spots gradually became cold spots, such as the southwestern region. In 2018, some hot spots appeared in the northwestern region along with England. The original two hot spots in the southwest have experienced two-time nodes in 2008 and 2018, and they finally turned into cold spot clusters(Figure <a href="5.3-spatial-autocorrelation.html#fig:fig-Gi-entry-rate">5.5</a>).</p>
+<p>From: <a href="https://sci-hub.se/10.1556/032.65.2015.3.1" class="uri">https://sci-hub.se/10.1556/032.65.2015.3.1</a></p>
+<p>Discussion: 从时空趋势的角度上看，北方逐渐成为entry rate的热点，有越来越多的科技公司加入北方并且这一现象具有空间自相关性；而西南部地区如何进行政策鼓励和调整来使得他们的科技产业重新焕发生机，税收？</p>
+<div class="figure"><span style="display:block;" id="fig:fig-Gi-entry-rate"></span>
+<img src="general_images/G_enR.png" alt="Significance Statistics for Local Moran's I in Entry Rate in England for three time periods" width="100%" />
+<p class="caption">
+Figure 5.5: Significance Statistics for Local Moran’s I in Entry Rate in England for three time periods
+</p>
+</div>
+
+</div>
+</div>
+<!-- </div> -->
+<p style="text-align: center;">
+<a href="5.2-regression-analysis.html"><button class="btn btn-default">Previous</button></a>
+<a href="6-disc.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>
