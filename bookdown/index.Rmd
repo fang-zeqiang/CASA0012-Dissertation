@@ -1,5 +1,5 @@
 --- 
-title: Spatial Pattern Mining of Tech Clusters of Dynamics and Industry Mix Based On Quantitative Methods in England Area, UK
+title: Spatial Pattern Mining of Tech Clusters of Dynamics and Industry Mix Based on Quantitative Methods in England Area, UK
 
 author: 
 - |
