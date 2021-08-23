@@ -1,12 +1,12 @@
 # References {-}
 
-a b c d e f g h i j k l m n o p q r s t u v w x y z
-
 Alcacer J. and Chung W., 2007. Location strategies and knowledge spillovers, Management Science 53, 760–776.
 
 Anselin, L., 2010. Local Indicators of Spatial Association-LISA. Geographical Analysis, 27(2), pp.93-115.
 
 Agarwal, R. and Audretsch, D., 2001. Does Entry Size Matter? The Impact of the Life Cycle and Technology on Firm Survival. Journal of Industrial Economics, 49(1), pp.21-43.
+
+Allott, S., Kingston, J., Endsor, M., Miller, M., Goldstaub, T., Sachania, M. and Janvrin, E., 2021. London: The AI Growth Capital of Europe. [online] Mayor of London. Available at: <https://www.london.gov.uk/sites/default/files/london_theaigrowthcapitalofeurope.pdf> [Accessed 23 August 2021].
 
 Brandt, N., 2005. Business dynamics and policies. OECD Economic Studies, 2004(1), pp.9-36.
 
@@ -95,5 +95,8 @@ Tech Nation, 2021. The Future UK Tech Built. [online] Tech Nation. Available at:
 
 Tremblay, V., Iwasaki, N. and Tremblay, C., 2005. The Dynamics of Industry Concentration for U.S. Micro and Macro Brewers. Review of Industrial Organization, 26(3), pp.307-324.
 
+Taylor, C., 2018 London is fast becoming a major hub for A.I. development. [online] CNBC. Available at: <https://www.cnbc.com/2018/11/15/london-is-fast-becoming-a-major-hub-for-ai-development.html> [Accessed 10 August 2021].
 
+UK GOV, 2016. BIS analysis of key sectors. UK business sectors: indicators of concentration. [online] Department for Business, Innovation & Skills, UK GOV. Available at: <https://www.gov.uk/government/statistics/uk-business-sectors-indicators-of-concentration> [Accessed 23 August 2021].
 
+UK GOV, 2021. UK Digital Strategy 2017. [online] UK GOV. Available at: <https://www.gov.uk/government/publications/uk-digital-strategy/uk-digital-strategy> [Accessed 23 August 2021].

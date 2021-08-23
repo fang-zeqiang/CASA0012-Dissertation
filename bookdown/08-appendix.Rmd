@@ -3,17 +3,19 @@
 \addcontentsline{toc}{chapter}{Bibliography}
 \printbibliography
 ```
-# Appendix A Data Source {-}
+# Appendix A Data Source {.unlisted .unnumbered}
 
 ```{=latex}
 \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 ```
 
-Dissertation Book Live Version: https://zeqiang.fun/CASA0012-Dissertation/bookdown/html/
+|Name | Link|
+|:--:|:--:|
+|Main Data Source| https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset|
+|Research Reports|https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset|
+|Dissertation Book Live Version| https://zeqiang.fun/CASA0012-Dissertation/bookdown/html/|
 
-Data Source: ...
-
-## Science and Technology Classification {.unlisted .unnumbered}
+<!-- ## Science and Technology Classification {.unlisted .unnumbered} -->
 
 ```{r researchlog, echo=FALSE, message=FALSE, warning=FALSE}
 library(here)
@@ -34,8 +36,14 @@ library(fs)
 ```
 
 `r if (knitr:::is_latex_output()) '
-# Appendix B  Proposal {.unlisted .unnumbered}
+# Appendix B Research Reports {.unlisted .unnumbered}
 '`
+
+|Name | Link|
+|:--:|:--:|
+|Main Data Source| https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset|
+|Research Reports|https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset|
+|Dissertation Book Live Version| https://zeqiang.fun/CASA0012-Dissertation/bookdown/html/|
 
 ```{=latex}
 \addtocontents{toc}{\protect\setcounter{tocdepth}{3}}

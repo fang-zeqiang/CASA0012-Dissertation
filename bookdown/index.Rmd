@@ -15,7 +15,7 @@ author:
     | MSc in the Centre for Advanced Spatial Analysis, 
     | Bartlett Faculty of the Built Environment, UCL
     |
-    | Word count: 8,000
+    | Word count: 9,490
 
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -54,5 +54,4 @@ library(tinytex)
 `r if (knitr:::is_latex_output()) '
 # Abstract {.unlisted .unnumbered}
 '`
-Some abstract text
-
+Since tech clusters play an increasingly important role in economic contribution around the world, the analysis of what factors can affect firm dynamics has become a relatively new topic in economic geography research. England's tech industry is a vital aspect of the global economy, and the UK government has included it in numerous investment programs. Therefore, studying the distribution of science and tech clusters, regression analysis and spatio-temporal pattern mining methods to comprehensively understand the relationship among industrial concentration, firm density and dynamics will help to provide appropriate local policy recommendations. Despite limitations of the research framework, regression models and spatial autocorrelation methods have good reproducibility. Based on quantitative methods, it is found that the higher the degree of industrial diversification and the greater the density of local tech companies, the higher the entry rate of tech firms. Simultaneously, the visualisation of spatio-temporal patterns also indicates the transfer of hot spots of firm entry. These results are conducive to optimising the government's investment allocation in England tech industry.

@@ -35,7 +35,7 @@ For the identification of science and technology companies, this study introduce
 ```{r tab-sic-part, echo=FALSE, message=FALSE, warning=FALSE}
 
 read_excel(here("tables", "tech_sic_code.xlsx"))%>%
-  knitr::kable(booktabs = TRUE,longtable = T,
+  knitr::kable(booktabs = TRUE,
                caption = "Science and Technology Classification Sample (Part)")%>% 
   kable_styling(position = "center")%>%
     row_spec(.,

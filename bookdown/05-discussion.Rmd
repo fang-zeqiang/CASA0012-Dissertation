@@ -1,40 +1,53 @@
 # Discussion{#discussion}
 
-+ 思考：Over time, smaller factories generated proportionately more jobs, implying that job-growth incentives to larger enterprises may have been misdirected. Overall, our findings suggest that the impacts of size and age on manufacturing plant expansion in a developing economy are similar to those in rich economies (negative relationship between plant age and plant growth)(Liu, Tsou and Hammitt, 1999)
-
-+ Discussion: 从时空趋势的角度上看，北方逐渐成为entry rate的热点，有越来越多的科技公司加入北方并且这一现象具有空间自相关性；而西南部地区如何进行政策鼓励和调整来使得他们的科技产业重新焕发生机，税收？
-
 ## Reflection on Results
 
-针对公司层面
+### Spatio-Temporal Distribution
 
-总体上，风险投资选择未来科技产业较为多样的地区且公司密度较大的地区进行投资，因为这些地区往往和高进入率可能存在联系，这意味着试错成本较低，选择较多（新兴企业的存活基数较大）；
+According to the trend shown in figure \@ref(fig:fig-all-var-trend), in the 20 years since 1998, although the industry concentration in England fluctuated from 2002 to 2010, the overall average level has been reduced by about 70%.  This means that after 2010, many new technology industry companies have joined the England region every year, resulting in a rising diversity of the technology industry.  The British government (2016) mentioned in its official statistics report on industry concentration that Telecoms, which is more related to the technology industry, experienced a significant increase in indicators from 2006 to mid-2015 and then began to decline. Comparing the results in England, the overall concentration of the technology industry is in a downward trend. This phenomenon may affect the above-mentioned macro-industry trends.
 
-作为风险投资，也可以多关注诸如北部一些进入率热点集群。根据冷热点分析的结果，在未来可以多关注北部地区。这里在不考虑除了England地区以外的其他UK地区影响下，东北部城市带有可能会成为科技企业的进入热点区。关注这些地区的企业可以为投资提供更多选择。虽然西南部地区在2018年是公司进入的冷点，该地区相应企业服务基础设施可能会比较完善，因为该地区在1998年是科技公司进入的热点集群。
+Echoing the trend of increasing industry diversity is the rising trend of entry rate and company density. According to the results shown in figure \@ref(fig:fig-all-var-trend) starting in 2016, the growth rate of the two indicators has suddenly increased compared to the indicator trend before 2008. This phenomenon may be due to the UK government(2017) plans to spend more than £1 billion to speed up the development and adoption of next-generation digital infrastructure in their policy paper. It can be seen that the prosperity of the industry, information and policies may promote each other.
 
-如果从通勤区的角度观察，可以发现在一个特定的Travel to Work Area中通勤者从住宅区到商业区往往有着较为成熟的通勤方式。这种模式可以帮助我们更好地理解科技企业的集群现象。并且，从业者在家庭位置固定的情况下选择工作上往往倾向于在一定的通勤区域内(...)。在这种情况下，企业在市场竞争较不激烈的地区中雇佣高端稳定的劳动力要比其他地区进行同样的公司招聘行为更加可行。
+From the perspective of geographical and temporal distribution, as an emerging technology cluster with a higher entry rate, northern England performed well after 2008 (above the average level). However, the central region, relying on Manchester and Birmingham and other regions, also has an above-average level in the medium term(2008). Combined with figure \@ref(fig:fig-hh-1998-2018), the overall concentration of science and technology industries in the north is higher than that in the south. However, the industrial diversity in the London area has always been high, and there is no obvious trend of change. It is worth noting that the decline in industrial concentration in the central region has the most obvious effect. The corresponding growth in the entry rate of these regions is also obvious (\@ref(fig:fig-enR-1998-2018-v1))
 
-但另一方面，市场竞争较为激烈的地方对人才的吸引力大这会改变个体家庭的通勤决策。风险投资也不妨兼顾在未来会有更大科技进入率的伦敦周边地区(Figure \@ref(fig:fig-enR-1998-2018-v1))。虽然该地区在回归分析结果中往往被当作离群点处理，伦敦及其周边卫星城市可能有着相比England地区非常不同的企业动态模式。
+### Firm Dynamics and Influence Factors 
 
-针对政府层面
+The regression results between the three variables found that in England, the more diverse the technology industry and the greater the density of technology companies, the greater the entry rate of regional technology companies. It is worth noting that the data of the London area in 2018 were excluded as outliers in the partial regression model. This is because the entry rate value in this year far exceeds the value in other years in other regions. This phenomenon may also be related to the rapid development of AI venture capital in the London area in 2018. For instance, between 2015 and 2017, the AI sector in London had a 200 percent growth in venture capital funding, and the city now has 13 universities offering AI-related degrees(Taylor,2018; Allott et al., 2018). 
 
-从全局角度出发，根据实验结果会发现企业的进入率聚集效应呈现逐年下降的趋势 (\@ref(tab:tab-morans-i-enR))
+Meanwhile, the direct effect of firm density on firm dynamics seems to be more significant than the effect of industry concentration. Industry diversity often first acts on regional market performance and other factors, thereby indirectly affecting dynamics. Combining the large number of SMEs, mentioned in the literature section, tends to provide employment growth better than the small number of large companies (Liu et al., 1999). Regions with large industry diversity may also have more small companies, which also explains the negative impact of high industry concentration on the increase of entry rate.
 
-从局部角度观察，北方地区特别是东北部通勤地区的聚集效应下降相比其他地区有延迟。对于政策而言，南北部地区的政策推行需要结合当地现状。举个例子，政府希望提高某大区域科技企业数量平均水平以此来优化各个地区产业结构。如果England政府出于鼓励当地企业迁入或创立的目的，在投资优先级上可以考虑企业进入率冷点群地区优先。因为提高冷点群中某一个地区的企业entry rate可以在空间效应上一定程度消解Low-Low Cluster的产生。这样做有利于引导地区之间的产业平衡，而不是高进入率和低进入率二元分明（也可以避免马太效应）
+### Spatio-Temporal Cluster Analysis for Two Indicators
 
-从政府直接作用的角度出发，比如推行针对科技公司的税收优惠，地区租金优惠来提高地区的企业进入率。
+Overall, the agglomeration effect of two indicators (firm dynamics and density) in England will reduce over time. However, the density index has a greater degree of reduction compared to the entry rate's cluster effect (Table \@ref(tab:tab-morans-i-den)). From the perspective of temporal and spatial trends, the north has gradually become a hot spot for the entry rate. More and more tech companies have joined the north and this phenomenon has local spatial autocorrelation. At the same time, these high entry rate regional clusters will be transferred to Liverpool and its surrounding areas in the later stage (2018). In the southwestern corner, the high entry rate hotspot from the beginning has gradually become a low entry rate cluster in the 10 years since 2008. How to implement policy encouragement and adjustments to make their technology industry rejuvenate may be a challenge to local authorities.
 
-从间接作用的方式上，政府可以通过引导地区科技产业的多样性发展与适当增加地区科技企业密度的方式来提高的当地企业进入率。根据(Table \@ref(tab:tab-regression-entry-rate))的实验结果展示，企业在某一地区在某一时段的进入率受到地区企业密度的正影响和企业集中度(Herfindahl-Hirschman Index )的负影响。
+The LISA analysis of the firm density is used to supplement the exploratory description of the spatial model in this study. In figure \@ref(fig:fig-lisa-den), it might be a continuous pattern that London and its surrounding commuting areas have always had high-density clusters in these three periods although this spatial pattern may be weakened. Although there are also low-density clusters in the northern area, this might be related to the England railway line and transportation planning. The weakening effect of low-density clustering in this area is more obvious. These urban areas that are different from the London metropolitan area also have a certain absorption potential for new enterprises.
 
+```{r fig-lisa-den, echo=FALSE, fig.cap="Local Moran\'s I Cluster Analysis for Firm Density in England for Three Time Periods", out.width='100%'}
+knitr::include_graphics(here::here('general_images','LISA_den_98_18.png'))
+```
 
 ## Limitations
 
-To be done
+According to methodology, the method of identifying technology clusters mentioned in the section, the definition of the classification of technology companies comes from 2007. This division of the enterprise may not be the latest and most applicable method. Moreover, their information might be lagging because Office for National Statistics (2015) employed a comprehensive identification method, for example, refer to the code division part of *UK Standard Industrial Classification of Economic Activities* and the UK government official website *Science, technology, engineering and maths graduates in non- Industry definitions in STEM jobs* reports, etc. In addition, in the research of spatial pattern mining, there may be a lack of information in some areas. This will lead to low confidence in the local Moran's index detection, which cannot be discussed as a evidence. Finally, the study of hot-spot only calculates the significance standard and only considers univariate to participate in the calculation. The explanatory nature of spatial clustering analysis may not cover most of the scenes because of practical reasons. For example, the dynamics of enterprises are also affected by other factors in the space, such as policies, taxes, etc.
+
+## Recommendations
+
+### Coperations
+
+Regardless of the influence of other UK regions except England, the northeastern city belt might become a hot-spot for tech firms to enter. Although the southwest region was a cold-spot for that in 2018, the corresponding service infrastructure in the region is likely to be relatively complete because the region was a high entry rate cluster for technology companies to enter in 1998. Meanwhile, it can be found that commuters in a particular travel to work area often have a mature way of commuting from residential areas to commercial areas. This pattern can help us better understand the cluster phenomenon of technology companies. Moreover, when the home location is fixed, practitioners tend to choose work within a certain commuting area. In this case, it is more feasible for companies to hire high-end and stable labor in regions where market competition is less intense than to conduct the same corporate recruitment behaviour in other areas.
+
+On the other hand, places with fierce market competition are likely to be highly attractive to talents, which will change the commuting decisions of individual families. Thus, company investors can also take into account the surrounding areas of London where there will be a greater tech firm entry rate in the future (Figure \@ref(fig:fig-enR-1998-2018-v1)). Although this area is often treated as an outlier in the regression analysis results, London and its surrounding satellite cities may have very different corporate dynamics compared to other areas in England.
+
+<!-- ### Government -->
+
+<!-- 从全局角度出发，根据实验结果会发现企业的进入率聚集效应呈现逐年下降的趋势 (\@ref(tab:tab-morans-i-enR)) -->
+
+<!-- 从局部角度观察，北方地区特别是东北部通勤地区的聚集效应下降相比其他地区有延迟。对于政策而言，南北部地区的政策推行需要结合当地现状。举个例子，政府希望提高某大区域科技企业数量平均水平以此来优化各个地区产业结构。如果England政府出于鼓励当地企业迁入或创立的目的，在投资优先级上可以考虑企业进入率冷点群地区优先。因为提高冷点群中某一个地区的企业entry rate可以在空间效应上一定程度消解Low-Low Cluster的产生。这样做有利于引导地区之间的产业平衡，而不是高进入率和低进入率二元分明（也可以避免马太效应） -->
+
+<!-- 从政府直接作用的角度出发，比如推行针对科技公司的税收优惠，地区租金优惠来提高地区的企业进入率。 -->
+
+<!-- 从间接作用的方式上，政府可以通过引导地区科技产业的多样性发展与适当增加地区科技企业密度的方式来提高的当地企业进入率。根据(Table \@ref(tab:tab-regression-entry-rate))的实验结果展示，企业在某一地区在某一时段的进入率受到地区企业密度的正影响和企业集中度(Herfindahl-Hirschman Index )的负影响。 -->
 
 ## Transferability 
 
-研究其他地区也可以采用本研究的方式。比如研究科技企业可以从公司集群入手，先量化公司进入率与产业集中度。在此基础上，研究可以通过回归模型分析集群特征与进入率的关系。进一步研究局部地区的空间相关性可以采用全局与局部莫兰分析方法，结合冷热点分析进行某项指标的聚集现象。这样有助于帮助特定地区的政府平衡各个地区的发展来消解某一个产业的马太效应，从而实现社会生产的分配公平。
-
-To be done
-
-TTWA可以作为...
+Studying other regions can also utilise the method of this study. For example, research on technology companies can start with company clusters and first quantify firm entry rate and industrial concentration. On this basis, the research can analyse the relationship between cluster characteristics and entry rate through regression models. To further study the spatial correlation of local areas, global and local Moran's index analysis methods and analysis of hot-spot to research the aggregation phenomenon of a certain index. This helps the government in a specific area to balance the development of each area to eliminate the Matthew effect of a certain industry, thereby realising the fair distribution of social production.
