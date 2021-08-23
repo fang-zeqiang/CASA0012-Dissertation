@@ -25,7 +25,7 @@ output:
     bookdown::pdf_book
 documentclass: book
 classoption: oneside #openany or #twosides #if two then need to change headers and check margins.
-geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
+geometry: "left=3.18cm, right=3.18cm, top=2.54cm, bottom=2.54cm"
 fontsize: 12pt
 linestretch: 1.5
 bibliography: [book.bib, packages.bib]
@@ -55,26 +55,4 @@ library(tinytex)
 # Abstract {.unlisted .unnumbered}
 '`
 Some abstract text
-
-```{r include=FALSE}
-word_count_00 = wordcountaddin::word_count("00-preamble.Rmd")
-
-word_count_01 = wordcountaddin::word_count("01-intro.Rmd")
-
-word_count_02 = wordcountaddin::word_count("02-literature.Rmd")
-
-word_count_03 = wordcountaddin::word_count("03-method.Rmd")
-
-word_count_04 = wordcountaddin::word_count("04-results.Rmd")
-
-word_count_05 = wordcountaddin::word_count("05-discussion.Rmd")
-
-word_count_06 = wordcountaddin::word_count("06-conclusion.Rmd")
-
-word_count_07 = wordcountaddin::word_count("07-references.Rmd")
-
-word_count_08 = wordcountaddin::word_count("08-appendix.Rmd")
-```
-
-word count: `r word_count_00 + word_count_01 + word_count_02 + word_count_03 + word_count_04 + word_count_05 + word_count_06 + word_count_07`
 

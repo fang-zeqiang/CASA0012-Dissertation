@@ -43,7 +43,7 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage[left=4cm, right=3cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage[left=3.18cm, right=3.18cm, top=2.54cm, bottom=2.54cm]{geometry}
 \usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -133,14 +133,14 @@ Word count: 8,000}
 
 Some abstract text
 
-word count: 8380
+word count: 8372
 
 \pagenumbering{roman}
 
 \hypertarget{declaration}{%
 \chapter*{Declaration}\label{declaration}}
 
-I, Zeqiang Fang, hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is 8380 words in length
+I, Zeqiang Fang, hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is 8372 words in length
 
 \hypertarget{acknowledgements}{%
 \chapter*{Acknowledgements}\label{acknowledgements}}
@@ -340,7 +340,7 @@ To measure the degree of dynamic change of a cluster, it is necessary to calcula
 Entry\ Rate_{i,t} = \frac{Incorporating\ Firms_{i,t}}{Total\  Firms_{i}} 
 \]
 
-Where \(i\) means location(travel to work area), \(t\) means year
+where \(i\) means location(travel to work area), \(t\) means year
 
 \hypertarget{industry-mix-measuring-index}{%
 \subsection{Industry Mix Measuring Index}\label{industry-mix-measuring-index}}
@@ -350,16 +350,17 @@ It is necessary to calculate the Herfindahl-Hirschman Index or location quotient
 \[
 HHI_{\ i,t} = \sum_{j=1}^N (\frac{Tech\ Firms_{j,i,t}}{Total\ Tech\ Firms_{i,t}})^2 
 \]
-Where:
+where
+
 \(HHI_{i,t}\) means Herfindahl-Hirschman ~Index in location \(i\) and year \(t\)
 
 \(N\) is the overall number of individual tech firm contained.
 
 \(k\) represents the \(k\)th industry in location \(i\) and year \(t\).
 
-\(Tech Firms_j\) is the number of j-th individual tech firm
+\(Tech\ Firms_j\) is the number of j-th individual tech firm
 
-\(Total Tech Firms\) represents the number of total tech firms in a specific location and year.
+\(Total\ Tech\ Firms\) represents the number of total tech firms in a specific location and year.
 
 \hypertarget{regression}{%
 \subsection{Regression}\label{regression}}
@@ -387,7 +388,7 @@ Dynamics variable(entry rate) is measured empirically by the ratio of the number
 \[
 \ y\ =\ b_0 + b_1 \ x_1 + b_2 \ x_2 + \sum_{i=3}^{4} \ b_i \ x_i + \epsilon_{i,j}
 \]
-Where
+where
 
 \(y\) means entry rate in the year and location
 \(x_1\) means the year, a dummy variable
@@ -408,7 +409,7 @@ Moran's \ I = \frac{n}{S_0} \frac{\sum_{x=1}^n \sum_{y=1}^n w_{x,y} z_x z_y}{\su
 S_0 = \sum_{x=1}^n \sum_{y=1}^n w_{x,y}
 \]
 
-Where \(z_x\) stands for deviation of an attribute from its mean \((x_i – X̅)\) for feature \(X\), \(w_{x,y}\) is the spatial weight among feature \(X\) and \(Y\), \(n\) is the total number of features and So is the summation of all spatial weights
+where \(z_x\) stands for deviation of an attribute from its mean \((x_i – X̅)\) for feature \(X\), \(w_{x,y}\) is the spatial weight among feature \(X\) and \(Y\), \(n\) is the total number of features and So is the summation of all spatial weights
 
 The statistic's \(z_j\) score is given below
 
@@ -462,11 +463,7 @@ The value of this statistical data(Herfindahl-Hirschman Index) for identifying m
 
 The data for this project comes from OpenCorporates, a firm which aggregates company-level data from around the world(\url{https://opencorporates.com/}). In this case, OpenCorporates have taken data from the UK Companies House register (\url{https://www.gov.uk/government/organisations/companies-house}). As detailed by Nathan and Rosso (2015), all limited companies in the UK need to registers with Companies House when they are set up, and provide annual returns and financial statements. These include details of directors and company secretary, registered office address, shares and shareholders, as well as company type and principal business activity. Thus, all the data used here is already in the public domain.
 
-The research objectives are tech firms in the UK for this project and the individual data will not be collected and measured in this project. For issues of deanonymisation or privacy, traceable information such as the real companies name and ID will not be utilised in the research. The raw data will be cleaned and filtered by several key variables include industries instead of the company's name or other sensitive information before doing the research. Through data cleaning, pre-processing, desensitisation or other processing methods, the risks of damage to company interests (such as social reputation, economic benefits and etc.) will be mitigated to an as low as possible level in the research process.
-
-Besides, this project will not cause discrimination of industries or job categories. The final analysis results, such as the different industry concentration in each region, will not deepen some people's stereotypes and prejudices about the region (This content will be fully discussed in the project discussion section). It is necessary to point out and declare the objectivity of the analysis and the non-absoluteness of the results in the disclaimer. Consider the feelings of people and governments in different parts of the UK, this research will prevent the influence of personal preferences and subjective emotions.
-
-The leakage of companies' name and information will be protected. For example, in the reflection of the results section of academic research, the name and related information of the companies that moved may be revealed. Although this information may be open to the public you need to know that this information may be used by people with other ulterior motives. This project will desensitise the company name and information at the stage of chart presentation, such as using A, B, and C to replace them to achieve this purpose.
+The research objectives are tech firms in the UK for this project and the individual data will not be collected and measured in this project. For issues of deanonymisation or privacy, traceable information such as the real companies name and ID will not be utilised in the research. The raw data will be cleaned and filtered by several key variables include industries instead of the company's name or other sensitive information before doing the research. Through data cleaning, pre-processing, desensitisation or other processing methods, the risks of damage to company interests (such as social reputation, economic benefits and etc.) will be mitigated to an as low as possible level in the research process. Besides, this project will not cause discrimination of industries or job categories. The final analysis results, such as the different industry concentration in each region, will not deepen some people's stereotypes and prejudices about the region (This content will be fully discussed in the project discussion section). It is necessary to point out and declare the objectivity of the analysis and the non-absoluteness of the results in the disclaimer. Consider the feelings of people and governments in different parts of the UK, this research will prevent the influence of personal preferences and subjective emotions. Last but not least, the leakage of companies' name and information will be protected. For example, in the reflection of the results section of academic research, the name and related information of the companies that moved may be revealed. Although this information may be open to the public you need to know that this information may be used by people with other ulterior motives. This project will desensitise the company name and information at the stage of chart presentation, such as using A, B, and C to replace them to achieve this purpose.
 
 \hypertarget{results}{%
 \chapter{Results}\label{results}}
@@ -479,8 +476,6 @@ In terms of three variables' change of overall England level,it can be found tha
 \begin{figure}
 \includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/all_enR_hh_den_change} \caption{The average level change of three variables in two decades}\label{fig:fig-all-var-trend}
 \end{figure}
-
-How to reference (Figure \ref{fig:fig-all-var-trend})
 
 \begin{table}
 
@@ -519,8 +514,6 @@ How to reference (Figure \ref{fig:fig-all-var-trend})
 \end{tabular}
 \end{table}
 
-How to reference (Table \ref{tab:tab-all-var-trend})
-
 \hypertarget{tech-cluster-dynamics}{%
 \subsection{Tech Cluster Dynamics}\label{tech-cluster-dynamics}}
 
@@ -533,8 +526,8 @@ Finally, from the perspective of changes in temporal and spatial distribution, t
 \includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/enR_1998_2018_v1} \caption{The Distribution of the Firms Entry Rate of the England Travel to Work Areas(TTWAs) from 1998 to 2018}\label{fig:fig-enR-1998-2018-v1}
 \end{figure}
 
-\hypertarget{tech-industry-mix}{%
-\subsection{Tech Industry Mix}\label{tech-industry-mix}}
+\hypertarget{tech-industry-concentration}{%
+\subsection{Tech Industry Concentration}\label{tech-industry-concentration}}
 
 In terms of herfindahl-Hirschman index of tech industry in travel to work area of England. As given figure below, it can be seen that the Herfindahl-Hirschman index has a downward trend year by year (Figure \ref{fig:fig-hh-1998-2018}). In the methodology module, this index is mentioned as a measure of industrial concentration. A decrease in the value represents an increase in industrial competition and a decrease in market power. The decline of the index means that the types of SIC codes corresponding to companies in a particular region have increased in a year or the number of companies corresponding to a large share of SIC codes has decreased. In other words, the types of technology industries corresponding to the unit area have increased, or the number of advantageous industries has decreased; you can see The concentration of technology industries out of England declined year by year from 1998 to 2018 (Table \ref{tab:tab-all-var-trend}). In the same way, the diversity of the technology industry is also increasing, and the richness of the industry may also be related to the increase in the entry rate of enterprises.
 
@@ -588,14 +581,14 @@ R-squared & 0.89 & 0.89 & 0.90\\
 
 As mentioned in the methodology section(Brandt, 2005), Table \ref{tab:tab-regression-control-var} can illustrates the unconditional relation between entry rate and tech cluster characters. These two independent variables are controlled to be added in the regression model which can help to observe to what extent they can have an influence on the dynamics element(entry rate).
 
-When the year and regional conditions in the model remain unchanged, the model {[}1{]} only adds Herfindahl-Hirschman index to consider the regression analysis, and it can be found that the coefficient is about -1.2 and the confidence level is greater than 95\%. Similarly, the model {[}2{]} only considers adding firm density into the fitting, the coefficient of this independent variable is about 0.38 and the statistical significance is also less than 5\%. However, when other conditions are the same, adding two variables into the model at the same time {[}3{]}, the absolute value of each coefficient increases, and the confidence level increases, and the overall goodness of fit is also improved (Table @ref(tab :tab-regression-control-var)).
+When the year and regional conditions in the model remain unchanged, the model {[}1{]} only adds Herfindahl-Hirschman index to consider the regression analysis, and it can be found that the coefficient is about -1.2 and the confidence level is greater than 95\%. Similarly, the model {[}2{]} only considers adding firm density into the fitting, the coefficient of this independent variable is about 0.38 and the statistical significance is also less than 5\%. However, when other conditions are the same, adding two variables into the model{[}3{]} at the same time, the absolute value of each coefficient increases, and the confidence level increases, and the overall goodness of fit is also improved which can be seen in table @ref(tab :tab-regression-control-var).
 
-In terms of Herfindahl-Hirschman index, the entry rate might decrease when this indicator increase(Table \ref{tab:tab-regression-control-var}).
+In terms of Herfindahl-Hirschman index, the entry rate might decrease when this indicator increase.
 Consistent with model{[}2{]}, the entry rate increase with density (Table \ref{tab:tab-regression-control-var}). The HHI decrease and density increase, leading to lower entry rates.
 
 \begin{table}
 
-\caption{\label{tab:tab-regression-control-var}Regression Results of Firms Entry Rate and Tech Clusters' Characters (variables Controlled)}
+\caption{\label{tab:tab-regression-control-var}Regression Results of Firms Entry Rate and Tech Clusters' Characters (Variables Controlled)}
 \centering
 \begin{tabular}[t]{llll}
 \toprule

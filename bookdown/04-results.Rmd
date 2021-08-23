@@ -29,6 +29,7 @@ read_excel(here("tables", "enR_hh_den_year_trend.xlsx"))%>%
 ```
 
 ### Tech Cluster Dynamics
+
 From 1998 to 2018, the entry rate of each Travel to work area (TTWA) in England will change drastically every decades. For example, in 1998 the darker colored areas were mostly around the Greater London area and the entire southern part of England(Figure \@ref(fig:fig-enR-1998-2018-v1)). The overall entry rate in 2008 was higher than that in 1998 and showed a trend of new companies entering the north of England. In this year, some travel to work areas on the edge of England have more prominent entry rates, such as Malton, Minehead and Bridport. However, the overall entry rate in 2018 was about twice as high as the average in 2008. Moreover, ttwa with high entry rate is mostly concentrated in the north and the surrounding areas of Greater London. The overall trend can be witnessed as given by Table \@ref(tab:tab-all-var-trend) that there is an increasing trend in the overall level of entry rate from 1998 (average about 1.06% ) to 2018
 (average about 14.33%)
 
@@ -37,7 +38,8 @@ Finally, from the perspective of changes in temporal and spatial distribution, t
 ```{r fig-enR-1998-2018-v1, echo=FALSE, fig.cap='The Distribution of the Firms Entry Rate of the England Travel to Work Areas(TTWAs) from 1998 to 2018', out.width='100%'}
 knitr::include_graphics(here::here('general_images','enR_1998_2018_v1.png'))
 ```
-### Tech Industry Mix
+
+### Tech Industry Concentration
 
 In terms of herfindahl-Hirschman index of tech industry in travel to work area of England. As given figure below, it can be seen that the Herfindahl-Hirschman index has a downward trend year by year (Figure \@ref(fig:fig-hh-1998-2018)). In the methodology module, this index is mentioned as a measure of industrial concentration. A decrease in the value represents an increase in industrial competition and a decrease in market power. The decline of the index means that the types of SIC codes corresponding to companies in a particular region have increased in a year or the number of companies corresponding to a large share of SIC codes has decreased. In other words, the types of technology industries corresponding to the unit area have increased, or the number of advantageous industries has decreased; you can see The concentration of technology industries out of England declined year by year from 1998 to 2018 (Table \@ref(tab:tab-all-var-trend)). In the same way, the diversity of the technology industry is also increasing, and the richness of the industry may also be related to the increase in the entry rate of enterprises.
 
@@ -66,9 +68,9 @@ read_excel(here("tables", "OLS_regression_results.xlsx"))%>%
 
 As mentioned in the methodology section(Brandt, 2005), Table \@ref(tab:tab-regression-control-var) can illustrates the unconditional relation between entry rate and tech cluster characters. These two independent variables are controlled to be added in the regression model which can help to observe to what extent they can have an influence on the dynamics element(entry rate).
 
-When the year and regional conditions in the model remain unchanged, the model [1] only adds Herfindahl-Hirschman index to consider the regression analysis, and it can be found that the coefficient is about -1.2 and the confidence level is greater than 95%. Similarly, the model [2] only considers adding firm density into the fitting, the coefficient of this independent variable is about 0.38 and the statistical significance is also less than 5%. However, when other conditions are the same, adding two variables into the model at the same time [3], the absolute value of each coefficient increases, and the confidence level increases, and the overall goodness of fit is also improved (Table \@ref(tab :tab-regression-control-var)). 
+When the year and regional conditions in the model remain unchanged, the model [1] only adds Herfindahl-Hirschman index to consider the regression analysis, and it can be found that the coefficient is about -1.2 and the confidence level is greater than 95%. Similarly, the model [2] only considers adding firm density into the fitting, the coefficient of this independent variable is about 0.38 and the statistical significance is also less than 5%. However, when other conditions are the same, adding two variables into the model[3] at the same time, the absolute value of each coefficient increases, and the confidence level increases, and the overall goodness of fit is also improved which can be seen in table \@ref(tab :tab-regression-control-var). 
 
-In terms of Herfindahl-Hirschman index, the entry rate might decrease when this indicator increase(Table \@ref(tab:tab-regression-control-var)).
+In terms of Herfindahl-Hirschman index, the entry rate might decrease when this indicator increase.
 Consistent with model[2], the entry rate increase with density (Table \@ref(tab:tab-regression-control-var)). The HHI decrease and density increase, leading to lower entry rates.
 
 ```{r tab-regression-control-var, echo=FALSE}
