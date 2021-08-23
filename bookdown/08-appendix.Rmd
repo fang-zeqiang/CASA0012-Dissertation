@@ -9,34 +9,23 @@
 \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 ```
 
-|Name| Link|
-|:--:|:--:|
-|Dissertation Book Live Version| https://zeqiang.fun/CASA0012-Dissertation/bookdown/html/|
-|Data Source Repository| https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset|
-|UK Registered Firms|https://opencorporates.com/info/our-data/|
-|Science and Technology Classification|https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/science-and-technology-classification.xls|
-|Travel to Work Area Boundaries|https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset/Travel_to_Work_Areas_2011_guidance_and_information_V5|
-|Regression Data|https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/df_hh_EnR_ttwaName_asset_not_drop.csv|
-|TTWAs with Three Indicators in 1998|https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/Spatial/dfm_1998_output.geojson|
-|TTWAs with Three Indicators in 2008|https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/Spatial/dfm_2008_output.geojson|
-|TTWAs with Three Indicators in 2018|https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/Spatial/dfm_2018_output.geojson|
-
-```{r researchlog, echo=FALSE, message=FALSE, warning=FALSE}
+```{r data-source, echo=FALSE, message=FALSE, warning=FALSE}
 library(here)
 library(tidyverse)
 library(knitr)
 library(kableExtra)
 library(readxl)
 library(fs)
-# 
-# read_excel(here("tables","science_and_technology_classification.xlsx"))%>%
-#   arrange("SIC07 heading") %>% # i.e. alphabetical order by Term
-#   knitr::kable(booktabs = TRUE)%>% # booktab = T gives us a pretty APA-ish table
-#   kable_styling(position = "center")%>%
-#   row_spec(.,
-#   row=0,
-#   bold = TRUE)
-
+options(knitr.kable.NA = '')
+read_excel(here("tables", "data_source.xlsx"))%>% 
+    knitr::kable(booktabs = TRUE,
+                 longtable = TRUE,
+                 caption = "Research Data Source and Link")%>%
+    kable_styling(position = "center") %>% 
+    add_footnote(c("TTWAs means travel to work areas"), notation = "alphabet") %>% 
+    row_spec(.,row=0,bold = TRUE) %>% 
+    column_spec(1,width = "4.5cm")%>% 
+    column_spec(2,width = "8.5cm")
 ```
 
 `r if (knitr:::is_html_output()) '
@@ -47,12 +36,19 @@ library(fs)
 # Appendix B Research Log{-}
 '`
 
-|Name | Link|
-|:--:|:--:|
-|Exploratory Data Analysis |https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/EDA.html|
-|Descriptive Analysis for Dynamics|https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Dynamics-Research.html|
-|Regression Analysis| https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Regression-Research.html|
-|Spatial Pattern Research|https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Spatial-Research.html|
+```{r research-log, echo=FALSE, message=FALSE, warning=FALSE}
+
+options(knitr.kable.NA = '')
+read_excel(here("tables", "reproducible_research_log.xlsx"))%>% 
+    knitr::kable(booktabs = TRUE,
+                 longtable = TRUE,
+                 caption = "Research Log and Reproducible Analysis Process")%>%
+    kable_styling(position = "center") %>% 
+    # add_footnote(c("TTWAs means travel to work areas"), notation = "alphabet") %>% 
+    row_spec(.,row=0,bold = TRUE) %>% 
+    column_spec(1,width = "4.5cm")%>% 
+    column_spec(2,width = "8.5cm")
+```
 
 ```{=latex}
 \addtocontents{toc}{\protect\setcounter{tocdepth}{3}}

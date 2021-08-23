@@ -14,6 +14,8 @@ tab:tab-z-p-corr
 fig:fig-lisa-entry-rate
 fig:fig-Gi-entry-rate
 fig:fig-lisa-den
+tab:data-source
+tab:research-log
 intro
 background-and-motivation
 research-question-and-objectives

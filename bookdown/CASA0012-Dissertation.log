@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.8.15)  23 AUG 2021 22:46
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.8.15)  23 AUG 2021 23:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1536,24 +1536,100 @@ Underfull \hbox (badness 10000) in paragraph at lines 876--877
 
 LaTeX Warning: Empty bibliography on input line 879.
 
-[46] [47
+[46]
+Overfull \hbox (79.42758pt too wide) in paragraph at lines 892--893
+[]|\TU/lmr/m/n/12 https://zeqiang.fun/CASA0012-Dissertation/bookdown/html/|  
+ []
 
-] [48] [49
+
+Overfull \hbox (136.52359pt too wide) in paragraph at lines 893--894
+[]|\TU/lmr/m/n/12 https://github.com/fang-zeqiang/Master-Dissertation/tree/main
+/Dataset|  
+ []
+
+
+Overfull \hbox (347.97556pt too wide) in paragraph at lines 895--896
+[]|\TU/lmr/m/n/12 https://github.com/fang-zeqiang/Master-Dissertation/blob/main
+/Dataset/science-and-technology-classification.xls|  
+ []
+
+
+Overfull \hbox (474.10757pt too wide) in paragraph at lines 896--897
+[]|\TU/lmr/m/n/12 https://github.com/fang-zeqiang/Master-Dissertation/tree/main
+/Dataset/Travel_-to_-Work_-Areas_-2011_-guidance_-and_-information_-V5|  
+ []
+
+
+Overfull \hbox (381.51558pt too wide) in paragraph at lines 898--899
+[]|\TU/lmr/m/n/12 https://github.com/fang-zeqiang/Master-Dissertation/blob/main
+/Dataset/df_-hh_-EnR_-ttwaName_-asset_-not_-drop.csv|  
+ []
+
+
+Overfull \hbox (323.66357pt too wide) in paragraph at lines 899--900
+[]|\TU/lmr/m/n/12 https://github.com/fang-zeqiang/Master-Dissertation/blob/main
+/Dataset/Spatial/dfm_-1998_-output.geojson|  
+ []
+
+
+Overfull \hbox (323.66357pt too wide) in paragraph at lines 900--901
+[]|\TU/lmr/m/n/12 https://github.com/fang-zeqiang/Master-Dissertation/blob/main
+/Dataset/Spatial/dfm_-2008_-output.geojson|  
+ []
+
+
+Overfull \hbox (323.66357pt too wide) in paragraph at lines 901--902
+[]|\TU/lmr/m/n/12 https://github.com/fang-zeqiang/Master-Dissertation/blob/main
+/Dataset/Spatial/dfm_-2018_-output.geojson|  
+ []
+
+[47
+
+]
+Overfull \hbox (102.58759pt too wide) in paragraph at lines 914--915
+[]|\TU/lmr/m/n/12 https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/EDA.html
+|  
+ []
+
+
+Overfull \hbox (177.14359pt too wide) in paragraph at lines 915--916
+[]|\TU/lmr/m/n/12 https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Dynamics
+-Research.html|  
+ []
+
+
+Overfull \hbox (181.1276pt too wide) in paragraph at lines 916--917
+[]|\TU/lmr/m/n/12 https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Regressi
+on-Research.html|  
+ []
+
+
+Overfull \hbox (162.56357pt too wide) in paragraph at lines 917--918
+[]|\TU/lmr/m/n/12 https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Spatial-
+Research.html|  
+ []
+
+
+Overfull \hbox (29.23158pt too wide) in paragraph at lines 918--919
+[]|\TU/lmr/m/n/12 https://rpubs.com/fangzq/UK_-ttwa_-tmap_-making|  
+ []
+
+[48
 
 ] (./CASA0012-Dissertation.aux)
 Package rerunfilecheck Info: File `CASA0012-Dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: AD89EC98ADECE26211CD3182138CE64C;8475.
+(rerunfilecheck)             Checksum: 98EEFA84BA7106C9DBC607BC5BF4E5CF;8460.
 Package logreq Info: Writing requests to 'CASA0012-Dissertation.run.xml'.
 \openout1 = `CASA0012-Dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27344 strings out of 478475
- 513337 string characters out of 5857943
- 1499169 words of memory out of 5000000
- 47277 multiletter control sequences out of 15000+600000
+ 27347 strings out of 478475
+ 513390 string characters out of 5857943
+ 1492250 words of memory out of 5000000
+ 47280 multiletter control sequences out of 15000+600000
  407503 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  87i,13n,120p,1328b,4823s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CASA0012-Dissertation.pdf (59 pages).
+Output written on CASA0012-Dissertation.pdf (58 pages).
