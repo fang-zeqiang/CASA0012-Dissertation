@@ -7,12 +7,36 @@ This repo is to store my dissertation file and present my disseration book
 - jupyterlab #the path of research progress log
 - code #the path of the reproducible analysis and map making
 ```
+## Reproducible Analysis Process
+
+|Name|Link|
+|:--:|:--:|
+|Exploratory Data Analysis|	https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/EDA.html|
+|Descriptive Analysis for Dynamics|https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Dynamics-Research.html|
+|Regression Analysis|	https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Regression-Research.html|
+|Spatial Pattern Research	|https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Spatial-Research.html|
+|Map Making in R|	https://rpubs.com/fangzq/UK_ttwa_tmap_making|
+
+## Dataset
+
+|Name|Link|
+|:--:|:--:|
+|Dissertation Book Live Version|https://zeqiang.fun/CASA0012-Dissertation/bookdown/html/|
+|Data Source Repository|https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset|
+|UK Registered Firms|	https://opencorporates.com/info/our-data/|
+|Science and Technology Classification|	https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/science-and-technology-classification.xls|
+|Travel to Work Area Boundaries|https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset/Travel_to_Work_Areas_2011_guidance_and_information_V5|
+|Regression Data|https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/df_hh_EnR_ttwaName_asset_not_drop.csv|
+|TTWAs with Three Indicators in 1998|https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/Spatial/dfm_1998_output.geojson|
+|TTWAs with Three Indicators in 2008|https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/Spatial/dfm_2008_output.geojson|
+|TTWAs with Three Indicators in 2018|https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/Spatial/dfm_2018_output.geojson|
+
 ## Research Progress
 
 1. For very beginning exploratory analysis of `fame_OC.dta`, you can access [this page](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/EDA.html)
 1. For further descriptive analysis(dynamics), you can access [this page](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Dynamics-Research.html)
 1. For regression analysis, you can access [this page](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Regression-Research.html)(For regression **dataset**, you can access [this page](https://zeqiang.fun/CASA0012-Dissertation/dataset/Top_10_Tech_TTWA_Cluster_Reg_Prepare.xlsx))
-2. For [Spatial Research](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Spatial-Research.html), OLS need to be refined :-)
+2. For [Spatial Research](https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Spatial-Research.html)
 
 ## The Cheatsheet
 
