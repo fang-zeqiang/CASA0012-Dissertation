@@ -3,19 +3,23 @@
 \addcontentsline{toc}{chapter}{Bibliography}
 \printbibliography
 ```
-# Appendix A Data Source {.unlisted .unnumbered}
+# Appendix A Data Source {-}
 
 ```{=latex}
 \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 ```
 
-|Name | Link|
+|Name| Link|
 |:--:|:--:|
-|Main Data Source| https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset|
-|Research Reports|https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset|
 |Dissertation Book Live Version| https://zeqiang.fun/CASA0012-Dissertation/bookdown/html/|
-
-<!-- ## Science and Technology Classification {.unlisted .unnumbered} -->
+|Data Source Repository| https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset|
+|UK Registered Firms|https://opencorporates.com/info/our-data/|
+|Science and Technology Classification|https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/science-and-technology-classification.xls|
+|Travel to Work Area Boundaries|https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset/Travel_to_Work_Areas_2011_guidance_and_information_V5|
+|Regression Data|https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/df_hh_EnR_ttwaName_asset_not_drop.csv|
+|TTWAs with Three Indicators in 1998|https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/Spatial/dfm_1998_output.geojson|
+|TTWAs with Three Indicators in 2008|https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/Spatial/dfm_2008_output.geojson|
+|TTWAs with Three Indicators in 2018|https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/Spatial/dfm_2018_output.geojson|
 
 ```{r researchlog, echo=FALSE, message=FALSE, warning=FALSE}
 library(here)
@@ -35,15 +39,20 @@ library(fs)
 
 ```
 
+`r if (knitr:::is_html_output()) '
+# Appendix B Research Report{-}
+'`
+
 `r if (knitr:::is_latex_output()) '
-# Appendix B Research Reports {.unlisted .unnumbered}
+# Appendix B Research Report{-}
 '`
 
 |Name | Link|
 |:--:|:--:|
-|Main Data Source| https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset|
-|Research Reports|https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset|
-|Dissertation Book Live Version| https://zeqiang.fun/CASA0012-Dissertation/bookdown/html/|
+|Exploratory Data Analysis |https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/EDA.html|
+|Descriptive Analysis for Dynamics|https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Dynamics-Research.html|
+|Regression Analysis| https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Regression-Research.html|
+|Spatial Pattern Research|https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Spatial-Research.html|
 
 ```{=latex}
 \addtocontents{toc}{\protect\setcounter{tocdepth}{3}}

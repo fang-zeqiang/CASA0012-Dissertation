@@ -2,13 +2,13 @@
 
 ## Industrial Cluster and Tech Cluster
 
-A cluster is described as a geographic concentration of businesses that operate in the same industry. High rates of entry and exit are often correlated with growth in employment and productivity, so these questions are of interest not only to academics but also to policymakers (Fritsch, 2011). Industry clusters form as a result of the production benefits of local specialization mixed with cross-regional trade. Three forces of what is now known as agglomeration economies were discussed previously: knowledge spillovers, labour market pooling, and customer-supplier interactions. While most Marshallian force studies have focused on industrial contexts, they also apply to tech clusters, albeit in slightly different ways (Ellison et al. 2010). The definition of tech clusters is mentioned in Kerr's research(2020) as given below
+A cluster is described as a geographic concentration of businesses that operate in the same industry. High rates of entry and exit are often correlated with growth in employment and productivity, so these questions are of interest not only to academics but also to policymakers (Fritsch, 2011). Industry clusters form as a result of the production benefits of local specialization mixed with cross-regional trade. Three forces of what is now known as agglomeration economies were discussed previously: knowledge spillovers, labour market pooling, and customer-supplier interactions. While most Marshallian force studies have focused on industrial contexts, they also apply to tech clusters, albeit in slightly different ways (Ellison et al. 2010). The definition of tech clusters is mentioned in Kerr's research(2020) as given below.
 
 > we define “tech” clusters to be locations where new products (be they goods or services) and production processes are created that impact multiple parts of the economy. 
 
 In identifying Information and communications technology (ICT) relative economic activities, They find ICT employment shares nearly double the usual estimates using their unique approach even if this conclusion is more speculative(Nathan and Rosso, 2015). The definition and tech relative industry information can give a brief understanding of our research objects.
 
-## Industrial Dynamics
+## Industry and Cluster Dynamics
 
 Industrial dynamics is still a relatively new subject of research. Its main focus is on the evolution of industries, with an emphasis on company entry, growth, and exit(Malerba, 2006). Industrial dynamics, in contrast to the neoclassical approach to industries (also known as industrial organization), focuses primarily on phenomena that are intrinsically dynamic and deals with them in an interdisciplinary manner such as economic geography(Carlsson 1987;Fritsch, 2011). 
 

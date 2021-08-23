@@ -103,8 +103,6 @@
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[style=apa,]{biblatex}
-\addbibresource{book.bib}
-\addbibresource{packages.bib}
 
 \title{Spatial Pattern Mining of Tech Clusters of Dynamics and Industry Mix Based On Quantitative Methods in England Area, UK}
 \author{Zeqiang Fang\\
@@ -119,7 +117,7 @@ This dissertation is submitted in part requirement for the\\
 MSc in the Centre for Advanced Spatial Analysis,\\
 Bartlett Faculty of the Built Environment, UCL\\
 ~\\
-Word count: 9,490}
+Word count: 10,039}
 \date{2021-08-23}
 
 \begin{document}
@@ -138,7 +136,7 @@ Since tech clusters play an increasingly important role in economic contribution
 \hypertarget{declaration}{%
 \chapter*{Declaration}\label{declaration}}
 
-I, Zeqiang Fang, hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is 9733 words in length
+I, Zeqiang Fang, hereby declare that this dissertation is all my own original work and that all sources have been acknowledged. It is 10050 words in length
 
 \hypertarget{acknowledgements}{%
 \chapter*{Acknowledgements}\label{acknowledgements}}
@@ -180,9 +178,7 @@ Silicon Valley and other tech clusters are critical for modern innovation, compa
 
 There are clustering effects existing among the England tech firms. Some research teams such as Baptista (1999) conducted growth model research and dynamic model mining on regional clusters of technology industries and found that the growth rate of the sub-category business of a specific industry in the cluster may be higher than the industry average and a certain agglomeration phenomenon. Some teams also had done research on employment changes in the corresponding technology research and development industry. Also, the employment growth of high-tech small and medium-sized enterprises (SMEs) seems to depend on the initial level of clusters, and the impact of this clustering effect on employment growth varies greatly in geographic scope (Fingleton et al., 2004). Although there are obvious differences in clustering characteristics between the technology industries in the UK and other areas, the cluster effect of the technology industry in the UK did not seem to be weaker than that in the United States (Baptista and Swann, 1999).
 
-The dynamics characters of clusters can be measured by their entry pattern. Many patterns of industrial dynamics appear to be affected by the process of knowledge creation, gathering, and destruction. This promotes the admission of new businesses, the long-term coexistence of incumbents and newcomers, and their selected or combined withdrawal (Krafft, 2004).
-
-In terms of industry clustering pattern and policy formulation, Nathan and Rosso (2015), in response to the development needs of governments for information and communications technology sectors, utilise big data resources to conduct an innovative alternative analysis for all active information and communications technology manufacturers in the UK. This can help researchers to better understand the current condition of the UK's information and communications technology industry. Meanwhile, the approach of spatial autocorrelation analysis is useful for revealing the structure and patterns of economic geographical variables. It can be used to identify not only the country's overall spatial patterns but also specific micro-locations(Stankov and Dragićević, 2015). Our research can employ these methods and background information to explore the technology industry dynamics and obtain sufficient argument evidence.
+The dynamics characters of clusters can be measured by their entry pattern. Many patterns of industrial dynamics appear to be affected by the process of knowledge creation, gathering, and destruction. This promotes the admission of new businesses, the long-term coexistence of incumbents and newcomers, and their selected or combined withdrawal (Krafft, 2004). In terms of industry clustering pattern and policy formulation, Nathan and Rosso (2015), in response to the development needs of governments for information and communications technology sectors, utilise big data resources to conduct an innovative alternative analysis for all active information and communications technology manufacturers in the UK. This can help researchers to better understand the current condition of the UK's information and communications technology industry. Meanwhile, the approach of spatial autocorrelation analysis is useful for revealing the structure and patterns of economic geographical variables. It can be used to identify not only the country's overall spatial patterns but also specific micro-locations(Stankov and Dragićević, 2015). Our research can employ these methods and background information to explore the technology industry dynamics and obtain sufficient argument evidence.
 
 \hypertarget{research-question-and-objectives}{%
 \section{Research Question and Objectives}\label{research-question-and-objectives}}
@@ -224,7 +220,7 @@ This research paper contains 6 chapters. Chapter 2 will first compare and summar
 \hypertarget{industrial-cluster-and-tech-cluster}{%
 \section{Industrial Cluster and Tech Cluster}\label{industrial-cluster-and-tech-cluster}}
 
-A cluster is described as a geographic concentration of businesses that operate in the same industry. High rates of entry and exit are often correlated with growth in employment and productivity, so these questions are of interest not only to academics but also to policymakers (Fritsch, 2011). Industry clusters form as a result of the production benefits of local specialization mixed with cross-regional trade. Three forces of what is now known as agglomeration economies were discussed previously: knowledge spillovers, labour market pooling, and customer-supplier interactions. While most Marshallian force studies have focused on industrial contexts, they also apply to tech clusters, albeit in slightly different ways (Ellison et al.~2010). The definition of tech clusters is mentioned in Kerr's research(2020) as given below
+A cluster is described as a geographic concentration of businesses that operate in the same industry. High rates of entry and exit are often correlated with growth in employment and productivity, so these questions are of interest not only to academics but also to policymakers (Fritsch, 2011). Industry clusters form as a result of the production benefits of local specialization mixed with cross-regional trade. Three forces of what is now known as agglomeration economies were discussed previously: knowledge spillovers, labour market pooling, and customer-supplier interactions. While most Marshallian force studies have focused on industrial contexts, they also apply to tech clusters, albeit in slightly different ways (Ellison et al.~2010). The definition of tech clusters is mentioned in Kerr's research(2020) as given below.
 
 \begin{quote}
 we define ``tech'' clusters to be locations where new products (be they goods or services) and production processes are created that impact multiple parts of the economy.
@@ -232,8 +228,8 @@ we define ``tech'' clusters to be locations where new products (be they goods or
 
 In identifying Information and communications technology (ICT) relative economic activities, They find ICT employment shares nearly double the usual estimates using their unique approach even if this conclusion is more speculative(Nathan and Rosso, 2015). The definition and tech relative industry information can give a brief understanding of our research objects.
 
-\hypertarget{industrial-dynamics}{%
-\section{Industrial Dynamics}\label{industrial-dynamics}}
+\hypertarget{industry-and-cluster-dynamics}{%
+\section{Industry and Cluster Dynamics}\label{industry-and-cluster-dynamics}}
 
 Industrial dynamics is still a relatively new subject of research. Its main focus is on the evolution of industries, with an emphasis on company entry, growth, and exit(Malerba, 2006). Industrial dynamics, in contrast to the neoclassical approach to industries (also known as industrial organization), focuses primarily on phenomena that are intrinsically dynamic and deals with them in an interdisciplinary manner such as economic geography(Carlsson 1987;Fritsch, 2011).
 
@@ -275,7 +271,7 @@ The study area is 149 travel to work areas in England area (out of 228 in the UK
 \hypertarget{data-source-and-processing}{%
 \section{Data Source and Processing}\label{data-source-and-processing}}
 
-This raw dataset is collected from the core company data from Open Corporates master company database (Open Corporates, 2018). And the size of dataset accounts for 15 GB which is handled with \texttt{read\_stata} and \texttt{get\_chunk} function to read large data file in chunks, then increasing the reading speed. The ``primary uk sic 2007'' identification field is the basis of industry finding and the ``birth year'' is the key to measure dynamics variables . All rows whose these two values are empty are removed（17\% incorperate date is missing and sic code is complete).
+This raw dataset is collected from the core company data from Open Corporates master company database (Open Corporates, 2018). And the size of dataset accounts for 15 GB which is handled with \texttt{read\_stata} and \texttt{get\_chunk} function to read large data file in chunks, then increasing the reading speed. The ``primary uk sic 2007'' identification field is the basis of industry finding and the ``birth year'' is the key to measure dynamics variables . All rows whose these two values are empty are removed（17\% incorperate date is missing and sic code is complete). The details of data processing can be seen in the reproducible analysis reports in Appendix B.
 
 \hypertarget{identifying-tech-clusters}{%
 \section{Identifying Tech Clusters}\label{identifying-tech-clusters}}
@@ -304,26 +300,24 @@ For the identification of science and technology companies, this study introduce
 
 This research refers to the science and technology classification table provided by the government. The technology indicator is used to position the technology industry of all industries, and a total of 168 sic codes for the technology industry in 2007 were obtained, accounting for about 16\% of all industry categories in the UK, including 5 industry categories such as Digital Technologies, Life Sciences and Healthcare, Publishing and Broadcasting , Other scientific/technological manufacture and Other scientific/technological services, details of the classification form will be attached in the attachment. There are almost 20\% firms in the raw data belonging to tech firms according to the method of category as mentioned above.
 
-\hypertarget{data-scale}{%
-\section{Data Scale}\label{data-scale}}
+\hypertarget{data-selection}{%
+\section{Data Selection}\label{data-selection}}
 
-\hypertarget{time-range-selection}{%
-\subsection{Time Range Selection}\label{time-range-selection}}
+\hypertarget{time-range-temporal-dimension}{%
+\subsection{Time Range (Temporal Dimension)}\label{time-range-temporal-dimension}}
 
-The reason why this research choose tech firms which incorporate from 1998 to 2018 is because the number of technology companies established in the UK in the past 20 years is significantly higher than before 1998, as shown in below figure.
+The reason why this research choose tech firms which incorporate from 1998 to 2018 is because the number of technology companies established in the UK in the past 20 years is significantly higher than before 1998, as shown in figure \ref{fig:fig-1}.
 
 \begin{figure}
 \includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/figure1} \caption{Incorporating technology and science companies in UK}\label{fig:fig-1}
 \end{figure}
 
-\hypertarget{tech-cluster-identifying}{%
-\subsection{Tech Cluster Identifying}\label{tech-cluster-identifying}}
+\hypertarget{cluster-boundary-spatial-dimension}{%
+\subsection{Cluster Boundary (Spatial Dimension)}\label{cluster-boundary-spatial-dimension}}
 
 Travel to Work Locations is official statistics that capture local labour markets, i.e., areas where the majority (approximately 70\%) of the people who live there work. These measures are based on responses to the 2011 and are used to define the TTWAs algorithmically. There are currently 228 TTWAs in the UK. When it is recognised that the activity of interest may be scattered across administrative boundaries such as local authority districts or NUTS areas, TTWAs are widely utilised in industrial clustering investigations (Prothero, 2021).
 
-Relevant studies have shown that commuting across towns has become more common in England and Wales. People are not limited to living and working in the same administrative area. In addition, studies have found that low-skilled workers tend to rely on the public to work locally. Strong skill-oriented jobs are more dependent on cars, and they are also the main force for cross-city commuting. The technology industry has a greater demand for those strong skill-oriented workers which suggest that travel to work area(TTWA) is used as a cluster of technology companies compared to traditional administrative Region would be a good choice (Titheridge and Hall,2006)
-
-The University of Cambridge had funded some researchers to undertake the Wisbech 2020 Vision project to analyse the current problem, mining the potential future space for employment growth with alternative macro-economic scenario to help drive a high value-added growth plan in the local area (Burgess et al., 2014)
+Relevant studies have shown that commuting across towns has become more common in England and Wales. People are not limited to living and working in the same administrative area. In addition, studies have found that low-skilled workers tend to rely on the public to work locally. Strong skill-oriented jobs are more dependent on cars, and they are also the main force for cross-city commuting. The technology industry has a greater demand for those strong skill-oriented workers which suggest that travel to work area(TTWA) is used as a cluster of technology companies compared to traditional administrative Region would be a good choice (Titheridge and Hall,2006). The University of Cambridge had funded some researchers to undertake the Wisbech 2020 Vision project to analyse the current problem, mining the potential future space for employment growth with alternative macro-economic scenario to help drive a high value-added growth plan in the local area (Burgess et al., 2014)
 
 This geographical division can better reflect the relationship between population, company and work. In terms of geographic research, related researchers have combined the Business Structure Database (BSD) from the Office for National Statistics (ONS) and industry classification methods to use the ONS geographic area of TTWA to survey the commuting patterns and labour market of the population in 2011. Most scholars state that this might be an effective measure for the research of industrial clusters at the sub-regional level (Mateos-Garcia，2016).
 
@@ -463,9 +457,11 @@ The value of this statistical data(Herfindahl-Hirschman Index) for identifying m
 \hypertarget{ethical-statement}{%
 \section{Ethical Statement}\label{ethical-statement}}
 
-The data for this project comes from OpenCorporates, a firm which aggregates company-level data from around the world(\url{https://opencorporates.com/}). In this case, OpenCorporates have taken data from the UK Companies House register (\url{https://www.gov.uk/government/organisations/companies-house}). As detailed by Nathan and Rosso (2015), all limited companies in the UK need to registers with Companies House when they are set up, and provide annual returns and financial statements. These include details of directors and company secretary, registered office address, shares and shareholders, as well as company type and principal business activity. Thus, all the data used here is already in the public domain.
+The data for this project comes from OpenCorporates, a firm that aggregates company-level data from around the world(\url{https://opencorporates.com/}). In this case, OpenCorporates have taken data from the UK Companies House register (\url{https://www.gov.uk/government/organisations/companies-house}). As detailed by Nathan and Rosso (2015), all limited companies in the UK need to registers with Companies House when they are set up, and provide annual returns and financial statements. These include details of directors and company secretary, registered office address, shares and shareholders, as well as company type and principal business activity. Thus, all the data used here is already in the public domain.
 
-The research objectives are tech firms in the UK for this project and the individual data will not be collected and measured in this project. For issues of deanonymisation or privacy, traceable information such as the real companies name and ID will not be utilised in the research. The raw data will be cleaned and filtered by several key variables include industries instead of the company's name or other sensitive information before doing the research. Through data cleaning, pre-processing, desensitisation or other processing methods, the risks of damage to company interests (such as social reputation, economic benefits and etc.) will be mitigated to an as low as possible level in the research process. Besides, this project will not cause discrimination of industries or job categories. The final analysis results, such as the different industry concentration in each region, will not deepen some people's stereotypes and prejudices about the region (This content will be fully discussed in the project discussion section). It is necessary to point out and declare the objectivity of the analysis and the non-absoluteness of the results in the disclaimer. Consider the feelings of people and governments in different parts of the UK, this research will prevent the influence of personal preferences and subjective emotions. Last but not least, the leakage of companies' name and information will be protected. For example, in the reflection of the results section of academic research, the name and related information of the companies that moved may be revealed. Although this information may be open to the public you need to know that this information may be used by people with other ulterior motives. This project will desensitise the company name and information at the stage of chart presentation, such as using A, B, and C to replace them to achieve this purpose.
+The research objectives are tech firms in the UK for this project and the individual data will not be collected and measured in this project. For issues of deanonymisation or privacy, traceable information such as the real companies name and ID will not be utilised in the research. The raw data will be cleaned and filtered by several key variables include industries instead of the company's name or other sensitive information before doing the research. Through data cleaning, pre-processing, desensitisation or other processing methods, the risks of damage to company interests (such as social reputation, economic benefits and etc.) will be mitigated to an as low as possible level in the research process. Besides, this project will not cause discrimination of industries or job categories. The final analysis results, such as the different industry concentration in each region, will not deepen some people's stereotypes and prejudices about the region (This content will be fully discussed in the project discussion section).
+
+It is necessary to point out and declare the objectivity of the analysis and the non-absoluteness of the results in the disclaimer. Consider the feelings of people and governments in different parts of the UK, this research will prevent the influence of personal preferences and subjective emotions. Last but not least, the leakage of companies' name and information will be protected. For example, in the reflection of the results section of academic research, the name and related information of the companies that moved may be revealed. Although this information may be open to the public you need to know that this information may be used by people with other ulterior motives. This project will desensitise the company name and information at the stage of chart presentation, such as using A, B, and C to replace them to achieve this purpose.
 
 \hypertarget{results}{%
 \chapter{Results}\label{results}}
@@ -519,7 +515,7 @@ In terms of three variables' change of overall England level,it can be found tha
 \hypertarget{tech-cluster-dynamics}{%
 \subsection{Tech Cluster Dynamics}\label{tech-cluster-dynamics}}
 
-From 1998 to 2018, the entry rate of each Travel to work area (TTWA) in England will change drastically every decades. For example, in 1998 the darker colored areas were mostly around the Greater London area and the entire southern part of England(Figure \ref{fig:fig-enR-1998-2018-v1}). The overall entry rate in 2008 was higher than that in 1998 and showed a trend of new companies entering the north of England. In this year, some travel to work areas on the edge of England have more prominent entry rates, such as Malton, Minehead and Bridport. However, the overall entry rate in 2018 was about twice as high as the average in 2008. Moreover, ttwa with high entry rate is mostly concentrated in the north and the surrounding areas of Greater London. The overall trend can be witnessed as given by Table \ref{tab:tab-all-var-trend} that there is an increasing trend in the overall level of entry rate from 1998 (average about 1.06\% ) to 2018
+From 1998 to 2018, the entry rate of each travel to work area (TTWA) in England will change drastically every decades. For example, in 1998 the darker colored areas were mostly around the Greater London area and the entire southern part of England(Figure \ref{fig:fig-enR-1998-2018-v1}). The overall entry rate in 2008 was higher than that in 1998 and showed a trend of new companies entering the north of England. In this year, some travel to work areas on the edge of England have more prominent entry rates, such as Malton, Minehead and Bridport. However, the overall entry rate in 2018 was about twice as high as the average in 2008. Moreover, ttwa with high entry rate is mostly concentrated in the north and the surrounding areas of Greater London. The overall trend can be witnessed as given by table \ref{tab:tab-all-var-trend} that there is an increasing trend in the overall level of entry rate from 1998 (average about 1.06\% ) to 2018
 (average about 14.33\%)
 
 Finally, from the perspective of changes in temporal and spatial distribution, the increase in the entry rate of the travel to work area in the northern part of England is much larger than that in the southern part. The areas with high entry rates before 2008 were mostly scattered in other areas except for the Greater London area. However, close to after 2018, London and its surrounding areas, the central Manchester-Birmingham area and the southwest, such as Exeter, have a rising entry rate. In contrast, in 2008, the urban agglomerations north of Leeds had higher firm entry rates in tech industry(Figure \ref{fig:fig-enR-1998-2018-v1}).
@@ -665,8 +661,8 @@ Contrary to the entry rate variable, the density attribute value of England has 
 \hypertarget{lisa-analysis-of-firms-dynamics}{%
 \subsection{LISA Analysis of Firms Dynamics}\label{lisa-analysis-of-firms-dynamics}}
 
-Local Indicators of Spatial Association(LISA)
-According to the Table \ref{tab:tab-z-p-corr}, the z-score with its significance can be found.
+Local indicators of spatial association(LISA)
+according to the table \ref{tab:tab-z-p-corr}, the z-score with its significance can be found.
 
 \begin{table}
 
@@ -683,11 +679,11 @@ less than -2.58 or more than 2.58 & less than 0.01 & 0.99\\
 \end{tabular}
 \end{table}
 
-The visualisation result of the local Moran's index's Z-score of Entry rate is as similarly indicated by the global Moran coefficient (Figure \ref{fig:fig-enR-1998-2018-v1}). With the growth of the year, the overall agglomeration effect of England has decreased. But, in this process, the agglomeration effect in the northern region was higher than that in other regions. However, the travel to work areas in the southwest corner changed significantly from the early cluster effect in 1998 to the corresponding outliers such as Low-High, High-Low areas in 2018 (Figure \ref{fig:fig-lisa-entry-rate} ). In addition, from Figure \ref{fig:fig-hh-1998-2018}, the higher industrial concentration in the north also makes the phenomenon of dynamics agglomeration more obvious than that in other places in England area
+The visualisation result of the local Moran's index's z-score of Entry rate is as similarly indicated by the global Moran coefficient (Figure \ref{fig:fig-enR-1998-2018-v1}). With the growth of the year, the overall agglomeration effect of England has decreased. But, in this process, the agglomeration effect in the northern region was higher than that in other regions. However, the travel to work areas in the southwest corner changed significantly from the early cluster effect in 1998 to the corresponding outliers such as low-high, high-low areas in 2018 (Figure \ref{fig:fig-lisa-entry-rate} ). In addition, from Figure \ref{fig:fig-hh-1998-2018}, the higher industrial concentration in the north also makes the phenomenon of dynamics agglomeration more obvious than that in other places in England area.
 
-To be more specific, High-High clusters in 1998 are mainly concentrated in travel to work areas in northern areas such as Newcastle, southern areas such as Andover-Newbury, and the southwest of Exeter. The entry rate values around these places may be higher than the British average. The Low-Low clusters of entry rates are clustered in the northern North Yorkshire area. The surrounding areas of these places usually have relatively close entry rates and low entry rate values;
+To be more specific, high-high clusters in 1998 are mainly concentrated in travel to work areas in northern areas such as Newcastle, southern areas such as Andover-Newbury, and the southwest of Exeter. The entry rate values around these places may be higher than the British average. The low-low clusters of entry rates are clustered in the northern North Yorkshire area. The surrounding areas of these places usually have relatively close entry rates and low entry rate values.
 
-With the passage of time, the High-High cluster has shifted (the north like Whitehaven and the southwest corner like Launceston areas with higher entry rates gradually formed). By 2018, High-High cluster only appeared in travel to work areas around Liverpool, and new low tech firms entry rate areas were formed in Workington and Penrith\&Appleby (Figure \ref{fig:fig-lisa-entry-rate})
+The high-high cluster has shifted over time (the north like Whitehaven and the southwest corner like Launceston areas with higher entry rates gradually formed). By 2018, high-high cluster only appeared in travel to work areas around Liverpool, and new low tech firms entry rate areas were formed in Workington and Penrith\&Appleby (Figure \ref{fig:fig-lisa-entry-rate})
 
 Central regions of England such as London, Birmingham and other regions have not had obvious spatial clustering effects in the visualisation results. This may be due to the low statistical confidence of the local Moran's index among regions. Or it might be because the data in this study is aggregated before calculated. The related data may be missing after the HHI and entry rate are utilised, which might not perfectly represent the company information in some parts of England.
 
@@ -721,7 +717,7 @@ According to the trend shown in figure \ref{fig:fig-all-var-trend}, in the 20 ye
 
 Echoing the trend of increasing industry diversity is the rising trend of entry rate and company density. According to the results shown in figure \ref{fig:fig-all-var-trend} starting in 2016, the growth rate of the two indicators has suddenly increased compared to the indicator trend before 2008. This phenomenon may be due to the UK government(2017) plans to spend more than £1 billion to speed up the development and adoption of next-generation digital infrastructure in their policy paper. It can be seen that the prosperity of the industry, information and policies may promote each other.
 
-From the perspective of geographical and temporal distribution, as an emerging technology cluster with a higher entry rate, northern England performed well after 2008 (above the average level). However, the central region, relying on Manchester and Birmingham and other regions, also has an above-average level in the medium term(2008). Combined with figure \ref{fig:fig-hh-1998-2018}, the overall concentration of science and technology industries in the north is higher than that in the south. However, the industrial diversity in the London area has always been high, and there is no obvious trend of change. It is worth noting that the decline in industrial concentration in the central region has the most obvious effect. The corresponding growth in the entry rate of these regions is also obvious (\ref{fig:fig-enR-1998-2018-v1})
+From the perspective of geographical and temporal distribution, as an emerging technology cluster with a higher entry rate, northern England performed well after 2008 (above the average level). However, the central region, relying on Manchester and Birmingham and other regions, also has an above-average level in the medium term(2008). Combined with figure \ref{fig:fig-hh-1998-2018}, the overall concentration of science and technology industries in the north is higher than that in the south. However, the industrial diversity in the London area has always been high, and there is no obvious trend of change. It is worth noting that the decline in industrial concentration in the central region has the most obvious effect. The corresponding growth in the entry rate of these regions is also obvious (Figure \ref{fig:fig-enR-1998-2018-v1})
 
 \hypertarget{firm-dynamics-and-influence-factors}{%
 \subsection{Firm Dynamics and Influence Factors}\label{firm-dynamics-and-influence-factors}}
@@ -741,25 +737,29 @@ The LISA analysis of the firm density is used to supplement the exploratory desc
 \includegraphics[width=1\linewidth]{/Users/fangzeqiang/Github/CASA0012-Dissertation/bookdown/general_images/LISA_den_98_18} \caption{Local Moran's I Cluster Analysis for Firm Density in England for Three Time Periods}\label{fig:fig-lisa-den}
 \end{figure}
 
-\hypertarget{limitations-1}{%
-\section{Limitations}\label{limitations-1}}
+\hypertarget{limitations-and-transferability}{%
+\section{Limitations and Transferability}\label{limitations-and-transferability}}
 
 According to methodology, the method of identifying technology clusters mentioned in the section, the definition of the classification of technology companies comes from 2007. This division of the enterprise may not be the latest and most applicable method. Moreover, their information might be lagging because Office for National Statistics (2015) employed a comprehensive identification method, for example, refer to the code division part of \emph{UK Standard Industrial Classification of Economic Activities} and the UK government official website \emph{Science, technology, engineering and maths graduates in non- Industry definitions in STEM jobs} reports, etc. In addition, in the research of spatial pattern mining, there may be a lack of information in some areas. This will lead to low confidence in the local Moran's index detection, which cannot be discussed as a evidence. Finally, the study of hot-spot only calculates the significance standard and only considers univariate to participate in the calculation. The explanatory nature of spatial clustering analysis may not cover most of the scenes because of practical reasons. For example, the dynamics of enterprises are also affected by other factors in the space, such as policies, taxes, etc.
+
+Studying other regions can also utilise the method of this study. For example, research on technology companies can start with company clusters and first quantify firm entry rate and industrial concentration. On this basis, the research can analyse the relationship between cluster characteristics and entry rate through regression models. To further study the spatial correlation of local areas, global and local Moran's index analysis methods and analysis of hot-spot to research the aggregation phenomenon of a certain index. This helps the government in a specific area to balance the development of each area to eliminate the Matthew effect of a certain industry, thereby realising the fair distribution of social production.
 
 \hypertarget{recommendations}{%
 \section{Recommendations}\label{recommendations}}
 
-\hypertarget{coperations}{%
-\subsection{Coperations}\label{coperations}}
+\hypertarget{corporate-decision-making-and-investment}{%
+\subsection{Corporate Decision-Making and Investment}\label{corporate-decision-making-and-investment}}
 
-Regardless of the influence of other UK regions except England, the northeastern city belt might become a hot-spot for tech firms to enter. Although the southwest region was a cold-spot for that in 2018, the corresponding service infrastructure in the region is likely to be relatively complete because the region was a high entry rate cluster for technology companies to enter in 1998. Meanwhile, it can be found that commuters in a particular travel to work area often have a mature way of commuting from residential areas to commercial areas. This pattern can help us better understand the cluster phenomenon of technology companies. Moreover, when the home location is fixed, practitioners tend to choose work within a certain commuting area. In this case, it is more feasible for companies to hire high-end and stable labor in regions where market competition is less intense than to conduct the same corporate recruitment behaviour in other areas.
+Regardless of the influence of other UK regions except England area, the northeastern city belt might become a hot-spot for tech firms to enter. Although the southwest region was a cold-spot for that in 2018, the corresponding service infrastructure in the region is likely to be relatively complete because the region was a high entry rate cluster for technology companies to enter in 1998. Meanwhile, it can be found that commuters in a particular travel to work area often have a mature way of commuting from residential areas to commercial areas. This pattern can help us better understand the cluster phenomenon of technology companies. Moreover, when the home location is fixed, practitioners tend to choose work within a certain commuting area. In this case, it is more feasible for companies to hire high-end and stable labor in regions where market competition is less intense than to conduct the same corporate recruitment behaviour in other areas.
 
 On the other hand, places with fierce market competition are likely to be highly attractive to talents, which will change the commuting decisions of individual families. Thus, company investors can also take into account the surrounding areas of London where there will be a greater tech firm entry rate in the future (Figure \ref{fig:fig-enR-1998-2018-v1}). Although this area is often treated as an outlier in the regression analysis results, London and its surrounding satellite cities may have very different corporate dynamics compared to other areas in England.
 
-\hypertarget{transferability}{%
-\section{Transferability}\label{transferability}}
+\hypertarget{government-policy-and-strategy}{%
+\subsection{Government Policy and Strategy}\label{government-policy-and-strategy}}
 
-Studying other regions can also utilise the method of this study. For example, research on technology companies can start with company clusters and first quantify firm entry rate and industrial concentration. On this basis, the research can analyse the relationship between cluster characteristics and entry rate through regression models. To further study the spatial correlation of local areas, global and local Moran's index analysis methods and analysis of hot-spot to research the aggregation phenomenon of a certain index. This helps the government in a specific area to balance the development of each area to eliminate the Matthew effect of a certain industry, thereby realising the fair distribution of social production.
+Observing the overall situation, according to the experimental results, it could be found that the aggregation effect of the entry rate of enterprises shows a downward trend over time (\ref{tab:tab-morans-i-enR}). From local analysis, the decline in the clustering effect in the northern area, especially the commuter areas in the northeast, is delayed compared to other areas. In terms of government decision-making, the implementation of policies in the northern and southern regions needs to be combined with the local real condition. For example, the government hopes to improve the average level of the number of technology companies in a large area in order to optimise the industrial structure. If the government of England aims to encourage local enterprises to move in or establish themselves, the investment priority can be considered in the cold-spot cluster area. Because increasing the enterprise entry rate in a certain area of the cold-spot cluster can eliminate the generation of low-low clusters to a certain extent in the spatial pattern. This is conducive to guiding the industrial balance between regions, thus weakening the Matthew effect.
+
+From the perspective of the direct role of the government, such as the implementation of tax incentives for technology companies, and regional rental incentives to increase the entry rate of local enterprises. In terms of indirect action, the government can increase the entry rate of local enterprises by guiding the diversified development of regional science and tech industries and appropriately increasing the density of regional science and technology enterprises. According to the experimental results of (Table \ref{tab:tab-regression-entry-rate}), the entry rate of enterprises in a certain area in a certain period of time is positively affected by the density of regional enterprises and the concentration of enterprises (Herfindahl-Hirschman Index ).
 
 \hypertarget{conclusion-1}{%
 \chapter{Conclusion}\label{conclusion-1}}
@@ -799,10 +799,10 @@ Carlsson B. ,1987 Reflections on industrial dynamics: the challenges ahead, Inte
 
 ESRI., 2021. How Hot Spot Analysis (Getis-Ord Gi*) works. {[}online{]} Available at: \url{https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/h-how-hot-spot-analysis-getis-ord-gi-spatial-stati.htm} {[}Accessed 21 August 2021{]}.
 
-Ellison, G., Glaeser, E., Kerr, W. ,2010. ``What causes industry agglomeration? Evidence from
+Ellison, G., Glaeser, E., Kerr, W. , 2010. ``What causes industry agglomeration? Evidence from
 coagglomeration patterns.'' American Economic Review, 100 (3), 1195-213.
 
-Frenken, K., Cefis, E., and Stam, E. 2015. Industrial Dynamicsand Clusters: A Survey. Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505
+Frenken, K., Cefis, E., and Stam, E., 2015. Industrial Dynamicsand Clusters: A Survey. Regional Studies, 49(1), 10-27.doi:10.1080/00343404.2014.904505
 
 Fariñas, J. and Moreno, L., 2000. Review of Industrial Organization, 17(3), pp.249-265.
 
@@ -880,6 +880,7 @@ UK GOV, 2021. UK Digital Strategy 2017. {[}online{]} UK GOV. Available at: \url{
 
 \hypertarget{appendix-a-data-source}{%
 \chapter*{Appendix A Data Source}\label{appendix-a-data-source}}
+\addcontentsline{toc}{chapter}{Appendix A Data Source}
 
 \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 
@@ -893,25 +894,56 @@ Link\strut
 \midrule
 \endhead
 \begin{minipage}[t]{0.47\columnwidth}\centering
-Main Data Source\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
-\url{https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\centering
-Research Reports\strut
-\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
-\url{https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.47\columnwidth}\centering
 Dissertation Book Live Version\strut
 \end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
 \url{https://zeqiang.fun/CASA0012-Dissertation/bookdown/html/}\strut
 \end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\centering
+Data Source Repository\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
+\url{https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\centering
+UK Registered Firms\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
+\url{https://opencorporates.com/info/our-data/}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\centering
+Science and Technology Classification\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
+\url{https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/science-and-technology-classification.xls}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\centering
+Travel to Work Area Boundaries\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
+\url{https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset/Travel_to_Work_Areas_2011_guidance_and_information_V5}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\centering
+Regression Data\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
+\url{https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/df_hh_EnR_ttwaName_asset_not_drop.csv}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\centering
+TTWAs with Three Indicators in 1998\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
+\url{https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/Spatial/dfm_1998_output.geojson}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\centering
+TTWAs with Three Indicators in 2008\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
+\url{https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/Spatial/dfm_2008_output.geojson}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\centering
+TTWAs with Three Indicators in 2018\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
+\url{https://github.com/fang-zeqiang/Master-Dissertation/blob/main/Dataset/Spatial/dfm_2018_output.geojson}\strut
+\end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
 
-\hypertarget{appendix-b-research-reports}{%
-\chapter*{Appendix B Research Reports}\label{appendix-b-research-reports}}
+\hypertarget{appendix-b-research-report}{%
+\chapter*{Appendix B Research Report}\label{appendix-b-research-report}}
+\addcontentsline{toc}{chapter}{Appendix B Research Report}
 
 \begin{longtable}[]{@{}cc@{}}
 \toprule
@@ -923,19 +955,24 @@ Link\strut
 \midrule
 \endhead
 \begin{minipage}[t]{0.47\columnwidth}\centering
-Main Data Source\strut
+Exploratory Data Analysis\strut
 \end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
-\url{https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset}\strut
+\url{https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/EDA.html}\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.47\columnwidth}\centering
-Research Reports\strut
+Descriptive Analysis for Dynamics\strut
 \end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
-\url{https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset}\strut
+\url{https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Dynamics-Research.html}\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.47\columnwidth}\centering
-Dissertation Book Live Version\strut
+Regression Analysis\strut
 \end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
-\url{https://zeqiang.fun/CASA0012-Dissertation/bookdown/html/}\strut
+\url{https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Regression-Research.html}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\centering
+Spatial Pattern Research\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\centering
+\url{https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Spatial-Research.html}\strut
 \end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}

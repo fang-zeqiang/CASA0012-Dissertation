@@ -15,7 +15,7 @@ author:
     | MSc in the Centre for Advanced Spatial Analysis, 
     | Bartlett Faculty of the Built Environment, UCL
     |
-    | Word count: 9,490
+    | Word count: 10,039
 
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -28,7 +28,7 @@ classoption: oneside #openany or #twosides #if two then need to change headers a
 geometry: "left=3.18cm, right=3.18cm, top=2.54cm, bottom=2.54cm"
 fontsize: 12pt
 linestretch: 1.5
-bibliography: [book.bib, packages.bib]
+# bibliography: [book.bib, packages.bib]
 biblio-style: apa
 link-citations: yes
 github-repo: fang-zeqiang/CASA0012-Dissertation

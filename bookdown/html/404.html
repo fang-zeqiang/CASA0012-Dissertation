@@ -52,9 +52,33 @@
 
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -74,6 +98,7 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Abstract</a></li>
 <li class="chapter" data-level="" data-path="declaration.html"><a href="declaration.html"><i class="fa fa-check"></i>Declaration</a></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#background-and-motivation"><i class="fa fa-check"></i><b>1.1</b> Background and Motivation</a></li>
@@ -83,7 +108,7 @@
 <li class="chapter" data-level="2" data-path="lit-review.html"><a href="lit-review.html"><i class="fa fa-check"></i><b>2</b> Literature Review</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="lit-review.html"><a href="lit-review.html#industrial-cluster-and-tech-cluster"><i class="fa fa-check"></i><b>2.1</b> Industrial Cluster and Tech Cluster</a></li>
-<li class="chapter" data-level="2.2" data-path="lit-review.html"><a href="lit-review.html#industrial-dynamics"><i class="fa fa-check"></i><b>2.2</b> Industrial Dynamics</a></li>
+<li class="chapter" data-level="2.2" data-path="lit-review.html"><a href="lit-review.html#industry-and-cluster-dynamics"><i class="fa fa-check"></i><b>2.2</b> Industry and Cluster Dynamics</a></li>
 <li class="chapter" data-level="2.3" data-path="lit-review.html"><a href="lit-review.html#industry-concentration"><i class="fa fa-check"></i><b>2.3</b> Industry Concentration</a></li>
 <li class="chapter" data-level="2.4" data-path="lit-review.html"><a href="lit-review.html#other-factors-and-dynamics-pattern"><i class="fa fa-check"></i><b>2.4</b> Other Factors and Dynamics Pattern</a></li>
 <li class="chapter" data-level="2.5" data-path="lit-review.html"><a href="lit-review.html#conclusion"><i class="fa fa-check"></i><b>2.5</b> Conclusion</a></li>
@@ -93,10 +118,10 @@
 <li class="chapter" data-level="3.1" data-path="methodology.html"><a href="methodology.html#research-framework"><i class="fa fa-check"></i><b>3.1</b> Research Framework</a></li>
 <li class="chapter" data-level="3.2" data-path="methodology.html"><a href="methodology.html#data-source-and-processing"><i class="fa fa-check"></i><b>3.2</b> Data Source and Processing</a></li>
 <li class="chapter" data-level="3.3" data-path="methodology.html"><a href="methodology.html#identifying-tech-clusters"><i class="fa fa-check"></i><b>3.3</b> Identifying Tech Clusters</a></li>
-<li class="chapter" data-level="3.4" data-path="methodology.html"><a href="methodology.html#data-scale"><i class="fa fa-check"></i><b>3.4</b> Data Scale</a>
+<li class="chapter" data-level="3.4" data-path="methodology.html"><a href="methodology.html#data-selection"><i class="fa fa-check"></i><b>3.4</b> Data Selection</a>
 <ul>
-<li class="chapter" data-level="3.4.1" data-path="methodology.html"><a href="methodology.html#time-range-selection"><i class="fa fa-check"></i><b>3.4.1</b> Time Range Selection</a></li>
-<li class="chapter" data-level="3.4.2" data-path="methodology.html"><a href="methodology.html#tech-cluster-identifying"><i class="fa fa-check"></i><b>3.4.2</b> Tech Cluster Identifying</a></li>
+<li class="chapter" data-level="3.4.1" data-path="methodology.html"><a href="methodology.html#time-range-temporal-dimension"><i class="fa fa-check"></i><b>3.4.1</b> Time Range (Temporal Dimension)</a></li>
+<li class="chapter" data-level="3.4.2" data-path="methodology.html"><a href="methodology.html#cluster-boundary-spatial-dimension"><i class="fa fa-check"></i><b>3.4.2</b> Cluster Boundary (Spatial Dimension)</a></li>
 </ul></li>
 <li class="chapter" data-level="3.5" data-path="methodology.html"><a href="methodology.html#quatitative-analysis-and-methods"><i class="fa fa-check"></i><b>3.5</b> Quatitative Analysis and Methods</a>
 <ul>
@@ -131,12 +156,17 @@
 <li class="chapter" data-level="5.1.2" data-path="discussion.html"><a href="discussion.html#firm-dynamics-and-influence-factors"><i class="fa fa-check"></i><b>5.1.2</b> Firm Dynamics and Influence Factors</a></li>
 <li class="chapter" data-level="5.1.3" data-path="discussion.html"><a href="discussion.html#spatio-temporal-cluster-analysis-for-two-indicators"><i class="fa fa-check"></i><b>5.1.3</b> Spatio-Temporal Cluster Analysis for Two Indicators</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="discussion.html"><a href="discussion.html#limitations-1"><i class="fa fa-check"></i><b>5.2</b> Limitations</a></li>
-<li class="chapter" data-level="5.3" data-path="discussion.html"><a href="discussion.html#transferability"><i class="fa fa-check"></i><b>5.3</b> Transferability</a></li>
+<li class="chapter" data-level="5.2" data-path="discussion.html"><a href="discussion.html#limitations-and-transferability"><i class="fa fa-check"></i><b>5.2</b> Limitations and Transferability</a></li>
+<li class="chapter" data-level="5.3" data-path="discussion.html"><a href="discussion.html#recommendations"><i class="fa fa-check"></i><b>5.3</b> Recommendations</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="discussion.html"><a href="discussion.html#corporate-decision-making-and-investment"><i class="fa fa-check"></i><b>5.3.1</b> Corporate Decision-Making and Investment</a></li>
+<li class="chapter" data-level="5.3.2" data-path="discussion.html"><a href="discussion.html#government-policy-and-strategy"><i class="fa fa-check"></i><b>5.3.2</b> Government Policy and Strategy</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="conclusion-1.html"><a href="conclusion-1.html"><i class="fa fa-check"></i><b>6</b> Conclusion</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
-<li class="chapter" data-level="" data-path="appendix-a-data-source-and-research-reports.html"><a href="appendix-a-data-source-and-research-reports.html"><i class="fa fa-check"></i>Appendix A Data Source and Research Reports</a></li>
+<li class="chapter" data-level="" data-path="appendix-a-data-source.html"><a href="appendix-a-data-source.html"><i class="fa fa-check"></i>Appendix A Data Source</a></li>
+<li class="chapter" data-level="" data-path="appendix-b-research-report.html"><a href="appendix-b-research-report.html"><i class="fa fa-check"></i>Appendix B Research Report</a></li>
 <li class="divider"></li>
 <li><a href="" target="blank"></a></li>
 
@@ -225,6 +255,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
