@@ -40,11 +40,11 @@ library(fs)
 ```
 
 `r if (knitr:::is_html_output()) '
-# Appendix B Research Report{-}
+# Appendix B Research Log{-}
 '`
 
 `r if (knitr:::is_latex_output()) '
-# Appendix B Research Report{-}
+# Appendix B Research Log{-}
 '`
 
 |Name | Link|
