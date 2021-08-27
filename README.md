@@ -1,4 +1,6 @@
-# CASA0012-Dissertation
+# CASA0012 Dissertation
+
+**Title: Spatial Pattern Mining of Tech Clusters of Dynamics and Industry Mix Based on Quantitative Methods in England Area, UK**
 
 ![intro_picture](https://github.com/fang-zeqiang/CASA0012-Dissertation/blob/main/bookdown/general_images/G_enR_v1.png?raw=true)
 
