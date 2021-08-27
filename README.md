@@ -3,10 +3,13 @@
 This repo is to store my dissertation file and present my disseration book
 
 ```
-- bookdown #the path of dissertation book
-- code #the path of the reproducible analysis and map making
-- jupyterlab #the path of research progress log
-- dataset #the path of data source
+|- bookdown #the path of dissertation book
+|- code #the path of the reproducible analysis and map making
+|- - sql #the folder contains sql scripts for data aggregation
+|- - geoda #the spatial pattern EDA project folder
+|- jupyterlab #the path of research progress log
+|- dataset #the path of data source
+|- CASA0012-Dissertation.pdf # the paper version of dissertation
 ```
 ## Reproducible Analysis Process
 
@@ -14,9 +17,11 @@ This repo is to store my dissertation file and present my disseration book
 |:--|:--|
 |Exploratory Data Analysis|	https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/EDA.html|
 |Descriptive Analysis for Dynamics|https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Dynamics-Research.html|
-|Regression Analysis|	https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Regression-Research.html|
-|Spatial Pattern Research	|https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Spatial-Research.html|
-|Map Making in R|	https://rpubs.com/fangzq/UK_ttwa_tmap_making|
+|Regression Analysis(Top 10 TTWAs)|https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Regression-Research.html|
+|Regression Results(All TTWAs)|https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Regression-Results.html|
+|Spatial Pattern Research|https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Spatial-Research.html|
+|Map Making in R (Distribution)|https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Map-Making-R-dis.html|
+|Map Making in R (Morans I and LISA)|	https://rpubs.com/fangzq/UK_ttwa_tmap_making|
 
 ## Dataset
 
