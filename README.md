@@ -3,13 +3,13 @@
 This repo is to store my dissertation file and present my disseration book
 
 ```
-|- bookdown #the path of dissertation book
-|- code #the path of the reproducible analysis and map making
-|- - sql #the folder contains sql scripts for data aggregation
-|- - geoda #the spatial pattern EDA project folder
-|- jupyterlab #the path of research progress log
-|- dataset #the path of data source
-|- CASA0012-Dissertation.pdf # the paper version of dissertation
+|_ bookdown                   # the path of dissertation book
+|_ code                       # the path of the reproducible analysis and map making
+  |_ sql                      # the folder contains sql scripts for data aggregation
+  |_ geoda                    # the spatial pattern EDA project folder
+|_ jupyterlab                 # the path of research progress log
+|_ dataset                    # the path of data source
+|_ CASA0012-Dissertation.pdf  # the paper version of dissertation
 ```
 ## Reproducible Analysis Process
 
