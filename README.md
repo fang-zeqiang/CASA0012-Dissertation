@@ -1,5 +1,7 @@
 # CASA0012-Dissertation
 
+![intro_picture](https://github.com/fang-zeqiang/CASA0012-Dissertation/blob/main/bookdown/general_images/G_enR_v1.png?raw=true)
+
 This repo is to store my dissertation file and present my disseration book
 
 ```
