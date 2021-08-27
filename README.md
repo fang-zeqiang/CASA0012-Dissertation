@@ -11,7 +11,7 @@ This repo is to store my dissertation file and present my disseration book
 ## Reproducible Analysis Process
 
 |Name|Link|
-|:--:|:--:|
+|:--|:--|
 |Exploratory Data Analysis|	https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/EDA.html|
 |Descriptive Analysis for Dynamics|https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Dynamics-Research.html|
 |Regression Analysis|	https://zeqiang.fun/CASA0012-Dissertation/jupyterlab/Regression-Research.html|
@@ -21,7 +21,7 @@ This repo is to store my dissertation file and present my disseration book
 ## Dataset
 
 |Name|Link|
-|:--:|:--:|
+|:--|:--|
 |Dissertation Book Live Version|https://zeqiang.fun/CASA0012-Dissertation/bookdown/html/|
 |Data Source Repository|https://github.com/fang-zeqiang/Master-Dissertation/tree/main/Dataset|
 |UK Registered Firms|	https://opencorporates.com/info/our-data/|
